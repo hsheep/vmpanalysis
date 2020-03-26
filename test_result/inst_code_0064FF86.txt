@@ -1,0 +1,1523 @@
+
+>>>>>>> Handler: 0 >>>>>>>
+0x64ff86 push    70BF0443h
+0x64ff8b call    sub_66EF74
+0x66ef74 push    ecx
+0x6453b9 push    edx
+0x6453c2 push    edi
+0x5f7ced push    esi
+0x5f7cf3 push    ebp
+0x615116 push    eax
+0x615117 pushf
+0x615120 push    ebx
+0x615125 mov     edx, 0
+0x61512a push    edx
+0x61512b mov     edi, [esp+24h+arg_0]
+0x615138 neg     edi
+0x61513a xor     edi, 62C93AABh
+0x64fb3f sub     edi, 3D9B306Eh
+0x64fb48 ror     edi, 1
+0x64fb4a xor     edi, 57951EEEh
+0x64fb54 add     edi, edx
+0x64fb56 mov     ebp, esp
+0x64fb58 sub     esp, 0C0h
+0x64fb62 mov     ebx, edi
+0x64fb6c mov     edx, 0
+0x64fb71 sub     ebx, edx
+0x64fb77 lea     esi, loc_64FB77
+0x64fb85 lea     edi, [edi-4]
+0x64fb8b mov     eax, [edi]
+0x616c12 xor     eax, ebx
+0x616c14 inc     eax
+0x616c15 bswap   eax
+0x6074ee neg     eax
+0x6074f2 ror     eax, 1
+0x6074f7 lea     eax, [eax+3C4A327Dh]
+0x6074fd xor     ebx, eax
+0x5f2ea1 add     esi, eax
+0x5f2ea3 jmp     esi
+
+>>>>>>> Handler: 1 >>>>>>>
+0x670010 mov     eax, [ebp+0]
+0x67001b add     ebp, 4
+0x670025 sub     edi, 1
+0x67002b movzx   ecx, byte ptr [edi]
+0x670032 xor     cl, bl
+0x670035 neg     cl
+0x67086e inc     cl
+0x671453 rol     cl, 1
+0x671456 sub     cl, 0EBh
+0x671459 ror     cl, 1
+0x67145d xor     bl, cl
+0x671469 mov     [esp+ecx], eax
+0x67146c lea     edi, [edi-4]
+0x671472 mov     ecx, [edi]
+0x671474 xor     ecx, ebx
+0x671476 sub     ecx, 334D677Bh
+0x68d99f ror     ecx, 1
+0x68d9a4 not     ecx
+0x68d9a9 add     ecx, 401B4D25h
+0x5f99fb neg     ecx
+0x623fae dec     ecx
+0x623faf xor     ecx, 62BF0271h
+0x623fb7 xor     ebx, ecx
+0x623fb9 add     esi, ecx
+0x64a751 jmp     esi
+
+>>>>>>> Handler: 2 >>>>>>>
+0x626b4f mov     eax, [ebp+0]
+0x626b56 lea     ebp, [ebp+4]
+0x626b5f sub     edi, 1
+0x626b68 movzx   ecx, byte ptr [edi]
+0x626b6b xor     cl, bl
+0x626b74 neg     cl
+0x613368 inc     cl
+0x61336a rol     cl, 1
+0x61336c sub     cl, 0EBh
+0x61336f ror     cl, 1
+0x613371 xor     bl, cl
+0x61337b mov     [esp+ecx], eax
+0x613386 sub     edi, 4
+0x61338f mov     ecx, [edi]
+0x613395 xor     ecx, ebx
+0x613398 sub     ecx, 334D677Bh
+0x61bf50 ror     ecx, 1
+0x61bf53 not     ecx
+0x61bf55 lea     ecx, [ecx+401B4D25h]
+0x61bf61 neg     ecx
+0x61bf63 dec     ecx
+0x61bf6d xor     ecx, 62BF0271h
+0x5f5f94 xor     ebx, ecx
+0x5f5f96 add     esi, ecx
+0x6613b7 push    esi
+0x6613b8 retn
+
+>>>>>>> Handler: 3 >>>>>>>
+0x634486 mov     eax, [ebp+0]
+0x63448b lea     ebp, [ebp+4]
+0x634498 lea     edi, [edi-1]
+0x63449e movzx   ecx, byte ptr [edi]
+0x6344a3 xor     cl, bl
+0x6344a8 neg     cl
+0x6344aa inc     cl
+0x6344ac rol     cl, 1
+0x6344b2 sub     cl, 0EBh
+0x5f4dd4 ror     cl, 1
+0x5f4ddb xor     bl, cl
+0x5f4de3 mov     [esp+ecx], eax
+0x5f4dec sub     edi, 4
+0x5f4df2 mov     ecx, [edi]
+0x5f4df4 xor     ecx, ebx
+0x5f4df6 sub     ecx, 334D677Bh
+0x62c4d7 ror     ecx, 1
+0x62c4de not     ecx
+0x62c4e0 add     ecx, 401B4D25h
+0x62c4e6 neg     ecx
+0x660d08 dec     ecx
+0x660d0c xor     ecx, 62BF0271h
+0x660d18 xor     ebx, ecx
+0x63daec add     esi, ecx
+0x635cfc jmp     esi
+
+>>>>>>> Handler: 4 >>>>>>>
+0x61f4f1 mov     eax, [ebp+0]
+0x61f4fb lea     ebp, [ebp+4]
+0x61f505 lea     edi, [edi-1]
+0x61f50e movzx   ecx, byte ptr [edi]
+0x61f513 xor     cl, bl
+0x61f515 neg     cl
+0x5f83fb inc     cl
+0x5f83ff rol     cl, 1
+0x5f8403 sub     cl, 0EBh
+0x5f8406 ror     cl, 1
+0x5f840d xor     bl, cl
+0x5f8412 mov     [esp+ecx], eax
+0x5f8418 sub     edi, 4
+0x5f8420 mov     ecx, [edi]
+0x5f8422 xor     ecx, ebx
+0x5f8424 sub     ecx, 334D677Bh
+0x672f0e ror     ecx, 1
+0x605c0d not     ecx
+0x605c0f lea     ecx, [ecx+401B4D25h]
+0x605c17 neg     ecx
+0x67f80f dec     ecx
+0x67f811 xor     ecx, 62BF0271h
+0x67f81c xor     ebx, ecx
+0x67fa75 add     esi, ecx
+0x67fa77 jmp     esi
+
+>>>>>>> Handler: 5 >>>>>>>
+0x616145 mov     eax, [ebp+0]
+0x61614c lea     ebp, [ebp+4]
+0x616152 sub     edi, 1
+0x616158 movzx   ecx, byte ptr [edi]
+0x61615b xor     cl, bl
+0x616160 neg     cl
+0x6146a0 inc     cl
+0x6146a2 rol     cl, 1
+0x6146ab sub     cl, 0EBh
+0x5f8f5f ror     cl, 1
+0x5f8f61 xor     bl, cl
+0x67d406 mov     [esp+ecx], eax
+0x67d40c sub     edi, 4
+0x67d416 mov     ecx, [edi]
+0x67d41f xor     ecx, ebx
+0x67d421 sub     ecx, 334D677Bh
+0x67d427 ror     ecx, 1
+0x617fab not     ecx
+0x617fb0 add     ecx, 401B4D25h
+0x68a9ea neg     ecx
+0x688954 dec     ecx
+0x688955 xor     ecx, 62BF0271h
+0x68895e xor     ebx, ecx
+0x688961 add     esi, ecx
+0x622a06 push    esi
+0x622a07 retn
+
+>>>>>>> Handler: 6 >>>>>>>
+0x6846c4 mov     eax, [ebp+0]
+0x6846ce add     ebp, 4
+0x6846d5 sub     edi, 1
+0x6846db movzx   ecx, byte ptr [edi]
+0x663e4a xor     cl, bl
+0x663e53 neg     cl
+0x663e55 inc     cl
+0x663e57 rol     cl, 1
+0x663e5b sub     cl, 0EBh
+0x663e5f ror     cl, 1
+0x60bed1 xor     bl, cl
+0x60bed7 mov     [esp+ecx], eax
+0x60beda lea     edi, [edi-4]
+0x60bee0 mov     ecx, [edi]
+0x60beea xor     ecx, ebx
+0x60bef2 sub     ecx, 334D677Bh
+0x60bef9 ror     ecx, 1
+0x60befb not     ecx
+0x60befd add     ecx, 401B4D25h
+0x60bf07 neg     ecx
+0x60bf09 dec     ecx
+0x620291 xor     ecx, 62BF0271h
+0x62029b xor     ebx, ecx
+0x61f152 add     esi, ecx
+0x62c091 jmp     esi
+
+>>>>>>> Handler: 7 >>>>>>>
+0x65c89e mov     eax, [ebp+0]
+0x65c8a2 add     ebp, 4
+0x65c8ad lea     edi, [edi-1]
+0x65c8b7 movzx   ecx, byte ptr [edi]
+0x65c8bc xor     cl, bl
+0x65c8c3 neg     cl
+0x656af1 inc     cl
+0x656af5 rol     cl, 1
+0x656afd sub     cl, 0EBh
+0x62421a ror     cl, 1
+0x624223 xor     bl, cl
+0x62422c mov     [esp+ecx], eax
+0x624237 lea     edi, [edi-4]
+0x624242 mov     ecx, [edi]
+0x6591d8 xor     ecx, ebx
+0x6591da sub     ecx, 334D677Bh
+0x658839 ror     ecx, 1
+0x65883c not     ecx
+0x65883e add     ecx, 401B4D25h
+0x658846 neg     ecx
+0x651f7e dec     ecx
+0x651f7f xor     ecx, 62BF0271h
+0x651f8c xor     ebx, ecx
+0x62f103 add     esi, ecx
+0x673fc8 jmp     esi
+
+>>>>>>> Handler: 8 >>>>>>>
+0x6024f2 mov     eax, [ebp+0]
+0x6024f6 add     ebp, 4
+0x6024fe lea     edi, [edi-1]
+0x602504 movzx   ecx, byte ptr [edi]
+0x60250c xor     cl, bl
+0x60250e neg     cl
+0x670946 inc     cl
+0x670948 rol     cl, 1
+0x67094d sub     cl, 0EBh
+0x69131e ror     cl, 1
+0x691322 xor     bl, cl
+0x69132d mov     [esp+ecx], eax
+0x691336 sub     edi, 4
+0x691344 mov     ecx, [edi]
+0x67dd03 xor     ecx, ebx
+0x67dd0a sub     ecx, 334D677Bh
+0x67dd10 ror     ecx, 1
+0x67dd1c not     ecx
+0x67dd1e lea     ecx, [ecx+401B4D25h]
+0x67dd25 neg     ecx
+0x64d99c dec     ecx
+0x64d99e xor     ecx, 62BF0271h
+0x64d9a4 xor     ebx, ecx
+0x64d9a6 add     esi, ecx
+0x660e58 jmp     esi
+
+>>>>>>> Handler: 9 >>>>>>>
+0x603363 mov     eax, [ebp+0]
+0x603367 lea     ebp, [ebp+4]
+0x603372 sub     edi, 1
+0x603384 movzx   ecx, byte ptr [edi]
+0x679320 xor     cl, bl
+0x679325 neg     cl
+0x68bf1b inc     cl
+0x68bf1e rol     cl, 1
+0x68bf20 sub     cl, 0EBh
+0x68bf23 ror     cl, 1
+0x68bf29 xor     bl, cl
+0x68bf2b mov     [esp+ecx], eax
+0x68bf35 lea     edi, [edi-4]
+0x68bf45 mov     ecx, [edi]
+0x68bf47 xor     ecx, ebx
+0x68bf4f sub     ecx, 334D677Bh
+0x68bf55 ror     ecx, 1
+0x68bf59 not     ecx
+0x64ae68 add     ecx, 401B4D25h
+0x64ae6e neg     ecx
+0x6742e9 dec     ecx
+0x6742ea xor     ecx, 62BF0271h
+0x6742f0 xor     ebx, ecx
+0x6742f2 add     esi, ecx
+0x6742f4 jmp     esi
+
+>>>>>>> Handler: 10 >>>>>>>
+0x663195 mov     eax, [ebp+0]
+0x663199 add     ebp, 4
+0x6631aa lea     edi, [edi-1]
+0x6631b8 movzx   ecx, byte ptr [edi]
+0x6631be xor     cl, bl
+0x68dfb8 neg     cl
+0x60c1c3 inc     cl
+0x60c1c5 rol     cl, 1
+0x60c1c8 sub     cl, 0EBh
+0x60c1cc ror     cl, 1
+0x60c1d2 xor     bl, cl
+0x60c1d4 mov     [esp+ecx], eax
+0x60c1da sub     edi, 4
+0x60c1e0 mov     ecx, [edi]
+0x60c1e3 xor     ecx, ebx
+0x60c1e5 sub     ecx, 334D677Bh
+0x60c1eb ror     ecx, 1
+0x60c1ef not     ecx
+0x60c1f1 lea     ecx, [ecx+401B4D25h]
+0x60c1f8 neg     ecx
+0x6367df dec     ecx
+0x6367e0 xor     ecx, 62BF0271h
+0x6367e6 xor     ebx, ecx
+0x603c28 add     esi, ecx
+0x6613b5 jmp     esi
+
+>>>>>>> Handler: 11 >>>>>>>
+0x688b14 mov     eax, [ebp+0]
+0x688b20 add     ebp, 4
+0x688b2b sub     edi, 1
+0x688b3c movzx   ecx, byte ptr [edi]
+0x688b3f xor     cl, bl
+0x688b41 neg     cl
+0x66fcaf inc     cl
+0x66fcb1 rol     cl, 1
+0x66fcb3 sub     cl, 0EBh
+0x66fcb7 ror     cl, 1
+0x66fcba xor     bl, cl
+0x67963d mov     [esp+ecx], eax
+0x679640 lea     edi, [edi-4]
+0x67964f mov     ecx, [edi]
+0x679658 xor     ecx, ebx
+0x67965b sub     ecx, 334D677Bh
+0x679662 ror     ecx, 1
+0x679668 not     ecx
+0x67966c lea     ecx, [ecx+401B4D25h]
+0x679672 neg     ecx
+0x679c28 dec     ecx
+0x679c2b xor     ecx, 62BF0271h
+0x67b627 xor     ebx, ecx
+0x67b62c add     esi, ecx
+0x67b62e jmp     esi
+
+>>>>>>> Handler: 12 >>>>>>>
+0x6191ea sub     edi, 4
+0x6191fb mov     eax, [edi]
+0x64b4d3 xor     eax, ebx
+0x64b4d6 add     eax, 33C571C8h
+0x5ffe47 ror     eax, 3
+0x5ffe4b sub     eax, 295F0987h
+0x66cd72 ror     eax, 3
+0x66cd78 xor     ebx, eax
+0x66cd7a sub     ebp, 4
+0x63f2a5 mov     [ebp+0], eax
+0x63f2a9 lea     edi, [edi-4]
+0x63f2af mov     eax, [edi]
+0x63f2b1 xor     eax, ebx
+0x63f2b4 ror     eax, 2
+0x63f2b7 add     eax, 688A11F4h
+0x63f2bd ror     eax, 3
+0x63f2c0 bswap   eax
+0x614bac inc     eax
+0x614bb1 xor     ebx, eax
+0x614bb7 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 13 >>>>>>>
+0x667bed sub     edi, 1
+0x667bfa movzx   ecx, byte ptr [edi]
+0x667c07 xor     cl, bl
+0x667c15 neg     cl
+0x667c21 dec     cl
+0x667c29 neg     cl
+0x667c2b not     cl
+0x667c2d xor     bl, cl
+0x667c2f mov     edx, [esp+ecx]
+0x667c32 sub     ebp, 4
+0x667c3f mov     [ebp+0], edx
+0x667c4c sub     edi, 4
+0x667c55 mov     eax, [edi]
+0x667c57 xor     eax, ebx
+0x667c5a bswap   eax
+0x667c5c not     eax
+0x667c5e sub     eax, 6FA428FEh
+0x667c63 rol     eax, 3
+0x667c66 neg     eax
+0x667c69 rol     eax, 3
+0x667c6c xor     ebx, eax
+0x667c71 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 14 >>>>>>>
+0x6708cc mov     ecx, [ebp+0]
+0x6708d7 mov     edx, [ebp+4]
+0x6708da add     ecx, edx
+0x6708e2 mov     [ebp+4], ecx
+0x6708e5 pushf
+0x6708f0 pop     dword ptr [ebp+0]
+0x6708f9 sub     edi, 4
+0x6708ff mov     edx, [edi]
+0x670901 xor     edx, ebx
+0x670903 xor     edx, 4D6E40ACh
+0x670909 ror     edx, 1
+0x67090c bswap   edx
+0x67090f neg     edx
+0x67091d xor     ebx, edx
+0x67091f add     esi, edx
+0x630b0f jmp     esi
+
+>>>>>>> Handler: 15 >>>>>>>
+0x670010 mov     eax, [ebp+0]
+0x67001b add     ebp, 4
+0x670025 sub     edi, 1
+0x67002b movzx   ecx, byte ptr [edi]
+0x670032 xor     cl, bl
+0x670035 neg     cl
+0x67086e inc     cl
+0x671453 rol     cl, 1
+0x671456 sub     cl, 0EBh
+0x671459 ror     cl, 1
+0x67145d xor     bl, cl
+0x671469 mov     [esp+ecx], eax
+0x67146c lea     edi, [edi-4]
+0x671472 mov     ecx, [edi]
+0x671474 xor     ecx, ebx
+0x671476 sub     ecx, 334D677Bh
+0x68d99f ror     ecx, 1
+0x68d9a4 not     ecx
+0x68d9a9 add     ecx, 401B4D25h
+0x5f99fb neg     ecx
+0x623fae dec     ecx
+0x623faf xor     ecx, 62BF0271h
+0x623fb7 xor     ebx, ecx
+0x623fb9 add     esi, ecx
+0x64a751 jmp     esi
+
+>>>>>>> Handler: 16 >>>>>>>
+0x626b4f mov     eax, [ebp+0]
+0x626b56 lea     ebp, [ebp+4]
+0x626b5f sub     edi, 1
+0x626b68 movzx   ecx, byte ptr [edi]
+0x626b6b xor     cl, bl
+0x626b74 neg     cl
+0x613368 inc     cl
+0x61336a rol     cl, 1
+0x61336c sub     cl, 0EBh
+0x61336f ror     cl, 1
+0x613371 xor     bl, cl
+0x61337b mov     [esp+ecx], eax
+0x613386 sub     edi, 4
+0x61338f mov     ecx, [edi]
+0x613395 xor     ecx, ebx
+0x613398 sub     ecx, 334D677Bh
+0x61bf50 ror     ecx, 1
+0x61bf53 not     ecx
+0x61bf55 lea     ecx, [ecx+401B4D25h]
+0x61bf61 neg     ecx
+0x61bf63 dec     ecx
+0x61bf6d xor     ecx, 62BF0271h
+0x5f5f94 xor     ebx, ecx
+0x5f5f96 add     esi, ecx
+0x6613b7 push    esi
+0x6613b8 retn
+
+>>>>>>> Handler: 17 >>>>>>>
+0x644717 sub     edi, 1
+0x644721 movzx   ecx, byte ptr [edi]
+0x644727 xor     cl, bl
+0x644730 neg     cl
+0x644734 dec     cl
+0x64473b neg     cl
+0x64473d not     cl
+0x64473f xor     bl, cl
+0x644748 mov     edx, [esp+ecx]
+0x644750 sub     ebp, 4
+0x644760 mov     [ebp+0], edx
+0x644764 lea     edi, [edi-4]
+0x64476c mov     eax, [edi]
+0x644777 xor     eax, ebx
+0x644779 bswap   eax
+0x6077e4 not     eax
+0x6077e6 sub     eax, 6FA428FEh
+0x6077ec rol     eax, 3
+0x60fdc5 neg     eax
+0x6679a4 rol     eax, 3
+0x66275a xor     ebx, eax
+0x66275c add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 18 >>>>>>>
+0x646b05 sub     edi, 1
+0x646b16 movzx   ecx, byte ptr [edi]
+0x646b1d xor     cl, bl
+0x646b1f neg     cl
+0x646b23 dec     cl
+0x646b2b neg     cl
+0x646b31 not     cl
+0x646b33 xor     bl, cl
+0x646b35 mov     edx, [esp+ecx]
+0x646b38 lea     ebp, [ebp-4]
+0x646b3e mov     [ebp+0], edx
+0x646b45 lea     edi, [edi-4]
+0x646b4c mov     eax, [edi]
+0x646b57 xor     eax, ebx
+0x646b5c bswap   eax
+0x63c6ef not     eax
+0x63c6f1 sub     eax, 6FA428FEh
+0x60235f rol     eax, 3
+0x602367 neg     eax
+0x602369 rol     eax, 3
+0x60236c xor     ebx, eax
+0x60236e add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 19 >>>>>>>
+0x66b2d3 lea     edi, [edi-1]
+0x66b2d9 movzx   ecx, byte ptr [edi]
+0x66b2dc xor     cl, bl
+0x66b2de neg     cl
+0x66b2e1 dec     cl
+0x66b2ea neg     cl
+0x66b2ef not     cl
+0x66b2f1 xor     bl, cl
+0x66b2f5 mov     edx, [esp+ecx]
+0x66b2fa lea     ebp, [ebp-4]
+0x66b309 mov     [ebp+0], edx
+0x66b310 sub     edi, 4
+0x66b31c mov     eax, [edi]
+0x625ab5 xor     eax, ebx
+0x625ab9 bswap   eax
+0x625abb not     eax
+0x625ac3 sub     eax, 6FA428FEh
+0x625ac8 rol     eax, 3
+0x622299 neg     eax
+0x62229d rol     eax, 3
+0x6222a0 xor     ebx, eax
+0x6222a3 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 20 >>>>>>>
+0x6405e5 sub     edi, 1
+0x6405f0 movzx   ecx, byte ptr [edi]
+0x6405f5 xor     cl, bl
+0x6405fa neg     cl
+0x6405fc dec     cl
+0x640603 neg     cl
+0x638acd not     cl
+0x638ada xor     bl, cl
+0x638ae7 mov     edx, [esp+ecx]
+0x638af3 sub     ebp, 4
+0x638afc mov     [ebp+0], edx
+0x638b03 lea     edi, [edi-4]
+0x638b11 mov     eax, [edi]
+0x638b1a xor     eax, ebx
+0x638b1c bswap   eax
+0x638b24 not     eax
+0x68e80d sub     eax, 6FA428FEh
+0x68e813 rol     eax, 3
+0x68e818 neg     eax
+0x68e81b rol     eax, 3
+0x68e820 xor     ebx, eax
+0x68e824 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 21 >>>>>>>
+0x689e3d lea     edi, [edi-1]
+0x689e49 movzx   ecx, byte ptr [edi]
+0x689e4f xor     cl, bl
+0x689e5e neg     cl
+0x689e60 dec     cl
+0x689e6b neg     cl
+0x689e71 not     cl
+0x689e7e xor     bl, cl
+0x689e88 mov     edx, [esp+ecx]
+0x689e8b sub     ebp, 4
+0x689e91 mov     [ebp+0], edx
+0x689e98 sub     edi, 4
+0x689ea3 mov     eax, [edi]
+0x689ea6 xor     eax, ebx
+0x689ea9 bswap   eax
+0x689eb1 not     eax
+0x689eb9 sub     eax, 6FA428FEh
+0x61a54f rol     eax, 3
+0x61a55a neg     eax
+0x628ef7 rol     eax, 3
+0x628f01 xor     ebx, eax
+0x628f03 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 22 >>>>>>>
+0x686af4 lea     edi, [edi-1]
+0x686afe movzx   ecx, byte ptr [edi]
+0x686b03 xor     cl, bl
+0x686b05 neg     cl
+0x686b09 dec     cl
+0x686b0b neg     cl
+0x686b11 not     cl
+0x686b20 xor     bl, cl
+0x686b26 mov     edx, [esp+ecx]
+0x686b33 sub     ebp, 4
+0x686b39 mov     [ebp+0], edx
+0x686b41 lea     edi, [edi-4]
+0x686b4c mov     eax, [edi]
+0x686b4e xor     eax, ebx
+0x686b53 bswap   eax
+0x686b5d not     eax
+0x686b62 sub     eax, 6FA428FEh
+0x686b67 rol     eax, 3
+0x686b6a neg     eax
+0x61e4e3 rol     eax, 3
+0x692008 xor     ebx, eax
+0x617523 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 23 >>>>>>>
+0x6801c6 lea     edi, [edi-1]
+0x6801d4 movzx   ecx, byte ptr [edi]
+0x6801d7 xor     cl, bl
+0x6801d9 neg     cl
+0x6801db dec     cl
+0x6801e3 neg     cl
+0x6801e5 not     cl
+0x6801ea xor     bl, cl
+0x6801f1 mov     edx, [esp+ecx]
+0x6801f4 sub     ebp, 4
+0x680200 mov     [ebp+0], edx
+0x680207 sub     edi, 4
+0x68020d mov     eax, [edi]
+0x5f6d69 xor     eax, ebx
+0x5f6d6e bswap   eax
+0x5f6d75 not     eax
+0x5f6d7a sub     eax, 6FA428FEh
+0x658a0a rol     eax, 3
+0x6863df neg     eax
+0x607a4e rol     eax, 3
+0x607a53 xor     ebx, eax
+0x6217b8 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 24 >>>>>>>
+0x62211a lea     edi, [edi-1]
+0x622120 rol     cx, 25h
+0x622124 shr     dh, cl
+0x622126 movzx   ecx, byte ptr [edi]
+0x62212c xor     cl, bl
+0x62212e neg     cl
+0x622130 dec     cl
+0x622132 neg     cl
+0x622134 not     cl
+0x622136 xor     bl, cl
+0x622141 mov     edx, [esp+ecx]
+0x62214a sub     ebp, 4
+0x622150 mov     [ebp+0], edx
+0x62215c sub     edi, 4
+0x622164 mov     eax, [edi]
+0x6010ea xor     eax, ebx
+0x6010ef bswap   eax
+0x6010f2 not     eax
+0x6010f6 sub     eax, 6FA428FEh
+0x6010fd rol     eax, 3
+0x601108 neg     eax
+0x649091 rol     eax, 3
+0x68972b xor     ebx, eax
+0x689732 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 25 >>>>>>>
+0x66c1bf sub     edi, 1
+0x66c1c5 movzx   ecx, byte ptr [edi]
+0x66c1d0 xor     cl, bl
+0x66c1d8 neg     cl
+0x66c1e1 dec     cl
+0x66c1e5 neg     cl
+0x66c1f0 not     cl
+0x66c1fb xor     bl, cl
+0x66c204 mov     edx, [esp+ecx]
+0x66c210 sub     ebp, 4
+0x66c218 mov     [ebp+0], edx
+0x66c222 sub     edi, 4
+0x66c22b mov     eax, [edi]
+0x66c230 xor     eax, ebx
+0x63e858 bswap   eax
+0x63e85d not     eax
+0x63e868 sub     eax, 6FA428FEh
+0x63e86d rol     eax, 3
+0x63e870 neg     eax
+0x63e873 rol     eax, 3
+0x63e877 xor     ebx, eax
+0x63e87c add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 26 >>>>>>>
+0x620a0c lea     edi, [edi-1]
+0x620a19 movzx   ecx, byte ptr [edi]
+0x620a23 xor     cl, bl
+0x620a2c neg     cl
+0x5fcd0b dec     cl
+0x5fcd14 neg     cl
+0x5fcd1b not     cl
+0x5fcd1d xor     bl, cl
+0x5fcd2b mov     edx, [esp+ecx]
+0x5fcd30 sub     ebp, 4
+0x5fcd36 mov     [ebp+0], edx
+0x5fcd3e sub     edi, 4
+0x5fcd44 mov     eax, [edi]
+0x5fcd46 xor     eax, ebx
+0x5fcd4a bswap   eax
+0x5fcd4c not     eax
+0x5fcd52 sub     eax, 6FA428FEh
+0x5f2809 rol     eax, 3
+0x669e7c neg     eax
+0x669e7e rol     eax, 3
+0x669e81 xor     ebx, eax
+0x669e86 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 27 >>>>>>>
+0x667bed sub     edi, 1
+0x667bfa movzx   ecx, byte ptr [edi]
+0x667c07 xor     cl, bl
+0x667c15 neg     cl
+0x667c21 dec     cl
+0x667c29 neg     cl
+0x667c2b not     cl
+0x667c2d xor     bl, cl
+0x667c2f mov     edx, [esp+ecx]
+0x667c32 sub     ebp, 4
+0x667c3f mov     [ebp+0], edx
+0x667c4c sub     edi, 4
+0x667c55 mov     eax, [edi]
+0x667c57 xor     eax, ebx
+0x667c5a bswap   eax
+0x667c5c not     eax
+0x667c5e sub     eax, 6FA428FEh
+0x667c63 rol     eax, 3
+0x667c66 neg     eax
+0x667c69 rol     eax, 3
+0x667c6c xor     ebx, eax
+0x667c71 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 28 >>>>>>>
+0x644717 sub     edi, 1
+0x644721 movzx   ecx, byte ptr [edi]
+0x644727 xor     cl, bl
+0x644730 neg     cl
+0x644734 dec     cl
+0x64473b neg     cl
+0x64473d not     cl
+0x64473f xor     bl, cl
+0x644748 mov     edx, [esp+ecx]
+0x644750 sub     ebp, 4
+0x644760 mov     [ebp+0], edx
+0x644764 lea     edi, [edi-4]
+0x64476c mov     eax, [edi]
+0x644777 xor     eax, ebx
+0x644779 bswap   eax
+0x6077e4 not     eax
+0x6077e6 sub     eax, 6FA428FEh
+0x6077ec rol     eax, 3
+0x60fdc5 neg     eax
+0x6679a4 rol     eax, 3
+0x66275a xor     ebx, eax
+0x66275c add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 29 >>>>>>>
+0x63e0b1 mov     eax, [ebp+0]
+0x63e0bb add     ebp, 4
+0x63e0c1 mov     edi, eax
+0x64fb62 mov     ebx, edi
+0x64fb6c mov     edx, 0
+0x64fb71 sub     ebx, edx
+0x64fb77 lea     esi, loc_64FB77
+0x64fb85 lea     edi, [edi-4]
+0x64fb8b mov     eax, [edi]
+0x616c12 xor     eax, ebx
+0x616c14 inc     eax
+0x616c15 bswap   eax
+0x6074ee neg     eax
+0x6074f2 ror     eax, 1
+0x6074f7 lea     eax, [eax+3C4A327Dh]
+0x6074fd xor     ebx, eax
+0x5f2ea1 add     esi, eax
+0x5f2ea3 jmp     esi
+
+>>>>>>> Handler: 30 >>>>>>>
+0x626b4f mov     eax, [ebp+0]
+0x626b56 lea     ebp, [ebp+4]
+0x626b5f sub     edi, 1
+0x626b68 movzx   ecx, byte ptr [edi]
+0x626b6b xor     cl, bl
+0x626b74 neg     cl
+0x613368 inc     cl
+0x61336a rol     cl, 1
+0x61336c sub     cl, 0EBh
+0x61336f ror     cl, 1
+0x613371 xor     bl, cl
+0x61337b mov     [esp+ecx], eax
+0x613386 sub     edi, 4
+0x61338f mov     ecx, [edi]
+0x613395 xor     ecx, ebx
+0x613398 sub     ecx, 334D677Bh
+0x61bf50 ror     ecx, 1
+0x61bf53 not     ecx
+0x61bf55 lea     ecx, [ecx+401B4D25h]
+0x61bf61 neg     ecx
+0x61bf63 dec     ecx
+0x61bf6d xor     ecx, 62BF0271h
+0x5f5f94 xor     ebx, ecx
+0x5f5f96 add     esi, ecx
+0x6613b7 push    esi
+0x6613b8 retn
+
+>>>>>>> Handler: 31 >>>>>>>
+0x634486 mov     eax, [ebp+0]
+0x63448b lea     ebp, [ebp+4]
+0x634498 lea     edi, [edi-1]
+0x63449e movzx   ecx, byte ptr [edi]
+0x6344a3 xor     cl, bl
+0x6344a8 neg     cl
+0x6344aa inc     cl
+0x6344ac rol     cl, 1
+0x6344b2 sub     cl, 0EBh
+0x5f4dd4 ror     cl, 1
+0x5f4ddb xor     bl, cl
+0x5f4de3 mov     [esp+ecx], eax
+0x5f4dec sub     edi, 4
+0x5f4df2 mov     ecx, [edi]
+0x5f4df4 xor     ecx, ebx
+0x5f4df6 sub     ecx, 334D677Bh
+0x62c4d7 ror     ecx, 1
+0x62c4de not     ecx
+0x62c4e0 add     ecx, 401B4D25h
+0x62c4e6 neg     ecx
+0x660d08 dec     ecx
+0x660d0c xor     ecx, 62BF0271h
+0x660d18 xor     ebx, ecx
+0x63daec add     esi, ecx
+0x635cfc jmp     esi
+
+>>>>>>> Handler: 32 >>>>>>>
+0x61f4f1 mov     eax, [ebp+0]
+0x61f4fb lea     ebp, [ebp+4]
+0x61f505 lea     edi, [edi-1]
+0x61f50e movzx   ecx, byte ptr [edi]
+0x61f513 xor     cl, bl
+0x61f515 neg     cl
+0x5f83fb inc     cl
+0x5f83ff rol     cl, 1
+0x5f8403 sub     cl, 0EBh
+0x5f8406 ror     cl, 1
+0x5f840d xor     bl, cl
+0x5f8412 mov     [esp+ecx], eax
+0x5f8418 sub     edi, 4
+0x5f8420 mov     ecx, [edi]
+0x5f8422 xor     ecx, ebx
+0x5f8424 sub     ecx, 334D677Bh
+0x672f0e ror     ecx, 1
+0x605c0d not     ecx
+0x605c0f lea     ecx, [ecx+401B4D25h]
+0x605c17 neg     ecx
+0x67f80f dec     ecx
+0x67f811 xor     ecx, 62BF0271h
+0x67f81c xor     ebx, ecx
+0x67fa75 add     esi, ecx
+0x67fa77 jmp     esi
+
+>>>>>>> Handler: 33 >>>>>>>
+0x616145 mov     eax, [ebp+0]
+0x61614c lea     ebp, [ebp+4]
+0x616152 sub     edi, 1
+0x616158 movzx   ecx, byte ptr [edi]
+0x61615b xor     cl, bl
+0x616160 neg     cl
+0x6146a0 inc     cl
+0x6146a2 rol     cl, 1
+0x6146ab sub     cl, 0EBh
+0x5f8f5f ror     cl, 1
+0x5f8f61 xor     bl, cl
+0x67d406 mov     [esp+ecx], eax
+0x67d40c sub     edi, 4
+0x67d416 mov     ecx, [edi]
+0x67d41f xor     ecx, ebx
+0x67d421 sub     ecx, 334D677Bh
+0x67d427 ror     ecx, 1
+0x617fab not     ecx
+0x617fb0 add     ecx, 401B4D25h
+0x68a9ea neg     ecx
+0x688954 dec     ecx
+0x688955 xor     ecx, 62BF0271h
+0x68895e xor     ebx, ecx
+0x688961 add     esi, ecx
+0x622a06 push    esi
+0x622a07 retn
+
+>>>>>>> Handler: 34 >>>>>>>
+0x6846c4 mov     eax, [ebp+0]
+0x6846ce add     ebp, 4
+0x6846d5 sub     edi, 1
+0x6846db movzx   ecx, byte ptr [edi]
+0x663e4a xor     cl, bl
+0x663e53 neg     cl
+0x663e55 inc     cl
+0x663e57 rol     cl, 1
+0x663e5b sub     cl, 0EBh
+0x663e5f ror     cl, 1
+0x60bed1 xor     bl, cl
+0x60bed7 mov     [esp+ecx], eax
+0x60beda lea     edi, [edi-4]
+0x60bee0 mov     ecx, [edi]
+0x60beea xor     ecx, ebx
+0x60bef2 sub     ecx, 334D677Bh
+0x60bef9 ror     ecx, 1
+0x60befb not     ecx
+0x60befd add     ecx, 401B4D25h
+0x60bf07 neg     ecx
+0x60bf09 dec     ecx
+0x620291 xor     ecx, 62BF0271h
+0x62029b xor     ebx, ecx
+0x61f152 add     esi, ecx
+0x62c091 jmp     esi
+
+>>>>>>> Handler: 35 >>>>>>>
+0x65c89e mov     eax, [ebp+0]
+0x65c8a2 add     ebp, 4
+0x65c8ad lea     edi, [edi-1]
+0x65c8b7 movzx   ecx, byte ptr [edi]
+0x65c8bc xor     cl, bl
+0x65c8c3 neg     cl
+0x656af1 inc     cl
+0x656af5 rol     cl, 1
+0x656afd sub     cl, 0EBh
+0x62421a ror     cl, 1
+0x624223 xor     bl, cl
+0x62422c mov     [esp+ecx], eax
+0x624237 lea     edi, [edi-4]
+0x624242 mov     ecx, [edi]
+0x6591d8 xor     ecx, ebx
+0x6591da sub     ecx, 334D677Bh
+0x658839 ror     ecx, 1
+0x65883c not     ecx
+0x65883e add     ecx, 401B4D25h
+0x658846 neg     ecx
+0x651f7e dec     ecx
+0x651f7f xor     ecx, 62BF0271h
+0x651f8c xor     ebx, ecx
+0x62f103 add     esi, ecx
+0x673fc8 jmp     esi
+
+>>>>>>> Handler: 36 >>>>>>>
+0x6024f2 mov     eax, [ebp+0]
+0x6024f6 add     ebp, 4
+0x6024fe lea     edi, [edi-1]
+0x602504 movzx   ecx, byte ptr [edi]
+0x60250c xor     cl, bl
+0x60250e neg     cl
+0x670946 inc     cl
+0x670948 rol     cl, 1
+0x67094d sub     cl, 0EBh
+0x69131e ror     cl, 1
+0x691322 xor     bl, cl
+0x69132d mov     [esp+ecx], eax
+0x691336 sub     edi, 4
+0x691344 mov     ecx, [edi]
+0x67dd03 xor     ecx, ebx
+0x67dd0a sub     ecx, 334D677Bh
+0x67dd10 ror     ecx, 1
+0x67dd1c not     ecx
+0x67dd1e lea     ecx, [ecx+401B4D25h]
+0x67dd25 neg     ecx
+0x64d99c dec     ecx
+0x64d99e xor     ecx, 62BF0271h
+0x64d9a4 xor     ebx, ecx
+0x64d9a6 add     esi, ecx
+0x660e58 jmp     esi
+
+>>>>>>> Handler: 37 >>>>>>>
+0x603363 mov     eax, [ebp+0]
+0x603367 lea     ebp, [ebp+4]
+0x603372 sub     edi, 1
+0x603384 movzx   ecx, byte ptr [edi]
+0x679320 xor     cl, bl
+0x679325 neg     cl
+0x68bf1b inc     cl
+0x68bf1e rol     cl, 1
+0x68bf20 sub     cl, 0EBh
+0x68bf23 ror     cl, 1
+0x68bf29 xor     bl, cl
+0x68bf2b mov     [esp+ecx], eax
+0x68bf35 lea     edi, [edi-4]
+0x68bf45 mov     ecx, [edi]
+0x68bf47 xor     ecx, ebx
+0x68bf4f sub     ecx, 334D677Bh
+0x68bf55 ror     ecx, 1
+0x68bf59 not     ecx
+0x64ae68 add     ecx, 401B4D25h
+0x64ae6e neg     ecx
+0x6742e9 dec     ecx
+0x6742ea xor     ecx, 62BF0271h
+0x6742f0 xor     ebx, ecx
+0x6742f2 add     esi, ecx
+0x6742f4 jmp     esi
+
+>>>>>>> Handler: 38 >>>>>>>
+0x663195 mov     eax, [ebp+0]
+0x663199 add     ebp, 4
+0x6631aa lea     edi, [edi-1]
+0x6631b8 movzx   ecx, byte ptr [edi]
+0x6631be xor     cl, bl
+0x68dfb8 neg     cl
+0x60c1c3 inc     cl
+0x60c1c5 rol     cl, 1
+0x60c1c8 sub     cl, 0EBh
+0x60c1cc ror     cl, 1
+0x60c1d2 xor     bl, cl
+0x60c1d4 mov     [esp+ecx], eax
+0x60c1da sub     edi, 4
+0x60c1e0 mov     ecx, [edi]
+0x60c1e3 xor     ecx, ebx
+0x60c1e5 sub     ecx, 334D677Bh
+0x60c1eb ror     ecx, 1
+0x60c1ef not     ecx
+0x60c1f1 lea     ecx, [ecx+401B4D25h]
+0x60c1f8 neg     ecx
+0x6367df dec     ecx
+0x6367e0 xor     ecx, 62BF0271h
+0x6367e6 xor     ebx, ecx
+0x603c28 add     esi, ecx
+0x6613b5 jmp     esi
+
+>>>>>>> Handler: 39 >>>>>>>
+0x688b14 mov     eax, [ebp+0]
+0x688b20 add     ebp, 4
+0x688b2b sub     edi, 1
+0x688b3c movzx   ecx, byte ptr [edi]
+0x688b3f xor     cl, bl
+0x688b41 neg     cl
+0x66fcaf inc     cl
+0x66fcb1 rol     cl, 1
+0x66fcb3 sub     cl, 0EBh
+0x66fcb7 ror     cl, 1
+0x66fcba xor     bl, cl
+0x67963d mov     [esp+ecx], eax
+0x679640 lea     edi, [edi-4]
+0x67964f mov     ecx, [edi]
+0x679658 xor     ecx, ebx
+0x67965b sub     ecx, 334D677Bh
+0x679662 ror     ecx, 1
+0x679668 not     ecx
+0x67966c lea     ecx, [ecx+401B4D25h]
+0x679672 neg     ecx
+0x679c28 dec     ecx
+0x679c2b xor     ecx, 62BF0271h
+0x67b627 xor     ebx, ecx
+0x67b62c add     esi, ecx
+0x67b62e jmp     esi
+
+>>>>>>> Handler: 40 >>>>>>>
+0x670010 mov     eax, [ebp+0]
+0x67001b add     ebp, 4
+0x670025 sub     edi, 1
+0x67002b movzx   ecx, byte ptr [edi]
+0x670032 xor     cl, bl
+0x670035 neg     cl
+0x67086e inc     cl
+0x671453 rol     cl, 1
+0x671456 sub     cl, 0EBh
+0x671459 ror     cl, 1
+0x67145d xor     bl, cl
+0x671469 mov     [esp+ecx], eax
+0x67146c lea     edi, [edi-4]
+0x671472 mov     ecx, [edi]
+0x671474 xor     ecx, ebx
+0x671476 sub     ecx, 334D677Bh
+0x68d99f ror     ecx, 1
+0x68d9a4 not     ecx
+0x68d9a9 add     ecx, 401B4D25h
+0x5f99fb neg     ecx
+0x623fae dec     ecx
+0x623faf xor     ecx, 62BF0271h
+0x623fb7 xor     ebx, ecx
+0x623fb9 add     esi, ecx
+0x64a751 jmp     esi
+
+>>>>>>> Handler: 41 >>>>>>>
+0x68d3f5 sub     edi, 4
+0x68d3fb mov     eax, [edi]
+0x68d3fd xor     eax, ebx
+0x68d3ff add     eax, 33C571C8h
+0x68d404 ror     eax, 3
+0x68d40e sub     eax, 295F0987h
+0x68d415 ror     eax, 3
+0x68bbb4 xor     ebx, eax
+0x68bbbc sub     ebp, 4
+0x68bbc4 mov     [ebp+0], eax
+0x68bbc8 lea     edi, [edi-4]
+0x68bbd4 mov     eax, [edi]
+0x68bbd6 xor     eax, ebx
+0x68bbd8 ror     eax, 2
+0x68bbdb add     eax, 688A11F4h
+0x68bbe0 ror     eax, 3
+0x68bbe3 bswap   eax
+0x642b8a inc     eax
+0x689c5e xor     ebx, eax
+0x689c63 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 42 >>>>>>>
+0x66b2d3 lea     edi, [edi-1]
+0x66b2d9 movzx   ecx, byte ptr [edi]
+0x66b2dc xor     cl, bl
+0x66b2de neg     cl
+0x66b2e1 dec     cl
+0x66b2ea neg     cl
+0x66b2ef not     cl
+0x66b2f1 xor     bl, cl
+0x66b2f5 mov     edx, [esp+ecx]
+0x66b2fa lea     ebp, [ebp-4]
+0x66b309 mov     [ebp+0], edx
+0x66b310 sub     edi, 4
+0x66b31c mov     eax, [edi]
+0x625ab5 xor     eax, ebx
+0x625ab9 bswap   eax
+0x625abb not     eax
+0x625ac3 sub     eax, 6FA428FEh
+0x625ac8 rol     eax, 3
+0x622299 neg     eax
+0x62229d rol     eax, 3
+0x6222a0 xor     ebx, eax
+0x6222a3 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 43 >>>>>>>
+0x62abd1 mov     ecx, [ebp+0]
+0x62abd8 mov     edx, [ebp+4]
+0x67a94c add     ecx, edx
+0x67a951 mov     [ebp+4], ecx
+0x67a954 pushf
+0x67a955 pop     dword ptr [ebp+0]
+0x67a95b lea     edi, [edi-4]
+0x67a969 mov     edx, [edi]
+0x67a96b xor     edx, ebx
+0x62b4b0 xor     edx, 4D6E40ACh
+0x62b4b6 ror     edx, 1
+0x62b4b8 bswap   edx
+0x62b4bd neg     edx
+0x62b4c2 xor     ebx, edx
+0x62b4c9 add     esi, edx
+0x62b4cb push    esi
+0x62b4cc retn
+
+>>>>>>> Handler: 44 >>>>>>>
+0x626b4f mov     eax, [ebp+0]
+0x626b56 lea     ebp, [ebp+4]
+0x626b5f sub     edi, 1
+0x626b68 movzx   ecx, byte ptr [edi]
+0x626b6b xor     cl, bl
+0x626b74 neg     cl
+0x613368 inc     cl
+0x61336a rol     cl, 1
+0x61336c sub     cl, 0EBh
+0x61336f ror     cl, 1
+0x613371 xor     bl, cl
+0x61337b mov     [esp+ecx], eax
+0x613386 sub     edi, 4
+0x61338f mov     ecx, [edi]
+0x613395 xor     ecx, ebx
+0x613398 sub     ecx, 334D677Bh
+0x61bf50 ror     ecx, 1
+0x61bf53 not     ecx
+0x61bf55 lea     ecx, [ecx+401B4D25h]
+0x61bf61 neg     ecx
+0x61bf63 dec     ecx
+0x61bf6d xor     ecx, 62BF0271h
+0x5f5f94 xor     ebx, ecx
+0x5f5f96 add     esi, ecx
+0x6613b7 push    esi
+0x6613b8 retn
+
+>>>>>>> Handler: 45 >>>>>>>
+0x6191ea sub     edi, 4
+0x6191fb mov     eax, [edi]
+0x64b4d3 xor     eax, ebx
+0x64b4d6 add     eax, 33C571C8h
+0x5ffe47 ror     eax, 3
+0x5ffe4b sub     eax, 295F0987h
+0x66cd72 ror     eax, 3
+0x66cd78 xor     ebx, eax
+0x66cd7a sub     ebp, 4
+0x63f2a5 mov     [ebp+0], eax
+0x63f2a9 lea     edi, [edi-4]
+0x63f2af mov     eax, [edi]
+0x63f2b1 xor     eax, ebx
+0x63f2b4 ror     eax, 2
+0x63f2b7 add     eax, 688A11F4h
+0x63f2bd ror     eax, 3
+0x63f2c0 bswap   eax
+0x614bac inc     eax
+0x614bb1 xor     ebx, eax
+0x614bb7 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 46 >>>>>>>
+0x6405e5 sub     edi, 1
+0x6405f0 movzx   ecx, byte ptr [edi]
+0x6405f5 xor     cl, bl
+0x6405fa neg     cl
+0x6405fc dec     cl
+0x640603 neg     cl
+0x638acd not     cl
+0x638ada xor     bl, cl
+0x638ae7 mov     edx, [esp+ecx]
+0x638af3 sub     ebp, 4
+0x638afc mov     [ebp+0], edx
+0x638b03 lea     edi, [edi-4]
+0x638b11 mov     eax, [edi]
+0x638b1a xor     eax, ebx
+0x638b1c bswap   eax
+0x638b24 not     eax
+0x68e80d sub     eax, 6FA428FEh
+0x68e813 rol     eax, 3
+0x68e818 neg     eax
+0x68e81b rol     eax, 3
+0x68e820 xor     ebx, eax
+0x68e824 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 47 >>>>>>>
+0x62a501 mov     ecx, [ebp+0]
+0x62a50c mov     edx, [ebp+4]
+0x62a510 add     ecx, edx
+0x62a512 mov     [ebp+4], ecx
+0x62a51c pushf
+0x62a526 pop     dword ptr [ebp+0]
+0x62a535 lea     edi, [edi-4]
+0x62a53b mov     edx, [edi]
+0x62a544 xor     edx, ebx
+0x6665b1 xor     edx, 4D6E40ACh
+0x6665b8 ror     edx, 1
+0x6665bb bswap   edx
+0x6665c2 neg     edx
+0x6665c8 xor     ebx, edx
+0x6665d1 add     esi, edx
+0x6665d3 push    esi
+0x6665d4 retn
+
+>>>>>>> Handler: 48 >>>>>>>
+0x634486 mov     eax, [ebp+0]
+0x63448b lea     ebp, [ebp+4]
+0x634498 lea     edi, [edi-1]
+0x63449e movzx   ecx, byte ptr [edi]
+0x6344a3 xor     cl, bl
+0x6344a8 neg     cl
+0x6344aa inc     cl
+0x6344ac rol     cl, 1
+0x6344b2 sub     cl, 0EBh
+0x5f4dd4 ror     cl, 1
+0x5f4ddb xor     bl, cl
+0x5f4de3 mov     [esp+ecx], eax
+0x5f4dec sub     edi, 4
+0x5f4df2 mov     ecx, [edi]
+0x5f4df4 xor     ecx, ebx
+0x5f4df6 sub     ecx, 334D677Bh
+0x62c4d7 ror     ecx, 1
+0x62c4de not     ecx
+0x62c4e0 add     ecx, 401B4D25h
+0x62c4e6 neg     ecx
+0x660d08 dec     ecx
+0x660d0c xor     ecx, 62BF0271h
+0x660d18 xor     ebx, ecx
+0x63daec add     esi, ecx
+0x635cfc jmp     esi
+
+>>>>>>> Handler: 49 >>>>>>>
+0x6866a4 mov     edx, [ebp+0]
+0x6866a8 mov     eax, [edx]
+0x6866ad mov     [ebp+0], eax
+0x6866b4 lea     edi, [edi-4]
+0x6866bb mov     ecx, [edi]
+0x67af42 xor     ecx, ebx
+0x67af44 not     ecx
+0x67af46 rol     ecx, 2
+0x67af4a sub     ecx, 7F8F1238h
+0x67af53 bswap   ecx
+0x67af5c xor     ebx, ecx
+0x67af5e add     esi, ecx
+0x65cc50 jmp     esi
+
+>>>>>>> Handler: 50 >>>>>>>
+0x689e3d lea     edi, [edi-1]
+0x689e49 movzx   ecx, byte ptr [edi]
+0x689e4f xor     cl, bl
+0x689e5e neg     cl
+0x689e60 dec     cl
+0x689e6b neg     cl
+0x689e71 not     cl
+0x689e7e xor     bl, cl
+0x689e88 mov     edx, [esp+ecx]
+0x689e8b sub     ebp, 4
+0x689e91 mov     [ebp+0], edx
+0x689e98 sub     edi, 4
+0x689ea3 mov     eax, [edi]
+0x689ea6 xor     eax, ebx
+0x689ea9 bswap   eax
+0x689eb1 not     eax
+0x689eb9 sub     eax, 6FA428FEh
+0x61a54f rol     eax, 3
+0x61a55a neg     eax
+0x628ef7 rol     eax, 3
+0x628f01 xor     ebx, eax
+0x628f03 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 51 >>>>>>>
+0x686af4 lea     edi, [edi-1]
+0x686afe movzx   ecx, byte ptr [edi]
+0x686b03 xor     cl, bl
+0x686b05 neg     cl
+0x686b09 dec     cl
+0x686b0b neg     cl
+0x686b11 not     cl
+0x686b20 xor     bl, cl
+0x686b26 mov     edx, [esp+ecx]
+0x686b33 sub     ebp, 4
+0x686b39 mov     [ebp+0], edx
+0x686b41 lea     edi, [edi-4]
+0x686b4c mov     eax, [edi]
+0x686b4e xor     eax, ebx
+0x686b53 bswap   eax
+0x686b5d not     eax
+0x686b62 sub     eax, 6FA428FEh
+0x686b67 rol     eax, 3
+0x686b6a neg     eax
+0x61e4e3 rol     eax, 3
+0x692008 xor     ebx, eax
+0x617523 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 52 >>>>>>>
+0x6801c6 lea     edi, [edi-1]
+0x6801d4 movzx   ecx, byte ptr [edi]
+0x6801d7 xor     cl, bl
+0x6801d9 neg     cl
+0x6801db dec     cl
+0x6801e3 neg     cl
+0x6801e5 not     cl
+0x6801ea xor     bl, cl
+0x6801f1 mov     edx, [esp+ecx]
+0x6801f4 sub     ebp, 4
+0x680200 mov     [ebp+0], edx
+0x680207 sub     edi, 4
+0x68020d mov     eax, [edi]
+0x5f6d69 xor     eax, ebx
+0x5f6d6e bswap   eax
+0x5f6d75 not     eax
+0x5f6d7a sub     eax, 6FA428FEh
+0x658a0a rol     eax, 3
+0x6863df neg     eax
+0x607a4e rol     eax, 3
+0x607a53 xor     ebx, eax
+0x6217b8 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 53 >>>>>>>
+0x62211a lea     edi, [edi-1]
+0x622120 rol     cx, 25h
+0x622124 shr     dh, cl
+0x622126 movzx   ecx, byte ptr [edi]
+0x62212c xor     cl, bl
+0x62212e neg     cl
+0x622130 dec     cl
+0x622132 neg     cl
+0x622134 not     cl
+0x622136 xor     bl, cl
+0x622141 mov     edx, [esp+ecx]
+0x62214a sub     ebp, 4
+0x622150 mov     [ebp+0], edx
+0x62215c sub     edi, 4
+0x622164 mov     eax, [edi]
+0x6010ea xor     eax, ebx
+0x6010ef bswap   eax
+0x6010f2 not     eax
+0x6010f6 sub     eax, 6FA428FEh
+0x6010fd rol     eax, 3
+0x601108 neg     eax
+0x649091 rol     eax, 3
+0x68972b xor     ebx, eax
+0x689732 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 54 >>>>>>>
+0x66c1bf sub     edi, 1
+0x66c1c5 movzx   ecx, byte ptr [edi]
+0x66c1d0 xor     cl, bl
+0x66c1d8 neg     cl
+0x66c1e1 dec     cl
+0x66c1e5 neg     cl
+0x66c1f0 not     cl
+0x66c1fb xor     bl, cl
+0x66c204 mov     edx, [esp+ecx]
+0x66c210 sub     ebp, 4
+0x66c218 mov     [ebp+0], edx
+0x66c222 sub     edi, 4
+0x66c22b mov     eax, [edi]
+0x66c230 xor     eax, ebx
+0x63e858 bswap   eax
+0x63e85d not     eax
+0x63e868 sub     eax, 6FA428FEh
+0x63e86d rol     eax, 3
+0x63e870 neg     eax
+0x63e873 rol     eax, 3
+0x63e877 xor     ebx, eax
+0x63e87c add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 55 >>>>>>>
+0x620a0c lea     edi, [edi-1]
+0x620a19 movzx   ecx, byte ptr [edi]
+0x620a23 xor     cl, bl
+0x620a2c neg     cl
+0x5fcd0b dec     cl
+0x5fcd14 neg     cl
+0x5fcd1b not     cl
+0x5fcd1d xor     bl, cl
+0x5fcd2b mov     edx, [esp+ecx]
+0x5fcd30 sub     ebp, 4
+0x5fcd36 mov     [ebp+0], edx
+0x5fcd3e sub     edi, 4
+0x5fcd44 mov     eax, [edi]
+0x5fcd46 xor     eax, ebx
+0x5fcd4a bswap   eax
+0x5fcd4c not     eax
+0x5fcd52 sub     eax, 6FA428FEh
+0x5f2809 rol     eax, 3
+0x669e7c neg     eax
+0x669e7e rol     eax, 3
+0x669e81 xor     ebx, eax
+0x669e86 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 56 >>>>>>>
+0x667bed sub     edi, 1
+0x667bfa movzx   ecx, byte ptr [edi]
+0x667c07 xor     cl, bl
+0x667c15 neg     cl
+0x667c21 dec     cl
+0x667c29 neg     cl
+0x667c2b not     cl
+0x667c2d xor     bl, cl
+0x667c2f mov     edx, [esp+ecx]
+0x667c32 sub     ebp, 4
+0x667c3f mov     [ebp+0], edx
+0x667c4c sub     edi, 4
+0x667c55 mov     eax, [edi]
+0x667c57 xor     eax, ebx
+0x667c5a bswap   eax
+0x667c5c not     eax
+0x667c5e sub     eax, 6FA428FEh
+0x667c63 rol     eax, 3
+0x667c66 neg     eax
+0x667c69 rol     eax, 3
+0x667c6c xor     ebx, eax
+0x667c71 add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 57 >>>>>>>
+0x644717 sub     edi, 1
+0x644721 movzx   ecx, byte ptr [edi]
+0x644727 xor     cl, bl
+0x644730 neg     cl
+0x644734 dec     cl
+0x64473b neg     cl
+0x64473d not     cl
+0x64473f xor     bl, cl
+0x644748 mov     edx, [esp+ecx]
+0x644750 sub     ebp, 4
+0x644760 mov     [ebp+0], edx
+0x644764 lea     edi, [edi-4]
+0x64476c mov     eax, [edi]
+0x644777 xor     eax, ebx
+0x644779 bswap   eax
+0x6077e4 not     eax
+0x6077e6 sub     eax, 6FA428FEh
+0x6077ec rol     eax, 3
+0x60fdc5 neg     eax
+0x6679a4 rol     eax, 3
+0x66275a xor     ebx, eax
+0x66275c add     esi, eax
+0x5f4dcb lea     eax, [esp+60h]
+0x67dd01 jmp     esi
+
+>>>>>>> Handler: 58 >>>>>>>
+0x672f3c mov     esp, ebp
+0x672f3e pop     ebx
+0x672f43 popf
+0x672f44 pop     eax
+0x672f45 pop     ebp
+0x672f4b pop     esi
+0x672f4e pop     edi
+0x672f54 pop     edx
+0x6350c4 pop     ecx
+0x665a5a retn

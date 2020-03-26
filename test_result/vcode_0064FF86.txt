@@ -1,0 +1,66 @@
+0x64ff86  VMEntry
+0x670010  vPopReg R3
+0x626b4f  vPopReg R9
+0x634486  vPopReg R15
+0x61f4f1  vPopReg R1
+0x616145  vPopReg R6
+0x6846c4  vPopReg R13
+0x65c89e  vPopReg R10
+0x6024f2  vPopReg R7
+0x603363  vPopReg R0
+0x663195  vPopReg R4
+0x688b14  vPopReg R2
+
+0x6191ea  vPushImm 0060122c
+0x667bed  vPushReg R3
+0x6708cc  vAdd
+0x670010  vPopReg R4
+
+0x626b4f  vPopReg R4
+
+0x644717  vPushReg R2
+0x646b05  vPushReg R2
+0x66b2d3  vPushReg R13
+0x6405e5  vPushReg R15
+0x689e3d  vPushReg R10
+0x686af4  vPushReg R6
+0x6801c6  vPushReg R9
+0x62211a  vPushReg R1
+0x66c1bf  vPushReg R7
+0x620a0c  vPushReg R0
+0x667bed  vPushReg R3
+0x644717  vPushReg R4
+0x63e0b1  vPopOptable
+0x626b4f  vPopReg R6
+0x634486  vPopReg R14
+0x61f4f1  vPopReg R15
+0x616145  vPopReg R13
+0x6846c4  vPopReg R7
+0x65c89e  vPopReg R9
+0x6024f2  vPopReg R8
+0x603363  vPopReg R12
+0x663195  vPopReg R10
+0x688b14  vPopReg R4
+0x670010  vPopReg R2
+
+0x68d3f5  vPushImm 0064a2a8
+0x66b2d3  vPushReg R6
+0x62abd1  vAdd
+0x626b4f  vPopReg R1
+
+0x6191ea  vPushImm 00560158
+0x6405e5  vPushReg R6
+0x62a501  vAdd
+0x634486  vPopReg R3
+
+0x6866a4  vPoiEsp
+
+0x689e3d  vPushReg R14
+0x686af4  vPushReg R15
+0x6801c6  vPushReg R8
+0x62211a  vPushReg R10
+0x66c1bf  vPushReg R9
+0x620a0c  vPushReg R13
+0x667bed  vPushReg R12
+0x644717  vPushReg R7
+0x672f3c  VMLeave
