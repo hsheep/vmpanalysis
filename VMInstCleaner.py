@@ -5,7 +5,7 @@ from tools import *
 
 # 指令清理器调试变量
 DEBUG = False
-DEBUG_BLOCK_INDEX = []
+DEBUG_BLOCK_INDEX = [683]
 g_block_index = -1
 
 

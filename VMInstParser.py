@@ -12,7 +12,7 @@ from VMInstructions import VMEntry, vPopOptable, vInstList, vRegMap
 
 # 中间代码解析器调试变量
 DEBUG = False
-DEBUG_BLOCK_INDEX = [96]
+DEBUG_BLOCK_INDEX = []
 g_block_index = -1
 
 

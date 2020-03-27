@@ -30,7 +30,7 @@ g_block_index = -1
 
 # memory address where emulation starts
 BASE_ADDR = 0x400000                # <-- 当前分析PE到IDA加载基地址
-SPACE_SIZE = 10 * 1024 * 1024       # <-- 内存映像大小
+SPACE_SIZE = 20 * 1024 * 1024       # <-- 内存映像大小
 
 mu = Uc(UC_ARCH_X86, UC_MODE_32)
 mu.mem_map(BASE_ADDR, SPACE_SIZE)
@@ -245,8 +245,6 @@ def vCode2File(v_code_list, file_name):
     output_fd.close()
 
 
-
-
 def StartAnalysis(code_start_addr):
     global g_block_index
     block_index = 0
@@ -319,10 +317,11 @@ if __name__ == "__main__":
     # vmcode_start_addr = 0x6257CF
     # vmcode_start_addr = 0x62f66A
     # vmcode_start_addr = 0x664C1A
-    vmcode_start_addr = 0x64FF86
+    # vmcode_start_addr = 0x64FF86
 
     # msgbox.vmp.exe
     # vmcode_start_addr = 0x7D4897
     # msgbox.vmp0.exe
     # vmcode_start_addr = 0x881D7A
+    vmcode_start_addr = 0x1781D7A
     StartAnalysis(vmcode_start_addr)
