@@ -22,7 +22,7 @@ from VMInstParser import ConvertCodeSequence
 
 # 调试参数初始化
 DEBUG = False                          # <-- 全局输出调试信息
-DEBUG_BLOCK_INDEX = [683]             # <-- 输出特定指令到调试信息
+DEBUG_BLOCK_INDEX = []             # <-- 输出特定指令到调试信息
 OUTPUT_FILE = True                     # <-- 是否要输出到文件
 g_block_index = -1
 
@@ -33,7 +33,6 @@ print("current baseaddr: %08x" % cur_base_addr)
 
 
 def dbgprint(dbg_str):
-    global g_block_index
     if DEBUG or g_block_index in DEBUG_BLOCK_INDEX:
         print("  %s" % dbg_str)
 
@@ -44,21 +43,7 @@ def GetBlockCode(trace_fd, base_addr, next_context=None):
     icount = 0
     reg_dict = {}
     start_addr = None
-    
-    """
-    # 首条指令分析
-    if next_context:
-        # 寄存器上下文
-        reg_context = next_context[1:]
-        reg_dict[icount] = [int(item) for item in reg_context]
-        icount += 1
-        # print("cur_addr %08x, reg: %s" % (cur_addr, reg_context))
-    
-        # decode instruction
-        inst = idautils.DecodeInstruction(next_context[0])
-        inst_series.append(inst)
-    """
-    
+
     # 继续读取文件分析
     for inst_context_line in trace_fd.xreadlines():
         # 寄存器上下文
@@ -67,16 +52,15 @@ def GetBlockCode(trace_fd, base_addr, next_context=None):
         reg_context = context[1:]
         reg_dict[icount] = [int(item) for item in reg_context]
         icount += 1
-        # print("cur_addr %08x, reg: %s" % (cur_addr, reg_context))
         
         # decode instruction
         inst = idautils.DecodeInstruction(cur_addr)
         inst_series.append(inst)
         
+        dbgprint("%08x %s" % (inst.ea, idc.GetDisasm(inst.ea)))
+        
         if not start_addr:
             start_addr = cur_addr
-
-        # DebugOutput(inst)
 
         # "call"
         if inst.itype in (idaapi.NN_call, idaapi.NN_callfi, idaapi.NN_callni):
@@ -95,16 +79,7 @@ def GetBlockCode(trace_fd, base_addr, next_context=None):
         elif inst.itype == idaapi.NN_retn:
             print("NN_retn, break")
             break
-    
-    """
-    # 获取下一条指令地址
-    for inst_context_line in trace_fd.xreadlines():
-        next_context = inst_context_line.split(",")
-        next_context[0] = cur_base_addr + (int(next_context[0]) - base_addr)
-        print("# NextBlock, %08x" % int(next_context[0]))
-        break
-    """
-    
+
     return start_addr, inst_series, reg_dict
 
 
@@ -149,11 +124,11 @@ def StartAnalysis(trace_file, base_addr):
     # 开始分析
     while v_code != "VMLeave":
         try:
-            print("<<<<<<<<<<<<<<<<<<<<<<<<<< [%s]Debug <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<" % block_index)
+            print("<<<<<<<<<<<<<<<<<<<<<<<<<< [%s]Debug <<<<<<<<<<<<<<<<<<<<<<<<<<<" % block_index)
             # 指令解析,获取一个代码块
             start0 = time.time()
-            cur_addr, inst_series_all, reg_dict = GetBlockCode(trace_fd, base_addr, cur_addr)
             g_block_index = block_index
+            cur_addr, inst_series_all, reg_dict = GetBlockCode(trace_fd, base_addr, cur_addr)
 
             # 消除花指令，输出结果
             start1 = time.time()
@@ -198,6 +173,9 @@ def StartAnalysis(trace_file, base_addr):
     return v_code_list
 
 
+# trace file format:
+# "addr,eax,ecx,edx,ebx,esp,ebp,esi,edi\n"
+# ...
 if __name__ == "__main__":
     # * 使用前请指定"映像基地址"
     base_addr = 0x00FC0000

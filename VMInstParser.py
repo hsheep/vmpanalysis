@@ -24,6 +24,11 @@ RegAny_0 = 0
 RegAny_1 = 1
 RegAny_2 = 2
 RegAny_3 = 3
+RegAny_4 = 8
+RegAny_5 = 9
+RegAny_6 = 10
+RegAny_7 = 11
+
 
 #  4～7 段表示VMCPU变量
 vRegArray = 4
@@ -35,11 +40,16 @@ vEsp = 7
 vReg = {}
 
 # 默认声明的寄存器变量，可以为任意寄存器
+# 同样修改：InitGlobalRegMap
 vVariable = {
     "RegAny:0": RegAny_0,
     "RegAny:1": RegAny_1,
     "RegAny:2": RegAny_2,
     "RegAny:3": RegAny_3,
+    "RegAny:4": RegAny_4,
+    "RegAny:5": RegAny_5,
+    "RegAny:6": RegAny_6,
+    "RegAny:7": RegAny_7,
     "vRegArray": vRegArray,
     "vOptable": vOptable,
     "vEip": vEip,
@@ -204,6 +214,10 @@ def InitGlobalRegMap():
         "RegAny:1": RegAny_1,
         "RegAny:2": RegAny_2,
         "RegAny:3": RegAny_3,
+        "RegAny:4": RegAny_4,
+        "RegAny:5": RegAny_5,
+        "RegAny:6": RegAny_6,
+        "RegAny:7": RegAny_7,
         "vOptable": vOptable,
         "vEip": vEip,
         "vEsp": vEsp,
@@ -440,8 +454,6 @@ def interInstBuild(v_inst_serial, init=False):
 
     def set_opbit(var, cur_op, optype):
         tmp_dword = 0
-        # print("set_opbit var: %s" % var)
-
         # 真实寄存器
         if var in RegMap:
             # set operands
@@ -458,7 +470,10 @@ def interInstBuild(v_inst_serial, init=False):
             tmp_dword |= (optype + 1) << (cur_op * 4)
             # set operands
             tmp_dword |= vVariable[var] << (8 + optype * 4 + cur_op * 8)
-
+            
+        if var == "RegAny:4":
+            print("# RegAny:4" in vVariable)
+            print("# Set_op: var: %s, %08x" % (var, tmp_dword))
         return tmp_dword
 
     # 开始描述代码串分析
@@ -660,17 +675,24 @@ def vInterCodeMach(vCodes, vTypes):
             * bit_var: 类型标记位和对应的寄存器标记
         """
         opt_vars = []
-        all_ids = []
-        for i, item_inst in enumerate(inst_code_list):
+        all_ids = {}
+        
+        # 获取所有指令
+        for item_inst in inst_code_list:
+            for item_icount in vCodes[item_inst]:
+                all_ids[item_icount] = item_inst
+        
+        # 将所有指令加入匹配列表
+        for item_icount in sorted(all_ids.keys()):
+            item_inst = all_ids[item_icount]
             var_list = {}
-
-            # 要保证读取all_ids的顺序，否则会进行乱序匹配
-            all_ids.extend(sorted(vCodes[item_inst]))
-            dbgprint("all_ids: %s" % all_ids)
-
-            for var_off, var_key in bit_var.items():
-                var_list[var_key] = [(item_inst >> var_off) & 0xF, var_off, all_ids[i], item_inst]
+            for var_off, var_reg in bit_var.items():
+                var_list[var_reg] = [(item_inst >> var_off) & 0xF, var_off, item_icount, item_inst]
             opt_vars.append(var_list)
+            dbgprint("item_inst, %08x, %s" % (item_inst, var_list))
+            
+        dbgprint("all_ids: %s" % all_ids)
+        
         return opt_vars
 
     def var_substitute(op_list, vm_insts, vars, offs=0):
@@ -898,41 +920,44 @@ def SetOperands(match_vop, vars, reg_dict):
             for item_icount, item_context in reg_dict.items():
                 print("%s: %s, %s" % (item_icount | (g_block_index << 16), item_icount, item_context))
 
-        op_info = vRegMap[match_vop]
-
-        try:
-            # 获取当前寄存器ID
-            if op_info[2] in vVariable:
-                reg_id = vVariable[op_info[2]]
-            else:
-                reg_id = vReg[op_info[2]]
-
-            # 通过寄存器ID获取真实寄存器
-            if reg_id in vCPUMap:
-                reg = vCPUMap[reg_id]
-            else:
-                reg = vars[reg_id]
-
-            # 获取该描述指令的寄存器上下文
-            match_list = sorted(set(vars["match"]))
-            if op_info[0] != -1:
-                icount = match_list[op_info[0]] & 0xffff
-                dbgprint("%s reg => icount: %s" % (match_vop, match_list[op_info[0]]))
-                reg_context = reg_dict[icount]
-            else:
-                reg_context = reg_dict[sorted(reg_dict.keys())[op_info[0]]]
-
-            # 设置虚拟操作数
-            if op_info[1] == "reg":
-                match_vop = "%s R%s" % (match_vop, reg_context[reg]/4)
-            elif op_info[1] == "imm":
-                match_vop = "%s %08x" % (match_vop, reg_context[reg])
-            else:
-                print("[warn] vRegMap operand type error, %s" % op_info[1])
-
-        except Exception as e:
-            print("[warn] set operands error:")
-            traceback.print_exc()
+        for op_info in vRegMap[match_vop]:
+            try:
+                # 获取当前寄存器ID
+                if op_info[2] in vVariable:
+                    reg_id = vVariable[op_info[2]]
+                else:
+                    reg_id = vReg[op_info[2]]
+    
+                # 通过寄存器ID获取真实寄存器
+                if reg_id in vCPUMap:
+                    reg = vCPUMap[reg_id]
+                else:
+                    reg = vars[reg_id]
+    
+                # 获取该描述指令的寄存器上下文
+                match_list = sorted(set(vars["match"]))
+                if op_info[0] != -1:
+                    icount = match_list[op_info[0]] & 0xffff
+                    dbgprint("%s reg => icount: %s" % (match_vop, match_list[op_info[0]]))
+                    reg_context = reg_dict[icount]
+                else:
+                    reg_context = reg_dict[sorted(reg_dict.keys())[op_info[0]]]
+    
+                # 设置虚拟操作数
+                if op_info[1] == "reg":
+                    match_vop += " R%s" % (reg_context[reg]/4)
+                elif op_info[1] == "imm":
+                    match_vop += " %08x" % reg_context[reg]
+                elif op_info[1] == "suf":
+                    match_vop += " (%s)" % reg_context[reg]
+                    print("reg_context: %s, reg: %s" % (reg_context, reg))
+                else:
+                    print("[warn] vRegMap operand type error, %s" % op_info[1])
+    
+            except Exception as e:
+                print("[warn] set operands error:")
+                traceback.print_exc()
+                break
 
     return match_vop
 

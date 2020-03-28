@@ -1,0 +1,172 @@
+<<<<<<<<<<<<<<<<<<<<<<<<<< [683]Debug <<<<<<<<<<<<<<<<<<<<<<<<<<<
+0106356b movzx   eax, byte ptr [ebp+0]
+01063570 rcr     edx, 0Ah
+01063573 btr     dx, si
+01063577 lea     ebp, [ebp+1]
+0106357d xor     al, bl
+0106357f mov     edx, 7A2067E3h
+01063584 ror     al, 1
+01063586 bswap   edx
+01063588 jmp     loc_1291DB8
+01291db8 inc     al
+01291dba ror     al, 1
+01291dbc xor     edx, esp
+01291dbe shr     edx, 0B2h
+01291dc1 sub     al, 47h
+01291dc3 rcl     dh, cl
+01291dc5 bsf     dx, bx
+01291dc9 not     al
+01291dcb add     dx, 6015h
+01291dd0 and     dl, cl
+01291dd2 add     al, 0EAh
+01291dd4 cmp     cx, bp
+01291dd7 bts     dx, di
+01291ddb xor     bl, al
+01291ddd ror     dh, 0B9h
+01291de0 push    ebp
+01291de1 inc     dx
+01291de4 xadd    edx, ebp
+01291de7 push    edi
+01291de8 sar     ebp, 0F3h
+01291deb push    ebx
+01291dec clc
+01291ded test    cx, 209Ch
+01291df2 mov     ebp, esi
+01291df4 sal     dl, 0ECh
+01291df7 shl     ebx, cl
+01291df9 ror     dl, 79h
+01291dfc mov     ebx, eax
+01291dfe mov     edx, ebx
+01291e00 and     ah, 45h
+01291e03 shl     edx, 2
+01291e06 mov     eax, ebp
+01291e08 clc
+01291e09 lea     eax, [eax+edx]
+01291e0c mov     [ebp-4], eax
+01291e10 clc
+01291e11 cmp     di, 0BBBh
+01291e16 test    ebx, ebx
+01291e18 jmp     loc_1276F14
+01276f14 jz      loc_1052ACB
+01276f1a mov     eax, [ebp+ebx*4+0]
+01276f1e push    eax
+01276f1f sub     ebx, 1
+01276f25 jmp     loc_1052AC5
+01052ac5 jnz     loc_1276F1A
+01276f1a mov     eax, [ebp+ebx*4+0]
+01276f1e push    eax
+01276f1f sub     ebx, 1
+01276f25 jmp     loc_1052AC5
+01052ac5 jnz     loc_1276F1A
+01052acb mov     eax, [ebp+0]
+01052acf call    eax
+01052ad1 mov     ebp, [ebp-4]
+01052ad5 sub     di, bp
+01052ad8 mov     [ebp+0], eax
+01052adc shr     edx, cl
+01052ade mov     esi, ebp
+01052ae0 pop     ebx
+01052ae1 ror     dh, 4Eh
+01052ae4 shr     dl, 0B4h
+01052ae7 movsx   edi, cx
+01052aea pop     edi
+01052aeb xchg    edx, ebp
+01052aed pop     ebp
+01052aee sub     dl, ch
+01052af0 bsf     edx, esp
+01052af3 mov     edx, [ebp+0]
+01052af7 lea     ebp, [ebp+4]
+01052afd cmp     ax, bp
+01052b00 test    esp, eax
+01052b02 test    esp, 4D504407h
+01052b08 xor     edx, ebx
+01052b0a jmp     loc_13425A2
+013425a2 add     edx, 1AD81BBFh
+013425a8 cmc
+013425a9 bswap   edx
+013425ab cmc
+013425ac rol     edx, 3
+013425af jmp     loc_12DD1EE
+012dd1ee inc     edx
+012dd1ef cmp     si, di
+012dd1f2 xor     ebx, edx
+012dd1f4 clc
+012dd1f5 cmp     sp, 5F1Fh
+012dd1fa add     edi, edx
+012dd1fc jmp     loc_109F275
+0109f275 push    edi
+0109f276 retn
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<< [683]Debug <<<<<<<<<<<<<<<<<<<<<<<<<<<
+# 从Optable中取出函数的参数个数
+44761088	0x106356b movzx   eax, byte ptr [ebp+0]
+44761091	0x1063577 lea     ebp, [ebp+1]
+44761092	0x106357d xor     al, bl
+44761094	0x1063584 ror     al, 1
+44761097	0x1291db8 inc     al
+44761098	0x1291dba ror     al, 1
+44761101	0x1291dc1 sub     al, 47h
+44761104	0x1291dc9 not     al
+44761107	0x1291dd2 add     al, 0EAh
+44761110	0x1291ddb xor     bl, al
+
+# 初始化调用
+44761112	0x1291de0 push    ebp
+44761115	0x1291de7 push    edi
+44761117	0x1291deb push    ebx
+44761120	0x1291df2 mov     ebp, esi
+44761124	0x1291dfc mov     ebx, eax
+
+# 这里被的指令优化所展开，无法看到jcc逻辑：
+# test & jcc 指令循环从栈中取出参数,举例如果当前函数有2个参数如下
+#
+# real_stack:
+# 	esp->	arg0
+# 			arg4
+# vm_cpu(esp):
+#  			...
+#			...
+# vm_stack(vEsp):
+# 	vEsp->	func_addr
+# 			arg0
+#			arg4 & retret_val
+# 0）保存返回的VM栈帧，在最后一个参数位置上。
+44761125	0x1291dfe mov     edx, ebx				
+44761127	0x1291e03 shl     edx, 2
+44761128	0x1291e06 mov     eax, ebp
+44761130	0x1291e09 lea     eax, [eax+edx]
+44761131	0x1291e0c mov     [ebp-4], eax		
+# 1）循环从栈中取出参数，push到真实栈中
+44761137	0x1276f1a mov     eax, [ebp+ebx*4+0]
+44761138	0x1276f1e push    eax
+44761139	0x1276f1f sub     ebx, 1
+44761142	0x1276f1a mov     eax, [ebp+ebx*4+0]
+44761143	0x1276f1e push    eax
+# 2）取出函数地址
+44761147	0x1052acb mov     eax, [ebp+0]			
+44761148	0x1052acf call    eax				
+#	* 如果为_cdecl猜测可能会平真实栈，add esp, xx
+# 3）VM平栈
+44761149	0x1052ad1 mov     ebp, [ebp-4]
+# 4）将返回值存贮在最后一个参数位置上		
+44761151	0x1052ad8 mov     [ebp+0], eax			
+
+# 恢复VM寄存器
+44761153	0x1052ade mov     esi, ebp
+44761154	0x1052ae0 pop     ebx
+44761158	0x1052aea pop     edi
+44761160	0x1052aed pop     ebp
+
+# 取出vEip解密，跳转到下一条VM指令
+44761163	0x1052af3 mov     edx, [ebp+0]
+44761164	0x1052af7 lea     ebp, [ebp+4]
+44761168	0x1052b08 xor     edx, ebx
+44761170	0x13425a2 add     edx, 1AD81BBFh
+44761172	0x13425a9 bswap   edx
+44761174	0x13425ac rol     edx, 3
+44761176	0x12dd1ee inc     edx
+44761178	0x12dd1f2 xor     ebx, edx
+44761181	0x12dd1fa add     edi, edx
+44761183	0x109f275 push    edi
+44761184	0x109f276 retn

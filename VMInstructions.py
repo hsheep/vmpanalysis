@@ -162,6 +162,20 @@ vPoiEsp = [
     _StreamNextCode_
 ]
 
+vCall = [
+    {
+        0: ["MOV RegAny:0, [vOptable]", _OptableSeekAdd_],
+        1: [_OptableSeekSub_, "MOV RegAny:0, [vOptable]"],
+    },
+    "MOV RegAny:4, RegAny:0",
+    # ---
+    "MOV RegAny:1, vEsp",
+    "MOV RegAny:2, [RegAny:1]",
+    "i:call RegAny:2",
+    "MOV [RegAny:1], eax",
+    _StreamNextCode_
+]
+
 vNand = [
     "MOV RegAny:0, [vEsp]",
     "MOV RegAny:1, [vEsp]",
@@ -220,7 +234,8 @@ vInstList = {
     "vNand": vNand,
     "vNor": vNor,
     "vShr": vShr,
-    "vPopMem": vPopMem
+    "vPopMem": vPopMem,
+    "vCall": vCall,
 }
 
 # ------------------------------------------------------------------------------------
@@ -229,8 +244,9 @@ vInstList = {
 # * 指令索引以该指令描述代码是否有变量累计
 # ------------------------------------------------------------------------------------
 vRegMap = {
-    "vPopReg": [2, "reg", "RegAny:1"],
-    "vPushReg": [1, "reg", "RegAny:0"],
-    "vPushImm": [1, "imm", "RegAny:0"],
-    "vJmp": [-1, "imm", "vEip"],
+    "vPopReg": [[2, "reg", "RegAny:1"]],
+    "vPushReg": [[1, "reg", "RegAny:0"]],
+    "vPushImm": [[1, "imm", "RegAny:0"]],
+    "vJmp": [[-1, "imm", "vEip"]],
+    "vCall": [[1, "suf", "RegAny:0"], [4, "imm", "RegAny:2"]],
 }
