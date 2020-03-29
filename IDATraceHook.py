@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 # ---------------------------------------------------------------------
 # Debug notification hook test
 #
@@ -130,9 +131,13 @@ except Exception as e:
     pass
 
 if __name__ == "__main__":
-    # *set hardware BP and trace
+    # 如果在入口处开始Trace，要将入口断点修改为Trace
+    # 参数初始化：
+    trace_file = "C:\\Users\\zhang\\Desktop\\result.trace.txt"
+    trace_end_addr = 0x75196359
+    
     # Install the debug hook
-    trace = TraceAnalysis("C:\\Users\\zhang\\Desktop\\result.trace.txt")
+    trace = TraceAnalysis(trace_file)
     trace.hook()
 
     # Stop at the entry point
@@ -145,7 +150,7 @@ if __name__ == "__main__":
     # Set trace limit
     trace.trace_limit["start"] = ep
     # trace.trace_limit["end"] = idaapi.get_dword(idautils.cpu.esp)
-    trace.trace_limit["end"] = 0x75196359
+    trace.trace_limit["end"] = trace_end_addr
     print("start: %08x ~ %08x" % (trace.trace_limit["start"], trace.trace_limit["end"]))
 
     # Enable tracing()

@@ -140,6 +140,7 @@
 # 1）循环从栈中取出参数，push到真实栈中
 44761137	0x1276f1a mov     eax, [ebp+ebx*4+0]
 44761138	0x1276f1e push    eax
+
 44761139	0x1276f1f sub     ebx, 1
 44761142	0x1276f1a mov     eax, [ebp+ebx*4+0]
 44761143	0x1276f1e push    eax

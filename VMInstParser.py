@@ -2,6 +2,7 @@
 # code by @madfinger, 2020-3-2
 from __future__ import print_function
 import traceback
+import logging
 from tools import *
 
 # IDAPython 重新加载该模块刷新字节码, 否则执行的字节码和代码不对应
@@ -9,6 +10,9 @@ import VMInstructions
 reload(VMInstructions)
 
 from VMInstructions import VMEntry, vPopOptable, vInstList, vRegMap
+
+log = logging.getLogger("main.VMInstParser")
+
 
 # 中间代码解析器调试变量
 DEBUG = False
@@ -376,7 +380,7 @@ def x86InstBuild(inst_serial):
             opcode_lsit[inst_dword].append(icount)
 
         except Exception as e:
-            traceback.print_exc()
+            log.error(traceback.format_exc())
 
     return opcode_lsit, type_list
 
@@ -471,9 +475,6 @@ def interInstBuild(v_inst_serial, init=False):
             # set operands
             tmp_dword |= vVariable[var] << (8 + optype * 4 + cur_op * 8)
             
-        if var == "RegAny:4":
-            print("# RegAny:4" in vVariable)
-            print("# Set_op: var: %s, %08x" % (var, tmp_dword))
         return tmp_dword
 
     # 开始描述代码串分析
@@ -544,8 +545,8 @@ def interInstBuild(v_inst_serial, init=False):
                 raise Exception("%s Unknown Instrucion!" % v_inst)
 
         except Exception as e:
-            print("error inst: %s" % v_inst)
-            traceback.print_exc()
+            log.error("error inst: %s" % v_inst)
+            log.error(traceback.format_exc())
 
     return opcode_lsit, type_list
 
@@ -573,21 +574,21 @@ g_inst_str = []
 
 def DebugOpCode(code_list, code_type):
     if DEBUG or g_block_index in DEBUG_BLOCK_INDEX:
-        print (">>> %s >>>" % code_type)
+        log.info(">>> %s >>>" % code_type)
         if isinstance(code_list, list):
             for i, item in enumerate(code_list):
-                print("%s: %08x" % (i, item))
+                log.info("%s: %08x" % (i, item))
         elif isinstance(code_list, dict):
             for i, item in enumerate(code_list.items()):
-                print("%s: %08x: %s" % (i, item[0], item[1]))
+                log.info("%s: %08x: %s" % (i, item[0], item[1]))
         else:
-            print("%s, %s" % (code_type, code_list))
+            log.info("%s, %s" % (code_type, code_list))
 
 
 def VMLeaveProcess(inst_name, vars):
     """ 离开虚拟机，重置所有寄存器相关值"""
     global g_vminit
-    print("VMLeaveProcess callback")
+    log.info("VMLeaveProcess callback")
     g_vminit = False
 
     # 重新初始化寄存器映射，为了下次VMInitEntry使用
@@ -599,7 +600,7 @@ def VMTransRegProcess(inst_name, vars):
     global g_inst_list
     global g_inst_str
 
-    print("VMTransRegProcess callback", inst_name, vars)
+    log.info("VMTransRegProcess callback, %s, %s", inst_name, vars)
 
     # 1. 重新初始化寄存器映射
     vEspTmp = vCPUMap[vEsp]
@@ -619,7 +620,7 @@ def VMTransRegProcess(inst_name, vars):
     # 3.重新初始化vCPU和映射关系
     vCPUMap[vOptable] = vars[vOptable]
     vCPUMap[vEip] = vars[vEip]
-    print("* vCPUMap: %s" % vCPUMap)
+    log.info("* vCPUMap: %s" % vCPUMap)
 
     vm_var = []
     for vrstr, vr in vVariable.items():
@@ -631,12 +632,12 @@ def VMTransRegProcess(inst_name, vars):
         vVariable.pop(item)
 
     # 4. vCPU寄存器等映射关系等变化，重新生成中间代码（后面可以做成在匹配等时候进行实时映射）
-    print("* Reinit VM instructions...")
+    log.info("* Reinit VM instructions...")
     for v_str, v_inst in vInstList.items():
-        print("* build %s" % v_str)
+        log.info("* build %s" % v_str)
         g_inst_list.append(MakeInterCode(v_inst))
     g_inst_str.extend(vInstList.keys())
-    print("* Reinit complete.")
+    log.info("* Reinit complete.")
 
 
 # 指令回调函数
@@ -869,10 +870,10 @@ def VMEntryIdent(inst_serial):
 
     bmatch, var = vInterCodeMach(*x86InstBuild(inst_serial))
     if bmatch == "UNKNOWN":
-        print("* VMEntry mismatch!!")
-        return bmatch
+        log.info("* VMEntry mismatch!!")
+        return ""
     else:
-        print("* VMEntry matched.")
+        log.info("* VMEntry matched.")
     g_vminit = True
 
     # 2. 初始化VMTransReg指令，该指令需要重新提取所有虚拟寄存器值
@@ -886,7 +887,7 @@ def VMEntryIdent(inst_serial):
     for vr, rr in var.items():
         if isinstance(vr, int) and vr > 4:
             vCPUMap[vr] = rr
-    print("* vCPUMap: %s" % vCPUMap)
+    log.info("* vCPUMap: %s" % vCPUMap)
 
     vm_var = []
     for vrstr, vr in vVariable.items():
@@ -898,12 +899,12 @@ def VMEntryIdent(inst_serial):
         vVariable.pop(item)
 
     # 4. vCPU寄存器有变化，重新生成中间代码
-    print("* Init VM instructions...")
+    log.info("* Init VM instructions...")
     for v_str, v_inst in vInstList.items():
-        print("* build %s" % v_str)
+        log.info("* build %s" % v_str)
         g_inst_list.append(MakeInterCode(v_inst))
     g_inst_str.extend(vInstList.keys())
-    print("* Init complete.")
+    log.info("* Init complete.")
 
     return bmatch
 
@@ -912,7 +913,6 @@ def SetOperands(match_vop, vars, reg_dict):
     """ 设置VM指令操作数 """
 
     if match_vop in vRegMap:
-
         if DEBUG or g_block_index in DEBUG_BLOCK_INDEX:
             for item in sorted(set(vars["match"])):
                 print("vars =>>> %s: %s" % (item, item & 0xffff))
@@ -950,12 +950,11 @@ def SetOperands(match_vop, vars, reg_dict):
                     match_vop += " %08x" % reg_context[reg]
                 elif op_info[1] == "suf":
                     match_vop += " (%s)" % reg_context[reg]
-                    print("reg_context: %s, reg: %s" % (reg_context, reg))
                 else:
-                    print("[warn] vRegMap operand type error, %s" % op_info[1])
+                    log.info("[warn] vRegMap operand type error, %s" % op_info[1])
     
             except Exception as e:
-                print("[warn] set operands error:")
+                log.error("[warn] set operands error:")
                 traceback.print_exc()
                 break
 

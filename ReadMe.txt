@@ -4,7 +4,7 @@ IDA VMProtect 3.4 Analysis Script
 
 * 已经完成:
     (1) x86寄存器传播分析，指令优化 [ok]
-    * jcc指令分析处理 [ok]
+    * jcc指令分析处理 (待加入分析) [??]
     * xchg指令处理有问题 [ok]
     x x86指令化简
 

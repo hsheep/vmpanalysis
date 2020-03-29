@@ -1,7 +1,10 @@
 # -*- coding:utf-8 -*-
 # code by @madfinger, 2020-2-2
 import time
+import logging
 from tools import *
+
+log = logging.getLogger("main.VMInstCleaner")
 
 # 指令清理器调试变量
 DEBUG = False
@@ -18,12 +21,25 @@ trash_insts = {}
 xchg_ref_map = [0, 1, 2, 3, 4, 5, 6, 7]
 
 
+def InitGlobalStruct():
+    global reg_reference
+    global mem_reference
+    global stack_reference
+    global trash_insts
+    global xchg_ref_map
+    reg_reference = [{}, {}, {}, {}, {}, {}, {}, {}]
+    mem_reference = {}
+    stack_reference = []
+    trash_insts = {}
+    xchg_ref_map = [0, 1, 2, 3, 4, 5, 6, 7]
+
+
 def dbgprint(dbg_str):
     if DEBUG or g_block_index in DEBUG_BLOCK_INDEX:
         print("  %s" % dbg_str)
 
 
-def OutputInst(block_index=0):
+def OutputInst(block_index=0, out_limited=0):
     global stack_reference
     global mem_reference
 
@@ -51,7 +67,7 @@ def OutputInst(block_index=0):
     dbgprint(">>>>>>> Optimized Instructions >>>>>>>")
 
     # DEBUG: show handle instruction
-    if DEBUG or g_block_index in DEBUG_BLOCK_INDEX:
+    if DEBUG or g_block_index in DEBUG_BLOCK_INDEX or int(block_index) > int(out_limited):
         for icount in sorted(instructions.keys()):
             inst = instructions[icount]
             print("%s\t%s %s" % (icount, hex(int(inst.ea)), idc.GetDisasm(inst.ea)))
@@ -330,17 +346,21 @@ def RegAnalysis(inst, icount=-1):
             dbgprint("[+] mem inst")
 
         else:
-            print("# >>>>>>>>>>>>> record error: %s %s <<<<<<<<<<<<<" %
-                  (hex(int(inst.ea)), idc.GetDisasm(inst.ea)))
+            log.info("# >>>>>>>>>>>>> record error: %s %s <<<<<<<<<<<<<" %
+                     (hex(int(inst.ea)), idc.GetDisasm(inst.ea)))
 
 
 # Export
-def InstructionCleaner(inst_series_all, block_index=0):
+def InstructionCleaner(inst_series_all, block_index=0, init=False, out_limited=0x7fffffff):
     global g_block_index
     global xchg_ref_map
-
-    # 每个代码块重置映射表 [??]
-    xchg_ref_map = [0, 1, 2, 3, 4, 5, 6, 7]
+    
+    if init:
+        log.info("# InitGlobalStruct")
+        InitGlobalStruct()
+    else:
+        # 每个代码块重置映射表 [??]
+        xchg_ref_map = [0, 1, 2, 3, 4, 5, 6, 7]
 
     # global debug
     g_block_index = block_index
@@ -353,4 +373,4 @@ def InstructionCleaner(inst_series_all, block_index=0):
         RegAnalysis(cur_inst, icount)
         icount += 1
 
-    return OutputInst(block_index)
+    return OutputInst(block_index, out_limited)

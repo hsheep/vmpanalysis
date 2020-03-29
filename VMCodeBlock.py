@@ -7,6 +7,7 @@ import idautils
 import traceback
 import struct
 import time
+import logging
 
 # IDAPython 重新加载该模块刷新字节码, 否则执行的字节码和代码不对应
 import tools
@@ -21,10 +22,11 @@ from tools import *
 from VMInstCleaner import InstructionCleaner
 from VMInstParser import ConvertCodeSequence
 
+log = logging.getLogger("main.VMCodeBlock")
 
 # 调试参数初始化
 DEBUG = False                          # <-- 全局输出调试信息
-DEBUG_BLOCK_INDEX = [97]             # <-- 输出特定指令到调试信息
+DEBUG_BLOCK_INDEX = []             # <-- 输出特定指令到调试信息
 OUTPUT_FILE = True                     # <-- 是否要输出到文件
 g_block_index = -1
 
@@ -323,5 +325,6 @@ if __name__ == "__main__":
     # vmcode_start_addr = 0x7D4897
     # msgbox.vmp0.exe
     # vmcode_start_addr = 0x881D7A
-    vmcode_start_addr = 0x1781D7A
+    # vmcode_start_addr = 0x1781D7A
+    vmcode_start_addr = 0x13316ED
     StartAnalysis(vmcode_start_addr)

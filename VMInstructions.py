@@ -61,7 +61,6 @@ VMEntry = [
     "i:push edi",
     "i:pushf",
     "MOV vOptable, [esp]",
-    # "i:xor vOptable, IMM",
     "MOV vEsp, esp",
     "SUB esp, IMM",
     _StreamNextCode_,
@@ -88,9 +87,12 @@ vPopOptable = [
             "i:xchg vOptable, RegAny:0",
             "MOV RegAny:1, RegAny:0"],
         4: [
+            "i:xchg RegAny:0, vOptable",
+            "MOV RegAny:1, RegAny:0"],
+        5: [
             "MOV vOptable, RegAny:0",
             "MOV RegAny:1, vEsp"],
-        5:[
+        6:[
             "MOV vOptable, RegAny:0",
             ]
     },
@@ -168,7 +170,6 @@ vCall = [
         1: [_OptableSeekSub_, "MOV RegAny:0, [vOptable]"],
     },
     "MOV RegAny:4, RegAny:0",
-    # ---
     "MOV RegAny:1, vEsp",
     "MOV RegAny:2, [RegAny:1]",
     "i:call RegAny:2",
@@ -217,6 +218,16 @@ vShr = [
     _StreamNextCode_
 ]
 
+vShl = [
+    "MOV RegAny:0, [vEsp]",
+    "MOV RegAny:1, [vEsp]",
+    _InStackvSubEsp_,
+    "i:shl RegAny:0, RegAny:1",
+    "MOV [vEsp], RegAny:0",
+    _StreamSetFlags_,
+    _StreamNextCode_
+]
+
 
 # ------------------------------------------------------------------------------------
 # 指令匹配列表,上面声明的指令要在这里加入到解析列表:
@@ -234,6 +245,7 @@ vInstList = {
     "vNand": vNand,
     "vNor": vNor,
     "vShr": vShr,
+    "vShl": vShl,
     "vPopMem": vPopMem,
     "vCall": vCall,
 }
