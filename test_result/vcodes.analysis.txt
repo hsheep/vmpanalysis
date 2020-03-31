@@ -1,0 +1,8138 @@
+0x1341d7a  VMEntry
+0x1119383  vPopReg R1
+0x12ab1ef  vPopReg R2
+0x107559b  vPopReg R11
+0x129cf7c  vPopReg R9
+0x105322e  vPopReg R5
+0x129f8ac  vPopReg R4
+0x1069c6a  vPopReg R12
+0x10ea0a3  vPopReg R8
+0x109d9ba  vPopReg R15
+0x1054a12  vPopReg R7
+0x107c093  vPopReg R6
+
+0x12e067a  vPushReg R15
+
+0x12dfac4  vPushImm 00000020
+
+# add esp, 4
+0x128e50e  vPushEsp
+0x1096a78  vPushImm 00000004
+0x13140d4  vAdd
+0x1119383  vPopReg R7
+
+# add esp, 8
+0x106a04c  vPushEsp
+0x12bdf39  vPushImm 00000008
+0x10e4509  vAdd
+0x12ab1ef  vPopReg R0
+
+# nor esp0, esp1
+0x12af894  vNor
+0x107559b  vPopReg R6
+
+# add esp, 0x20
+0x1296a98  vAdd
+0x129cf7c  vPopReg R3
+
+0x10eff0d  vPushEsp
+0x10c8e27  vPoiEsp
+0x10acfee  vNand
+0x105322e  vPopReg R14
+
+0x12f84cb  vResetEsp
+
+0x10f7cbc  vPushReg R3
+0x10dedb7  vPushReg R3
+0x136aa13  vNand
+0x129f8ac  vPopReg R10
+
+0x12efc55  vPushImm fffff7ea
+0x12b53e1  vNand
+0x1069c6a  vPopReg R10
+
+0x131fd9f  vPushReg R14
+0x1062a29  vPushImm fffff7ea
+0x1369e2e  vNor
+0x10ea0a3  vPopReg R13
+
+0x107fbaf  vPushEsp
+0x129dd64  vPoiEsp
+0x10f0caa  vNand
+0x109d9ba  vPopReg R10
+
+0x131ffd6  vAdd
+0x1054a12  vPopReg R10
+
+0x107c093  vPopReg R13
+
+0x10a5221  vPushEsp
+0x1119383  vPopReg R6
+
+0x110fad1  vPushImm 007b6aab
+0x13365cd  vPushReg R1
+0x131ceb6  vAdd
+0x12ab1ef  vPopReg R0
+
+0x12f5e04  vPushImm 0089aefd
+0x12f2cd9  vPushReg R1
+0x1323df4  vAdd
+0x107559b  vPopReg R0
+
+0x129cf7c  vPopReg R0
+
+# register transfer
+0x135b655  vPushReg R14
+0x10a9f15  vPushReg R3
+0x135e153  vPushReg R13
+0x10a45d0  vPushReg R4
+0x128a4a3  vPushReg R5
+0x12e067a  vPushReg R12
+0x10f7cbc  vPushReg R9
+0x10dedb7  vPushReg R6
+0x131fd9f  vPushReg R11
+0x13365cd  vPushReg R2
+0x12f2cd9  vPushReg R1
+0x135b655  vPushReg R0
+0x10dcd90  vPopOptable
+0x131c33e  vPopReg R14
+0x10bd219  vPopReg R1
+0x10d4926  vPopReg R9
+0x12cf658  vPopReg R6
+0x132ad5d  vPopReg R3
+0x10bc3b4  vPopReg R4
+0x13141af  vPopReg R11
+0x10efac9  vPopReg R7
+0x105af09  vPopReg R2
+0x127c341  vPopReg R15
+0x12ec54e  vPopReg R0
+
+0x1119a06  vPushReg R6
+0x11157db  vPushEsp
+0x131c33e  vPopReg R10
+0x133de7c  vPushImm ffffffff
+0x128f0de  vPushImm 007d9204
+0x10cc662  vPushReg R14
+0x1282631  vAdd
+0x10bd219  vPopReg R6
+0x128f0de  vPushImm 0041f580
+0x106a8b2  vPushReg R14
+0x10ae8c7  vAdd
+0x10d4926  vPopReg R6
+0x10eb16a  vPushImm 00000000
+0x1326f80  vPoiEsp
+0x12cf658  vPopReg R6
+0x12f0dd8  vPushReg R6
+0x1309670  vPushEsp
+0x1124bfa  vPushImm 00000000
+0x13581db  vPopMem
+0x10afe3b  vPushImm 0000044c
+0x105c3d9  vPushEsp
+0x1069f3d  vPushImm 00000004
+0x1080816  vAdd
+0x132ad5d  vPopReg R13
+0x1298002  vPushEsp
+0x10c023d  vPushImm 00000008
+0x1352a56  vAdd
+0x10bc3b4  vPopReg R12
+0x12f2cc3  vNand
+0x13141af  vPopReg R13
+0x104d6a9  vAdd
+0x10efac9  vPopReg R5
+0x135a511  vPushEsp
+0x10a27c0  vPoiEsp
+0x1286b56  vNor
+0x105af09  vPopReg R8
+0x10c4926  vResetEsp
+0x127fdae  vPushReg R5
+0x12df538  vPushReg R5
+0x10a30f9  vNand
+0x127c341  vPopReg R2
+0x10f491f  vPushImm fffff7ea
+0x10ecb20  vNand
+0x12ec54e  vPopReg R4
+0x10b2ece  vPushReg R8
+0x12ec7ad  vPushImm fffff7ea
+0x133c635  vNor
+0x131c33e  vPopReg R2
+0x12e8ffe  vPushEsp
+0x12bed34  vPoiEsp
+0x1353902  vNand
+0x10bd219  vPopReg R15
+0x111db11  vAdd
+0x10d4926  vPopReg R0
+0x12cf658  vPopReg R4
+0x1291be5  vPushReg R11
+0x1112e8e  vPushReg R7
+0x1294412  vPushReg R3
+0x1353429  vPushEsp
+0x1064254  vPushReg R10
+0x12d2672  vPushImm ffffffe0
+0x1114ab7  vAdd
+0x132ad5d  vPopReg R15
+0x10bc3b4  vPopReg R15
+0x1119a06  vPushReg R10
+0x133de7c  vPushImm ffffffe8
+0x108c3e6  vAdd
+0x13141af  vPopReg R2
+0x1108a70  vPopMem
+0x10eb16a  vPushImm 00599953
+0x10cc662  vPushReg R14
+0x10f4c91  vAdd
+0x10efac9  vPopReg R12
+0x1124bfa  vPushImm 00861cd4
+0x106a8b2  vPushReg R14
+0x12cfb63  vAdd
+0x105af09  vPopReg R13
+0x127c341  vPopReg R12
+0x12f0dd8  vPushReg R6
+0x127fdae  vPushReg R3
+0x12df538  vPushReg R11
+0x10b2ece  vPushReg R3
+0x1291be5  vPushReg R9
+0x1112e8e  vPushReg R15
+0x1294412  vPushReg R4
+0x1064254  vPushReg R10
+0x1119a06  vPushReg R7
+0x10cc662  vPushReg R1
+0x106a8b2  vPushReg R14
+0x12f0dd8  vPushReg R12
+0x10c7c3d  vPopOptable
+0x105ff98  vPopReg R4
+0x10d913c  vPopReg R6
+0x10ac758  vPopReg R0
+0x1085738  vPopReg R12
+0x12cf478  vPopReg R8
+0x12b457a  vPopReg R2
+0x12e62da  vPopReg R13
+0x127fe91  vPopReg R15
+0x129de52  vPopReg R10
+0x12b3eeb  vPopReg R7
+0x10d1346  vPopReg R9
+0x10c4957  vPushImm 00000000
+0x109033b  vPushReg R2
+0x1088755  vPopMem
+0x105ff98  vPopReg R11
+0x12803a8  vPushReg R13
+0x1322529  vPushReg R4
+0x10f22dd  vPushReg R8
+0x10cf09d  vPushReg R15
+0x1335635  vPushReg R2
+0x11197ec  vPushReg R13
+0x129f083  vPushReg R12
+0x10a063a  vPushReg R6
+0x10a1621  vPushReg R10
+0x130cf9c  vPushReg R0
+0x109033b  vPushReg R4
+0x12803a8  vPushReg R11
+0x105bdac  vPopOptable
+0x105ff98  vPopReg R8
+0x10d913c  vPopReg R1
+0x10ac758  vPopReg R3
+0x1085738  vPopReg R6
+0x12cf478  vPopReg R9
+0x12b457a  vPopReg R14
+0x12e62da  vPopReg R0
+0x127fe91  vPopReg R15
+0x129de52  vPopReg R13
+0x12b3eeb  vPopReg R10
+0x10d1346  vPopReg R2
+0x12cfb2b  vPushImm 00885095
+0x130cf9c  vPushReg R8
+0x10e26be  vAdd
+0x105ff98  vPopReg R12
+0x12fb5ac  vPushImm 0061e240
+0x109033b  vPushReg R8
+0x10d3c62  vAdd
+0x10d913c  vPopReg R11
+0x10ac758  vPopReg R5
+0x12803a8  vPushReg R9
+0x1311f7a  vPushImm ffffffe0
+0x10eb1f1  vAdd
+0x1085738  vPopReg R4
+0x12cf478  vPopReg R7
+0x1322529  vPushReg R6
+0x10f22dd  vPushReg R7
+0x10cf09d  vPushReg R0
+0x1335635  vPushReg R1
+0x11197ec  vPushReg R13
+0x129f083  vPushReg R7
+0x10a063a  vPushReg R15
+0x10a1621  vPushReg R9
+0x130cf9c  vPushReg R14
+0x109033b  vPushReg R3
+0x12803a8  vPushReg R8
+0x1322529  vPushReg R5
+0x105bdac  vPopOptable
+0x10d913c  vPopReg R3
+0x10ac758  vPopReg R11
+0x1085738  vPopReg R5
+0x12cf478  vPopReg R4
+0x12b457a  vPopReg R1
+0x12e62da  vPopReg R13
+0x127fe91  vPopReg R0
+0x129de52  vPopReg R10
+0x12b3eeb  vPopReg R12
+0x10d1346  vPopReg R6
+0x105ff98  vPopReg R7
+0x12cfb2b  vPushImm 00400000
+0x130cf9c  vPushReg R3
+0x13436ff  vAdd
+0x10d913c  vPopReg R14
+0x10ac758  vPopReg R7
+0x109033b  vPushReg R13
+0x12a9f2a  vPoiEsp
+0x12803a8  vPushReg R7
+0x1322529  vPushReg R7
+0x10dfd6c  vNand
+0x1085738  vPopReg R2
+0x1094ffc  vAdd
+0x12cf478  vPopReg R6
+0x10b17b4  vPushEsp
+0x10c3c4e  vPoiEsp
+0x12f3ed2  vNand
+0x12b457a  vPopReg R14
+0x12e62da  vPopReg R8
+0x10f22dd  vPushReg R6
+0x10cf09d  vPushReg R6
+0x1279750  vNand
+0x127fe91  vPopReg R0
+0x12fb5ac  vPushImm fffff7ea
+0x1285cb8  vNand
+0x129de52  vPopReg R0
+0x1335635  vPushReg R14
+0x11197ec  vPushReg R14
+0x132d695  vNor
+0x12b3eeb  vPopReg R12
+0x12bdb5a  vPushImm 00000815
+0x106c99c  vNand
+0x10d1346  vPopReg R2
+0x13304c8  vAdd
+0x105ff98  vPopReg R2
+0x10d913c  vPopReg R9
+0x10ac758  vPopReg R7
+0x129f083  vPushReg R9
+0x10a063a  vPushReg R7
+0x10a1621  vPushReg R9
+0x130cf9c  vPushReg R1
+0x109033b  vPushReg R8
+0x12803a8  vPushReg R5
+0x1322529  vPushReg R4
+0x10f22dd  vPushReg R13
+0x10cf09d  vPushReg R11
+0x1335635  vPushReg R10
+0x11197ec  vPushReg R3
+0x129f083  vPushReg R7
+0x105bdac  vPopOptable
+0x10d1346  vPopReg R14
+0x105ff98  vPopReg R6
+0x10d913c  vPopReg R12
+0x10ac758  vPopReg R10
+0x1085738  vPopReg R5
+0x12cf478  vPopReg R11
+0x12b457a  vPopReg R15
+0x12e62da  vPopReg R0
+0x127fe91  vPopReg R8
+0x129de52  vPopReg R7
+0x12b3eeb  vPopReg R13
+0x10a1621  vPushReg R15
+0x10d1346  vPopReg R1
+0x130cf9c  vPushReg R1
+0x109033b  vPushReg R5
+0x10c4957  vPushImm ffffffa0
+0x12803a8  vPushReg R5
+0x1309d66  vPushImm ffffffe0
+0x1285ce8  vAdd
+0x105ff98  vPopReg R4
+0x10d913c  vPopReg R4
+0x111203c  vAdd
+0x10ac758  vPopReg R7
+0x12a8b68  vPopMem
+0x12bdb5a  vPushImm 006033ad
+0x1322529  vPushReg R14
+0x10a2ab2  vAdd
+0x1085738  vPopReg R13
+0x1311f7a  vPushImm 0085f00a
+0x10f22dd  vPushReg R14
+0x13436ff  vAdd
+0x12cf478  vPopReg R9
+0x12b457a  vPopReg R6
+0x10cf09d  vPushReg R5
+0x1335635  vPushReg R14
+0x11197ec  vPushReg R1
+0x129f083  vPushReg R4
+0x10a063a  vPushReg R5
+0x10a1621  vPushReg R11
+0x130cf9c  vPushReg R15
+0x109033b  vPushReg R8
+0x12803a8  vPushReg R0
+0x1322529  vPushReg R12
+0x10f22dd  vPushReg R14
+0x10cf09d  vPushReg R6
+0x105bdac  vPopOptable
+0x12b3eeb  vPopReg R12
+0x10d1346  vPopReg R7
+0x105ff98  vPopReg R3
+0x10d913c  vPopReg R0
+0x10ac758  vPopReg R2
+0x1085738  vPopReg R15
+0x12cf478  vPopReg R11
+0x12b457a  vPopReg R6
+0x12e62da  vPopReg R5
+0x127fe91  vPopReg R9
+0x129de52  vPopReg R13
+0x10a063a  vPushReg R6
+0x1311f7a  vPushImm 00400000
+0x12b3eeb  vPopReg R14
+0x12e3ed8  vPoiEsp
+0x10a1621  vPushReg R14
+0x130cf9c  vPushReg R14
+0x10bd49b  vNor
+0x10d1346  vPopReg R13
+0x13436ff  vAdd
+0x105ff98  vPopReg R10
+0x12f0e56  vPushEsp
+0x12e90e7  vPoiEsp
+0x12ab812  vNand
+0x10d913c  vPopReg R4
+0x10ac758  vPopReg R13
+0x109033b  vPushReg R10
+0x12803a8  vPushReg R10
+0x133495e  vNand
+0x1085738  vPopReg R8
+0x1301cb1  vPushImm fffff7ea
+0x12f15ca  vNand
+0x12cf478  vPopReg R8
+0x1322529  vPushReg R4
+0x107edd2  vPushImm fffff7ea
+0x12ca964  vNor
+0x12b457a  vPopReg R0
+0x10b17b4  vPushEsp
+0x1302ced  vPoiEsp
+0x106d2f8  vNor
+0x12e62da  vPopReg R8
+0x1094ffc  vAdd
+0x127fe91  vPopReg R1
+0x129de52  vPopReg R0
+0x12b3eeb  vPopReg R14
+0x10f22dd  vPushReg R9
+0x10cf09d  vPushReg R8
+0x1335635  vPushReg R0
+0x11197ec  vPushReg R3
+0x129f083  vPushReg R13
+0x10a063a  vPushReg R15
+0x10a1621  vPushReg R11
+0x130cf9c  vPushReg R6
+0x109033b  vPushReg R7
+0x12803a8  vPushReg R5
+0x1322529  vPushReg R12
+0x10f22dd  vPushReg R14
+0x105bdac  vPopOptable
+0x105ff98  vPopReg R11
+0x10d913c  vPopReg R3
+0x10ac758  vPopReg R15
+0x1085738  vPopReg R5
+0x12cf478  vPopReg R6
+0x12b457a  vPopReg R7
+0x12e62da  vPopReg R12
+0x127fe91  vPopReg R13
+0x129de52  vPopReg R2
+0x12b3eeb  vPopReg R10
+0x10d1346  vPopReg R9
+0x130cf9c  vPushReg R3
+0x105ff98  vPopReg R1
+0x109033b  vPushReg R12
+0x12803a8  vPushReg R1
+0x1322529  vPushReg R1
+0x1330ed1  vNor
+0x10d913c  vPopReg R5
+0x1094ffc  vAdd
+0x10ac758  vPopReg R0
+0x10b17b4  vPushEsp
+0x12ac750  vPoiEsp
+0x106c99c  vNand
+0x1085738  vPopReg R5
+0x12cf478  vPopReg R14
+0x10f22dd  vPushReg R0
+0x12cfb2b  vPushImm 00000815
+0x10c7c61  vNor
+0x12b457a  vPopReg R1
+0x1277ce3  vPushEsp
+0x10e28c0  vPoiEsp
+0x10f2a65  vNor
+0x10cf09d  vPushReg R14
+0x1335635  vPushReg R6
+0x12fb5ac  vPushImm ffffffac
+0x11197ec  vPushReg R6
+0x12bdb5a  vPushImm ffffffe0
+0x13304c8  vAdd
+0x12e62da  vPopReg R10
+0x127fe91  vPopReg R9
+0x10aa45c  vAdd
+0x129de52  vPopReg R4
+0x10d461e  vPopMem
+0x12b3eeb  vPopReg R2
+0x129f083  vPushReg R5
+0x10a063a  vPushReg R5
+0x10a198c  vNor
+0x10d1346  vPopReg R14
+0x1311f7a  vPushImm 00000815
+0x12c1ae9  vNand
+0x105ff98  vPopReg R10
+0x10e26be  vAdd
+0x10d913c  vPopReg R14
+0x10ac758  vPopReg R1
+0x1301cb1  vPushImm 00666022
+0x10a1621  vPushReg R11
+0x10d3c62  vAdd
+0x1085738  vPopReg R0
+0x107edd2  vPushImm 00812105
+0x130cf9c  vPushReg R11
+0x10eb1f1  vAdd
+0x12cf478  vPopReg R10
+0x12b457a  vPopReg R4
+0x109033b  vPushReg R14
+0x12803a8  vPushReg R10
+0x1322529  vPushReg R12
+0x10f22dd  vPushReg R3
+0x10cf09d  vPushReg R1
+0x1335635  vPushReg R7
+0x11197ec  vPushReg R9
+0x129f083  vPushReg R15
+0x10a063a  vPushReg R13
+0x10a1621  vPushReg R6
+0x130cf9c  vPushReg R11
+0x109033b  vPushReg R4
+0x105bdac  vPopOptable
+0x10d1346  vPopReg R2
+0x105ff98  vPopReg R7
+0x10d913c  vPopReg R4
+0x10ac758  vPopReg R12
+0x1085738  vPopReg R11
+0x12cf478  vPopReg R8
+0x12b457a  vPopReg R13
+0x12e62da  vPopReg R9
+0x127fe91  vPopReg R14
+0x129de52  vPopReg R10
+0x12b3eeb  vPopReg R6
+0x1321cd4  vPushImm 00026d54
+0x10d1346  vPopReg R5
+0x109033b  vPushReg R11
+0x12f6766  vPoiEsp
+0x12803a8  vPushReg R5
+0x1322529  vPushReg R5
+0x10bd49b  vNor
+0x105ff98  vPopReg R0
+0x111203c  vAdd
+0x10d913c  vPopReg R15
+0x10b79bb  vPushEsp
+0x12ac750  vPoiEsp
+0x133495e  vNand
+0x10ac758  vPopReg R3
+0x1085738  vPopReg R10
+0x10f22dd  vPushReg R15
+0x10cf09d  vPushReg R15
+0x12ca964  vNor
+0x12cf478  vPopReg R6
+0x10c4957  vPushImm fffff7ea
+0x12f15ca  vNand
+0x12b457a  vPopReg R6
+0x1335635  vPushReg R3
+0x1309d66  vPushImm fffff7ea
+0x106d2f8  vNor
+0x12e62da  vPopReg R14
+0x10a181d  vPushEsp
+0x10e28c0  vPoiEsp
+0x1330ed1  vNor
+0x127fe91  vPopReg R5
+0x10a2ab2  vAdd
+0x129de52  vPopReg R13
+0x12b3eeb  vPopReg R14
+0x10d1346  vPopReg R0
+0x11197ec  vPushReg R7
+0x129f083  vPushReg R13
+0x10a063a  vPushReg R14
+0x10a1621  vPushReg R4
+0x130cf9c  vPushReg R10
+0x109033b  vPushReg R8
+0x12803a8  vPushReg R7
+0x1322529  vPushReg R11
+0x10f22dd  vPushReg R12
+0x10cf09d  vPushReg R9
+0x1335635  vPushReg R2
+0x11197ec  vPushReg R0
+0x105bdac  vPopOptable
+0x105ff98  vPopReg R11
+0x10d913c  vPopReg R9
+0x10ac758  vPopReg R4
+0x1085738  vPopReg R10
+0x12cf478  vPopReg R8
+0x12b457a  vPopReg R14
+0x12e62da  vPopReg R3
+0x127fe91  vPopReg R1
+0x129de52  vPopReg R7
+0x12b3eeb  vPopReg R13
+0x10d1346  vPopReg R5
+0x129f083  vPushReg R3
+0x10a063a  vPushReg R9
+0x10eb1f1  vAdd
+0x105ff98  vPopReg R5
+0x108b492  vPoiEsp
+0x10d913c  vPopReg R12
+0x10a1621  vPushReg R12
+0x130cf9c  vPushReg R12
+0x10bd49b  vNor
+0x10ac758  vPopReg R6
+0x107b307  vPushEsp
+0x12ac750  vPoiEsp
+0x12f15ca  vNand
+0x1085738  vPopReg R6
+0x12cf478  vPopReg R2
+0x1060349  vPushImm 00000006
+0x109033b  vPushReg R6
+0x12803a8  vPushReg R6
+0x12ca964  vNor
+0x12b457a  vPopReg R7
+0x12fb5ac  vPushImm ffffffbf
+0x10c3b00  vNand
+0x12e62da  vPopReg R5
+0x1123562  vShr
+0x127fe91  vPopReg R15
+0x12bdb5a  vPushImm ffffffff
+0x1094dba  vAdd
+0x129de52  vPopReg R15
+0x12b3eeb  vPopReg R0
+0x12d0631  vPushImm 00665e13
+0x1322529  vPushReg R0
+0x10f22dd  vPushReg R0
+0x106d2f8  vNor
+0x10d1346  vPopReg R2
+0x1330ed1  vNor
+0x105ff98  vPopReg R5
+0x12cbec7  vPushEsp
+0x10e28c0  vPoiEsp
+0x10ff1e6  vNand
+0x10d913c  vPopReg R3
+0x1321cd4  vPushImm 00842e86
+0x10cf09d  vPushReg R0
+0x10c7c61  vNor
+0x10ac758  vPopReg R2
+0x10d6779  vPushEsp
+0x12d0ce9  vPoiEsp
+0x10f2a65  vNor
+0x1085738  vPopReg R15
+0x1285ce8  vAdd
+0x12cf478  vPopReg R7
+0x1335635  vPushReg R11
+0x111203c  vAdd
+0x12b457a  vPopReg R5
+0x12e62da  vPopReg R15
+0x11197ec  vPushReg R3
+0x129f083  vPushReg R14
+0x10a063a  vPushReg R9
+0x10a1621  vPushReg R12
+0x130cf9c  vPushReg R6
+0x109033b  vPushReg R1
+0x12803a8  vPushReg R10
+0x1322529  vPushReg R8
+0x10f22dd  vPushReg R4
+0x10cf09d  vPushReg R14
+0x1335635  vPushReg R11
+0x11197ec  vPushReg R15
+0x105bdac  vPopOptable
+0x12b3eeb  vPopReg R12
+0x10d1346  vPopReg R1
+0x105ff98  vPopReg R15
+0x10d913c  vPopReg R9
+0x10ac758  vPopReg R7
+0x1085738  vPopReg R2
+0x12cf478  vPopReg R5
+0x12b457a  vPopReg R0
+0x12e62da  vPopReg R4
+0x127fe91  vPopReg R14
+0x129de52  vPopReg R3
+0x10c4957  vPushImm 0080cbd8
+0x10a1621  vPushReg R12
+0x13436ff  vAdd
+0x12b3eeb  vPopReg R13
+0x10d1346  vPopReg R6
+0x130cf9c  vPushReg R7
+0x109033b  vPushReg R15
+0x12803a8  vPushReg R4
+0x1322529  vPushReg R0
+0x10f22dd  vPushReg R5
+0x10cf09d  vPushReg R2
+0x1335635  vPushReg R7
+0x11197ec  vPushReg R9
+0x129f083  vPushReg R15
+0x10a063a  vPushReg R1
+0x10a1621  vPushReg R12
+0x130cf9c  vPushReg R6
+0x1082cbc  vPopOptable
+0x10cf800  vPopReg R12
+0x128f63c  vPopReg R11
+0x105716d  vPopReg R10
+0x107b289  vPopReg R5
+0x1290435  vPopReg R2
+0x12b1cc5  vPopReg R6
+0x10b7953  vPopReg R1
+0x12f782c  vPushReg R6
+0x127ac3d  vPushReg R6
+0x10ed1e6  vNand
+0x130e65f  vPopReg R7
+0x10e2754  vPushReg R6
+0x12c0878  vNor
+0x108ca38  vPopReg R0
+0x1337b4f  vPushReg R6
+0x1367de6  vPushReg R6
+0x105df98  vPushReg R6
+0x11244a5  vNor
+0x10e369b  vPopReg R15
+0x10d9964  vNor
+0x10a403c  vPopReg R3
+0x1300cf1  vNor
+0x10cf800  vPopReg R4
+0x128f63c  vPopReg R1
+0x105716d  vPopReg R3
+0x107b289  vPopReg R7
+0x1290435  vPopReg R6
+0x12b1cc5  vPopReg R13
+0x10599ab  vPushImm 000000b0
+0x1329378  vPushReg R1
+0x1086ff3  vPushImm 00657008
+0x110f79d  vPushReg R12
+0x1129e5a  vAdd
+0x10b7953  vPopReg R0
+0x1343d56  vPoiEsp
+0x130e65f  vPopReg R6
+0x10b9571  vPushReg R6
+0x106356b  vCall (2) 75198980
+0x108ca38  vPopReg R3
+0x12a9528  vPushImm 0054c7fe
+0x12f634f  vPushReg R8
+0x10582ef  vPushReg R1
+0x12f782c  vPushReg R3
+0x127ac3d  vPushReg R7
+0x10e2754  vPushReg R11
+0x1337b4f  vPushReg R4
+0x1367de6  vPushReg R5
+0x105df98  vPushReg R2
+0x1329378  vPushReg R10
+0x110f79d  vPushReg R12
+0x130307f  vJmp 0075f7f0
+0x10e369b  vPopReg R6
+0x10a403c  vPopReg R8
+0x10cf800  vPopReg R9
+0x128f63c  vPopReg R13
+0x105716d  vPopReg R5
+0x107b289  vPopReg R4
+0x1290435  vPopReg R14
+0x12b1cc5  vPopReg R12
+0x10b7953  vPopReg R2
+0x130e65f  vPopReg R3
+0x108ca38  vPopReg R1
+0x10b9571  vPushReg R12
+0x10e369b  vPopReg R0
+0x110d6c4  vPushImm 0000140f
+0x12f634f  vPushReg R0
+0x12fc983  vPushImm 000079fd
+0x10582ef  vPushReg R0
+0x127c78b  vPushImm 0000001c
+0x12f782c  vPushReg R2
+0x127ac3d  vPushReg R0
+0x10e2754  vPushReg R13
+0x1095030  vPushImm ffffffb8
+0x127aef4  vAdd
+0x10a403c  vPopReg R14
+0x1098fd2  vPopMem
+0x1337b4f  vPushReg R0
+0x111f697  vPushImm 00000000
+0x1081228  vAdd
+0x10cf800  vPopReg R10
+0x1309b41  vPopMem
+0x1112c38  vAdd
+0x128f63c  vPopReg R1
+0x12a9230  vPopMem
+0x105ec28  vPushImm 0000002c
+0x111e9ff  vAdd
+0x105716d  vPopReg R10
+0x12b27a5  vPopMem
+0x109c0d3  vPushImm 00003388
+0x1367de6  vPushReg R13
+0x1086ff3  vPushImm ffffffe0
+0x109a38c  vAdd
+0x107b289  vPopReg R15
+0x1290435  vPopReg R11
+0x105df98  vPushReg R0
+0x10599ab  vPushImm 00000004
+0x108652f  vAdd
+0x12b1cc5  vPopReg R15
+0x10a0354  vPopMem
+0x10599ab  vPushImm 0066b860
+0x1329378  vPushReg R6
+0x1081bf7  vAdd
+0x10b7953  vPopReg R15
+0x12c1a0d  vPushImm 007ea954
+0x110f79d  vPushReg R6
+0x12ee040  vAdd
+0x130e65f  vPopReg R3
+0x108ca38  vPopReg R14
+0x10b9571  vPushReg R12
+0x12f634f  vPushReg R6
+0x10582ef  vPushReg R13
+0x12f782c  vPushReg R12
+0x127ac3d  vPushReg R11
+0x10e2754  vPushReg R5
+0x1337b4f  vPushReg R4
+0x1367de6  vPushReg R8
+0x105df98  vPushReg R2
+0x1329378  vPushReg R0
+0x110f79d  vPushReg R6
+0x10b9571  vPushReg R14
+0x10e81b3  vPopOptable
+0x12b457a  vPopReg R11
+0x12e62da  vPopReg R4
+0x127fe91  vPopReg R15
+0x129de52  vPopReg R14
+0x12b3eeb  vPopReg R5
+0x10d1346  vPopReg R10
+0x105ff98  vPopReg R13
+0x10d913c  vPopReg R7
+0x10ac758  vPopReg R9
+0x1085738  vPopReg R6
+0x12cf478  vPopReg R6
+0x10a1621  vPushReg R13
+0x1321cd4  vPushImm 00249470
+0x12b457a  vPopReg R0
+0x12e3ed8  vPoiEsp
+0x130cf9c  vPushReg R0
+0x109033b  vPushReg R0
+0x1285cb8  vNand
+0x12e62da  vPopReg R7
+0x10d3c62  vAdd
+0x127fe91  vPopReg R7
+0x10a181d  vPushEsp
+0x10afd14  vPoiEsp
+0x10f6632  vNor
+0x129de52  vPopReg R6
+0x12b3eeb  vPopReg R1
+0x12803a8  vPushReg R7
+0x1322529  vPushReg R7
+0x132d695  vNor
+0x10d1346  vPopReg R2
+0x10f7bba  vPushImm fffff7ea
+0x106c99c  vNand
+0x105ff98  vPopReg R2
+0x10f22dd  vPushReg R6
+0x10cf09d  vPushReg R6
+0x12c1ae9  vNand
+0x10d913c  vPopReg R0
+0x1321cd4  vPushImm 00000815
+0x12ab812  vNand
+0x10ac758  vPopReg R12
+0x10eb1f1  vAdd
+0x1085738  vPopReg R3
+0x12cf478  vPopReg R0
+0x12b457a  vPopReg R3
+0x1335635  vPushReg R7
+0x11197ec  vPushReg R2
+0x129f083  vPushReg R0
+0x10a063a  vPushReg R15
+0x10a1621  vPushReg R1
+0x130cf9c  vPushReg R5
+0x109033b  vPushReg R9
+0x12803a8  vPushReg R13
+0x1322529  vPushReg R14
+0x10f22dd  vPushReg R4
+0x10cf09d  vPushReg R11
+0x1335635  vPushReg R3
+0x105bdac  vPopOptable
+0x12cf478  vPopReg R13
+0x12b457a  vPopReg R14
+0x12e62da  vPopReg R9
+0x127fe91  vPopReg R11
+0x129de52  vPopReg R1
+0x12b3eeb  vPopReg R2
+0x10d1346  vPopReg R4
+0x105ff98  vPopReg R6
+0x10d913c  vPopReg R0
+0x10ac758  vPopReg R15
+0x1085738  vPopReg R10
+0x1321cd4  vPushImm ffffec38
+0x1322529  vPushReg R4
+0x10f2a65  vNor
+0x12cf478  vPopReg R5
+0x10c4957  vPushImm 000013c7
+0x10f22dd  vPushReg R4
+0x10cf09d  vPushReg R4
+0x12ab812  vNand
+0x12b457a  vPopReg R15
+0x10a198c  vNor
+0x12e62da  vPopReg R10
+0x10f6632  vNor
+0x127fe91  vPopReg R8
+0x129de52  vPopReg R7
+0x1335635  vPushReg R6
+0x11197ec  vPushReg R1
+0x1309d66  vPushImm ffffff60
+0x13436ff  vAdd
+0x12cfb2b  vPushImm 00003907
+0x129f083  vPushReg R14
+0x12fb5ac  vPushImm 00000020
+0x10a063a  vPushReg R7
+0x10a1621  vPushReg R14
+0x12bdb5a  vPushImm 00000014
+0x1094ffc  vAdd
+0x12b3eeb  vPopReg R15
+0x110548f  vPopMem
+0x13304c8  vAdd
+0x10d1346  vPopReg R5
+0x12c64c5  vPopMem
+0x1309d66  vPushImm 005d1817
+0x130cf9c  vPushReg R13
+0x10aa45c  vAdd
+0x105ff98  vPopReg R5
+0x10d913c  vPopReg R15
+0x10ac758  vPopReg R5
+0x12a8b68  vPopMem
+0x1301cb1  vPushImm 00002198
+0x109033b  vPushReg R14
+0x107edd2  vPushImm 00000024
+0x10e26be  vAdd
+0x1085738  vPopReg R0
+0x10cbe66  vPopMem
+0x12cfb2b  vPushImm 008716ed
+0x12803a8  vPushReg R13
+0x10d3c62  vAdd
+0x12cf478  vPopReg R10
+0x12fb5ac  vPushImm 007b9762
+0x1322529  vPushReg R13
+0x10eb1f1  vAdd
+0x12b457a  vPopReg R0
+0x10f22dd  vPushReg R8
+0x10cf09d  vPushReg R6
+0x1335635  vPushReg R15
+0x11197ec  vPushReg R2
+0x129f083  vPushReg R1
+0x10a063a  vPushReg R11
+0x10a1621  vPushReg R9
+0x130cf9c  vPushReg R14
+0x13610a5  VMLeave
+0x13316ed  VMEntry
+0x1087fc6  vPopReg R8
+0x109d2ba  vPopReg R14
+0x130aa26  vPopReg R7
+0x12dacca  vPopReg R10
+0x131a60b  vPopReg R13
+0x13149ee  vPopReg R4
+0x12bade8  vPopReg R0
+0x1056b3c  vPopReg R12
+0x134df48  vPopReg R2
+0x12e9c5b  vPopReg R15
+0x1297a8a  vPopReg R5
+0x10a1a47  vPushReg R4
+0x10c36ad  vPushImm 0062ead4
+0x1369cae  vPushReg R8
+0x1355a62  vAdd
+0x1087fc6  vPopReg R3
+0x109d2ba  vPopReg R9
+0x12faad6  vPushReg R7
+0x1293a11  vPushImm ffffff98
+0x131d5ec  vAdd
+0x130aa26  vPopReg R3
+0x10b7817  vPopMem
+0x1095299  vPushImm 0058a65f
+0x104c894  vPushReg R8
+0x1306511  vAdd
+0x12dacca  vPopReg R6
+0x131656f  vPushImm 007b9762
+0x1070d27  vPushReg R8
+0x12cd8b2  vAdd
+0x131a60b  vPopReg R1
+0x1101e49  vPushReg R2
+0x129a15b  vPushReg R12
+0x1096b10  vPushReg R0
+0x105405d  vPushReg R9
+0x10f4a17  vPushReg R13
+0x12f3c95  vPushReg R10
+0x10a1a47  vPushReg R7
+0x1369cae  vPushReg R14
+0x12b22f9  VMLeave
+0x104a65f  VMEntry
+0x12c248d  vPopReg R13
+0x10a88af  vPopReg R2
+0x10d238d  vPopReg R1
+0x1354089  vPopReg R7
+0x1324fa0  vPopReg R14
+0x12e7ca6  vPopReg R4
+0x127de68  vPopReg R9
+0x10ecc28  vPopReg R10
+0x104e432  vPopReg R12
+0x10bf1d0  vPopReg R0
+0x12e70ba  vPopReg R5
+0x10d27af  vPushReg R9
+0x10f7ae1  vPushReg R14
+0x109d35f  vPushImm ffffffdc
+0x109bb63  vAdd
+0x1123c0c  vPushReg R9
+0x10c30a4  vPushReg R14
+0x10b0601  vPushImm ffffffcc
+0x133b690  vPushReg R1
+0x136e7e4  vPushReg R1
+0x10f1226  vNand
+0x12c248d  vPopReg R6
+0x10ab6fc  vPushReg R1
+0x109ceab  vNor
+0x10a88af  vPopReg R11
+0x10f0376  vPushReg R1
+0x10afc47  vPushReg R1
+0x10c5a42  vPushReg R1
+0x10ba699  vNand
+0x10d238d  vPopReg R8
+0x10a19bb  vNor
+0x1354089  vPopReg R15
+0x105b97f  vNor
+0x1324fa0  vPopReg R0
+0x12e7ca6  vPopReg R6
+0x1085cc3  vAdd
+0x133c6b3  vPushReg R9
+0x10d27af  vPushReg R14
+0x10cf9ea  vPushImm ffffffc8
+0x10e4596  vAdd
+0x10f7ae1  vPushReg R9
+0x1123c0c  vPushReg R14
+0x132c664  vPushImm ffffffd0
+0x10f0291  vAdd
+0x10c30a4  vPushReg R12
+0x133b690  vPushReg R14
+0x13312a0  vPushImm ffffffa4
+0x1325b8a  vAdd
+0x127de68  vPopReg R11
+0x107c00e  vPopMem
+0x10ecc28  vPopReg R11
+0x136e7e4  vPushReg R10
+0x10ab6fc  vPushReg R10
+0x12eba06  vNand
+0x104e432  vPopReg R15
+0x10f0376  vPushReg R10
+0x1060f69  vNor
+0x10bf1d0  vPopReg R11
+0x10afc47  vPushReg R10
+0x10c5a42  vPushReg R10
+0x133c6b3  vPushReg R10
+0x1120144  vNand
+0x12e70ba  vPopReg R11
+0x109af04  vNor
+0x12c248d  vPopReg R8
+0x1299433  vNor
+0x10a88af  vPopReg R0
+0x10d238d  vPopReg R3
+0x1317ce9  vPopMem
+0x1354089  vPopReg R8
+0x1326407  vPopMem
+0x1324fa0  vPopReg R8
+0x12ec5fa  vPopMem
+0x10d27af  vPushReg R9
+0x10f7ae1  vPushReg R14
+0x1323a45  vPushImm ffffffd4
+0x10cbab8  vAdd
+0x12e7ca6  vPopReg R5
+0x12a021d  vPopMem
+0x127de68  vPopReg R15
+0x10a102e  vPopMem
+0x1123c0c  vPushReg R3
+0x10c30a4  vPushReg R14
+0x128d827  vPushImm ffffffc4
+0x12faf0a  vAdd
+0x10ecc28  vPopReg R0
+0x1100068  vPopMem
+0x1349c21  vPushImm 00000030
+0x1101c30  vPoiEsp
+0x104e432  vPopReg R15
+0x13646a5  vPushImm 00000000
+0x133b690  vPushReg R15
+0x136e7e4  vPushReg R15
+0x10ab6fc  vPushReg R14
+0x1311207  vPushImm ffffffb0
+0x127a780  vAdd
+0x10bf1d0  vPopReg R5
+0x10bcdbf  vPopMem
+0x12e492b  vPushImm 000000ac
+0x110a79d  vAdd
+0x12e70ba  vPopReg R10
+0x128f6ca  vPoiEsp
+0x12c248d  vPopReg R10
+0x10cf33f  vPushImm 00000007
+0x10f0376  vPushReg R10
+0x12efac3  vShl
+0x10a88af  vPopReg R7
+0x10d238d  vPopReg R5
+0x10afc47  vPushReg R5
+0x10c5a42  vPushReg R14
+0x13130e5  vPushImm ffffff34
+0x111a5c3  vAdd
+0x1354089  vPopReg R8
+0x109aed5  vPopMem
+0x109d35f  vPushImm 00000001
+0x128d827  vPushImm 0062b075
+0x133c6b3  vPushReg R13
+0x1316075  vAdd
+0x1324fa0  vPopReg R10
+0x10d27af  vPushReg R12
+0x1349c21  vPushImm 005daac0
+0x10f7ae1  vPushReg R13
+0x109bb63  vAdd
+0x12e7ca6  vPopReg R1
+0x1311207  vPushImm 0089038e
+0x1123c0c  vPushReg R13
+0x1085cc3  vAdd
+0x127de68  vPopReg R8
+0x10c30a4  vPushReg R12
+0x133b690  vPushReg R3
+0x136e7e4  vPushReg R9
+0x10ab6fc  vPushReg R7
+0x10f0376  vPushReg R14
+0x10afc47  vPushReg R5
+0x10c5a42  vPushReg R6
+0x133c6b3  vPushReg R2
+0x10f4dd0  VMLeave
+0x109aac0  VMEntry
+0x12ec54e  vPopReg R3
+0x131c33e  vPopReg R15
+0x10bd219  vPopReg R0
+0x10d4926  vPopReg R13
+0x12cf658  vPopReg R1
+0x132ad5d  vPopReg R8
+0x10bc3b4  vPopReg R5
+0x13141af  vPopReg R2
+0x10efac9  vPopReg R4
+0x105af09  vPopReg R12
+0x127c341  vPopReg R10
+0x133de7c  vPushImm 0000000c
+0x12a01ad  vPushEsp
+0x10b0ca7  vPushImm 00000004
+0x12cfb63  vAdd
+0x12ec54e  vPopReg R7
+0x1296c53  vAdd
+0x131c33e  vPopReg R7
+0x105b4bd  vResetEsp
+0x1064254  vPushReg R8
+0x1119a06  vPushReg R8
+0x10ee53a  vNor
+0x10bd219  vPopReg R7
+0x131608f  vPushEsp
+0x10d9efc  vPoiEsp
+0x1286b56  vNor
+0x10d4926  vPopReg R6
+0x12cf658  vPopReg R7
+0x10c7ae6  vPushImm 00000006
+0x10cc662  vPushReg R6
+0x128f0de  vPushImm ffffffbf
+0x128fb0c  vNand
+0x132ad5d  vPopReg R14
+0x132933b  vShr
+0x10bc3b4  vPopReg R12
+0x10eb16a  vPushImm ffffffff
+0x1282631  vAdd
+0x13141af  vPopReg R14
+0x10efac9  vPopReg R11
+0x10afe3b  vPushImm 008273d3
+0x106a8b2  vPushReg R11
+0x12f0dd8  vPushReg R11
+0x133c635  vNor
+0x105af09  vPopReg R10
+0x12e3343  vNor
+0x127c341  vPopReg R12
+0x1101da3  vPushEsp
+0x12f1512  vPoiEsp
+0x10ca884  vNor
+0x12ec54e  vPopReg R5
+0x1069f3d  vPushImm 00827341
+0x127fdae  vPushReg R11
+0x111b085  vNor
+0x131c33e  vPopReg R10
+0x11157db  vPushEsp
+0x10f0d19  vPoiEsp
+0x10a18d3  vNand
+0x10bd219  vPopReg R9
+0x10ae8c7  vAdd
+0x10d4926  vPopReg R14
+0x12df538  vPushReg R3
+0x1080816  vAdd
+0x12cf658  vPopReg R5
+0x132ad5d  vPopReg R10
+0x10b2ece  vPushReg R8
+0x1291be5  vPushReg R10
+0x1112e8e  vPushReg R8
+0x1294412  vPushReg R15
+0x1064254  vPushReg R13
+0x1119a06  vPushReg R6
+0x10cc662  vPushReg R1
+0x106a8b2  vPushReg R4
+0x12f0dd8  vPushReg R0
+0x127fdae  vPushReg R2
+0x12df538  vPushReg R3
+0x10b2ece  vPushReg R10
+0x107000d  vPopOptable
+0x10bc3b4  vPopReg R5
+0x13141af  vPopReg R12
+0x10efac9  vPopReg R7
+0x105af09  vPopReg R3
+0x127c341  vPopReg R14
+0x12ec54e  vPopReg R1
+0x131c33e  vPopReg R0
+0x10bd219  vPopReg R13
+0x10d4926  vPopReg R9
+0x12cf658  vPopReg R8
+0x132ad5d  vPopReg R6
+0x10c023d  vPushImm 00617469
+0x1291be5  vPushReg R5
+0x1352a56  vAdd
+0x10bc3b4  vPopReg R11
+0x13141af  vPopReg R8
+0x1112e8e  vPushReg R12
+0x1294412  vPushReg R8
+0x1064254  vPushReg R9
+0x1119a06  vPushReg R13
+0x10cc662  vPushReg R0
+0x106a8b2  vPushReg R1
+0x12f0dd8  vPushReg R14
+0x127fdae  vPushReg R3
+0x12df538  vPushReg R7
+0x10b2ece  vPushReg R12
+0x1291be5  vPushReg R5
+0x1112e8e  vPushReg R8
+0x12e880f  vPopOptable
+0x107c093  vPopReg R12
+0x1119383  vPopReg R7
+0x12ab1ef  vPopReg R10
+0x107559b  vPopReg R8
+0x129cf7c  vPopReg R9
+0x105322e  vPopReg R6
+0x129f8ac  vPopReg R15
+0x1069c6a  vPopReg R4
+0x10ea0a3  vPopReg R11
+0x109d9ba  vPopReg R14
+0x1054a12  vPopReg R14
+0x135e153  vPushReg R10
+0x10a45d0  vPushReg R8
+0x12dfac4  vPushImm ffffffbc
+0x13140d4  vAdd
+0x107c093  vPopReg R0
+0x1316177  vPopMem
+0x1096a78  vPushImm 00000001
+0x12f5e04  vPushImm 005d6279
+0x128a4a3  vPushReg R12
+0x10e4509  vAdd
+0x1119383  vPopReg R14
+0x12e067a  vPushReg R8
+0x12efc55  vPushImm ffffff98
+0x1296a98  vAdd
+0x12ab1ef  vPopReg R2
+0x13201b4  vPoiEsp
+0x107559b  vPopReg R13
+0x10f7cbc  vPushReg R13
+0x132cd3b  vPushImm 0059b7bd
+0x10dedb7  vPushReg R12
+0x131ffd6  vAdd
+0x129cf7c  vPopReg R3
+0x1337557  vPushImm 0089038e
+0x131fd9f  vPushReg R12
+0x131ceb6  vAdd
+0x105322e  vPopReg R0
+0x13365cd  vPushReg R8
+0x12f2cd9  vPushReg R6
+0x135b655  vPushReg R13
+0x10a9f15  vPushReg R15
+0x135e153  vPushReg R10
+0x10a45d0  vPushReg R9
+0x128a4a3  vPushReg R7
+0x12e067a  vPushReg R4
+0x10c49b5  VMLeave
+0x105b7bd  VMEntry
+0x1081a08  vPopReg R3
+0x132e5c2  vPopReg R14
+0x128ca86  vPopReg R10
+0x105ed16  vPopReg R15
+0x1124bda  vPopReg R1
+0x10a454b  vPopReg R6
+0x10bfe87  vPopReg R7
+0x1334331  vPopReg R11
+0x111dfe6  vPopReg R9
+0x104d619  vPopReg R13
+0x136db24  vPopReg R13
+0x10612e2  vPushImm 0000000c
+0x1313d0f  vPushEsp
+0x1072d72  vPushImm 00000004
+0x10853ba  vAdd
+0x1081a08  vPopReg R5
+0x127f8db  vAdd
+0x132e5c2  vPopReg R12
+0x10c31a0  vResetEsp
+0x10bfdce  vPushReg R11
+0x127a971  vPushReg R11
+0x110c4a3  vNor
+0x128ca86  vPopReg R4
+0x10ba81f  vPushReg R11
+0x106e053  vPushReg R11
+0x129b5fc  vNand
+0x105ed16  vPopReg R2
+0x1273db4  vNand
+0x1124bda  vPopReg R0
+0x10a454b  vPopReg R12
+0x1317eb5  vPushImm 00000006
+0x1331243  vPushReg R0
+0x10595f1  vPushReg R0
+0x10f1361  vNand
+0x10bfe87  vPopReg R13
+0x1322aa0  vPushImm ffffffbf
+0x108fdff  vNand
+0x1334331  vPopReg R13
+0x10b8a2f  vShr
+0x111dfe6  vPopReg R2
+0x1351959  vPushImm ffffffff
+0x130031a  vAdd
+0x104d619  vPopReg R2
+0x136db24  vPopReg R1
+0x10cdbe6  vPushImm 0086ba8c
+0x106ae67  vPushReg R1
+0x1295096  vPushReg R1
+0x10fbc1e  vNor
+0x1081a08  vPopReg R13
+0x109dcb3  vNor
+0x132e5c2  vPopReg R13
+0x135d146  vPushEsp
+0x135037b  vPoiEsp
+0x12e4fad  vNor
+0x128ca86  vPopReg R13
+0x1294a27  vPushImm 0086b9fa
+0x104f9c8  vPushReg R1
+0x110343a  vNor
+0x105ed16  vPopReg R4
+0x10dd544  vPushEsp
+0x1068223  vPoiEsp
+0x1286724  vNand
+0x1124bda  vPopReg R13
+0x12fe53b  vAdd
+0x10a454b  vPopReg R8
+0x10afd57  vPushReg R3
+0x12b55fe  vAdd
+0x10bfe87  vPopReg R2
+0x1334331  vPopReg R2
+0x10d6fd4  vPushReg R10
+0x10bfdce  vPushReg R5
+0x127a971  vPushReg R15
+0x10ba81f  vPushReg R11
+0x106e053  vPushReg R10
+0x1331243  vPushReg R14
+0x10595f1  vPushReg R7
+0x106ae67  vPushReg R6
+0x1295096  vPushReg R0
+0x104f9c8  vPushReg R9
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R2
+0x133c62e  vPopOptable
+0x111dfe6  vPopReg R8
+0x104d619  vPopReg R1
+0x136db24  vPopReg R5
+0x1081a08  vPopReg R3
+0x132e5c2  vPopReg R12
+0x128ca86  vPopReg R6
+0x105ed16  vPopReg R4
+0x1124bda  vPopReg R13
+0x10a454b  vPopReg R11
+0x10bfe87  vPopReg R7
+0x1334331  vPopReg R10
+0x10612e2  vPushImm 008aae37
+0x10bfdce  vPushReg R8
+0x129d85b  vAdd
+0x111dfe6  vPopReg R15
+0x104d619  vPopReg R7
+0x127a971  vPushReg R13
+0x10ba81f  vPushReg R0
+0x106e053  vPushReg R11
+0x1331243  vPushReg R13
+0x10595f1  vPushReg R4
+0x106ae67  vPushReg R6
+0x1295096  vPushReg R12
+0x104f9c8  vPushReg R3
+0x10afd57  vPushReg R5
+0x10d6fd4  vPushReg R1
+0x10bfdce  vPushReg R8
+0x127a971  vPushReg R7
+0x12e8fed  vPopOptable
+0x1052b45  vPopReg R6
+0x10c533a  vPopReg R9
+0x10b3dc2  vPopReg R5
+0x10f54f1  vPopReg R15
+0x12bfa49  vPopReg R10
+0x1345186  vPopReg R14
+0x131853e  vPopReg R3
+0x10d93bc  vPopReg R2
+0x130dd69  vPopReg R13
+0x1284361  vPopReg R7
+0x133bc8c  vPopReg R11
+0x1352168  vPushReg R14
+0x10c59b7  vPushImm ffffffbc
+0x1352d83  vAdd
+0x1052b45  vPopReg R12
+0x10c533a  vPopReg R7
+0x133b2bc  vPushReg R7
+0x1074f5f  vPushImm ffffffff
+0x13154f8  vPushReg R2
+0x12d6e72  vResetEsp
+0x10b3dc2  vPopReg R4
+0x10b172e  vPushImm 0017af4b
+0x10c80a8  vPushReg R10
+0x12a56e8  vPushReg R13
+0x134dbe0  vPushReg R4
+0x1313d5d  vPushReg R3
+0x12ceb7c  vPushReg R14
+0x1316096  vPushReg R10
+0x1344cca  vPushReg R15
+0x10c116f  vPushReg R5
+0x1352168  vPushReg R7
+0x133b2bc  vPushReg R6
+0x12bccd5  vJmp 0075f7f0
+0x10f54f1  vPopReg R0
+0x12bfa49  vPopReg R9
+0x1345186  vPopReg R7
+0x131853e  vPopReg R6
+0x10d93bc  vPopReg R12
+0x130dd69  vPopReg R2
+0x1284361  vPopReg R10
+0x133bc8c  vPopReg R11
+0x1052b45  vPopReg R1
+0x10c533a  vPopReg R15
+0x10b3dc2  vPopReg R4
+0x12b54f0  vPushImm ffc2e8c9
+0x13154f8  vPushReg R2
+0x10c80a8  vPushReg R6
+0x12a56e8  vPushReg R12
+0x134dbe0  vPushReg R2
+0x1313d5d  vPushReg R9
+0x12ceb7c  vPushReg R7
+0x1316096  vPushReg R1
+0x1344cca  vPushReg R11
+0x10c116f  vPushReg R10
+0x1352168  vPushReg R0
+0x12bccd5  vJmp 0075f7f0
+0x10f54f1  vPopReg R13
+0x12bfa49  vPopReg R15
+0x1345186  vPopReg R3
+0x131853e  vPopReg R10
+0x10d93bc  vPopReg R5
+0x130dd69  vPopReg R1
+0x1284361  vPopReg R14
+0x133bc8c  vPopReg R4
+0x1052b45  vPopReg R7
+0x10c533a  vPopReg R12
+0x10b3dc2  vPopReg R11
+0x133b2bc  vPushReg R14
+0x130a235  vPushImm ffffffb0
+0x1305071  vAdd
+0x10f54f1  vPopReg R6
+0x10ad116  vPoiEsp
+0x12bfa49  vPopReg R8
+0x1301be0  vPushImm 00000000
+0x13154f8  vPushReg R8
+0x10db534  vPushImm 000000ac
+0x131986f  vAdd
+0x1345186  vPopReg R12
+0x12c7597  vPoiEsp
+0x131853e  vPopReg R9
+0x10c80a8  vPushReg R9
+0x12a56e8  vPushReg R14
+0x10d326e  vPushImm ffffffc0
+0x10c6c07  vAdd
+0x10b5e01  vPushImm 00000a28
+0x10d93bc  vPopReg R11
+0x130dd69  vPopReg R6
+0x110360b  vPushReg R11
+0x10e2b89  vPushReg R9
+0x12ea4cb  vPushReg R9
+0x1103c8c  vNand
+0x1284361  vPopReg R3
+0x1121465  vAdd
+0x133bc8c  vPopReg R3
+0x129f240  vPushEsp
+0x11130fd  vPoiEsp
+0x12ace1d  vNand
+0x1052b45  vPopReg R12
+0x13466c4  vPopReg R6
+0x134dbe0  vPushReg R3
+0x1311694  vPushImm 00000815
+0x10d399b  vNor
+0x10c533a  vPopReg R1
+0x105b7c7  vPushEsp
+0x1278f04  vPoiEsp
+0x108bd87  vNand
+0x10b3dc2  vPopReg R1
+0x1313d5d  vPushReg R12
+0x1082764  vPushImm fffff7ea
+0x13639e8  vNor
+0x10f54f1  vPopReg R6
+0x12ef188  vPushEsp
+0x10a4337  vPoiEsp
+0x10e3de9  vNand
+0x12bfa49  vPopReg R4
+0x12a897b  vAdd
+0x1345186  vPopReg R0
+0x131853e  vPopReg R0
+0x108de65  vPopMem
+0x10d3a11  vPushImm 00000006
+0x12ceb7c  vPushReg R0
+0x1316096  vPushReg R0
+0x12ca1ea  vNor
+0x10d93bc  vPopReg R3
+0x111b54a  vPushImm ffffffbf
+0x13081f8  vNand
+0x130dd69  vPopReg R6
+0x1113cab  vShr
+0x1284361  vPopReg R2
+0x10c59b7  vPushImm ffffffff
+0x11197bd  vAdd
+0x133bc8c  vPopReg R1
+0x1052b45  vPopReg R3
+0x130a235  vPushImm 008ab225
+0x1344cca  vPushReg R3
+0x10c116f  vPushReg R3
+0x1112554  vNor
+0x10c533a  vPopReg R1
+0x127ff7b  vNor
+0x10b3dc2  vPopReg R2
+0x1092c0a  vPushEsp
+0x105b50d  vPoiEsp
+0x135f748  vNand
+0x10f54f1  vPopReg R4
+0x10db534  vPushImm 008ab193
+0x1352168  vPushReg R3
+0x104d013  vNor
+0x12bfa49  vPopReg R6
+0x10eb405  vPushEsp
+0x12898b6  vPoiEsp
+0x10e0162  vNor
+0x1345186  vPopReg R2
+0x136aadd  vAdd
+0x131853e  vPopReg R4
+0x133b2bc  vPushReg R13
+0x128975c  vAdd
+0x10d93bc  vPopReg R12
+0x130dd69  vPopReg R4
+0x13154f8  vPushReg R0
+0x10c80a8  vPushReg R15
+0x12a56e8  vPushReg R8
+0x134dbe0  vPushReg R7
+0x1313d5d  vPushReg R15
+0x12ceb7c  vPushReg R0
+0x1316096  vPushReg R14
+0x1344cca  vPushReg R10
+0x10c116f  vPushReg R11
+0x1352168  vPushReg R9
+0x133b2bc  vPushReg R13
+0x13154f8  vPushReg R4
+0x1070ff4  vPopOptable
+0x1284361  vPopReg R6
+0x133bc8c  vPopReg R5
+0x1052b45  vPopReg R3
+0x10c533a  vPopReg R12
+0x10b3dc2  vPopReg R2
+0x10f54f1  vPopReg R14
+0x12bfa49  vPopReg R11
+0x1345186  vPopReg R13
+0x131853e  vPopReg R15
+0x10d93bc  vPopReg R0
+0x130dd69  vPopReg R9
+0x10d326e  vPushImm 007ffa89
+0x10c80a8  vPushReg R6
+0x129063f  vAdd
+0x1284361  vPopReg R0
+0x133bc8c  vPopReg R8
+0x12a56e8  vPushReg R10
+0x134dbe0  vPushReg R5
+0x1313d5d  vPushReg R15
+0x12ceb7c  vPushReg R13
+0x1316096  vPushReg R11
+0x1344cca  vPushReg R14
+0x10c116f  vPushReg R2
+0x1352168  vPushReg R12
+0x133b2bc  vPushReg R3
+0x13154f8  vPushReg R5
+0x10c80a8  vPushReg R6
+0x12a56e8  vPushReg R8
+0x1127a25  vPopOptable
+0x104d619  vPopReg R12
+0x136db24  vPopReg R5
+0x1081a08  vPopReg R13
+0x132e5c2  vPopReg R8
+0x128ca86  vPopReg R15
+0x105ed16  vPopReg R7
+0x1124bda  vPopReg R6
+0x10a454b  vPopReg R1
+0x10bfe87  vPopReg R3
+0x1334331  vPopReg R10
+0x111dfe6  vPopReg R4
+0x10c4115  vPushImm 00000ece
+0x104d619  vPopReg R4
+0x1060956  vPushReg R4
+0x104c8ee  vPushReg R5
+0x10ab988  vPushReg R5
+0x111adc9  vNand
+0x136db24  vPopReg R10
+0x130b1c9  vAdd
+0x1081a08  vPopReg R14
+0x108aeda  vPushEsp
+0x129428d  vPoiEsp
+0x12b4b99  vNor
+0x132e5c2  vPopReg R10
+0x12cd02f  vPopReg R2
+0x10ba81f  vPushReg R14
+0x10a2afb  vPushImm 00000815
+0x110343a  vNor
+0x128ca86  vPopReg R9
+0x12a4c14  vPushEsp
+0x104eb97  vPoiEsp
+0x1273db4  vNand
+0x105ed16  vPopReg R2
+0x106e053  vPushReg R10
+0x128d9f6  vPushImm fffff7ea
+0x10e35fc  vNor
+0x1124bda  vPopReg R0
+0x1074dca  vPushEsp
+0x105bc2d  vPoiEsp
+0x104ea9c  vNor
+0x10a454b  vPopReg R7
+0x12fe53b  vAdd
+0x10bfe87  vPopReg R9
+0x1334331  vPopReg R7
+0x1317eb5  vPushImm 00000006
+0x1331243  vPushReg R7
+0x10595f1  vPushReg R7
+0x10f1361  vNand
+0x111dfe6  vPopReg R11
+0x10cdbe6  vPushImm ffffffbf
+0x108fdff  vNand
+0x104d619  vPopReg R2
+0x136b845  vShr
+0x136db24  vPopReg R2
+0x1294a27  vPushImm ffffffff
+0x12b55fe  vAdd
+0x1081a08  vPopReg R11
+0x132e5c2  vPopReg R11
+0x1322aa0  vPushImm 007ffcf3
+0x106ae67  vPushReg R11
+0x1295096  vPushReg R11
+0x1286724  vNand
+0x128ca86  vPopReg R10
+0x10dabe4  vNor
+0x105ed16  vPopReg R9
+0x109b3d4  vPushEsp
+0x1336e21  vPoiEsp
+0x109f6dc  vNor
+0x1124bda  vPopReg R2
+0x1351959  vPushImm 007ffc61
+0x104f9c8  vPushReg R11
+0x12b162e  vNor
+0x10a454b  vPopReg R3
+0x1313d0f  vPushEsp
+0x10ecab7  vPoiEsp
+0x10a1baa  vNand
+0x10bfe87  vPopReg R10
+0x129d85b  vAdd
+0x1334331  vPopReg R2
+0x10afd57  vPushReg R12
+0x12af8af  vAdd
+0x111dfe6  vPopReg R3
+0x104d619  vPopReg R9
+0x10d6fd4  vPushReg R8
+0x10bfdce  vPushReg R3
+0x127a971  vPushReg R4
+0x10ba81f  vPushReg R1
+0x106e053  vPushReg R6
+0x1331243  vPushReg R7
+0x10595f1  vPushReg R15
+0x106ae67  vPushReg R8
+0x1295096  vPushReg R13
+0x104f9c8  vPushReg R5
+0x10afd57  vPushReg R12
+0x10d6fd4  vPushReg R9
+0x133c62e  vPopOptable
+0x136db24  vPopReg R0
+0x1081a08  vPopReg R12
+0x132e5c2  vPopReg R5
+0x128ca86  vPopReg R14
+0x105ed16  vPopReg R10
+0x1124bda  vPopReg R11
+0x10a454b  vPopReg R7
+0x10bfe87  vPopReg R8
+0x1334331  vPopReg R3
+0x111dfe6  vPopReg R15
+0x104d619  vPopReg R4
+0x1287ac9  vPushImm 005f4d09
+0x10bfdce  vPushReg R0
+0x107fa5e  vAdd
+0x136db24  vPopReg R6
+0x1081a08  vPopReg R1
+0x127a971  vPushReg R11
+0x10ba81f  vPushReg R3
+0x106e053  vPushReg R3
+0x1331243  vPushReg R8
+0x10595f1  vPushReg R7
+0x106ae67  vPushReg R11
+0x1295096  vPushReg R10
+0x104f9c8  vPushReg R14
+0x10afd57  vPushReg R5
+0x10d6fd4  vPushReg R12
+0x10bfdce  vPushReg R0
+0x127a971  vPushReg R1
+0x11271b8  vPopOptable
+0x105716d  vPopReg R9
+0x107b289  vPopReg R6
+0x1290435  vPopReg R1
+0x12b1cc5  vPopReg R7
+0x10b7953  vPopReg R0
+0x130e65f  vPopReg R5
+0x108ca38  vPopReg R13
+0x10e369b  vPopReg R10
+0x10a403c  vPopReg R2
+0x10cf800  vPopReg R4
+0x128f63c  vPopReg R8
+0x111f697  vPushImm 00001770
+0x105716d  vPopReg R11
+0x13245e5  vPushReg R11
+0x1095a4d  vPushReg R6
+0x106e84d  vPushReg R6
+0x1085059  vNor
+0x107b289  vPopReg R1
+0x134625f  vAdd
+0x1290435  vPopReg R12
+0x12c0765  vPushEsp
+0x104aac3  vPoiEsp
+0x128653a  vNor
+0x12b1cc5  vPopReg R15
+0x10c7176  vPopReg R1
+0x1337b4f  vPushReg R12
+0x105ec28  vPushImm 00000815
+0x136964f  vNor
+0x10b7953  vPopReg R14
+0x1087498  vPushEsp
+0x109ae10  vPoiEsp
+0x12f887b  vNor
+0x130e65f  vPopReg R4
+0x1367de6  vPushReg R15
+0x109c0d3  vPushImm fffff7ea
+0x12a5664  vNor
+0x108ca38  vPopReg R14
+0x10834f7  vPushEsp
+0x136ce05  vPoiEsp
+0x12b5cda  vNand
+0x10e369b  vPopReg R4
+0x109a38c  vAdd
+0x10a403c  vPopReg R3
+0x10cf800  vPopReg R5
+0x12d6017  vPushImm 00000006
+0x105df98  vPushReg R5
+0x1329378  vPushReg R5
+0x12c0878  vNor
+0x128f63c  vPopReg R4
+0x1086ff3  vPushImm ffffffbf
+0x110a59b  vNand
+0x105716d  vPopReg R8
+0x134add9  vShr
+0x107b289  vPopReg R14
+0x10599ab  vPushImm ffffffff
+0x108652f  vAdd
+0x1290435  vPopReg R3
+0x12b1cc5  vPopReg R8
+0x12a9528  vPushImm 005f4f73
+0x110f79d  vPushReg R8
+0x10b9571  vPushReg R8
+0x11244a5  vNor
+0x10b7953  vPopReg R1
+0x10d9964  vNor
+0x130e65f  vPopReg R4
+0x1323a12  vPushEsp
+0x10690ce  vPoiEsp
+0x12e9a94  vNand
+0x108ca38  vPopReg R12
+0x110d6c4  vPushImm 005f4ee1
+0x12f634f  vPushReg R8
+0x1300cf1  vNor
+0x10e369b  vPopReg R4
+0x1366fca  vPushEsp
+0x105c596  vPoiEsp
+0x1293fec  vNor
+0x10a403c  vPopReg R15
+0x1081bf7  vAdd
+0x10cf800  vPopReg R15
+0x10582ef  vPushReg R9
+0x12ee040  vAdd
+0x128f63c  vPopReg R12
+0x105716d  vPopReg R15
+0x12f782c  vPushReg R0
+0x127ac3d  vPushReg R6
+0x10e2754  vPushReg R2
+0x1337b4f  vPushReg R10
+0x1367de6  vPushReg R13
+0x105df98  vPushReg R5
+0x1329378  vPushReg R0
+0x110f79d  vPushReg R7
+0x10b9571  vPushReg R11
+0x12f634f  vPushReg R6
+0x10582ef  vPushReg R9
+0x12f782c  vPushReg R15
+0x10fa7c1  vPopOptable
+0x107b289  vPopReg R1
+0x1290435  vPopReg R14
+0x12b1cc5  vPopReg R9
+0x10b7953  vPopReg R6
+0x130e65f  vPopReg R12
+0x108ca38  vPopReg R7
+0x10e369b  vPopReg R3
+0x10a403c  vPopReg R4
+0x10cf800  vPopReg R0
+0x128f63c  vPopReg R8
+0x105716d  vPopReg R2
+0x12fc983  vPushImm 005a187a
+0x127ac3d  vPushReg R1
+0x10bd0b7  vAdd
+0x107b289  vPopReg R13
+0x1290435  vPopReg R11
+0x10e2754  vPushReg R14
+0x1337b4f  vPushReg R9
+0x1367de6  vPushReg R0
+0x105df98  vPushReg R4
+0x1329378  vPushReg R3
+0x110f79d  vPushReg R7
+0x10b9571  vPushReg R12
+0x12f634f  vPushReg R6
+0x10582ef  vPushReg R9
+0x12f782c  vPushReg R14
+0x127ac3d  vPushReg R1
+0x10e2754  vPushReg R11
+0x10d7672  vPopOptable
+0x1052b45  vPopReg R15
+0x10c533a  vPopReg R4
+0x10b3dc2  vPopReg R3
+0x10f54f1  vPopReg R1
+0x12bfa49  vPopReg R6
+0x1345186  vPopReg R5
+0x131853e  vPopReg R10
+0x10d93bc  vPopReg R14
+0x130dd69  vPopReg R9
+0x1284361  vPopReg R8
+0x133bc8c  vPopReg R0
+0x10db534  vPushImm 00001771
+0x1052b45  vPopReg R2
+0x110360b  vPushReg R2
+0x10e2b89  vPushReg R4
+0x12ea4cb  vPushReg R4
+0x12cc709  vNand
+0x10c533a  vPopReg R9
+0x129802d  vAdd
+0x10b3dc2  vPopReg R0
+0x1092c0a  vPushEsp
+0x11130fd  vPoiEsp
+0x1363a9c  vNor
+0x10f54f1  vPopReg R12
+0x104b469  vPopReg R7
+0x12ceb7c  vPushReg R0
+0x10d326e  vPushImm 00000815
+0x127ff7b  vNor
+0x12bfa49  vPopReg R9
+0x10eb405  vPushEsp
+0x10d3070  vPoiEsp
+0x127b376  vNand
+0x1345186  vPopReg R8
+0x1316096  vPushReg R12
+0x1344cca  vPushReg R12
+0x104d013  vNor
+0x131853e  vPopReg R11
+0x10b5e01  vPushImm 00000815
+0x134ff26  vNand
+0x10d93bc  vPopReg R13
+0x136aadd  vAdd
+0x130dd69  vPopReg R9
+0x1284361  vPopReg R5
+0x12ad6ed  vPushImm 00000006
+0x10c116f  vPushReg R5
+0x1352168  vPushReg R5
+0x12d528d  vNand
+0x133bc8c  vPopReg R13
+0x1311694  vPushImm ffffffbf
+0x10f5737  vNand
+0x1052b45  vPopReg R13
+0x132e7a0  vShr
+0x10c533a  vPopReg R8
+0x1082764  vPushImm ffffffff
+0x128975c  vAdd
+0x10b3dc2  vPopReg R7
+0x10f54f1  vPopReg R8
+0x1311694  vPushImm 005a1ae1
+0x133b2bc  vPushReg R8
+0x13154f8  vPushReg R8
+0x1074e21  vNand
+0x12bfa49  vPopReg R11
+0x10e0162  vNor
+0x1345186  vPopReg R7
+0x12da526  vPushEsp
+0x1062952  vPoiEsp
+0x10997bb  vNand
+0x131853e  vPopReg R13
+0x111b54a  vPushImm 0087e6c4
+0x10c80a8  vPushReg R8
+0x10c5bdb  vNor
+0x10d93bc  vPopReg R13
+0x108117f  vPushEsp
+0x1108684  vPoiEsp
+0x1288805  vNand
+0x130dd69  vPopReg R0
+0x129063f  vAdd
+0x1284361  vPopReg R12
+0x12a56e8  vPushReg R15
+0x10a26d0  vAdd
+0x133bc8c  vPopReg R9
+0x1052b45  vPopReg R13
+0x134dbe0  vPushReg R2
+0x1313d5d  vPushReg R8
+0x12ceb7c  vPushReg R2
+0x1316096  vPushReg R14
+0x1344cca  vPushReg R10
+0x10c116f  vPushReg R5
+0x1352168  vPushReg R6
+0x133b2bc  vPushReg R1
+0x13154f8  vPushReg R3
+0x10c80a8  vPushReg R4
+0x12a56e8  vPushReg R15
+0x134dbe0  vPushReg R13
+0x1070ff4  vPopOptable
+0x10c533a  vPopReg R8
+0x10b3dc2  vPopReg R6
+0x10f54f1  vPopReg R3
+0x12bfa49  vPopReg R11
+0x1345186  vPopReg R15
+0x131853e  vPopReg R5
+0x10d93bc  vPopReg R4
+0x130dd69  vPopReg R12
+0x1284361  vPopReg R9
+0x133bc8c  vPopReg R14
+0x1052b45  vPopReg R13
+0x111b54a  vPushImm 00001772
+0x10c533a  vPopReg R14
+0x10fd429  vPushReg R14
+0x10d3720  vPushReg R6
+0x1290385  vPushReg R6
+0x106e8d2  vNor
+0x10b3dc2  vPopReg R10
+0x135e923  vAdd
+0x10f54f1  vPopReg R0
+0x1129426  vPushEsp
+0x107b870  vPoiEsp
+0x1363a9c  vNor
+0x12bfa49  vPopReg R3
+0x135a27b  vPopReg R5
+0x1344cca  vPushReg R0
+0x10c116f  vPushReg R0
+0x1112554  vNor
+0x1345186  vPopReg R13
+0x10c59b7  vPushImm fffff7ea
+0x127b376  vNand
+0x131853e  vPopReg R13
+0x1352168  vPushReg R3
+0x133b2bc  vPushReg R3
+0x127ff7b  vNor
+0x10d93bc  vPopReg R2
+0x1074f5f  vPushImm 00000815
+0x134ff26  vNand
+0x130dd69  vPopReg R7
+0x12a897b  vAdd
+0x1284361  vPopReg R1
+0x133bc8c  vPopReg R7
+0x10c6b7b  vPushImm 00000006
+0x13154f8  vPushReg R7
+0x10c80a8  vPushReg R7
+0x104d013  vNor
+0x1052b45  vPopReg R13
+0x10b172e  vPushImm ffffffbf
+0x12d528d  vNand
+0x10c533a  vPopReg R10
+0x12e9c23  vShr
+0x10b3dc2  vPopReg R5
+0x12b54f0  vPushImm ffffffff
+0x11197bd  vAdd
+0x10f54f1  vPopReg R1
+0x12bfa49  vPopReg R2
+0x1074f5f  vPushImm 0087e928
+0x12a56e8  vPushReg R2
+0x134dbe0  vPushReg R2
+0x10f5737  vNand
+0x1345186  vPopReg R10
+0x10e0162  vNor
+0x131853e  vPopReg R0
+0x10e77be  vPushEsp
+0x1108684  vPoiEsp
+0x1074e21  vNand
+0x10d93bc  vPopReg R10
+0x10b172e  vPushImm 0087e896
+0x1313d5d  vPushReg R2
+0x10c5bdb  vNor
+0x130dd69  vPopReg R1
+0x131ee73  vPushEsp
+0x10b9fad  vPoiEsp
+0x12a85d0  vNor
+0x1284361  vPopReg R13
+0x136aadd  vAdd
+0x133bc8c  vPopReg R1
+0x12ceb7c  vPushReg R8
+0x128975c  vAdd
+0x1052b45  vPopReg R10
+0x10c533a  vPopReg R1
+0x1316096  vPushReg R10
+0x1344cca  vPushReg R0
+0x10c116f  vPushReg R9
+0x1352168  vPushReg R12
+0x133b2bc  vPushReg R4
+0x13154f8  vPushReg R7
+0x10c80a8  vPushReg R15
+0x12a56e8  vPushReg R11
+0x134dbe0  vPushReg R14
+0x1313d5d  vPushReg R6
+0x12ceb7c  vPushReg R8
+0x1316096  vPushReg R1
+0x1070ff4  vPopOptable
+0x10b3dc2  vPopReg R10
+0x10f54f1  vPopReg R2
+0x12bfa49  vPopReg R6
+0x1345186  vPopReg R3
+0x131853e  vPopReg R11
+0x10d93bc  vPopReg R13
+0x130dd69  vPopReg R14
+0x1284361  vPopReg R8
+0x133bc8c  vPopReg R7
+0x1052b45  vPopReg R0
+0x10c533a  vPopReg R5
+0x12b54f0  vPushImm 0089a6c9
+0x1344cca  vPushReg R10
+0x129063f  vAdd
+0x10b3dc2  vPopReg R5
+0x10f54f1  vPopReg R12
+0x10c116f  vPushReg R5
+0x1352168  vPushReg R4
+0x133b2bc  vPushReg R7
+0x13154f8  vPushReg R8
+0x10c80a8  vPushReg R14
+0x12a56e8  vPushReg R13
+0x134dbe0  vPushReg R11
+0x1313d5d  vPushReg R3
+0x12ceb7c  vPushReg R6
+0x1316096  vPushReg R2
+0x1344cca  vPushReg R10
+0x10c116f  vPushReg R12
+0x1284b70  vPopOptable
+0x107b289  vPopReg R2
+0x1290435  vPopReg R13
+0x12b1cc5  vPopReg R7
+0x10b7953  vPopReg R9
+0x130e65f  vPopReg R15
+0x108ca38  vPopReg R11
+0x10e369b  vPopReg R3
+0x10a403c  vPopReg R4
+0x10cf800  vPopReg R0
+0x128f63c  vPopReg R10
+0x105716d  vPopReg R14
+0x12c1a0d  vPushImm 00001db0
+0x107b289  vPopReg R1
+0x11150bb  vPushReg R1
+0x1076417  vPushReg R13
+0x13245e5  vPushReg R13
+0x10e34b2  vNand
+0x1290435  vPopReg R0
+0x10da663  vAdd
+0x12b1cc5  vPopReg R6
+0x1077044  vPushEsp
+0x112607e  vPoiEsp
+0x10adcc4  vNand
+0x10b7953  vPopReg R0
+0x12c352d  vPopReg R12
+0x110f79d  vPushReg R6
+0x12a9528  vPushImm 00000815
+0x10fe8cb  vNor
+0x130e65f  vPopReg R14
+0x10599fe  vPushEsp
+0x136ce05  vPoiEsp
+0x136964f  vNor
+0x108ca38  vPopReg R8
+0x10b9571  vPushReg R0
+0x110d6c4  vPushImm fffff7ea
+0x12f887b  vNor
+0x10e369b  vPopReg R12
+0x108f2ca  vPushEsp
+0x10690ce  vPoiEsp
+0x12a5664  vNor
+0x10a403c  vPopReg R14
+0x136a2ac  vAdd
+0x10cf800  vPopReg R14
+0x128f63c  vPopReg R10
+0x12d6017  vPushImm 00000006
+0x12f634f  vPushReg R10
+0x10582ef  vPushReg R10
+0x12b5cda  vNand
+0x105716d  vPopReg R11
+0x12fc983  vPushImm ffffffbf
+0x110a59b  vNand
+0x107b289  vPopReg R12
+0x128c14f  vShr
+0x1290435  vPopReg R5
+0x127c78b  vPushImm ffffffff
+0x1129e5a  vAdd
+0x12b1cc5  vPopReg R8
+0x10b7953  vPopReg R5
+0x1095030  vPushImm 0089a933
+0x12f782c  vPushReg R5
+0x127ac3d  vPushReg R5
+0x12e9a94  vNand
+0x130e65f  vPopReg R8
+0x12c0878  vNor
+0x108ca38  vPopReg R6
+0x12c0765  vPushEsp
+0x105c596  vPoiEsp
+0x10ae75a  vNand
+0x10e369b  vPopReg R14
+0x111f697  vPushImm 0089a8a1
+0x10e2754  vPushReg R5
+0x11244a5  vNor
+0x10a403c  vPopReg R14
+0x1087498  vPushEsp
+0x104c6d9  vPoiEsp
+0x10d9964  vNor
+0x10cf800  vPopReg R12
+0x127aef4  vAdd
+0x128f63c  vPopReg R14
+0x1337b4f  vPushReg R2
+0x1081228  vAdd
+0x105716d  vPopReg R11
+0x107b289  vPopReg R0
+0x1367de6  vPushReg R2
+0x105df98  vPushReg R9
+0x1329378  vPushReg R1
+0x110f79d  vPushReg R4
+0x10b9571  vPushReg R3
+0x12f634f  vPushReg R10
+0x10582ef  vPushReg R15
+0x12f782c  vPushReg R9
+0x127ac3d  vPushReg R7
+0x10e2754  vPushReg R13
+0x1337b4f  vPushReg R2
+0x1367de6  vPushReg R0
+0x10fa7c1  vPopOptable
+0x1290435  vPopReg R14
+0x12b1cc5  vPopReg R6
+0x10b7953  vPopReg R13
+0x130e65f  vPopReg R12
+0x108ca38  vPopReg R7
+0x10e369b  vPopReg R15
+0x10a403c  vPopReg R11
+0x10cf800  vPopReg R3
+0x128f63c  vPopReg R9
+0x105716d  vPopReg R4
+0x107b289  vPopReg R1
+0x105ec28  vPushImm 0085d56c
+0x105df98  vPushReg R14
+0x1112c38  vAdd
+0x1290435  vPopReg R5
+0x12b1cc5  vPopReg R5
+0x1329378  vPushReg R0
+0x110f79d  vPushReg R0
+0x10b9571  vPushReg R9
+0x12f634f  vPushReg R3
+0x10582ef  vPushReg R11
+0x12f782c  vPushReg R15
+0x127ac3d  vPushReg R7
+0x10e2754  vPushReg R12
+0x1337b4f  vPushReg R13
+0x1367de6  vPushReg R6
+0x105df98  vPushReg R14
+0x1329378  vPushReg R5
+0x10dc09a  vPopOptable
+0x1324fa0  vPopReg R4
+0x12e7ca6  vPopReg R11
+0x127de68  vPopReg R9
+0x10ecc28  vPopReg R15
+0x104e432  vPopReg R10
+0x10bf1d0  vPopReg R0
+0x12e70ba  vPopReg R12
+0x12c248d  vPopReg R1
+0x10a88af  vPopReg R6
+0x10d238d  vPopReg R3
+0x1354089  vPopReg R7
+0x10cf9ea  vPushImm 00001db1
+0x1324fa0  vPopReg R5
+0x12888db  vPushReg R5
+0x1294338  vPushReg R11
+0x111e907  vPushReg R11
+0x10662db  vNand
+0x12e7ca6  vPopReg R14
+0x12d8712  vAdd
+0x127de68  vPopReg R13
+0x105325e  vPushEsp
+0x106b859  vPoiEsp
+0x1367a23  vNand
+0x10ecc28  vPopReg R0
+0x13511d1  vPopReg R14
+0x133c6b3  vPushReg R13
+0x10d27af  vPushReg R13
+0x12b23fd  vNor
+0x104e432  vPopReg R7
+0x132c664  vPushImm fffff7ea
+0x12eba06  vNand
+0x10bf1d0  vPopReg R7
+0x10f7ae1  vPushReg R0
+0x1123c0c  vPushReg R0
+0x1120144  vNand
+0x12e70ba  vPopReg R2
+0x13312a0  vPushImm 00000815
+0x10ecb4c  vNand
+0x12c248d  vPopReg R9
+0x111a5c3  vAdd
+0x10a88af  vPopReg R2
+0x10d238d  vPopReg R3
+0x10f2b9c  vPushImm 00000006
+0x10c30a4  vPushReg R3
+0x133b690  vPushReg R3
+0x104ea1c  vNor
+0x1354089  vPopReg R9
+0x1323a45  vPushImm ffffffbf
+0x128a46f  vNand
+0x1324fa0  vPopReg R8
+0x107120f  vShr
+0x12e7ca6  vPopReg R8
+0x128d827  vPushImm ffffffff
+0x1316075  vAdd
+0x127de68  vPopReg R7
+0x10ecc28  vPopReg R7
+0x12e492b  vPushImm 0085d308
+0x136e7e4  vPushReg R7
+0x10ab6fc  vPushReg R7
+0x12bbaaa  vNand
+0x104e432  vPopReg R13
+0x1108667  vNor
+0x10bf1d0  vPopReg R9
+0x12e7487  vPushEsp
+0x107b56a  vPoiEsp
+0x1308266  vNand
+0x12e70ba  vPopReg R14
+0x13130e5  vPushImm 0085d39a
+0x10f0376  vPushReg R7
+0x109ceab  vNor
+0x12c248d  vPopReg R14
+0x1050054  vPushEsp
+0x1273b8b  vPoiEsp
+0x10a19bb  vNor
+0x10a88af  vPopReg R9
+0x109bb63  vAdd
+0x10d238d  vPopReg R0
+0x10afc47  vPushReg R4
+0x1085cc3  vAdd
+0x1354089  vPopReg R0
+0x1324fa0  vPopReg R9
+0x10c5a42  vPushReg R10
+0x133c6b3  vPushReg R12
+0x10d27af  vPushReg R6
+0x10f7ae1  vPushReg R1
+0x1123c0c  vPushReg R12
+0x10c30a4  vPushReg R3
+0x133b690  vPushReg R10
+0x136e7e4  vPushReg R15
+0x10ab6fc  vPushReg R5
+0x10f0376  vPushReg R11
+0x10afc47  vPushReg R4
+0x10c5a42  vPushReg R9
+0x10e35e8  vPopOptable
+0x12e7ca6  vPopReg R8
+0x127de68  vPopReg R0
+0x10ecc28  vPopReg R4
+0x104e432  vPopReg R7
+0x10bf1d0  vPopReg R11
+0x12e70ba  vPopReg R5
+0x12c248d  vPopReg R2
+0x10a88af  vPopReg R15
+0x10d238d  vPopReg R3
+0x1354089  vPopReg R12
+0x1324fa0  vPopReg R6
+0x109d35f  vPushImm 005d34c3
+0x133c6b3  vPushReg R8
+0x10e4596  vAdd
+0x12e7ca6  vPopReg R6
+0x127de68  vPopReg R1
+0x10d27af  vPushReg R3
+0x10f7ae1  vPushReg R9
+0x1123c0c  vPushReg R3
+0x10c30a4  vPushReg R15
+0x133b690  vPushReg R2
+0x136e7e4  vPushReg R5
+0x10ab6fc  vPushReg R11
+0x10f0376  vPushReg R7
+0x10afc47  vPushReg R4
+0x10c5a42  vPushReg R0
+0x133c6b3  vPushReg R8
+0x10d27af  vPushReg R1
+0x12a6c34  vPopOptable
+0x1124bda  vPopReg R11
+0x10a454b  vPopReg R3
+0x10bfe87  vPopReg R13
+0x1334331  vPopReg R12
+0x111dfe6  vPopReg R7
+0x104d619  vPopReg R0
+0x136db24  vPopReg R6
+0x1081a08  vPopReg R10
+0x132e5c2  vPopReg R5
+0x128ca86  vPopReg R14
+0x105ed16  vPopReg R2
+0x10a2afb  vPushImm 000023f0
+0x1124bda  vPopReg R1
+0x128848b  vPushReg R1
+0x1090ae9  vPushReg R3
+0x10f0203  vPushReg R3
+0x10849cc  vNor
+0x10a454b  vPopReg R14
+0x10f4712  vAdd
+0x10bfe87  vPopReg R5
+0x12ca22c  vPushEsp
+0x106021a  vPoiEsp
+0x10c7f07  vNand
+0x1334331  vPopReg R9
+0x12916e2  vPopReg R14
+0x10afd57  vPushReg R5
+0x128d9f6  vPushImm 00000815
+0x109dcb3  vNor
+0x111dfe6  vPopReg R15
+0x12a3639  vPushEsp
+0x1336e21  vPoiEsp
+0x10a1baa  vNand
+0x104d619  vPopReg R0
+0x10d6fd4  vPushReg R9
+0x10bfdce  vPushReg R9
+0x12e4fad  vNor
+0x136db24  vPopReg R0
+0x10cdbe6  vPushImm 00000815
+0x135fdc6  vNand
+0x1081a08  vPopReg R4
+0x107fa5e  vAdd
+0x132e5c2  vPopReg R15
+0x128ca86  vPopReg R15
+0x1362755  vPushImm 00000006
+0x127a971  vPushReg R15
+0x10ba81f  vPushReg R15
+0x110343a  vNor
+0x105ed16  vPopReg R2
+0x1294a27  vPushImm ffffffbf
+0x12b2859  vNand
+0x1124bda  vPopReg R5
+0x1060b55  vShr
+0x10a454b  vPopReg R2
+0x10612e2  vPushImm ffffffff
+0x1104aaf  vAdd
+0x10bfe87  vPopReg R0
+0x1334331  vPopReg R14
+0x10c4115  vPushImm 005d372a
+0x106e053  vPushReg R14
+0x1331243  vPushReg R14
+0x12cc5fd  vNand
+0x111dfe6  vPopReg R0
+0x10e35fc  vNor
+0x104d619  vPopReg R2
+0x1320a1e  vPushEsp
+0x10ecab7  vPoiEsp
+0x132f28d  vNand
+0x136db24  vPopReg R0
+0x10a2afb  vPushImm 005d3698
+0x10595f1  vPushReg R14
+0x104ea9c  vNor
+0x1081a08  vPopReg R5
+0x12b79f4  vPushEsp
+0x135037b  vPoiEsp
+0x10f7b54  vNand
+0x132e5c2  vPopReg R8
+0x109ce2d  vAdd
+0x128ca86  vPopReg R2
+0x106ae67  vPushReg R11
+0x12e02e4  vAdd
+0x105ed16  vPopReg R8
+0x1124bda  vPopReg R9
+0x1295096  vPushReg R15
+0x104f9c8  vPushReg R13
+0x10afd57  vPushReg R1
+0x10d6fd4  vPushReg R10
+0x10bfdce  vPushReg R6
+0x127a971  vPushReg R15
+0x10ba81f  vPushReg R7
+0x106e053  vPushReg R12
+0x1331243  vPushReg R13
+0x10595f1  vPushReg R3
+0x106ae67  vPushReg R11
+0x1295096  vPushReg R9
+0x133c62e  vPopOptable
+0x10a454b  vPopReg R8
+0x10bfe87  vPopReg R2
+0x1334331  vPopReg R14
+0x111dfe6  vPopReg R13
+0x104d619  vPopReg R3
+0x136db24  vPopReg R5
+0x1081a08  vPopReg R0
+0x132e5c2  vPopReg R4
+0x128ca86  vPopReg R10
+0x105ed16  vPopReg R7
+0x1124bda  vPopReg R11
+0x128d9f6  vPushImm 008927d5
+0x104f9c8  vPushReg R8
+0x10853ba  vAdd
+0x10a454b  vPopReg R12
+0x10bfe87  vPopReg R6
+0x10afd57  vPushReg R8
+0x10d6fd4  vPushReg R2
+0x10bfdce  vPushReg R10
+0x127a971  vPushReg R4
+0x10ba81f  vPushReg R0
+0x106e053  vPushReg R5
+0x1331243  vPushReg R3
+0x10595f1  vPushReg R13
+0x106ae67  vPushReg R14
+0x1295096  vPushReg R2
+0x104f9c8  vPushReg R8
+0x10afd57  vPushReg R6
+0x10b6de3  vPopOptable
+0x1085738  vPopReg R12
+0x12cf478  vPopReg R5
+0x12b457a  vPopReg R9
+0x12e62da  vPopReg R7
+0x127fe91  vPopReg R3
+0x129de52  vPopReg R4
+0x12b3eeb  vPopReg R1
+0x10d1346  vPopReg R11
+0x105ff98  vPopReg R13
+0x10d913c  vPopReg R0
+0x10ac758  vPopReg R14
+0x12cfb2b  vPushImm 00002580
+0x1085738  vPopReg R8
+0x106fd17  vPushReg R8
+0x128d6d8  vPushReg R5
+0x106b69a  vPushReg R5
+0x10b2fa8  vNor
+0x12cf478  vPopReg R0
+0x1068c65  vAdd
+0x12b457a  vPopReg R6
+0x10d6779  vPushEsp
+0x10b9a2a  vPoiEsp
+0x130e6ed  vNor
+0x12e62da  vPopReg R14
+0x10e452a  vPopReg R15
+0x11197ec  vPushReg R6
+0x12fb5ac  vPushImm 00000815
+0x1066bbc  vNor
+0x127fe91  vPopReg R10
+0x10f253f  vPushEsp
+0x1302ced  vPoiEsp
+0x133495e  vNand
+0x129de52  vPopReg R15
+0x129f083  vPushReg R14
+0x12bdb5a  vPushImm fffff7ea
+0x10e3b66  vNor
+0x12b3eeb  vPopReg R4
+0x1084289  vPushEsp
+0x132c678  vPoiEsp
+0x10bd49b  vNor
+0x10d1346  vPopReg R0
+0x13304c8  vAdd
+0x105ff98  vPopReg R4
+0x10d913c  vPopReg R10
+0x10a1ae2  vPushImm 00000006
+0x10a063a  vPushReg R10
+0x10a1621  vPushReg R10
+0x12f15ca  vNand
+0x10ac758  vPopReg R9
+0x1311f7a  vPushImm ffffffbf
+0x10c3b00  vNand
+0x1085738  vPopReg R9
+0x108f370  vShr
+0x12cf478  vPopReg R4
+0x1301cb1  vPushImm ffffffff
+0x10aa45c  vAdd
+0x12b457a  vPopReg R0
+0x12e62da  vPopReg R2
+0x12bdb5a  vPushImm 0089256b
+0x130cf9c  vPushReg R2
+0x109033b  vPushReg R2
+0x12ca964  vNor
+0x127fe91  vPopReg R15
+0x106d2f8  vNor
+0x129de52  vPopReg R0
+0x12f0e56  vPushEsp
+0x12bc847  vPoiEsp
+0x10ff1e6  vNand
+0x12b3eeb  vPopReg R0
+0x1311f7a  vPushImm 008925fd
+0x12803a8  vPushReg R2
+0x1330ed1  vNor
+0x10d1346  vPopReg R4
+0x10b17b4  vPushEsp
+0x133ecfd  vPoiEsp
+0x10dfd6c  vNand
+0x105ff98  vPopReg R14
+0x10e26be  vAdd
+0x10d913c  vPopReg R6
+0x1322529  vPushReg R12
+0x10d3c62  vAdd
+0x10ac758  vPopReg R9
+0x1085738  vPopReg R9
+0x10f22dd  vPushReg R15
+0x10cf09d  vPushReg R4
+0x1335635  vPushReg R13
+0x11197ec  vPushReg R11
+0x129f083  vPushReg R1
+0x10a063a  vPushReg R10
+0x10a1621  vPushReg R3
+0x130cf9c  vPushReg R7
+0x109033b  vPushReg R8
+0x12803a8  vPushReg R5
+0x1322529  vPushReg R12
+0x10f22dd  vPushReg R9
+0x105bdac  vPopOptable
+0x12cf478  vPopReg R6
+0x12b457a  vPopReg R14
+0x12e62da  vPopReg R12
+0x127fe91  vPopReg R2
+0x129de52  vPopReg R15
+0x12b3eeb  vPopReg R8
+0x10d1346  vPopReg R10
+0x105ff98  vPopReg R0
+0x10d913c  vPopReg R11
+0x10ac758  vPopReg R13
+0x1085738  vPopReg R1
+0x1301cb1  vPushImm 0063420b
+0x10cf09d  vPushReg R6
+0x10eb1f1  vAdd
+0x12cf478  vPopReg R13
+0x12b457a  vPopReg R3
+0x1335635  vPushReg R2
+0x11197ec  vPushReg R5
+0x129f083  vPushReg R11
+0x10a063a  vPushReg R0
+0x10a1621  vPushReg R10
+0x130cf9c  vPushReg R8
+0x109033b  vPushReg R15
+0x12803a8  vPushReg R2
+0x1322529  vPushReg R12
+0x10f22dd  vPushReg R14
+0x10cf09d  vPushReg R6
+0x1335635  vPushReg R3
+0x12a9fc8  vPopOptable
+0x10d9fec  vPopReg R10
+0x104a19c  vPopReg R8
+0x1332403  vPopReg R13
+0x105c04d  vPopReg R4
+0x1273598  vPopReg R9
+0x1108abe  vPopReg R6
+0x10d4453  vPopReg R12
+0x112af98  vPopReg R5
+0x1082617  vPopReg R15
+0x13555d7  vPopReg R1
+0x12c6d64  vPopReg R14
+0x1119310  vPushImm 00002800
+0x10d9fec  vPopReg R11
+0x131e8c2  vPushReg R11
+0x10d3cc2  vPushReg R8
+0x108d50e  vPushReg R8
+0x12875ca  vNand
+0x104a19c  vPopReg R7
+0x12c95c4  vAdd
+0x1332403  vPopReg R15
+0x109712f  vPushEsp
+0x10706b2  vPoiEsp
+0x1299342  vNand
+0x105c04d  vPopReg R7
+0x10b7857  vPopReg R6
+0x1352ef2  vPushReg R15
+0x10520d5  vPushImm 00000815
+0x10f0524  vNor
+0x1273598  vPopReg R14
+0x127e00e  vPushEsp
+0x10ab0d3  vPoiEsp
+0x10eb5a7  vNand
+0x1108abe  vPopReg R3
+0x12eb70b  vPushReg R7
+0x1305913  vPushImm fffff7ea
+0x12b5f01  vNor
+0x10d4453  vPopReg R1
+0x12b70ec  vPushEsp
+0x12ccee7  vPoiEsp
+0x10e1b93  vNand
+0x112af98  vPopReg R14
+0x10dee0b  vAdd
+0x1082617  vPopReg R1
+0x13555d7  vPopReg R3
+0x107e3e2  vPushImm 00000006
+0x12b7b0d  vPushReg R3
+0x10fa439  vPushReg R3
+0x104fc9b  vNand
+0x12c6d64  vPopReg R1
+0x12983b2  vPushImm ffffffbf
+0x10dc549  vNand
+0x10d9fec  vPopReg R6
+0x12fd6d1  vShr
+0x104a19c  vPopReg R15
+0x128001c  vPushImm ffffffff
+0x12ab2be  vAdd
+0x1332403  vPopReg R14
+0x105c04d  vPopReg R2
+0x12983b2  vPushImm 00634475
+0x12fb9e6  vPushReg R2
+0x1295d1a  vPushReg R2
+0x1369679  vNand
+0x1273598  vPopReg R6
+0x10f7a90  vNor
+0x1108abe  vPopReg R14
+0x1314616  vPushEsp
+0x131b4be  vPoiEsp
+0x12efade  vNand
+0x10d4453  vPopReg R7
+0x128001c  vPushImm 006343e3
+0x12c476d  vPushReg R2
+0x12f0c2c  vNor
+0x112af98  vPopReg R7
+0x10ba191  vPushEsp
+0x10d75ab  vPoiEsp
+0x1342d01  vNor
+0x1082617  vPopReg R7
+0x110b38d  vAdd
+0x13555d7  vPopReg R6
+0x109f8c7  vPushReg R10
+0x12a7b9e  vAdd
+0x12c6d64  vPopReg R6
+0x10d9fec  vPopReg R1
+0x133f876  vPushReg R9
+0x12e04d5  vPushReg R4
+0x10baa4d  vPushReg R11
+0x1352ef2  vPushReg R5
+0x12eb70b  vPushReg R12
+0x12b7b0d  vPushReg R3
+0x10fa439  vPushReg R9
+0x12fb9e6  vPushReg R4
+0x1295d1a  vPushReg R13
+0x12c476d  vPushReg R8
+0x109f8c7  vPushReg R10
+0x133f876  vPushReg R1
+0x135ef31  vPopOptable
+0x104a19c  vPopReg R7
+0x1332403  vPopReg R15
+0x105c04d  vPopReg R10
+0x1273598  vPopReg R2
+0x1108abe  vPopReg R14
+0x10d4453  vPopReg R0
+0x112af98  vPopReg R4
+0x1082617  vPopReg R8
+0x13555d7  vPopReg R9
+0x12c6d64  vPopReg R13
+0x10d9fec  vPopReg R13
+0x12a6996  vPushImm 00835623
+0x12e04d5  vPushReg R7
+0x104c759  vAdd
+0x104a19c  vPopReg R13
+0x1332403  vPopReg R5
+0x10baa4d  vPushReg R14
+0x1352ef2  vPushReg R7
+0x12eb70b  vPushReg R9
+0x12b7b0d  vPushReg R8
+0x10fa439  vPushReg R4
+0x12fb9e6  vPushReg R0
+0x1295d1a  vPushReg R14
+0x12c476d  vPushReg R2
+0x109f8c7  vPushReg R10
+0x133f876  vPushReg R15
+0x12e04d5  vPushReg R7
+0x10baa4d  vPushReg R5
+0x12c35e1  vPopOptable
+0x1297a8a  vPopReg R5
+0x1087fc6  vPopReg R2
+0x109d2ba  vPopReg R10
+0x130aa26  vPopReg R0
+0x12dacca  vPopReg R11
+0x131a60b  vPopReg R4
+0x13149ee  vPopReg R15
+0x12bade8  vPopReg R7
+0x1056b3c  vPopReg R13
+0x134df48  vPopReg R6
+0x12e9c5b  vPopReg R3
+0x130c89c  vPushImm 0000295a
+0x1297a8a  vPopReg R8
+0x108fd8a  vPushReg R8
+0x10adb3b  vPushReg R2
+0x1290592  vPushReg R2
+0x12a8648  vNor
+0x1087fc6  vPopReg R9
+0x1305544  vAdd
+0x109d2ba  vPopReg R3
+0x1062b1a  vPushEsp
+0x104cb71  vPoiEsp
+0x1091354  vNand
+0x130aa26  vPopReg R10
+0x12fb5fb  vPopReg R14
+0x12faad6  vPushReg R3
+0x104c894  vPushReg R3
+0x129390e  vNor
+0x12dacca  vPopReg R12
+0x12f371c  vPushImm fffff7ea
+0x10ffc42  vNand
+0x131a60b  vPopReg R4
+0x1070d27  vPushReg R10
+0x127c3ce  vPushImm fffff7ea
+0x1297978  vNor
+0x13149ee  vPopReg R9
+0x12a9ffb  vPushEsp
+0x13444cf  vPoiEsp
+0x1093465  vNor
+0x12bade8  vPopReg R14
+0x1306511  vAdd
+0x1056b3c  vPopReg R6
+0x134df48  vPopReg R1
+0x106775f  vPushImm 00000006
+0x1101e49  vPushReg R1
+0x129a15b  vPushReg R1
+0x12b3d76  vNand
+0x12e9c5b  vPopReg R3
+0x12bc3ca  vPushImm ffffffbf
+0x11048f8  vNand
+0x1297a8a  vPopReg R6
+0x1096122  vShr
+0x1087fc6  vPopReg R12
+0x10c108d  vPushImm ffffffff
+0x12cd8b2  vAdd
+0x109d2ba  vPopReg R3
+0x130aa26  vPopReg R12
+0x130c89c  vPushImm 0083588a
+0x1096b10  vPushReg R12
+0x105405d  vPushReg R12
+0x106014a  vNand
+0x12dacca  vPopReg R14
+0x12eb21d  vNor
+0x131a60b  vPopReg R9
+0x10c8951  vPushEsp
+0x12a6547  vPoiEsp
+0x12eff38  vNor
+0x13149ee  vPopReg R3
+0x12f371c  vPushImm 008357f8
+0x10f4a17  vPushReg R12
+0x1303d5b  vNor
+0x12bade8  vPopReg R6
+0x12942c1  vPushEsp
+0x13190e5  vPoiEsp
+0x134104d  vNor
+0x1056b3c  vPopReg R4
+0x13569e8  vAdd
+0x134df48  vPopReg R6
+0x12f3c95  vPushReg R5
+0x1308cb3  vAdd
+0x12e9c5b  vPopReg R3
+0x1297a8a  vPopReg R9
+0x10a1a47  vPushReg R11
+0x1369cae  vPushReg R11
+0x12faad6  vPushReg R13
+0x104c894  vPushReg R7
+0x1070d27  vPushReg R15
+0x1101e49  vPushReg R1
+0x129a15b  vPushReg R11
+0x1096b10  vPushReg R0
+0x105405d  vPushReg R8
+0x10f4a17  vPushReg R2
+0x12f3c95  vPushReg R5
+0x10a1a47  vPushReg R9
+0x10d4389  vPopOptable
+0x1087fc6  vPopReg R10
+0x109d2ba  vPopReg R5
+0x130aa26  vPopReg R12
+0x12dacca  vPopReg R8
+0x131a60b  vPopReg R6
+0x13149ee  vPopReg R2
+0x12bade8  vPopReg R3
+0x1056b3c  vPopReg R0
+0x134df48  vPopReg R15
+0x12e9c5b  vPopReg R14
+0x1297a8a  vPopReg R13
+0x127c3ce  vPushImm 0082d98c
+0x1369cae  vPushReg R10
+0x10d3fa0  vAdd
+0x1087fc6  vPopReg R14
+0x109d2ba  vPopReg R14
+0x12faad6  vPushReg R13
+0x104c894  vPushReg R1
+0x1070d27  vPushReg R15
+0x1101e49  vPushReg R0
+0x129a15b  vPushReg R3
+0x1096b10  vPushReg R2
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R8
+0x12f3c95  vPushReg R12
+0x10a1a47  vPushReg R5
+0x1369cae  vPushReg R10
+0x12faad6  vPushReg R14
+0x133bb6e  vPopOptable
+0x10ad4fa  vPopReg R1
+0x12ccbb2  vPopReg R11
+0x10edddc  vPopReg R2
+0x12bd020  vPopReg R6
+0x1058f31  vPopReg R8
+0x10ffe7b  vPopReg R13
+0x12d0dea  vPopReg R5
+0x1273a7e  vPopReg R14
+0x10d3929  vPopReg R12
+0x12f6fb6  vPopReg R9
+0x1351809  vPopReg R0
+0x10d3fd2  vPushImm 00003839
+0x10ad4fa  vPopReg R9
+0x130dbf2  vPushReg R9
+0x1121c2f  vPushReg R11
+0x10c17fd  vPushReg R11
+0x12b24db  vNor
+0x12ccbb2  vPopReg R12
+0x10a9d66  vAdd
+0x10edddc  vPopReg R15
+0x106b388  vPushEsp
+0x1060fe8  vPoiEsp
+0x136e109  vNor
+0x12bd020  vPopReg R12
+0x132ad26  vPopReg R10
+0x134a14d  vPushReg R15
+0x10fff23  vPushImm 00000815
+0x10eb8cc  vNor
+0x1058f31  vPopReg R7
+0x131e163  vPushEsp
+0x107400e  vPoiEsp
+0x10d100a  vNor
+0x10ffe7b  vPopReg R3
+0x10bd729  vPushReg R12
+0x10cfa02  vPushImm fffff7ea
+0x10bfbd0  vNor
+0x12d0dea  vPopReg R3
+0x10ccea5  vPushEsp
+0x10b5216  vPoiEsp
+0x11085fe  vNand
+0x1273a7e  vPopReg R13
+0x12b7e03  vAdd
+0x10d3929  vPopReg R10
+0x12f6fb6  vPopReg R3
+0x128f05c  vPushImm 00000006
+0x12caaf6  vPushReg R3
+0x10c3620  vPushReg R3
+0x128a4cc  vNor
+0x1351809  vPopReg R0
+0x1088344  vPushImm ffffffbf
+0x12d040e  vNand
+0x10ad4fa  vPopReg R10
+0x109c0e2  vShr
+0x12ccbb2  vPopReg R0
+0x10da1f8  vPushImm ffffffff
+0x10a795d  vAdd
+0x10edddc  vPopReg R7
+0x12bd020  vPopReg R15
+0x10d3fd2  vPushImm 0082dbf6
+0x136cf67  vPushReg R15
+0x1104c10  vPushReg R15
+0x108951b  vNand
+0x1058f31  vPopReg R12
+0x107b7a3  vNor
+0x10ffe7b  vPopReg R0
+0x10a24d5  vPushEsp
+0x13261f9  vPoiEsp
+0x10e99b1  vNand
+0x12d0dea  vPopReg R10
+0x10fff23  vPushImm 0082db64
+0x12bb9b1  vPushReg R15
+0x12a45c2  vNor
+0x1273a7e  vPopReg R7
+0x1293052  vPushEsp
+0x12ee612  vPoiEsp
+0x1056ff1  vNor
+0x10d3929  vPopReg R7
+0x10d30b4  vAdd
+0x12f6fb6  vPopReg R10
+0x12904d1  vPushReg R1
+0x1272ea8  vAdd
+0x1351809  vPopReg R12
+0x10ad4fa  vPopReg R13
+0x129543c  vPushReg R7
+0x134bcfb  vPushReg R7
+0x1052a7b  vPushReg R9
+0x134a14d  vPushReg R14
+0x10bd729  vPushReg R5
+0x12caaf6  vPushReg R3
+0x10c3620  vPushReg R8
+0x136cf67  vPushReg R6
+0x1104c10  vPushReg R2
+0x12bb9b1  vPushReg R11
+0x12904d1  vPushReg R1
+0x129543c  vPushReg R13
+0x10b1829  vPopOptable
+0x12ccbb2  vPopReg R4
+0x10edddc  vPopReg R1
+0x12bd020  vPopReg R11
+0x1058f31  vPopReg R15
+0x10ffe7b  vPopReg R12
+0x12d0dea  vPopReg R10
+0x1273a7e  vPopReg R7
+0x10d3929  vPopReg R5
+0x12f6fb6  vPopReg R0
+0x1351809  vPopReg R6
+0x10ad4fa  vPopReg R14
+0x10cfa02  vPushImm 007e4fe0
+0x134bcfb  vPushReg R4
+0x12785d4  vAdd
+0x12ccbb2  vPopReg R9
+0x10edddc  vPopReg R9
+0x1052a7b  vPushReg R8
+0x134a14d  vPushReg R4
+0x10bd729  vPushReg R0
+0x12caaf6  vPushReg R5
+0x10c3620  vPushReg R7
+0x136cf67  vPushReg R10
+0x1104c10  vPushReg R12
+0x12bb9b1  vPushReg R15
+0x12904d1  vPushReg R11
+0x129543c  vPushReg R1
+0x134bcfb  vPushReg R4
+0x1052a7b  vPushReg R9
+0x10d59cf  vPopOptable
+0x12e7ca6  vPopReg R5
+0x127de68  vPopReg R15
+0x10ecc28  vPopReg R12
+0x104e432  vPopReg R9
+0x10bf1d0  vPopReg R10
+0x12e70ba  vPopReg R0
+0x12c248d  vPopReg R4
+0x10a88af  vPopReg R7
+0x10d238d  vPopReg R2
+0x1354089  vPopReg R14
+0x1324fa0  vPopReg R6
+0x132c664  vPushImm 00003ad7
+0x12e7ca6  vPopReg R6
+0x12a4b2e  vPushReg R6
+0x12d1796  vPushReg R15
+0x12d879c  vPushReg R15
+0x12df028  vPushImm 0075b844
+0x127de68  vPopReg R13
+0x109dc4b  vAdd
+0x10ecc28  vPopReg R1
+0x12943b3  vPushEsp
+0x107691f  vPoiEsp
+0x132b74d  vPushImm 002b0ce4
+0x104e432  vPopReg R13
+0x13686b5  vPopReg R0
+0x1123c0c  vPushReg R1
+0x10c30a4  vPushReg R1
+0x105b97f  vNor
+0x10bf1d0  vPopReg R14
+0x13312a0  vPushImm fffff7ea
+0x136ac5c  vNand
+0x12e70ba  vPopReg R12
+0x133b690  vPushReg R13
+0x1323a45  vPushImm fffff7ea
+0x1060f69  vNor
+0x12c248d  vPopReg R3
+0x1321cee  vPushEsp
+0x1273b8b  vPoiEsp
+0x12939bc  vNand
+0x10a88af  vPopReg R14
+0x10e4596  vAdd
+0x10d238d  vPopReg R8
+0x1354089  vPopReg R0
+0x131b621  vPushImm 00000006
+0x136e7e4  vPushReg R0
+0x10ab6fc  vPushReg R0
+0x109af04  vNor
+0x1324fa0  vPopReg R11
+0x128d827  vPushImm ffffffbf
+0x10f1226  vNand
+0x12e7ca6  vPopReg R14
+0x12d5826  vShr
+0x127de68  vPopReg R3
+0x1349c21  vPushImm ffffffff
+0x10f0291  vAdd
+0x10ecc28  vPopReg R12
+0x104e432  vPopReg R14
+0x10cf9ea  vPushImm 007e4d79
+0x10f0376  vPushReg R14
+0x10afc47  vPushReg R14
+0x10ba699  vNand
+0x10bf1d0  vPopReg R13
+0x1299433  vNor
+0x12e70ba  vPopReg R1
+0x105ffea  vPushEsp
+0x12739bb  vPoiEsp
+0x12eba06  vNand
+0x12c248d  vPopReg R13
+0x132c664  vPushImm 007e4e0b
+0x10c5a42  vPushReg R14
+0x12eee98  vNor
+0x10a88af  vPopReg R3
+0x10a10c1  vPushEsp
+0x133f7d6  vPoiEsp
+0x1120144  vNand
+0x10d238d  vPopReg R11
+0x1325b8a  vAdd
+0x1354089  vPopReg R11
+0x133c6b3  vPushReg R5
+0x10cbab8  vAdd
+0x1324fa0  vPopReg R3
+0x12e7ca6  vPopReg R1
+0x10d27af  vPushReg R9
+0x10f7ae1  vPushReg R8
+0x1123c0c  vPushReg R2
+0x10c30a4  vPushReg R7
+0x133b690  vPushReg R4
+0x136e7e4  vPushReg R0
+0x10ab6fc  vPushReg R10
+0x10f0376  vPushReg R9
+0x10afc47  vPushReg R6
+0x10c5a42  vPushReg R15
+0x133c6b3  vPushReg R5
+0x10d27af  vPushReg R1
+0x10e35e8  vPopOptable
+0x127de68  vPopReg R11
+0x10ecc28  vPopReg R13
+0x104e432  vPopReg R3
+0x10bf1d0  vPopReg R5
+0x12e70ba  vPopReg R12
+0x12c248d  vPopReg R8
+0x10a88af  vPopReg R14
+0x10d238d  vPopReg R4
+0x1354089  vPopReg R6
+0x1324fa0  vPopReg R0
+0x12e7ca6  vPopReg R9
+0x13312a0  vPushImm 008620a6
+0x10f7ae1  vPushReg R11
+0x12faf0a  vAdd
+0x127de68  vPopReg R7
+0x10ecc28  vPopReg R10
+0x1123c0c  vPushReg R3
+0x10c30a4  vPushReg R5
+0x133b690  vPushReg R6
+0x136e7e4  vPushReg R4
+0x10ab6fc  vPushReg R14
+0x10f0376  vPushReg R8
+0x10afc47  vPushReg R12
+0x10c5a42  vPushReg R5
+0x133c6b3  vPushReg R3
+0x10d27af  vPushReg R13
+0x10f7ae1  vPushReg R11
+0x1123c0c  vPushReg R10
+0x10e105e  vPopOptable
+0x10d913c  vPopReg R7
+0x10ac758  vPopReg R2
+0x1085738  vPopReg R8
+0x12cf478  vPopReg R9
+0x12b457a  vPopReg R14
+0x12e62da  vPopReg R10
+0x127fe91  vPopReg R11
+0x129de52  vPopReg R12
+0x12b3eeb  vPopReg R15
+0x10d1346  vPopReg R3
+0x105ff98  vPopReg R4
+0x1309d66  vPushImm 00003fab
+0x10d913c  vPopReg R5
+0x111eae5  vPushReg R5
+0x1313be6  vPushReg R2
+0x12d273c  vPushReg R2
+0x12fb61b  vNor
+0x10ac758  vPopReg R4
+0x12931f9  vAdd
+0x1085738  vPopReg R0
+0x10a181d  vPushEsp
+0x129b54f  vPoiEsp
+0x134b6de  vNand
+0x12cf478  vPopReg R13
+0x1298131  vPopReg R3
+0x1322529  vPushReg R0
+0x10f22dd  vPushReg R0
+0x1285cb8  vNand
+0x12b457a  vPopReg R15
+0x12cfb2b  vPushImm fffff7ea
+0x106c99c  vNand
+0x12e62da  vPopReg R4
+0x10cf09d  vPushReg R13
+0x1335635  vPushReg R13
+0x10c7c61  vNor
+0x127fe91  vPopReg R1
+0x12fb5ac  vPushImm 00000815
+0x12c1ae9  vNand
+0x129de52  vPopReg R4
+0x10e26be  vAdd
+0x12b3eeb  vPopReg R6
+0x10d1346  vPopReg R3
+0x10a2858  vPushImm 00000006
+0x11197ec  vPushReg R3
+0x129f083  vPushReg R3
+0x10f2a65  vNor
+0x105ff98  vPopReg R10
+0x12bdb5a  vPushImm ffffffbf
+0x12ab812  vNand
+0x10d913c  vPopReg R10
+0x10a314e  vShr
+0x10ac758  vPopReg R0
+0x1311f7a  vPushImm ffffffff
+0x10d3c62  vAdd
+0x1085738  vPopReg R10
+0x12cf478  vPopReg R6
+0x12d0631  vPushImm 00861e42
+0x10a063a  vPushReg R6
+0x10a1621  vPushReg R6
+0x10a198c  vNor
+0x12b457a  vPopReg R1
+0x10f6632  vNor
+0x12e62da  vPopReg R15
+0x1280533  vPushEsp
+0x133ecfd  vPoiEsp
+0x133495e  vNand
+0x127fe91  vPopReg R10
+0x10f7bba  vPushImm 00861ed4
+0x130cf9c  vPushReg R6
+0x132d695  vNor
+0x129de52  vPopReg R4
+0x107b307  vPushEsp
+0x10afd14  vPoiEsp
+0x12f15ca  vNand
+0x12b3eeb  vPopReg R0
+0x10eb1f1  vAdd
+0x10d1346  vPopReg R10
+0x109033b  vPushReg R7
+0x1094dba  vAdd
+0x105ff98  vPopReg R10
+0x10d913c  vPopReg R15
+0x12803a8  vPushReg R7
+0x1322529  vPushReg R11
+0x10f22dd  vPushReg R5
+0x10cf09d  vPushReg R12
+0x1335635  vPushReg R11
+0x11197ec  vPushReg R3
+0x129f083  vPushReg R14
+0x10a063a  vPushReg R9
+0x10a1621  vPushReg R8
+0x130cf9c  vPushReg R2
+0x109033b  vPushReg R7
+0x12803a8  vPushReg R15
+0x105bdac  vPopOptable
+0x10ac758  vPopReg R1
+0x1085738  vPopReg R6
+0x12cf478  vPopReg R2
+0x12b457a  vPopReg R13
+0x12e62da  vPopReg R10
+0x127fe91  vPopReg R9
+0x129de52  vPopReg R4
+0x12b3eeb  vPopReg R3
+0x10d1346  vPopReg R14
+0x105ff98  vPopReg R7
+0x10d913c  vPopReg R5
+0x1321cd4  vPushImm 0087910a
+0x1322529  vPushReg R1
+0x1285ce8  vAdd
+0x10ac758  vPopReg R7
+0x1085738  vPopReg R5
+0x10f22dd  vPushReg R13
+0x10cf09d  vPushReg R13
+0x1335635  vPushReg R14
+0x11197ec  vPushReg R3
+0x129f083  vPushReg R4
+0x10a063a  vPushReg R9
+0x10a1621  vPushReg R10
+0x130cf9c  vPushReg R13
+0x109033b  vPushReg R2
+0x12803a8  vPushReg R6
+0x1322529  vPushReg R1
+0x10f22dd  vPushReg R5
+0x12c103a  vPopOptable
+0x12cf658  vPopReg R1
+0x132ad5d  vPopReg R4
+0x10bc3b4  vPopReg R3
+0x13141af  vPopReg R8
+0x10efac9  vPopReg R11
+0x105af09  vPopReg R10
+0x127c341  vPopReg R7
+0x12ec54e  vPopReg R15
+0x131c33e  vPopReg R14
+0x10bd219  vPopReg R6
+0x10d4926  vPopReg R13
+0x133de7c  vPushImm 000042ee
+0x12cf658  vPopReg R12
+0x12816c5  vPushReg R12
+0x108e7f1  vPushReg R4
+0x10e3a7a  vPushReg R4
+0x1118903  vNand
+0x132ad5d  vPopReg R6
+0x135fa06  vAdd
+0x10bc3b4  vPopReg R13
+0x136abf9  vPushEsp
+0x131903f  vPoiEsp
+0x10fffe4  vNor
+0x13141af  vPopReg R9
+0x105f53e  vPopReg R6
+0x12df538  vPushReg R13
+0x10b0ca7  vPushImm 00000815
+0x10866a4  vNor
+0x10efac9  vPopReg R3
+0x12a01ad  vPushEsp
+0x10f0d19  vPoiEsp
+0x12cce8d  vNor
+0x105af09  vPopReg R5
+0x10b2ece  vPushReg R9
+0x1291be5  vPushReg R9
+0x10ef172  vNor
+0x127c341  vPopReg R6
+0x128f0de  vPushImm 00000815
+0x130d403  vNand
+0x12ec54e  vPopReg R0
+0x1352a56  vAdd
+0x131c33e  vPopReg R10
+0x10bd219  vPopReg R6
+0x133e6b3  vPushImm 00000006
+0x1112e8e  vPushReg R6
+0x1294412  vPushReg R6
+0x10fc846  vNand
+0x10d4926  vPopReg R3
+0x10eb16a  vPushImm ffffffbf
+0x12bd107  vNand
+0x12cf658  vPopReg R13
+0x108149e  vShr
+0x132ad5d  vPopReg R3
+0x1124bfa  vPushImm ffffffff
+0x104d6a9  vAdd
+0x10bc3b4  vPopReg R3
+0x13141af  vPopReg R10
+0x10b0ca7  vPushImm 00878946
+0x1064254  vPushReg R10
+0x1119a06  vPushReg R10
+0x106364a  vNand
+0x10efac9  vPopReg R0
+0x10fd483  vNor
+0x105af09  vPopReg R0
+0x131608f  vPushEsp
+0x1102ff0  vPoiEsp
+0x108adc9  vNor
+0x127c341  vPopReg R5
+0x12d2672  vPushImm 008792df
+0x10cc662  vPushReg R10
+0x10ee53a  vNor
+0x12ec54e  vPopReg R3
+0x1101da3  vPushEsp
+0x10a8f81  vPoiEsp
+0x1088ae3  vNand
+0x131c33e  vPopReg R2
+0x111db11  vAdd
+0x10bd219  vPopReg R9
+0x106a8b2  vPushReg R1
+0x1114ab7  vAdd
+0x10d4926  vPopReg R5
+0x12cf658  vPopReg R9
+0x12f0dd8  vPushReg R3
+0x127fdae  vPushReg R3
+0x12df538  vPushReg R14
+0x10b2ece  vPushReg R15
+0x1291be5  vPushReg R7
+0x1112e8e  vPushReg R6
+0x1294412  vPushReg R11
+0x1064254  vPushReg R8
+0x1119a06  vPushReg R12
+0x10cc662  vPushReg R4
+0x106a8b2  vPushReg R1
+0x12f0dd8  vPushReg R9
+0x107000d  vPopOptable
+0x132ad5d  vPopReg R0
+0x10bc3b4  vPopReg R1
+0x13141af  vPopReg R5
+0x10efac9  vPopReg R13
+0x105af09  vPopReg R4
+0x127c341  vPopReg R3
+0x12ec54e  vPopReg R8
+0x131c33e  vPopReg R2
+0x10bd219  vPopReg R7
+0x10d4926  vPopReg R15
+0x12cf658  vPopReg R15
+0x133de7c  vPushImm 0089394d
+0x127fdae  vPushReg R0
+0x108c3e6  vAdd
+0x132ad5d  vPopReg R12
+0x10bc3b4  vPopReg R6
+0x12df538  vPushReg R3
+0x10b2ece  vPushReg R2
+0x1291be5  vPushReg R7
+0x1112e8e  vPushReg R2
+0x1294412  vPushReg R8
+0x1064254  vPushReg R3
+0x1119a06  vPushReg R4
+0x10cc662  vPushReg R13
+0x106a8b2  vPushReg R5
+0x12f0dd8  vPushReg R1
+0x127fdae  vPushReg R0
+0x12df538  vPushReg R6
+0x1094d0c  vPopOptable
+0x10ad4fa  vPopReg R10
+0x12ccbb2  vPopReg R3
+0x10edddc  vPopReg R11
+0x12bd020  vPopReg R14
+0x1058f31  vPopReg R8
+0x10ffe7b  vPopReg R12
+0x12d0dea  vPopReg R1
+0x1273a7e  vPopReg R13
+0x10d3929  vPopReg R4
+0x12f6fb6  vPopReg R5
+0x1351809  vPopReg R15
+0x10bd729  vPushReg R8
+0x12caaf6  vPushReg R13
+0x10c3620  vPushReg R8
+0x106f2d9  vPushImm ffffffc0
+0x10d886c  vPushImm 00005a4d
+0x10ad4fa  vPopReg R5
+0x12785d4  vAdd
+0x12ccbb2  vPopReg R6
+0x10c1d48  vPopMem
+0x13078f8  vPushImm ffffffa4
+0x131f209  vAdd
+0x10edddc  vPopReg R4
+0x13261f9  vPoiEsp
+0x12bd020  vPopReg R6
+0x10fb3b5  vPushReg R5
+0x136cf67  vPushReg R6
+0x10f41a6  vPoiEsp
+0x133cef7  vPushEsp
+0x10ab72f  vPoiEsp
+0x1305895  vNor
+0x1058f31  vPopReg R11
+0x10d836e  vAdd
+0x10ffe7b  vPopReg R7
+0x106b388  vPushEsp
+0x12eb7c1  vPoiEsp
+0x106100f  vNor
+0x12d0dea  vPopReg R9
+0x12b0e85  vPopReg R0
+0x1104c10  vPushReg R7
+0x12bb9b1  vPushReg R7
+0x10eb8cc  vNor
+0x1273a7e  vPopReg R0
+0x104a102  vPushImm fffff7ea
+0x132370b  vNand
+0x10d3929  vPopReg R12
+0x12904d1  vPushReg R9
+0x10b3797  vPushImm fffff7ea
+0x10d100a  vNor
+0x12f6fb6  vPopReg R11
+0x131e163  vPushEsp
+0x12ee612  vPoiEsp
+0x10bfbd0  vNor
+0x1351809  vPopReg R11
+0x129ce93  vAdd
+0x10ad4fa  vPopReg R0
+0x12ccbb2  vPopReg R15
+0x105492d  vPushImm 00000006
+0x129543c  vPushReg R15
+0x10d3fd2  vPushImm ffffffbf
+0x10d5964  vNand
+0x10edddc  vPopReg R0
+0x1368648  vShr
+0x12bd020  vPopReg R4
+0x10fff23  vPushImm ffffffff
+0x107ddb6  vAdd
+0x1058f31  vPopReg R7
+0x10ffe7b  vPopReg R11
+0x10da1f8  vPushImm 00893beb
+0x134bcfb  vPushReg R11
+0x1052a7b  vPushReg R11
+0x1093392  vNand
+0x12d0dea  vPopReg R7
+0x128a4cc  vNor
+0x1273a7e  vPopReg R0
+0x10ccea5  vPushEsp
+0x1318568  vPoiEsp
+0x107b7a3  vNor
+0x10d3929  vPopReg R4
+0x12e4757  vPushImm 00893b59
+0x134a14d  vPushReg R11
+0x12a45c2  vNor
+0x12f6fb6  vPopReg R7
+0x10a24d5  vPushEsp
+0x127c7d5  vPoiEsp
+0x11085fe  vNand
+0x1351809  vPopReg R4
+0x127a74a  vAdd
+0x10ad4fa  vPopReg R0
+0x10bd729  vPushReg R10
+0x1296da6  vAdd
+0x12ccbb2  vPopReg R0
+0x10edddc  vPopReg R4
+0x12caaf6  vPushReg R4
+0x10c3620  vPushReg R6
+0x136cf67  vPushReg R5
+0x1104c10  vPushReg R13
+0x12bb9b1  vPushReg R1
+0x12904d1  vPushReg R15
+0x129543c  vPushReg R8
+0x134bcfb  vPushReg R14
+0x1052a7b  vPushReg R6
+0x134a14d  vPushReg R3
+0x10bd729  vPushReg R10
+0x12caaf6  vPushReg R4
+0x10b1829  vPopOptable
+0x12bd020  vPopReg R0
+0x1058f31  vPopReg R9
+0x10ffe7b  vPopReg R3
+0x12d0dea  vPopReg R10
+0x1273a7e  vPopReg R11
+0x10d3929  vPopReg R14
+0x12f6fb6  vPopReg R12
+0x1351809  vPopReg R7
+0x10ad4fa  vPopReg R8
+0x12ccbb2  vPopReg R15
+0x10edddc  vPopReg R15
+0x106f2d9  vPushImm 008add22
+0x10c3620  vPushReg R0
+0x10f242c  vAdd
+0x12bd020  vPopReg R15
+0x1058f31  vPopReg R6
+0x136cf67  vPushReg R12
+0x1104c10  vPushReg R11
+0x12bb9b1  vPushReg R8
+0x12904d1  vPushReg R7
+0x129543c  vPushReg R12
+0x134bcfb  vPushReg R14
+0x1052a7b  vPushReg R11
+0x134a14d  vPushReg R10
+0x10bd729  vPushReg R3
+0x12caaf6  vPushReg R9
+0x10c3620  vPushReg R0
+0x136cf67  vPushReg R6
+0x10ecd46  vPopOptable
+0x130aa26  vPopReg R3
+0x12dacca  vPopReg R10
+0x131a60b  vPopReg R2
+0x13149ee  vPopReg R9
+0x12bade8  vPopReg R0
+0x1056b3c  vPopReg R11
+0x134df48  vPopReg R13
+0x12e9c5b  vPopReg R8
+0x1297a8a  vPopReg R7
+0x1087fc6  vPopReg R1
+0x109d2ba  vPopReg R12
+0x12faad6  vPushReg R2
+0x1293a11  vPushImm 0000003c
+0x10b7267  vAdd
+0x130aa26  vPopReg R12
+0x12d376a  vPoiEsp
+0x12dacca  vPopReg R12
+0x104c894  vPushReg R2
+0x1070d27  vPushReg R12
+0x128eab1  vAdd
+0x131a60b  vPopReg R5
+0x13149ee  vPopReg R5
+0x10c36ad  vPushImm 00004550
+0x1101e49  vPushReg R5
+0x1052889  vPoiEsp
+0x1062b1a  vPushEsp
+0x136200f  vPoiEsp
+0x108bdd7  vNor
+0x12bade8  vPopReg R14
+0x1301ded  vAdd
+0x1056b3c  vPopReg R6
+0x12a9ffb  vPushEsp
+0x133246e  vPoiEsp
+0x1347bb5  vNor
+0x134df48  vPopReg R4
+0x12e9c5b  vPopReg R10
+0x129a15b  vPushReg R6
+0x1095299  vPushImm 00000815
+0x129390e  vNor
+0x1297a8a  vPopReg R15
+0x10c8951  vPushEsp
+0x10adc0c  vPoiEsp
+0x1297978  vNor
+0x1087fc6  vPopReg R14
+0x1096b10  vPushReg R4
+0x131656f  vPushImm fffff7ea
+0x1093465  vNor
+0x109d2ba  vPopReg R10
+0x12942c1  vPushEsp
+0x10c5469  vPoiEsp
+0x12eb21d  vNor
+0x130aa26  vPopReg R10
+0x1355a62  vAdd
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R10
+0x10e289d  vPushImm 00000006
+0x105405d  vPushReg R10
+0x130c89c  vPushImm ffffffbf
+0x10d6f9d  vNand
+0x13149ee  vPopReg R15
+0x128c04e  vShr
+0x12bade8  vPopReg R15
+0x12f371c  vPushImm ffffffff
+0x131d5ec  vAdd
+0x1056b3c  vPopReg R6
+0x134df48  vPopReg R1
+0x10c108d  vPushImm 008adfb2
+0x10f4a17  vPushReg R1
+0x12f3c95  vPushReg R1
+0x12eff38  vNor
+0x12e9c5b  vPopReg R4
+0x1303d5b  vNor
+0x1297a8a  vPopReg R6
+0x10ba2fc  vPushEsp
+0x10d6583  vPoiEsp
+0x128a40d  vNand
+0x1087fc6  vPopReg R14
+0x1111b04  vPushImm 008adf20
+0x10a1a47  vPushReg R1
+0x134104d  vNor
+0x109d2ba  vPopReg R6
+0x13533f4  vPushEsp
+0x108f0e6  vPoiEsp
+0x12be1c6  vNor
+0x130aa26  vPopReg R11
+0x1306511  vAdd
+0x12dacca  vPopReg R4
+0x1369cae  vPushReg R3
+0x12cd8b2  vAdd
+0x131a60b  vPopReg R12
+0x13149ee  vPopReg R11
+0x12faad6  vPushReg R9
+0x104c894  vPushReg R13
+0x1070d27  vPushReg R7
+0x1101e49  vPushReg R8
+0x129a15b  vPushReg R13
+0x1096b10  vPushReg R10
+0x105405d  vPushReg R0
+0x10f4a17  vPushReg R9
+0x12f3c95  vPushReg R2
+0x10a1a47  vPushReg R5
+0x1369cae  vPushReg R3
+0x12faad6  vPushReg R11
+0x10d4389  vPopOptable
+0x12bade8  vPopReg R1
+0x1056b3c  vPopReg R14
+0x134df48  vPopReg R3
+0x12e9c5b  vPopReg R2
+0x1297a8a  vPopReg R6
+0x1087fc6  vPopReg R0
+0x109d2ba  vPopReg R12
+0x130aa26  vPopReg R5
+0x12dacca  vPopReg R8
+0x131a60b  vPopReg R4
+0x13149ee  vPopReg R13
+0x1125c20  vPushImm 00831217
+0x104c894  vPushReg R1
+0x13569e8  vAdd
+0x12bade8  vPopReg R9
+0x1056b3c  vPopReg R15
+0x1070d27  vPushReg R7
+0x1101e49  vPushReg R7
+0x129a15b  vPushReg R8
+0x1096b10  vPushReg R5
+0x105405d  vPushReg R12
+0x10f4a17  vPushReg R0
+0x12f3c95  vPushReg R6
+0x10a1a47  vPushReg R2
+0x1369cae  vPushReg R3
+0x12faad6  vPushReg R14
+0x104c894  vPushReg R1
+0x1070d27  vPushReg R15
+0x130ed20  vPopOptable
+0x107c093  vPopReg R0
+0x1119383  vPopReg R1
+0x12ab1ef  vPopReg R3
+0x107559b  vPopReg R8
+0x129cf7c  vPopReg R15
+0x105322e  vPopReg R6
+0x129f8ac  vPopReg R2
+0x1069c6a  vPopReg R11
+0x10ea0a3  vPopReg R10
+0x109d9ba  vPopReg R14
+0x1054a12  vPopReg R9
+0x10f7cbc  vPushReg R1
+0x110fad1  vPushImm 00000088
+0x12e2411  vAdd
+0x107c093  vPopReg R9
+0x10ed0d5  vPoiEsp
+0x1119383  vPopReg R4
+0x10dedb7  vPushReg R4
+0x131fd9f  vPushReg R4
+0x1369e2e  vNor
+0x12ab1ef  vPopReg R3
+0x13365cd  vPushReg R4
+0x12f2cd9  vPushReg R4
+0x12b53e1  vNand
+0x107559b  vPopReg R14
+0x10f0caa  vNand
+0x129cf7c  vPopReg R12
+0x105322e  vPopReg R5
+0x10565e0  vPushImm 00000006
+0x135b655  vPushReg R12
+0x10a9f15  vPushReg R12
+0x1072391  vNand
+0x129f8ac  vPopReg R13
+0x12f5e04  vPushImm ffffffbf
+0x13338d2  vNand
+0x1069c6a  vPopReg R13
+0x10c82e9  vShr
+0x10ea0a3  vPopReg R3
+0x132cd3b  vPushImm ffffffff
+0x13140d4  vAdd
+0x109d9ba  vPopReg R14
+0x1054a12  vPopReg R14
+0x10e4c2c  vPushImm 00831434
+0x135e153  vPushReg R14
+0x10a45d0  vPushReg R14
+0x12ef963  vNor
+0x107c093  vPopReg R7
+0x132e74c  vNor
+0x1119383  vPopReg R5
+0x10c99d7  vPushEsp
+0x13201b4  vPoiEsp
+0x10f058a  vNor
+0x12ab1ef  vPopReg R3
+0x136d726  vPushImm 008313a2
+0x128a4a3  vPushReg R14
+0x12a57dd  vNor
+0x107559b  vPopReg R5
+0x106883c  vPushEsp
+0x107fed6  vPoiEsp
+0x12acd74  vNand
+0x129cf7c  vPopReg R13
+0x10e4509  vAdd
+0x105322e  vPopReg R13
+0x12e067a  vPushReg R0
+0x1296a98  vAdd
+0x129f8ac  vPopReg R7
+0x1069c6a  vPopReg R9
+0x10f7cbc  vPushReg R12
+0x10dedb7  vPushReg R13
+0x131fd9f  vPushReg R10
+0x13365cd  vPushReg R11
+0x12f2cd9  vPushReg R2
+0x135b655  vPushReg R12
+0x10a9f15  vPushReg R15
+0x135e153  vPushReg R8
+0x10a45d0  vPushReg R4
+0x128a4a3  vPushReg R1
+0x12e067a  vPushReg R0
+0x10f7cbc  vPushReg R9
+0x10f991d  vPopOptable
+0x10ea0a3  vPopReg R13
+0x109d9ba  vPopReg R14
+0x1054a12  vPopReg R3
+0x107c093  vPopReg R6
+0x1119383  vPopReg R8
+0x12ab1ef  vPopReg R0
+0x107559b  vPopReg R7
+0x129cf7c  vPopReg R12
+0x105322e  vPopReg R4
+0x129f8ac  vPopReg R10
+0x1069c6a  vPopReg R5
+0x12dfac4  vPushImm 007c9dd7
+0x10dedb7  vPushReg R13
+0x131ffd6  vAdd
+0x10ea0a3  vPopReg R10
+0x109d9ba  vPopReg R1
+0x131fd9f  vPushReg R4
+0x13365cd  vPushReg R13
+0x12f2cd9  vPushReg R4
+0x135b655  vPushReg R12
+0x10a9f15  vPushReg R7
+0x135e153  vPushReg R0
+0x10a45d0  vPushReg R8
+0x128a4a3  vPushReg R6
+0x12e067a  vPushReg R3
+0x10f7cbc  vPushReg R14
+0x10dedb7  vPushReg R13
+0x131fd9f  vPushReg R1
+0x1091c02  vPopOptable
+0x13149ee  vPopReg R13
+0x12bade8  vPopReg R2
+0x1056b3c  vPopReg R10
+0x134df48  vPopReg R4
+0x12e9c5b  vPopReg R6
+0x1297a8a  vPopReg R12
+0x1087fc6  vPopReg R7
+0x109d2ba  vPopReg R14
+0x130aa26  vPopReg R9
+0x12dacca  vPopReg R3
+0x131a60b  vPopReg R3
+0x12faad6  vPushReg R6
+0x131656f  vPushImm ffffffa4
+0x13569e8  vAdd
+0x13149ee  vPopReg R11
+0x10a465b  vPoiEsp
+0x12bade8  vPopReg R8
+0x104c894  vPushReg R2
+0x130c89c  vPushImm 0000008c
+0x1070d27  vPushReg R8
+0x1101e49  vPushReg R10
+0x1308cb3  vAdd
+0x1056b3c  vPopReg R11
+0x134df48  vPopReg R15
+0x10d3fa0  vAdd
+0x12e9c5b  vPopReg R10
+0x10635cb  vPoiEsp
+0x1297a8a  vPopReg R0
+0x129a15b  vPushReg R0
+0x1087fc6  vPopReg R5
+0x1096b10  vPushReg R15
+0x10c36ad  vPushImm 0059bc45
+0x105405d  vPushReg R13
+0x131c279  vAdd
+0x109d2ba  vPopReg R3
+0x1095299  vPushImm 005c1c3b
+0x10f4a17  vPushReg R13
+0x10b7267  vAdd
+0x130aa26  vPopReg R1
+0x12f3c95  vPushReg R14
+0x10a1a47  vPushReg R11
+0x1369cae  vPushReg R4
+0x12faad6  vPushReg R0
+0x104c894  vPushReg R7
+0x1070d27  vPushReg R5
+0x1101e49  vPushReg R6
+0x129a15b  vPushReg R15
+0x13209b1  VMLeave
+0x105bc45  VMEntry
+0x10b7953  vPopReg R2
+0x130e65f  vPopReg R6
+0x108ca38  vPopReg R5
+0x10e369b  vPopReg R4
+0x10a403c  vPopReg R7
+0x10cf800  vPopReg R1
+0x128f63c  vPopReg R15
+0x105716d  vPopReg R13
+0x107b289  vPopReg R9
+0x1290435  vPopReg R12
+0x12b1cc5  vPopReg R3
+0x12a9528  vPushImm 00000004
+0x1077044  vPushEsp
+0x110d6c4  vPushImm 00000004
+0x108652f  vAdd
+0x10b7953  vPopReg R0
+0x1081bf7  vAdd
+0x130e65f  vPopReg R0
+0x12914da  vResetEsp
+0x10b9571  vPushReg R13
+0x12f634f  vPushReg R13
+0x12c0878  vNor
+0x108ca38  vPopReg R12
+0x10599fe  vPushEsp
+0x10fc907  vPoiEsp
+0x1071a16  vNand
+0x10e369b  vPopReg R11
+0x10a403c  vPopReg R14
+0x108beb7  vPushImm 00000006
+0x10582ef  vPushReg R11
+0x12f782c  vPushReg R11
+0x12b44e6  vNand
+0x10cf800  vPopReg R8
+0x12fc983  vPushImm ffffffbf
+0x1124b78  vNand
+0x128f63c  vPopReg R7
+0x1361cfd  vShr
+0x105716d  vPopReg R8
+0x127c78b  vPushImm ffffffff
+0x12ee040  vAdd
+0x107b289  vPopReg R3
+0x1290435  vPopReg R12
+0x1086ff3  vPushImm 00894b51
+0x127ac3d  vPushReg R12
+0x10e2754  vPushReg R12
+0x11244a5  vNor
+0x12b1cc5  vPopReg R3
+0x10d9964  vNor
+0x10b7953  vPopReg R7
+0x108f2ca  vPushEsp
+0x109ae10  vPoiEsp
+0x1300cf1  vNor
+0x130e65f  vPopReg R14
+0x10599ab  vPushImm 00894abf
+0x1337b4f  vPushReg R12
+0x1293fec  vNor
+0x108ca38  vPopReg R10
+0x12c0765  vPushEsp
+0x136ce05  vPoiEsp
+0x10b6dfe  vNand
+0x10e369b  vPopReg R7
+0x10bd0b7  vAdd
+0x10a403c  vPopReg R7
+0x1367de6  vPushReg R2
+0x136a2ac  vAdd
+0x10cf800  vPopReg R7
+0x128f63c  vPopReg R8
+0x105df98  vPushReg R2
+0x1329378  vPushReg R12
+0x110f79d  vPushReg R1
+0x10b9571  vPushReg R6
+0x12f634f  vPushReg R15
+0x10582ef  vPushReg R11
+0x12f782c  vPushReg R4
+0x127ac3d  vPushReg R9
+0x10e2754  vPushReg R5
+0x1337b4f  vPushReg R13
+0x1367de6  vPushReg R2
+0x105df98  vPushReg R8
+0x10fa7c1  vPopOptable
+0x105716d  vPopReg R7
+0x107b289  vPopReg R3
+0x1290435  vPopReg R0
+0x12b1cc5  vPopReg R2
+0x10b7953  vPopReg R9
+0x130e65f  vPopReg R14
+0x108ca38  vPopReg R13
+0x10e369b  vPopReg R11
+0x10a403c  vPopReg R5
+0x10cf800  vPopReg R12
+0x128f63c  vPopReg R10
+0x12c1a0d  vPushImm 007fdbab
+0x1329378  vPushReg R7
+0x1129e5a  vAdd
+0x105716d  vPopReg R12
+0x107b289  vPopReg R6
+0x110f79d  vPushReg R8
+0x10b9571  vPushReg R15
+0x12f634f  vPushReg R5
+0x10582ef  vPushReg R11
+0x12f782c  vPushReg R13
+0x127ac3d  vPushReg R14
+0x10e2754  vPushReg R9
+0x1337b4f  vPushReg R2
+0x1367de6  vPushReg R0
+0x105df98  vPushReg R3
+0x1329378  vPushReg R7
+0x110f79d  vPushReg R6
+0x10c6b5b  vPopOptable
+0x12ec54e  vPopReg R0
+0x131c33e  vPopReg R9
+0x10bd219  vPopReg R6
+0x10d4926  vPopReg R15
+0x12cf658  vPopReg R3
+0x132ad5d  vPopReg R1
+0x10bc3b4  vPopReg R5
+0x13141af  vPopReg R11
+0x10efac9  vPopReg R10
+0x105af09  vPopReg R8
+0x127c341  vPopReg R14
+0x12f0dd8  vPushReg R10
+0x127fdae  vPushReg R10
+0x10fc846  vNand
+0x12ec54e  vPopReg R12
+0x10500e5  vPushImm 00000000
+0x12df538  vPushReg R9
+0x10ecff8  vPoiEsp
+0x131c33e  vPopReg R13
+0x10b2ece  vPushReg R10
+0x10ef172  vNor
+0x10bd219  vPopReg R4
+0x1291be5  vPushReg R10
+0x1112e8e  vPushReg R10
+0x1294412  vPushReg R10
+0x10d8b75  vPushReg R13
+0x10b5034  vPushReg R13
+0x1102a92  vNor
+0x10d4926  vPopReg R2
+0x1309670  vPushEsp
+0x128e97f  vPoiEsp
+0x10f7e29  vNor
+0x12cf658  vPopReg R12
+0x13441e6  vPopReg R8
+0x10fd483  vNor
+0x132ad5d  vPopReg R6
+0x108adc9  vNor
+0x10bc3b4  vPopReg R1
+0x10ee53a  vNor
+0x13141af  vPopReg R7
+0x10efac9  vPopReg R8
+0x10d9441  vPushImm 00000006
+0x1064254  vPushReg R12
+0x1119a06  vPushReg R12
+0x1286b56  vNor
+0x105af09  vPopReg R10
+0x1069f3d  vPushImm ffffffbf
+0x12bd107  vNand
+0x127c341  vPopReg R1
+0x108149e  vShr
+0x12ec54e  vPopReg R2
+0x10c023d  vPushImm ffffffff
+0x1296c53  vAdd
+0x131c33e  vPopReg R6
+0x10bd219  vPopReg R4
+0x10afe3b  vPushImm 00878946
+0x10cc662  vPushReg R4
+0x106a8b2  vPushReg R4
+0x133c635  vNor
+0x10d4926  vPopReg R14
+0x12e3343  vNor
+0x12cf658  vPopReg R10
+0x105c3d9  vPushEsp
+0x10a27c0  vPoiEsp
+0x106364a  vNand
+0x132ad5d  vPopReg R14
+0x10eb16a  vPushImm 007fdd70
+0x12f0dd8  vPushReg R4
+0x10ca884  vNor
+0x10bc3b4  vPopReg R1
+0x1298002  vPushEsp
+0x12bed34  vPoiEsp
+0x1088ae3  vNand
+0x13141af  vPopReg R14
+0x1282631  vAdd
+0x10efac9  vPopReg R1
+0x127fdae  vPushReg R0
+0x10ae8c7  vAdd
+0x105af09  vPopReg R14
+0x127c341  vPopReg R1
+0x12df538  vPushReg R6
+0x10b2ece  vPushReg R8
+0x1291be5  vPushReg R8
+0x1112e8e  vPushReg R11
+0x1294412  vPushReg R5
+0x1064254  vPushReg R12
+0x1119a06  vPushReg R3
+0x10cc662  vPushReg R15
+0x106a8b2  vPushReg R13
+0x12f0dd8  vPushReg R9
+0x127fdae  vPushReg R0
+0x12df538  vPushReg R1
+0x107000d  vPopOptable
+0x12ec54e  vPopReg R7
+0x131c33e  vPopReg R2
+0x10bd219  vPopReg R6
+0x10d4926  vPopReg R10
+0x12cf658  vPopReg R15
+0x132ad5d  vPopReg R14
+0x10bc3b4  vPopReg R9
+0x13141af  vPopReg R12
+0x10efac9  vPopReg R13
+0x105af09  vPopReg R8
+0x127c341  vPopReg R5
+0x1124bfa  vPushImm 00886a31
+0x10b2ece  vPushReg R7
+0x1080816  vAdd
+0x12ec54e  vPopReg R5
+0x131c33e  vPopReg R0
+0x1291be5  vPushReg R5
+0x1112e8e  vPushReg R0
+0x1294412  vPushReg R13
+0x1064254  vPushReg R12
+0x1119a06  vPushReg R9
+0x10cc662  vPushReg R14
+0x106a8b2  vPushReg R15
+0x12f0dd8  vPushReg R10
+0x127fdae  vPushReg R6
+0x12df538  vPushReg R2
+0x10b2ece  vPushReg R7
+0x1291be5  vPushReg R0
+0x128e4b5  vPopOptable
+0x131853e  vPopReg R13
+0x10d93bc  vPopReg R7
+0x130dd69  vPopReg R5
+0x1284361  vPopReg R3
+0x133bc8c  vPopReg R8
+0x1052b45  vPopReg R2
+0x10c533a  vPopReg R6
+0x10b3dc2  vPopReg R0
+0x10f54f1  vPopReg R4
+0x12bfa49  vPopReg R15
+0x1345186  vPopReg R12
+0x10cbe49  vPushEsp
+0x1311694  vPushImm 00000000
+0x10eeff0  vAdd
+0x131853e  vPopReg R12
+0x130fb4b  vResetEsp
+0x1082764  vPushImm fff9e522
+0x13154f8  vPushReg R6
+0x10c80a8  vPushReg R7
+0x12a56e8  vPushReg R2
+0x134dbe0  vPushReg R3
+0x1313d5d  vPushReg R4
+0x12ceb7c  vPushReg R0
+0x1316096  vPushReg R8
+0x1344cca  vPushReg R6
+0x10c116f  vPushReg R5
+0x1352168  vPushReg R13
+0x12bccd5  vJmp 0075f7f0
+0x10d93bc  vPopReg R15
+0x130dd69  vPopReg R12
+0x1284361  vPopReg R5
+0x133bc8c  vPopReg R9
+0x1052b45  vPopReg R6
+0x10c533a  vPopReg R1
+0x10b3dc2  vPopReg R10
+0x10f54f1  vPopReg R8
+0x12bfa49  vPopReg R0
+0x1345186  vPopReg R11
+0x131853e  vPopReg R3
+0x1087375  vPushImm 0000002e
+0x12d8d96  vPushReg R12
+0x132b162  vPushReg R12
+0x10564b8  vNor
+0x10d93bc  vPopReg R7
+0x131909a  vAdd
+0x130dd69  vPopReg R14
+0x129f240  vPushEsp
+0x10f7a62  vPoiEsp
+0x1332c5b  vNor
+0x1284361  vPopReg R13
+0x10b6891  vPopReg R4
+0x133b2bc  vPushReg R14
+0x111b54a  vPushImm 00000815
+0x10a62e3  vNor
+0x133bc8c  vPopReg R3
+0x105b7c7  vPushEsp
+0x1098936  vPoiEsp
+0x136dc8f  vNor
+0x1052b45  vPopReg R2
+0x13154f8  vPushReg R13
+0x10c59b7  vPushImm fffff7ea
+0x10d399b  vNor
+0x10c533a  vPopReg R3
+0x12ef188  vPushEsp
+0x109ad71  vPoiEsp
+0x13639e8  vNor
+0x10b3dc2  vPopReg R4
+0x1352d83  vAdd
+0x10f54f1  vPopReg R3
+0x12bfa49  vPopReg R4
+0x12ad6ed  vPushImm 00000006
+0x10c80a8  vPushReg R4
+0x1074f5f  vPushImm ffffffbf
+0x10997bb  vNand
+0x1345186  vPopReg R3
+0x12efb46  vShr
+0x131853e  vPopReg R8
+0x10b172e  vPushImm ffffffff
+0x1305071  vAdd
+0x10d93bc  vPopReg R8
+0x130dd69  vPopReg R14
+0x10db534  vPushImm 00886d0f
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R14
+0x12ca1ea  vNor
+0x1284361  vPopReg R11
+0x1112554  vNor
+0x133bc8c  vPopReg R3
+0x1092c0a  vPushEsp
+0x10ad116  vPoiEsp
+0x127ff7b  vNor
+0x1052b45  vPopReg R11
+0x10d326e  vPushImm 00886c7d
+0x1313d5d  vPushReg R14
+0x104d013  vNor
+0x10c533a  vPopReg R8
+0x10eb405  vPushEsp
+0x1278f04  vPoiEsp
+0x10e0162  vNor
+0x10b3dc2  vPopReg R2
+0x131986f  vAdd
+0x10f54f1  vPopReg R13
+0x12ceb7c  vPushReg R15
+0x10c6c07  vAdd
+0x12bfa49  vPopReg R2
+0x1345186  vPopReg R8
+0x1316096  vPushReg R10
+0x1344cca  vPushReg R11
+0x10c116f  vPushReg R1
+0x1352168  vPushReg R0
+0x133b2bc  vPushReg R10
+0x13154f8  vPushReg R6
+0x10c80a8  vPushReg R12
+0x12a56e8  vPushReg R5
+0x134dbe0  vPushReg R9
+0x1313d5d  vPushReg R4
+0x12ceb7c  vPushReg R15
+0x1316096  vPushReg R8
+0x1070ff4  vPopOptable
+0x130dd69  vPopReg R7
+0x1284361  vPopReg R10
+0x133bc8c  vPopReg R2
+0x1052b45  vPopReg R3
+0x10c533a  vPopReg R4
+0x10b3dc2  vPopReg R15
+0x10f54f1  vPopReg R1
+0x12bfa49  vPopReg R14
+0x1345186  vPopReg R11
+0x131853e  vPopReg R12
+0x10d93bc  vPopReg R9
+0x1311694  vPushImm 00871ff2
+0x1352168  vPushReg R7
+0x11197bd  vAdd
+0x130dd69  vPopReg R5
+0x1284361  vPopReg R0
+0x133b2bc  vPushReg R13
+0x13154f8  vPushReg R1
+0x10c80a8  vPushReg R11
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R1
+0x1313d5d  vPushReg R15
+0x12ceb7c  vPushReg R4
+0x1316096  vPushReg R3
+0x1344cca  vPushReg R2
+0x10c116f  vPushReg R10
+0x1352168  vPushReg R7
+0x133b2bc  vPushReg R0
+0x1099919  vPopOptable
+0x1085738  vPopReg R2
+0x12cf478  vPopReg R7
+0x12b457a  vPopReg R6
+0x12e62da  vPopReg R3
+0x127fe91  vPopReg R15
+0x129de52  vPopReg R4
+0x12b3eeb  vPopReg R10
+0x10d1346  vPopReg R5
+0x105ff98  vPopReg R12
+0x10d913c  vPopReg R14
+0x10ac758  vPopReg R9
+0x12fb5ac  vPushImm 00000002
+0x109033b  vPushReg R12
+0x12803a8  vPushReg R12
+0x12ab812  vNand
+0x1085738  vPopReg R1
+0x1094dba  vAdd
+0x12cf478  vPopReg R0
+0x10b79bb  vPushEsp
+0x1302ced  vPoiEsp
+0x133495e  vNand
+0x12b457a  vPopReg R11
+0x12e62da  vPopReg R9
+0x1322529  vPushReg R0
+0x12bdb5a  vPushImm 00000815
+0x132d695  vNor
+0x127fe91  vPopReg R9
+0x10a181d  vPushEsp
+0x132c678  vPoiEsp
+0x12f15ca  vNand
+0x129de52  vPopReg R8
+0x10f22dd  vPushReg R11
+0x1311f7a  vPushImm fffff7ea
+0x1066bbc  vNor
+0x12b3eeb  vPopReg R9
+0x1280533  vPushEsp
+0x12bc847  vPoiEsp
+0x10c3b00  vNand
+0x10d1346  vPopReg R8
+0x1285ce8  vAdd
+0x105ff98  vPopReg R14
+0x10d913c  vPopReg R1
+0x10a1ae2  vPushImm 00000006
+0x10cf09d  vPushReg R1
+0x1335635  vPushReg R1
+0x10e3b66  vNor
+0x10ac758  vPopReg R0
+0x1301cb1  vPushImm ffffffbf
+0x10ff1e6  vNand
+0x1085738  vPopReg R13
+0x136712c  vShr
+0x12cf478  vPopReg R7
+0x107edd2  vPushImm ffffffff
+0x111203c  vAdd
+0x12b457a  vPopReg R8
+0x12e62da  vPopReg R9
+0x12cfb2b  vPushImm 00871d92
+0x11197ec  vPushReg R9
+0x129f083  vPushReg R9
+0x10bd49b  vNor
+0x127fe91  vPopReg R14
+0x12ca964  vNor
+0x129de52  vPopReg R14
+0x107b307  vPushEsp
+0x133ecfd  vPoiEsp
+0x106d2f8  vNor
+0x12b3eeb  vPopReg R11
+0x12fb5ac  vPushImm 00871e24
+0x10a063a  vPushReg R9
+0x1330ed1  vNor
+0x10d1346  vPopReg R14
+0x12cbec7  vPushEsp
+0x10afd14  vPoiEsp
+0x10c7c61  vNor
+0x105ff98  vPopReg R13
+0x10a2ab2  vAdd
+0x10d913c  vPopReg R7
+0x10a1621  vPushReg R2
+0x13436ff  vAdd
+0x10ac758  vPopReg R7
+0x1085738  vPopReg R13
+0x130cf9c  vPushReg R14
+0x109033b  vPushReg R3
+0x12803a8  vPushReg R4
+0x1322529  vPushReg R3
+0x10f22dd  vPushReg R1
+0x10cf09d  vPushReg R10
+0x1335635  vPushReg R5
+0x11197ec  vPushReg R15
+0x129f083  vPushReg R12
+0x10a063a  vPushReg R6
+0x10a1621  vPushReg R2
+0x130cf9c  vPushReg R13
+0x105bdac  vPopOptable
+0x12cf478  vPopReg R9
+0x12b457a  vPopReg R8
+0x12e62da  vPopReg R2
+0x127fe91  vPopReg R7
+0x129de52  vPopReg R14
+0x12b3eeb  vPopReg R11
+0x10d1346  vPopReg R0
+0x105ff98  vPopReg R5
+0x10d913c  vPopReg R1
+0x10ac758  vPopReg R3
+0x1085738  vPopReg R4
+0x12bdb5a  vPushImm 005b014f
+0x109033b  vPushReg R9
+0x1094ffc  vAdd
+0x12cf478  vPopReg R3
+0x12b457a  vPopReg R10
+0x12803a8  vPushReg R4
+0x1322529  vPushReg R13
+0x10f22dd  vPushReg R1
+0x10cf09d  vPushReg R5
+0x1335635  vPushReg R0
+0x11197ec  vPushReg R11
+0x129f083  vPushReg R14
+0x10a063a  vPushReg R7
+0x10a1621  vPushReg R2
+0x130cf9c  vPushReg R8
+0x109033b  vPushReg R9
+0x12803a8  vPushReg R10
+0x10f49d5  vPopOptable
+0x1297a8a  vPopReg R7
+0x1087fc6  vPopReg R14
+0x109d2ba  vPopReg R12
+0x130aa26  vPopReg R8
+0x12dacca  vPopReg R1
+0x131a60b  vPopReg R4
+0x13149ee  vPopReg R11
+0x12bade8  vPopReg R3
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R0
+0x12e9c5b  vPopReg R2
+0x1125c20  vPushImm 00000002
+0x12f3c95  vPushReg R1
+0x13569e8  vAdd
+0x1297a8a  vPopReg R2
+0x1087fc6  vPopReg R6
+0x111e281  vPushImm 00000000
+0x10a1a47  vPushReg R6
+0x12ab12a  vPoiEsp
+0x109d2ba  vPopReg R10
+0x108fd8a  vPushReg R10
+0x10adb3b  vPushReg R10
+0x1347ece  vNor
+0x130aa26  vPopReg R13
+0x12adfe6  vPushEsp
+0x128f97a  vPoiEsp
+0x10f3822  vNor
+0x12dacca  vPopReg R1
+0x1084fc6  vPopReg R11
+0x1285c3e  vPushImm 00000006
+0x1369cae  vPushReg R1
+0x1293a11  vPushImm ffffffbf
+0x108babc  vNand
+0x131a60b  vPopReg R15
+0x128d635  vShr
+0x13149ee  vPopReg R11
+0x10c36ad  vPushImm ffffffff
+0x1308cb3  vAdd
+0x12bade8  vPopReg R13
+0x1056b3c  vPopReg R0
+0x131656f  vPushImm 005b0363
+0x12faad6  vPushReg R0
+0x104c894  vPushReg R0
+0x1347bb5  vNor
+0x134df48  vPopReg R8
+0x129390e  vNor
+0x12e9c5b  vPopReg R11
+0x12e9bdd  vPushEsp
+0x13444cf  vPoiEsp
+0x10d6f9d  vNand
+0x1297a8a  vPopReg R15
+0x130c89c  vPushImm 005b02d1
+0x1070d27  vPushReg R0
+0x1297978  vNor
+0x1087fc6  vPopReg R15
+0x104cc85  vPushEsp
+0x12a6547  vPoiEsp
+0x128a40d  vNand
+0x109d2ba  vPopReg R13
+0x10d3fa0  vAdd
+0x130aa26  vPopReg R15
+0x1101e49  vPushReg R7
+0x131c279  vAdd
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R2
+0x129a15b  vPushReg R0
+0x1096b10  vPushReg R14
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R1
+0x12f3c95  vPushReg R4
+0x10a1a47  vPushReg R12
+0x1369cae  vPushReg R5
+0x12faad6  vPushReg R14
+0x104c894  vPushReg R3
+0x1070d27  vPushReg R10
+0x1101e49  vPushReg R7
+0x129a15b  vPushReg R2
+0x10d4389  vPopOptable
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R6
+0x12e9c5b  vPopReg R11
+0x1297a8a  vPopReg R13
+0x1087fc6  vPopReg R10
+0x109d2ba  vPopReg R9
+0x130aa26  vPopReg R2
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R12
+0x13149ee  vPopReg R0
+0x12bade8  vPopReg R8
+0x127c3ce  vPushImm 00886abf
+0x10f4a17  vPushReg R5
+0x128eab1  vAdd
+0x1056b3c  vPopReg R1
+0x134df48  vPopReg R7
+0x12f3c95  vPushReg R2
+0x10a1a47  vPushReg R5
+0x1369cae  vPushReg R12
+0x12faad6  vPushReg R15
+0x104c894  vPushReg R2
+0x1070d27  vPushReg R9
+0x1101e49  vPushReg R10
+0x129a15b  vPushReg R13
+0x1096b10  vPushReg R11
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R5
+0x12f3c95  vPushReg R7
+0x1296161  vPopOptable
+0x10d93bc  vPopReg R15
+0x130dd69  vPopReg R12
+0x1284361  vPopReg R5
+0x133bc8c  vPopReg R9
+0x1052b45  vPopReg R6
+0x10c533a  vPopReg R1
+0x10b3dc2  vPopReg R10
+0x10f54f1  vPopReg R8
+0x12bfa49  vPopReg R0
+0x1345186  vPopReg R11
+0x131853e  vPopReg R3
+0x1087375  vPushImm 0000002e
+0x12d8d96  vPushReg R12
+0x132b162  vPushReg R12
+0x10564b8  vNor
+0x10d93bc  vPopReg R7
+0x131909a  vAdd
+0x130dd69  vPopReg R14
+0x129f240  vPushEsp
+0x10f7a62  vPoiEsp
+0x1332c5b  vNor
+0x1284361  vPopReg R13
+0x10b6891  vPopReg R4
+0x133b2bc  vPushReg R14
+0x111b54a  vPushImm 00000815
+0x10a62e3  vNor
+0x133bc8c  vPopReg R3
+0x105b7c7  vPushEsp
+0x1098936  vPoiEsp
+0x136dc8f  vNor
+0x1052b45  vPopReg R2
+0x13154f8  vPushReg R13
+0x10c59b7  vPushImm fffff7ea
+0x10d399b  vNor
+0x10c533a  vPopReg R3
+0x12ef188  vPushEsp
+0x109ad71  vPoiEsp
+0x13639e8  vNor
+0x10b3dc2  vPopReg R4
+0x1352d83  vAdd
+0x10f54f1  vPopReg R3
+0x12bfa49  vPopReg R4
+0x12ad6ed  vPushImm 00000006
+0x10c80a8  vPushReg R4
+0x1074f5f  vPushImm ffffffbf
+0x10997bb  vNand
+0x1345186  vPopReg R3
+0x12efb46  vShr
+0x131853e  vPopReg R8
+0x10b172e  vPushImm ffffffff
+0x1305071  vAdd
+0x10d93bc  vPopReg R8
+0x130dd69  vPopReg R14
+0x10db534  vPushImm 00886d0f
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R14
+0x12ca1ea  vNor
+0x1284361  vPopReg R11
+0x1112554  vNor
+0x133bc8c  vPopReg R3
+0x1092c0a  vPushEsp
+0x10ad116  vPoiEsp
+0x127ff7b  vNor
+0x1052b45  vPopReg R11
+0x10d326e  vPushImm 00886c7d
+0x1313d5d  vPushReg R14
+0x104d013  vNor
+0x10c533a  vPopReg R8
+0x10eb405  vPushEsp
+0x1278f04  vPoiEsp
+0x10e0162  vNor
+0x10b3dc2  vPopReg R2
+0x131986f  vAdd
+0x10f54f1  vPopReg R13
+0x12ceb7c  vPushReg R15
+0x10c6c07  vAdd
+0x12bfa49  vPopReg R2
+0x1345186  vPopReg R8
+0x1316096  vPushReg R10
+0x1344cca  vPushReg R11
+0x10c116f  vPushReg R1
+0x1352168  vPushReg R0
+0x133b2bc  vPushReg R10
+0x13154f8  vPushReg R6
+0x10c80a8  vPushReg R12
+0x12a56e8  vPushReg R5
+0x134dbe0  vPushReg R9
+0x1313d5d  vPushReg R4
+0x12ceb7c  vPushReg R15
+0x1316096  vPushReg R8
+0x1070ff4  vPopOptable
+0x130dd69  vPopReg R7
+0x1284361  vPopReg R10
+0x133bc8c  vPopReg R2
+0x1052b45  vPopReg R3
+0x10c533a  vPopReg R4
+0x10b3dc2  vPopReg R15
+0x10f54f1  vPopReg R1
+0x12bfa49  vPopReg R14
+0x1345186  vPopReg R11
+0x131853e  vPopReg R12
+0x10d93bc  vPopReg R9
+0x1311694  vPushImm 00871ff2
+0x1352168  vPushReg R7
+0x11197bd  vAdd
+0x130dd69  vPopReg R5
+0x1284361  vPopReg R0
+0x133b2bc  vPushReg R13
+0x13154f8  vPushReg R1
+0x10c80a8  vPushReg R11
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R1
+0x1313d5d  vPushReg R15
+0x12ceb7c  vPushReg R4
+0x1316096  vPushReg R3
+0x1344cca  vPushReg R2
+0x10c116f  vPushReg R10
+0x1352168  vPushReg R7
+0x133b2bc  vPushReg R0
+0x1099919  vPopOptable
+0x1085738  vPopReg R2
+0x12cf478  vPopReg R7
+0x12b457a  vPopReg R6
+0x12e62da  vPopReg R3
+0x127fe91  vPopReg R15
+0x129de52  vPopReg R4
+0x12b3eeb  vPopReg R10
+0x10d1346  vPopReg R5
+0x105ff98  vPopReg R12
+0x10d913c  vPopReg R14
+0x10ac758  vPopReg R9
+0x12fb5ac  vPushImm 00000002
+0x109033b  vPushReg R12
+0x12803a8  vPushReg R12
+0x12ab812  vNand
+0x1085738  vPopReg R1
+0x1094dba  vAdd
+0x12cf478  vPopReg R0
+0x10b79bb  vPushEsp
+0x1302ced  vPoiEsp
+0x133495e  vNand
+0x12b457a  vPopReg R11
+0x12e62da  vPopReg R9
+0x1322529  vPushReg R0
+0x12bdb5a  vPushImm 00000815
+0x132d695  vNor
+0x127fe91  vPopReg R9
+0x10a181d  vPushEsp
+0x132c678  vPoiEsp
+0x12f15ca  vNand
+0x129de52  vPopReg R8
+0x10f22dd  vPushReg R11
+0x1311f7a  vPushImm fffff7ea
+0x1066bbc  vNor
+0x12b3eeb  vPopReg R9
+0x1280533  vPushEsp
+0x12bc847  vPoiEsp
+0x10c3b00  vNand
+0x10d1346  vPopReg R8
+0x1285ce8  vAdd
+0x105ff98  vPopReg R14
+0x10d913c  vPopReg R1
+0x10a1ae2  vPushImm 00000006
+0x10cf09d  vPushReg R1
+0x1335635  vPushReg R1
+0x10e3b66  vNor
+0x10ac758  vPopReg R0
+0x1301cb1  vPushImm ffffffbf
+0x10ff1e6  vNand
+0x1085738  vPopReg R13
+0x136712c  vShr
+0x12cf478  vPopReg R7
+0x107edd2  vPushImm ffffffff
+0x111203c  vAdd
+0x12b457a  vPopReg R8
+0x12e62da  vPopReg R9
+0x12cfb2b  vPushImm 00871d92
+0x11197ec  vPushReg R9
+0x129f083  vPushReg R9
+0x10bd49b  vNor
+0x127fe91  vPopReg R14
+0x12ca964  vNor
+0x129de52  vPopReg R14
+0x107b307  vPushEsp
+0x133ecfd  vPoiEsp
+0x106d2f8  vNor
+0x12b3eeb  vPopReg R11
+0x12fb5ac  vPushImm 00871e24
+0x10a063a  vPushReg R9
+0x1330ed1  vNor
+0x10d1346  vPopReg R14
+0x12cbec7  vPushEsp
+0x10afd14  vPoiEsp
+0x10c7c61  vNor
+0x105ff98  vPopReg R13
+0x10a2ab2  vAdd
+0x10d913c  vPopReg R7
+0x10a1621  vPushReg R2
+0x13436ff  vAdd
+0x10ac758  vPopReg R7
+0x1085738  vPopReg R13
+0x130cf9c  vPushReg R14
+0x109033b  vPushReg R3
+0x12803a8  vPushReg R4
+0x1322529  vPushReg R3
+0x10f22dd  vPushReg R1
+0x10cf09d  vPushReg R10
+0x1335635  vPushReg R5
+0x11197ec  vPushReg R15
+0x129f083  vPushReg R12
+0x10a063a  vPushReg R6
+0x10a1621  vPushReg R2
+0x130cf9c  vPushReg R13
+0x105bdac  vPopOptable
+0x12cf478  vPopReg R9
+0x12b457a  vPopReg R8
+0x12e62da  vPopReg R2
+0x127fe91  vPopReg R7
+0x129de52  vPopReg R14
+0x12b3eeb  vPopReg R11
+0x10d1346  vPopReg R0
+0x105ff98  vPopReg R5
+0x10d913c  vPopReg R1
+0x10ac758  vPopReg R3
+0x1085738  vPopReg R4
+0x12bdb5a  vPushImm 005b014f
+0x109033b  vPushReg R9
+0x1094ffc  vAdd
+0x12cf478  vPopReg R3
+0x12b457a  vPopReg R10
+0x12803a8  vPushReg R4
+0x1322529  vPushReg R13
+0x10f22dd  vPushReg R1
+0x10cf09d  vPushReg R5
+0x1335635  vPushReg R0
+0x11197ec  vPushReg R11
+0x129f083  vPushReg R14
+0x10a063a  vPushReg R7
+0x10a1621  vPushReg R2
+0x130cf9c  vPushReg R8
+0x109033b  vPushReg R9
+0x12803a8  vPushReg R10
+0x10f49d5  vPopOptable
+0x1297a8a  vPopReg R7
+0x1087fc6  vPopReg R14
+0x109d2ba  vPopReg R12
+0x130aa26  vPopReg R8
+0x12dacca  vPopReg R1
+0x131a60b  vPopReg R4
+0x13149ee  vPopReg R11
+0x12bade8  vPopReg R3
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R0
+0x12e9c5b  vPopReg R2
+0x1125c20  vPushImm 00000002
+0x12f3c95  vPushReg R1
+0x13569e8  vAdd
+0x1297a8a  vPopReg R2
+0x1087fc6  vPopReg R6
+0x111e281  vPushImm 00000000
+0x10a1a47  vPushReg R6
+0x12ab12a  vPoiEsp
+0x109d2ba  vPopReg R10
+0x108fd8a  vPushReg R10
+0x10adb3b  vPushReg R10
+0x1347ece  vNor
+0x130aa26  vPopReg R13
+0x12adfe6  vPushEsp
+0x128f97a  vPoiEsp
+0x10f3822  vNor
+0x12dacca  vPopReg R1
+0x1084fc6  vPopReg R11
+0x1285c3e  vPushImm 00000006
+0x1369cae  vPushReg R1
+0x1293a11  vPushImm ffffffbf
+0x108babc  vNand
+0x131a60b  vPopReg R15
+0x128d635  vShr
+0x13149ee  vPopReg R11
+0x10c36ad  vPushImm ffffffff
+0x1308cb3  vAdd
+0x12bade8  vPopReg R13
+0x1056b3c  vPopReg R0
+0x131656f  vPushImm 005b0363
+0x12faad6  vPushReg R0
+0x104c894  vPushReg R0
+0x1347bb5  vNor
+0x134df48  vPopReg R8
+0x129390e  vNor
+0x12e9c5b  vPopReg R11
+0x12e9bdd  vPushEsp
+0x13444cf  vPoiEsp
+0x10d6f9d  vNand
+0x1297a8a  vPopReg R15
+0x130c89c  vPushImm 005b02d1
+0x1070d27  vPushReg R0
+0x1297978  vNor
+0x1087fc6  vPopReg R15
+0x104cc85  vPushEsp
+0x12a6547  vPoiEsp
+0x128a40d  vNand
+0x109d2ba  vPopReg R13
+0x10d3fa0  vAdd
+0x130aa26  vPopReg R15
+0x1101e49  vPushReg R7
+0x131c279  vAdd
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R2
+0x129a15b  vPushReg R0
+0x1096b10  vPushReg R14
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R1
+0x12f3c95  vPushReg R4
+0x10a1a47  vPushReg R12
+0x1369cae  vPushReg R5
+0x12faad6  vPushReg R14
+0x104c894  vPushReg R3
+0x1070d27  vPushReg R10
+0x1101e49  vPushReg R7
+0x129a15b  vPushReg R2
+0x10d4389  vPopOptable
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R6
+0x12e9c5b  vPopReg R11
+0x1297a8a  vPopReg R13
+0x1087fc6  vPopReg R10
+0x109d2ba  vPopReg R9
+0x130aa26  vPopReg R2
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R12
+0x13149ee  vPopReg R0
+0x12bade8  vPopReg R8
+0x127c3ce  vPushImm 00886abf
+0x10f4a17  vPushReg R5
+0x128eab1  vAdd
+0x1056b3c  vPopReg R1
+0x134df48  vPopReg R7
+0x12f3c95  vPushReg R2
+0x10a1a47  vPushReg R5
+0x1369cae  vPushReg R12
+0x12faad6  vPushReg R15
+0x104c894  vPushReg R2
+0x1070d27  vPushReg R9
+0x1101e49  vPushReg R10
+0x129a15b  vPushReg R13
+0x1096b10  vPushReg R11
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R5
+0x12f3c95  vPushReg R7
+0x1296161  vPopOptable
+0x10d93bc  vPopReg R15
+0x130dd69  vPopReg R12
+0x1284361  vPopReg R5
+0x133bc8c  vPopReg R9
+0x1052b45  vPopReg R6
+0x10c533a  vPopReg R1
+0x10b3dc2  vPopReg R10
+0x10f54f1  vPopReg R8
+0x12bfa49  vPopReg R0
+0x1345186  vPopReg R11
+0x131853e  vPopReg R3
+0x1087375  vPushImm 0000002e
+0x12d8d96  vPushReg R12
+0x132b162  vPushReg R12
+0x10564b8  vNor
+0x10d93bc  vPopReg R7
+0x131909a  vAdd
+0x130dd69  vPopReg R14
+0x129f240  vPushEsp
+0x10f7a62  vPoiEsp
+0x1332c5b  vNor
+0x1284361  vPopReg R13
+0x10b6891  vPopReg R4
+0x133b2bc  vPushReg R14
+0x111b54a  vPushImm 00000815
+0x10a62e3  vNor
+0x133bc8c  vPopReg R3
+0x105b7c7  vPushEsp
+0x1098936  vPoiEsp
+0x136dc8f  vNor
+0x1052b45  vPopReg R2
+0x13154f8  vPushReg R13
+0x10c59b7  vPushImm fffff7ea
+0x10d399b  vNor
+0x10c533a  vPopReg R3
+0x12ef188  vPushEsp
+0x109ad71  vPoiEsp
+0x13639e8  vNor
+0x10b3dc2  vPopReg R4
+0x1352d83  vAdd
+0x10f54f1  vPopReg R3
+0x12bfa49  vPopReg R4
+0x12ad6ed  vPushImm 00000006
+0x10c80a8  vPushReg R4
+0x1074f5f  vPushImm ffffffbf
+0x10997bb  vNand
+0x1345186  vPopReg R3
+0x12efb46  vShr
+0x131853e  vPopReg R8
+0x10b172e  vPushImm ffffffff
+0x1305071  vAdd
+0x10d93bc  vPopReg R8
+0x130dd69  vPopReg R14
+0x10db534  vPushImm 00886d0f
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R14
+0x12ca1ea  vNor
+0x1284361  vPopReg R11
+0x1112554  vNor
+0x133bc8c  vPopReg R3
+0x1092c0a  vPushEsp
+0x10ad116  vPoiEsp
+0x127ff7b  vNor
+0x1052b45  vPopReg R11
+0x10d326e  vPushImm 00886c7d
+0x1313d5d  vPushReg R14
+0x104d013  vNor
+0x10c533a  vPopReg R8
+0x10eb405  vPushEsp
+0x1278f04  vPoiEsp
+0x10e0162  vNor
+0x10b3dc2  vPopReg R2
+0x131986f  vAdd
+0x10f54f1  vPopReg R13
+0x12ceb7c  vPushReg R15
+0x10c6c07  vAdd
+0x12bfa49  vPopReg R2
+0x1345186  vPopReg R8
+0x1316096  vPushReg R10
+0x1344cca  vPushReg R11
+0x10c116f  vPushReg R1
+0x1352168  vPushReg R0
+0x133b2bc  vPushReg R10
+0x13154f8  vPushReg R6
+0x10c80a8  vPushReg R12
+0x12a56e8  vPushReg R5
+0x134dbe0  vPushReg R9
+0x1313d5d  vPushReg R4
+0x12ceb7c  vPushReg R15
+0x1316096  vPushReg R8
+0x1070ff4  vPopOptable
+0x131853e  vPopReg R2
+0x10d93bc  vPopReg R11
+0x130dd69  vPopReg R15
+0x1284361  vPopReg R4
+0x133bc8c  vPopReg R5
+0x1052b45  vPopReg R12
+0x10c533a  vPopReg R14
+0x10b3dc2  vPopReg R9
+0x10f54f1  vPopReg R13
+0x12bfa49  vPopReg R0
+0x1345186  vPopReg R10
+0x10b5e01  vPushImm 007cdbfa
+0x1344cca  vPushReg R2
+0x12a897b  vAdd
+0x131853e  vPopReg R10
+0x10d93bc  vPopReg R6
+0x10c116f  vPushReg R13
+0x1352168  vPushReg R0
+0x133b2bc  vPushReg R13
+0x13154f8  vPushReg R9
+0x10c80a8  vPushReg R14
+0x12a56e8  vPushReg R12
+0x134dbe0  vPushReg R5
+0x1313d5d  vPushReg R4
+0x12ceb7c  vPushReg R15
+0x1316096  vPushReg R11
+0x1344cca  vPushReg R2
+0x10c116f  vPushReg R6
+0x1099919  vPopOptable
+0x127fe91  vPopReg R12
+0x129de52  vPopReg R4
+0x12b3eeb  vPopReg R6
+0x10d1346  vPopReg R2
+0x105ff98  vPopReg R15
+0x10d913c  vPopReg R8
+0x10ac758  vPopReg R14
+0x1085738  vPopReg R5
+0x12cf478  vPopReg R1
+0x12b457a  vPopReg R11
+0x12e62da  vPopReg R9
+0x1309d66  vPushImm 005b014f
+0x109033b  vPushReg R12
+0x13304c8  vAdd
+0x1301cb1  vPushImm 00000001
+0x12803a8  vPushReg R1
+0x10aa45c  vAdd
+0x127fe91  vPopReg R3
+0x129de52  vPopReg R11
+0x1322529  vPushReg R4
+0x107edd2  vPushImm 00000001
+0x10a198c  vNor
+0x12b3eeb  vPopReg R10
+0x1084289  vPushEsp
+0x1302ced  vPoiEsp
+0x10f6632  vNor
+0x10d1346  vPopReg R7
+0x10f22dd  vPushReg R3
+0x12d0631  vPushImm fffffffe
+0x132d695  vNor
+0x105ff98  vPopReg R13
+0x12f0e56  vPushEsp
+0x132c678  vPoiEsp
+0x133495e  vNand
+0x10d913c  vPopReg R13
+0x10e26be  vAdd
+0x10ac758  vPopReg R7
+0x1085738  vPopReg R10
+0x12cf478  vPopReg R7
+0x12b457a  vPopReg R1
+0x10cf09d  vPushReg R7
+0x1335635  vPushReg R5
+0x11197ec  vPushReg R8
+0x129f083  vPushReg R2
+0x10a063a  vPushReg R10
+0x10a1621  vPushReg R14
+0x130cf9c  vPushReg R5
+0x109033b  vPushReg R15
+0x12803a8  vPushReg R11
+0x1322529  vPushReg R6
+0x10f22dd  vPushReg R12
+0x10cf09d  vPushReg R1
+0x10f49d5  vPopOptable
+0x1297a8a  vPopReg R7
+0x1087fc6  vPopReg R14
+0x109d2ba  vPopReg R12
+0x130aa26  vPopReg R8
+0x12dacca  vPopReg R1
+0x131a60b  vPopReg R4
+0x13149ee  vPopReg R11
+0x12bade8  vPopReg R3
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R0
+0x12e9c5b  vPopReg R2
+0x1125c20  vPushImm 00000002
+0x12f3c95  vPushReg R1
+0x13569e8  vAdd
+0x1297a8a  vPopReg R2
+0x1087fc6  vPopReg R6
+0x111e281  vPushImm 00000000
+0x10a1a47  vPushReg R6
+0x12ab12a  vPoiEsp
+0x109d2ba  vPopReg R10
+0x108fd8a  vPushReg R10
+0x10adb3b  vPushReg R10
+0x1347ece  vNor
+0x130aa26  vPopReg R13
+0x12adfe6  vPushEsp
+0x128f97a  vPoiEsp
+0x10f3822  vNor
+0x12dacca  vPopReg R1
+0x1084fc6  vPopReg R11
+0x1285c3e  vPushImm 00000006
+0x1369cae  vPushReg R1
+0x1293a11  vPushImm ffffffbf
+0x108babc  vNand
+0x131a60b  vPopReg R15
+0x128d635  vShr
+0x13149ee  vPopReg R11
+0x10c36ad  vPushImm ffffffff
+0x1308cb3  vAdd
+0x12bade8  vPopReg R13
+0x1056b3c  vPopReg R0
+0x131656f  vPushImm 005b0363
+0x12faad6  vPushReg R0
+0x104c894  vPushReg R0
+0x1347bb5  vNor
+0x134df48  vPopReg R8
+0x129390e  vNor
+0x12e9c5b  vPopReg R11
+0x12e9bdd  vPushEsp
+0x13444cf  vPoiEsp
+0x10d6f9d  vNand
+0x1297a8a  vPopReg R15
+0x130c89c  vPushImm 005b02d1
+0x1070d27  vPushReg R0
+0x1297978  vNor
+0x1087fc6  vPopReg R15
+0x104cc85  vPushEsp
+0x12a6547  vPoiEsp
+0x128a40d  vNand
+0x109d2ba  vPopReg R13
+0x10d3fa0  vAdd
+0x130aa26  vPopReg R15
+0x1101e49  vPushReg R7
+0x131c279  vAdd
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R2
+0x129a15b  vPushReg R0
+0x1096b10  vPushReg R14
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R1
+0x12f3c95  vPushReg R4
+0x10a1a47  vPushReg R12
+0x1369cae  vPushReg R5
+0x12faad6  vPushReg R14
+0x104c894  vPushReg R3
+0x1070d27  vPushReg R10
+0x1101e49  vPushReg R7
+0x129a15b  vPushReg R2
+0x10d4389  vPopOptable
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R6
+0x12e9c5b  vPopReg R11
+0x1297a8a  vPopReg R13
+0x1087fc6  vPopReg R10
+0x109d2ba  vPopReg R9
+0x130aa26  vPopReg R2
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R12
+0x13149ee  vPopReg R0
+0x12bade8  vPopReg R8
+0x127c3ce  vPushImm 00886abf
+0x10f4a17  vPushReg R5
+0x128eab1  vAdd
+0x1056b3c  vPopReg R1
+0x134df48  vPopReg R7
+0x12f3c95  vPushReg R2
+0x10a1a47  vPushReg R5
+0x1369cae  vPushReg R12
+0x12faad6  vPushReg R15
+0x104c894  vPushReg R2
+0x1070d27  vPushReg R9
+0x1101e49  vPushReg R10
+0x129a15b  vPushReg R13
+0x1096b10  vPushReg R11
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R5
+0x12f3c95  vPushReg R7
+0x1296161  vPopOptable
+0x10d93bc  vPopReg R15
+0x130dd69  vPopReg R12
+0x1284361  vPopReg R5
+0x133bc8c  vPopReg R9
+0x1052b45  vPopReg R6
+0x10c533a  vPopReg R1
+0x10b3dc2  vPopReg R10
+0x10f54f1  vPopReg R8
+0x12bfa49  vPopReg R0
+0x1345186  vPopReg R11
+0x131853e  vPopReg R3
+0x1087375  vPushImm 0000002e
+0x12d8d96  vPushReg R12
+0x132b162  vPushReg R12
+0x10564b8  vNor
+0x10d93bc  vPopReg R7
+0x131909a  vAdd
+0x130dd69  vPopReg R14
+0x129f240  vPushEsp
+0x10f7a62  vPoiEsp
+0x1332c5b  vNor
+0x1284361  vPopReg R13
+0x10b6891  vPopReg R4
+0x133b2bc  vPushReg R14
+0x111b54a  vPushImm 00000815
+0x10a62e3  vNor
+0x133bc8c  vPopReg R3
+0x105b7c7  vPushEsp
+0x1098936  vPoiEsp
+0x136dc8f  vNor
+0x1052b45  vPopReg R2
+0x13154f8  vPushReg R13
+0x10c59b7  vPushImm fffff7ea
+0x10d399b  vNor
+0x10c533a  vPopReg R3
+0x12ef188  vPushEsp
+0x109ad71  vPoiEsp
+0x13639e8  vNor
+0x10b3dc2  vPopReg R4
+0x1352d83  vAdd
+0x10f54f1  vPopReg R3
+0x12bfa49  vPopReg R4
+0x12ad6ed  vPushImm 00000006
+0x10c80a8  vPushReg R4
+0x1074f5f  vPushImm ffffffbf
+0x10997bb  vNand
+0x1345186  vPopReg R3
+0x12efb46  vShr
+0x131853e  vPopReg R8
+0x10b172e  vPushImm ffffffff
+0x1305071  vAdd
+0x10d93bc  vPopReg R8
+0x130dd69  vPopReg R14
+0x10db534  vPushImm 00886d0f
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R14
+0x12ca1ea  vNor
+0x1284361  vPopReg R11
+0x1112554  vNor
+0x133bc8c  vPopReg R3
+0x1092c0a  vPushEsp
+0x10ad116  vPoiEsp
+0x127ff7b  vNor
+0x1052b45  vPopReg R11
+0x10d326e  vPushImm 00886c7d
+0x1313d5d  vPushReg R14
+0x104d013  vNor
+0x10c533a  vPopReg R8
+0x10eb405  vPushEsp
+0x1278f04  vPoiEsp
+0x10e0162  vNor
+0x10b3dc2  vPopReg R2
+0x131986f  vAdd
+0x10f54f1  vPopReg R13
+0x12ceb7c  vPushReg R15
+0x10c6c07  vAdd
+0x12bfa49  vPopReg R2
+0x1345186  vPopReg R8
+0x1316096  vPushReg R10
+0x1344cca  vPushReg R11
+0x10c116f  vPushReg R1
+0x1352168  vPushReg R0
+0x133b2bc  vPushReg R10
+0x13154f8  vPushReg R6
+0x10c80a8  vPushReg R12
+0x12a56e8  vPushReg R5
+0x134dbe0  vPushReg R9
+0x1313d5d  vPushReg R4
+0x12ceb7c  vPushReg R15
+0x1316096  vPushReg R8
+0x1070ff4  vPopOptable
+0x130dd69  vPopReg R7
+0x1284361  vPopReg R10
+0x133bc8c  vPopReg R2
+0x1052b45  vPopReg R3
+0x10c533a  vPopReg R4
+0x10b3dc2  vPopReg R15
+0x10f54f1  vPopReg R1
+0x12bfa49  vPopReg R14
+0x1345186  vPopReg R11
+0x131853e  vPopReg R12
+0x10d93bc  vPopReg R9
+0x1311694  vPushImm 00871ff2
+0x1352168  vPushReg R7
+0x11197bd  vAdd
+0x130dd69  vPopReg R5
+0x1284361  vPopReg R0
+0x133b2bc  vPushReg R13
+0x13154f8  vPushReg R1
+0x10c80a8  vPushReg R11
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R1
+0x1313d5d  vPushReg R15
+0x12ceb7c  vPushReg R4
+0x1316096  vPushReg R3
+0x1344cca  vPushReg R2
+0x10c116f  vPushReg R10
+0x1352168  vPushReg R7
+0x133b2bc  vPushReg R0
+0x1099919  vPopOptable
+0x1085738  vPopReg R2
+0x12cf478  vPopReg R7
+0x12b457a  vPopReg R6
+0x12e62da  vPopReg R3
+0x127fe91  vPopReg R15
+0x129de52  vPopReg R4
+0x12b3eeb  vPopReg R10
+0x10d1346  vPopReg R5
+0x105ff98  vPopReg R12
+0x10d913c  vPopReg R14
+0x10ac758  vPopReg R9
+0x12fb5ac  vPushImm 00000002
+0x109033b  vPushReg R12
+0x12803a8  vPushReg R12
+0x12ab812  vNand
+0x1085738  vPopReg R1
+0x1094dba  vAdd
+0x12cf478  vPopReg R0
+0x10b79bb  vPushEsp
+0x1302ced  vPoiEsp
+0x133495e  vNand
+0x12b457a  vPopReg R11
+0x12e62da  vPopReg R9
+0x1322529  vPushReg R0
+0x12bdb5a  vPushImm 00000815
+0x132d695  vNor
+0x127fe91  vPopReg R9
+0x10a181d  vPushEsp
+0x132c678  vPoiEsp
+0x12f15ca  vNand
+0x129de52  vPopReg R8
+0x10f22dd  vPushReg R11
+0x1311f7a  vPushImm fffff7ea
+0x1066bbc  vNor
+0x12b3eeb  vPopReg R9
+0x1280533  vPushEsp
+0x12bc847  vPoiEsp
+0x10c3b00  vNand
+0x10d1346  vPopReg R8
+0x1285ce8  vAdd
+0x105ff98  vPopReg R14
+0x10d913c  vPopReg R1
+0x10a1ae2  vPushImm 00000006
+0x10cf09d  vPushReg R1
+0x1335635  vPushReg R1
+0x10e3b66  vNor
+0x10ac758  vPopReg R0
+0x1301cb1  vPushImm ffffffbf
+0x10ff1e6  vNand
+0x1085738  vPopReg R13
+0x136712c  vShr
+0x12cf478  vPopReg R7
+0x107edd2  vPushImm ffffffff
+0x111203c  vAdd
+0x12b457a  vPopReg R8
+0x12e62da  vPopReg R9
+0x12cfb2b  vPushImm 00871d92
+0x11197ec  vPushReg R9
+0x129f083  vPushReg R9
+0x10bd49b  vNor
+0x127fe91  vPopReg R14
+0x12ca964  vNor
+0x129de52  vPopReg R14
+0x107b307  vPushEsp
+0x133ecfd  vPoiEsp
+0x106d2f8  vNor
+0x12b3eeb  vPopReg R11
+0x12fb5ac  vPushImm 00871e24
+0x10a063a  vPushReg R9
+0x1330ed1  vNor
+0x10d1346  vPopReg R14
+0x12cbec7  vPushEsp
+0x10afd14  vPoiEsp
+0x10c7c61  vNor
+0x105ff98  vPopReg R13
+0x10a2ab2  vAdd
+0x10d913c  vPopReg R7
+0x10a1621  vPushReg R2
+0x13436ff  vAdd
+0x10ac758  vPopReg R7
+0x1085738  vPopReg R13
+0x130cf9c  vPushReg R14
+0x109033b  vPushReg R3
+0x12803a8  vPushReg R4
+0x1322529  vPushReg R3
+0x10f22dd  vPushReg R1
+0x10cf09d  vPushReg R10
+0x1335635  vPushReg R5
+0x11197ec  vPushReg R15
+0x129f083  vPushReg R12
+0x10a063a  vPushReg R6
+0x10a1621  vPushReg R2
+0x130cf9c  vPushReg R13
+0x105bdac  vPopOptable
+0x12cf478  vPopReg R9
+0x12b457a  vPopReg R8
+0x12e62da  vPopReg R2
+0x127fe91  vPopReg R7
+0x129de52  vPopReg R14
+0x12b3eeb  vPopReg R11
+0x10d1346  vPopReg R0
+0x105ff98  vPopReg R5
+0x10d913c  vPopReg R1
+0x10ac758  vPopReg R3
+0x1085738  vPopReg R4
+0x12bdb5a  vPushImm 005b014f
+0x109033b  vPushReg R9
+0x1094ffc  vAdd
+0x12cf478  vPopReg R3
+0x12b457a  vPopReg R10
+0x12803a8  vPushReg R4
+0x1322529  vPushReg R13
+0x10f22dd  vPushReg R1
+0x10cf09d  vPushReg R5
+0x1335635  vPushReg R0
+0x11197ec  vPushReg R11
+0x129f083  vPushReg R14
+0x10a063a  vPushReg R7
+0x10a1621  vPushReg R2
+0x130cf9c  vPushReg R8
+0x109033b  vPushReg R9
+0x12803a8  vPushReg R10
+0x10f49d5  vPopOptable
+0x1297a8a  vPopReg R7
+0x1087fc6  vPopReg R14
+0x109d2ba  vPopReg R12
+0x130aa26  vPopReg R8
+0x12dacca  vPopReg R1
+0x131a60b  vPopReg R4
+0x13149ee  vPopReg R11
+0x12bade8  vPopReg R3
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R0
+0x12e9c5b  vPopReg R2
+0x1125c20  vPushImm 00000002
+0x12f3c95  vPushReg R1
+0x13569e8  vAdd
+0x1297a8a  vPopReg R2
+0x1087fc6  vPopReg R6
+0x111e281  vPushImm 00000000
+0x10a1a47  vPushReg R6
+0x12ab12a  vPoiEsp
+0x109d2ba  vPopReg R10
+0x108fd8a  vPushReg R10
+0x10adb3b  vPushReg R10
+0x1347ece  vNor
+0x130aa26  vPopReg R13
+0x12adfe6  vPushEsp
+0x128f97a  vPoiEsp
+0x10f3822  vNor
+0x12dacca  vPopReg R1
+0x1084fc6  vPopReg R11
+0x1285c3e  vPushImm 00000006
+0x1369cae  vPushReg R1
+0x1293a11  vPushImm ffffffbf
+0x108babc  vNand
+0x131a60b  vPopReg R15
+0x128d635  vShr
+0x13149ee  vPopReg R11
+0x10c36ad  vPushImm ffffffff
+0x1308cb3  vAdd
+0x12bade8  vPopReg R13
+0x1056b3c  vPopReg R0
+0x131656f  vPushImm 005b0363
+0x12faad6  vPushReg R0
+0x104c894  vPushReg R0
+0x1347bb5  vNor
+0x134df48  vPopReg R8
+0x129390e  vNor
+0x12e9c5b  vPopReg R11
+0x12e9bdd  vPushEsp
+0x13444cf  vPoiEsp
+0x10d6f9d  vNand
+0x1297a8a  vPopReg R15
+0x130c89c  vPushImm 005b02d1
+0x1070d27  vPushReg R0
+0x1297978  vNor
+0x1087fc6  vPopReg R15
+0x104cc85  vPushEsp
+0x12a6547  vPoiEsp
+0x128a40d  vNand
+0x109d2ba  vPopReg R13
+0x10d3fa0  vAdd
+0x130aa26  vPopReg R15
+0x1101e49  vPushReg R7
+0x131c279  vAdd
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R2
+0x129a15b  vPushReg R0
+0x1096b10  vPushReg R14
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R1
+0x12f3c95  vPushReg R4
+0x10a1a47  vPushReg R12
+0x1369cae  vPushReg R5
+0x12faad6  vPushReg R14
+0x104c894  vPushReg R3
+0x1070d27  vPushReg R10
+0x1101e49  vPushReg R7
+0x129a15b  vPushReg R2
+0x10d4389  vPopOptable
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R6
+0x12e9c5b  vPopReg R11
+0x1297a8a  vPopReg R13
+0x1087fc6  vPopReg R10
+0x109d2ba  vPopReg R9
+0x130aa26  vPopReg R2
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R12
+0x13149ee  vPopReg R0
+0x12bade8  vPopReg R8
+0x127c3ce  vPushImm 00886abf
+0x10f4a17  vPushReg R5
+0x128eab1  vAdd
+0x1056b3c  vPopReg R1
+0x134df48  vPopReg R7
+0x12f3c95  vPushReg R2
+0x10a1a47  vPushReg R5
+0x1369cae  vPushReg R12
+0x12faad6  vPushReg R15
+0x104c894  vPushReg R2
+0x1070d27  vPushReg R9
+0x1101e49  vPushReg R10
+0x129a15b  vPushReg R13
+0x1096b10  vPushReg R11
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R5
+0x12f3c95  vPushReg R7
+0x1296161  vPopOptable
+0x10d93bc  vPopReg R15
+0x130dd69  vPopReg R12
+0x1284361  vPopReg R5
+0x133bc8c  vPopReg R9
+0x1052b45  vPopReg R6
+0x10c533a  vPopReg R1
+0x10b3dc2  vPopReg R10
+0x10f54f1  vPopReg R8
+0x12bfa49  vPopReg R0
+0x1345186  vPopReg R11
+0x131853e  vPopReg R3
+0x1087375  vPushImm 0000002e
+0x12d8d96  vPushReg R12
+0x132b162  vPushReg R12
+0x10564b8  vNor
+0x10d93bc  vPopReg R7
+0x131909a  vAdd
+0x130dd69  vPopReg R14
+0x129f240  vPushEsp
+0x10f7a62  vPoiEsp
+0x1332c5b  vNor
+0x1284361  vPopReg R13
+0x10b6891  vPopReg R4
+0x133b2bc  vPushReg R14
+0x111b54a  vPushImm 00000815
+0x10a62e3  vNor
+0x133bc8c  vPopReg R3
+0x105b7c7  vPushEsp
+0x1098936  vPoiEsp
+0x136dc8f  vNor
+0x1052b45  vPopReg R2
+0x13154f8  vPushReg R13
+0x10c59b7  vPushImm fffff7ea
+0x10d399b  vNor
+0x10c533a  vPopReg R3
+0x12ef188  vPushEsp
+0x109ad71  vPoiEsp
+0x13639e8  vNor
+0x10b3dc2  vPopReg R4
+0x1352d83  vAdd
+0x10f54f1  vPopReg R3
+0x12bfa49  vPopReg R4
+0x12ad6ed  vPushImm 00000006
+0x10c80a8  vPushReg R4
+0x1074f5f  vPushImm ffffffbf
+0x10997bb  vNand
+0x1345186  vPopReg R3
+0x12efb46  vShr
+0x131853e  vPopReg R8
+0x10b172e  vPushImm ffffffff
+0x1305071  vAdd
+0x10d93bc  vPopReg R8
+0x130dd69  vPopReg R14
+0x10db534  vPushImm 00886d0f
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R14
+0x12ca1ea  vNor
+0x1284361  vPopReg R11
+0x1112554  vNor
+0x133bc8c  vPopReg R3
+0x1092c0a  vPushEsp
+0x10ad116  vPoiEsp
+0x127ff7b  vNor
+0x1052b45  vPopReg R11
+0x10d326e  vPushImm 00886c7d
+0x1313d5d  vPushReg R14
+0x104d013  vNor
+0x10c533a  vPopReg R8
+0x10eb405  vPushEsp
+0x1278f04  vPoiEsp
+0x10e0162  vNor
+0x10b3dc2  vPopReg R2
+0x131986f  vAdd
+0x10f54f1  vPopReg R13
+0x12ceb7c  vPushReg R15
+0x10c6c07  vAdd
+0x12bfa49  vPopReg R2
+0x1345186  vPopReg R8
+0x1316096  vPushReg R10
+0x1344cca  vPushReg R11
+0x10c116f  vPushReg R1
+0x1352168  vPushReg R0
+0x133b2bc  vPushReg R10
+0x13154f8  vPushReg R6
+0x10c80a8  vPushReg R12
+0x12a56e8  vPushReg R5
+0x134dbe0  vPushReg R9
+0x1313d5d  vPushReg R4
+0x12ceb7c  vPushReg R15
+0x1316096  vPushReg R8
+0x1070ff4  vPopOptable
+0x131853e  vPopReg R2
+0x10d93bc  vPopReg R11
+0x130dd69  vPopReg R15
+0x1284361  vPopReg R4
+0x133bc8c  vPopReg R5
+0x1052b45  vPopReg R12
+0x10c533a  vPopReg R14
+0x10b3dc2  vPopReg R9
+0x10f54f1  vPopReg R13
+0x12bfa49  vPopReg R0
+0x1345186  vPopReg R10
+0x10b5e01  vPushImm 007cdbfa
+0x1344cca  vPushReg R2
+0x12a897b  vAdd
+0x131853e  vPopReg R10
+0x10d93bc  vPopReg R6
+0x10c116f  vPushReg R13
+0x1352168  vPushReg R0
+0x133b2bc  vPushReg R13
+0x13154f8  vPushReg R9
+0x10c80a8  vPushReg R14
+0x12a56e8  vPushReg R12
+0x134dbe0  vPushReg R5
+0x1313d5d  vPushReg R4
+0x12ceb7c  vPushReg R15
+0x1316096  vPushReg R11
+0x1344cca  vPushReg R2
+0x10c116f  vPushReg R6
+0x1099919  vPopOptable
+0x127fe91  vPopReg R12
+0x129de52  vPopReg R4
+0x12b3eeb  vPopReg R6
+0x10d1346  vPopReg R2
+0x105ff98  vPopReg R15
+0x10d913c  vPopReg R8
+0x10ac758  vPopReg R14
+0x1085738  vPopReg R5
+0x12cf478  vPopReg R1
+0x12b457a  vPopReg R11
+0x12e62da  vPopReg R9
+0x1309d66  vPushImm 005b014f
+0x109033b  vPushReg R12
+0x13304c8  vAdd
+0x1301cb1  vPushImm 00000001
+0x12803a8  vPushReg R1
+0x10aa45c  vAdd
+0x127fe91  vPopReg R3
+0x129de52  vPopReg R11
+0x1322529  vPushReg R4
+0x107edd2  vPushImm 00000001
+0x10a198c  vNor
+0x12b3eeb  vPopReg R10
+0x1084289  vPushEsp
+0x1302ced  vPoiEsp
+0x10f6632  vNor
+0x10d1346  vPopReg R7
+0x10f22dd  vPushReg R3
+0x12d0631  vPushImm fffffffe
+0x132d695  vNor
+0x105ff98  vPopReg R13
+0x12f0e56  vPushEsp
+0x132c678  vPoiEsp
+0x133495e  vNand
+0x10d913c  vPopReg R13
+0x10e26be  vAdd
+0x10ac758  vPopReg R7
+0x1085738  vPopReg R10
+0x12cf478  vPopReg R7
+0x12b457a  vPopReg R1
+0x10cf09d  vPushReg R7
+0x1335635  vPushReg R5
+0x11197ec  vPushReg R8
+0x129f083  vPushReg R2
+0x10a063a  vPushReg R10
+0x10a1621  vPushReg R14
+0x130cf9c  vPushReg R5
+0x109033b  vPushReg R15
+0x12803a8  vPushReg R11
+0x1322529  vPushReg R6
+0x10f22dd  vPushReg R12
+0x10cf09d  vPushReg R1
+0x10f49d5  vPopOptable
+0x1297a8a  vPopReg R7
+0x1087fc6  vPopReg R14
+0x109d2ba  vPopReg R12
+0x130aa26  vPopReg R8
+0x12dacca  vPopReg R1
+0x131a60b  vPopReg R4
+0x13149ee  vPopReg R11
+0x12bade8  vPopReg R3
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R0
+0x12e9c5b  vPopReg R2
+0x1125c20  vPushImm 00000002
+0x12f3c95  vPushReg R1
+0x13569e8  vAdd
+0x1297a8a  vPopReg R2
+0x1087fc6  vPopReg R6
+0x111e281  vPushImm 00000000
+0x10a1a47  vPushReg R6
+0x12ab12a  vPoiEsp
+0x109d2ba  vPopReg R10
+0x108fd8a  vPushReg R10
+0x10adb3b  vPushReg R10
+0x1347ece  vNor
+0x130aa26  vPopReg R13
+0x12adfe6  vPushEsp
+0x128f97a  vPoiEsp
+0x10f3822  vNor
+0x12dacca  vPopReg R1
+0x1084fc6  vPopReg R11
+0x1285c3e  vPushImm 00000006
+0x1369cae  vPushReg R1
+0x1293a11  vPushImm ffffffbf
+0x108babc  vNand
+0x131a60b  vPopReg R15
+0x128d635  vShr
+0x13149ee  vPopReg R11
+0x10c36ad  vPushImm ffffffff
+0x1308cb3  vAdd
+0x12bade8  vPopReg R13
+0x1056b3c  vPopReg R0
+0x131656f  vPushImm 005b0363
+0x12faad6  vPushReg R0
+0x104c894  vPushReg R0
+0x1347bb5  vNor
+0x134df48  vPopReg R8
+0x129390e  vNor
+0x12e9c5b  vPopReg R11
+0x12e9bdd  vPushEsp
+0x13444cf  vPoiEsp
+0x10d6f9d  vNand
+0x1297a8a  vPopReg R15
+0x130c89c  vPushImm 005b02d1
+0x1070d27  vPushReg R0
+0x1297978  vNor
+0x1087fc6  vPopReg R15
+0x104cc85  vPushEsp
+0x12a6547  vPoiEsp
+0x128a40d  vNand
+0x109d2ba  vPopReg R13
+0x10d3fa0  vAdd
+0x130aa26  vPopReg R15
+0x1101e49  vPushReg R7
+0x131c279  vAdd
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R2
+0x129a15b  vPushReg R0
+0x1096b10  vPushReg R14
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R1
+0x12f3c95  vPushReg R4
+0x10a1a47  vPushReg R12
+0x1369cae  vPushReg R5
+0x12faad6  vPushReg R14
+0x104c894  vPushReg R3
+0x1070d27  vPushReg R10
+0x1101e49  vPushReg R7
+0x129a15b  vPushReg R2
+0x10d4389  vPopOptable
+0x1056b3c  vPopReg R5
+0x134df48  vPopReg R6
+0x12e9c5b  vPopReg R11
+0x1297a8a  vPopReg R13
+0x1087fc6  vPopReg R10
+0x109d2ba  vPopReg R9
+0x130aa26  vPopReg R2
+0x12dacca  vPopReg R15
+0x131a60b  vPopReg R12
+0x13149ee  vPopReg R0
+0x12bade8  vPopReg R8
+0x127c3ce  vPushImm 00886abf
+0x10f4a17  vPushReg R5
+0x128eab1  vAdd
+0x1056b3c  vPopReg R1
+0x134df48  vPopReg R7
+0x12f3c95  vPushReg R2
+0x10a1a47  vPushReg R5
+0x1369cae  vPushReg R12
+0x12faad6  vPushReg R15
+0x104c894  vPushReg R2
+0x1070d27  vPushReg R9
+0x1101e49  vPushReg R10
+0x129a15b  vPushReg R13
+0x1096b10  vPushReg R11
+0x105405d  vPushReg R6
+0x10f4a17  vPushReg R5
+0x12f3c95  vPushReg R7
+0x1296161  vPopOptable
+0x10d93bc  vPopReg R15
+0x130dd69  vPopReg R12
+0x1284361  vPopReg R5
+0x133bc8c  vPopReg R9
+0x1052b45  vPopReg R6
+0x10c533a  vPopReg R1
+0x10b3dc2  vPopReg R10
+0x10f54f1  vPopReg R8
+0x12bfa49  vPopReg R0
+0x1345186  vPopReg R11
+0x131853e  vPopReg R3
+0x1087375  vPushImm 0000002e
+0x12d8d96  vPushReg R12
+0x132b162  vPushReg R12
+0x10564b8  vNor
+0x10d93bc  vPopReg R7
+0x131909a  vAdd
+0x130dd69  vPopReg R14
+0x129f240  vPushEsp
+0x10f7a62  vPoiEsp
+0x1332c5b  vNor
+0x1284361  vPopReg R13
+0x10b6891  vPopReg R4
+0x133b2bc  vPushReg R14
+0x111b54a  vPushImm 00000815
+0x10a62e3  vNor
+0x133bc8c  vPopReg R3
+0x105b7c7  vPushEsp
+0x1098936  vPoiEsp
+0x136dc8f  vNor
+0x1052b45  vPopReg R2
+0x13154f8  vPushReg R13
+0x10c59b7  vPushImm fffff7ea
+0x10d399b  vNor
+0x10c533a  vPopReg R3
+0x12ef188  vPushEsp
+0x109ad71  vPoiEsp
+0x13639e8  vNor
+0x10b3dc2  vPopReg R4
+0x1352d83  vAdd
+0x10f54f1  vPopReg R3
+0x12bfa49  vPopReg R4
+0x12ad6ed  vPushImm 00000006
+0x10c80a8  vPushReg R4
+0x1074f5f  vPushImm ffffffbf
+0x10997bb  vNand
+0x1345186  vPopReg R3
+0x12efb46  vShr
+0x131853e  vPopReg R8
+0x10b172e  vPushImm ffffffff
+0x1305071  vAdd
+0x10d93bc  vPopReg R8
+0x130dd69  vPopReg R14
+0x10db534  vPushImm 00886d0f
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R14
+0x12ca1ea  vNor
+0x1284361  vPopReg R11
+0x1112554  vNor
+0x133bc8c  vPopReg R3
+0x1092c0a  vPushEsp
+0x10ad116  vPoiEsp
+0x127ff7b  vNor
+0x1052b45  vPopReg R11
+0x10d326e  vPushImm 00886c7d
+0x1313d5d  vPushReg R14
+0x104d013  vNor
+0x10c533a  vPopReg R8
+0x10eb405  vPushEsp
+0x1278f04  vPoiEsp
+0x10e0162  vNor
+0x10b3dc2  vPopReg R2
+0x131986f  vAdd
+0x10f54f1  vPopReg R13
+0x12ceb7c  vPushReg R15
+0x10c6c07  vAdd
+0x12bfa49  vPopReg R2
+0x1345186  vPopReg R8
+0x1316096  vPushReg R10
+0x1344cca  vPushReg R11
+0x10c116f  vPushReg R1
+0x1352168  vPushReg R0
+0x133b2bc  vPushReg R10
+0x13154f8  vPushReg R6
+0x10c80a8  vPushReg R12
+0x12a56e8  vPushReg R5
+0x134dbe0  vPushReg R9
+0x1313d5d  vPushReg R4
+0x12ceb7c  vPushReg R15
+0x1316096  vPushReg R8
+0x1070ff4  vPopOptable
+0x130dd69  vPopReg R7
+0x1284361  vPopReg R10
+0x133bc8c  vPopReg R2
+0x1052b45  vPopReg R3
+0x10c533a  vPopReg R4
+0x10b3dc2  vPopReg R15
+0x10f54f1  vPopReg R1
+0x12bfa49  vPopReg R14
+0x1345186  vPopReg R11
+0x131853e  vPopReg R12
+0x10d93bc  vPopReg R9
+0x1311694  vPushImm 00871ff2
+0x1352168  vPushReg R7
+0x11197bd  vAdd
+0x130dd69  vPopReg R5
+0x1284361  vPopReg R0
+0x133b2bc  vPushReg R13
+0x13154f8  vPushReg R1
+0x10c80a8  vPushReg R11
+0x12a56e8  vPushReg R14
+0x134dbe0  vPushReg R1
+0x1313d5d  vPushReg R15
+0x12ceb7c  vPushReg R4
+0x1316096  vPushReg R3
+0x1344cca  vPushReg R2
+0x10c116f  vPushReg R10
+0x1352168  vPushReg R7
+0x133b2bc  vPushReg R0
+0x1099919  vPopOptable
+0x1085738  vPopReg R2
+0x12cf478  vPopReg R7
+0x12b457a  vPopReg R6
+0x12e62da  vPopReg R3
+0x127fe91  vPopReg R15
+0x129de52  vPopReg R4
+0x12b3eeb  vPopReg R10
+0x10d1346  vPopReg R5
+0x105ff98  vPopReg R12
+0x10d913c  vPopReg R14
+0x10ac758  vPopReg R9
+0x12fb5ac  vPushImm 00000002
+0x109033b  vPushReg R12
+0x12803a8  vPushReg R12
+0x12ab812  vNand
+0x1085738  vPopReg R1
+0x1094dba  vAdd
+0x12cf478  vPopReg R0
+0x10b79bb  vPushEsp
+0x1302ced  vPoiEsp
+0x133495e  vNand
+0x12b457a  vPopReg R11
+0x12e62da  vPopReg R9
+0x1322529  vPushReg R0
+0x12bdb5a  vPushImm 00000815
+0x132d695  vNor
+0x127fe91  vPopReg R9
+0x10a181d  vPushEsp
+0x132c678  vPoiEsp
+0x12f15ca  vNand
+0x129de52  vPopReg R8
+0x10f22dd  vPushReg R11
+0x1311f7a  vPushImm fffff7ea
+0x1066bbc  vNor
+0x12b3eeb  vPopReg R9
+0x1280533  vPushEsp
+0x12bc847  vPoiEsp
+0x10c3b00  vNand
+0x10d1346  vPopReg R8
+0x1285ce8  vAdd
+0x105ff98  vPopReg R14
+0x10d913c  vPopReg R1
+0x10a1ae2  vPushImm 00000006
+0x10cf09d  vPushReg R1
+0x1335635  vPushReg R1
+0x10e3b66  vNor
+0x10ac758  vPopReg R0
+0x1301cb1  vPushImm ffffffbf
+0x10ff1e6  vNand
+0x1085738  vPopReg R13
+0x136712c  vShr
+0x12cf478  vPopReg R7
+0x107edd2  vPushImm ffffffff
+0x111203c  vAdd
+0x12b457a  vPopReg R8
+0x12e62da  vPopReg R9
+0x12cfb2b  vPushImm 00871d92
+0x11197ec  vPushReg R9
+0x129f083  vPushReg R9
+0x10bd49b  vNor
+0x127fe91  vPopReg R14
+0x12ca964  vNor
+0x129de52  vPopReg R14
+0x107b307  vPushEsp
+0x133ecfd  vPoiEsp
+0x106d2f8  vNor
+0x12b3eeb  vPopReg R11
+0x12fb5ac  vPushImm 00871e24
+0x10a063a  vPushReg R9
+0x1330ed1  vNor
+0x10d1346  vPopReg R14
+0x12cbec7  vPushEsp
+0x10afd14  vPoiEsp
+0x10c7c61  vNor
+0x105ff98  vPopReg R13
+0x10a2ab2  vAdd
+0x10d913c  vPopReg R7
+0x10a1621  vPushReg R2
+0x13436ff  vAdd
+0x10ac758  vPopReg R7
+0x1085738  vPopReg R13
+0x130cf9c  vPushReg R14
+0x109033b  vPushReg R3
+0x12803a8  vPushReg R4
+0x1322529  vPushReg R3
+0x10f22dd  vPushReg R1
+0x10cf09d  vPushReg R10
+0x1335635  vPushReg R5
+0x11197ec  vPushReg R15
+0x129f083  vPushReg R12
+0x10a063a  vPushReg R6
+0x10a1621  vPushReg R2
+0x130cf9c  vPushReg R13
+0x105bdac  vPopOptable
+0x12e62da  vPopReg R6
+0x127fe91  vPopReg R13
+0x129de52  vPopReg R4
+0x12b3eeb  vPopReg R8
+0x10d1346  vPopReg R2
+0x105ff98  vPopReg R14
+0x10d913c  vPopReg R9
+0x10ac758  vPopReg R3
+0x1085738  vPopReg R12
+0x12cf478  vPopReg R11
+0x12b457a  vPopReg R11
+0x1311f7a  vPushImm 0058f4a9
+0x1322529  vPushReg R6
+0x13304c8  vAdd
+0x12e62da  vPopReg R1
+0x127fe91  vPopReg R11
+0x10f22dd  vPushReg R13
+0x10cf09d  vPushReg R4
+0x1335635  vPushReg R12
+0x11197ec  vPushReg R3
+0x129f083  vPushReg R9
+0x10a063a  vPushReg R14
+0x10a1621  vPushReg R2
+0x130cf9c  vPushReg R8
+0x109033b  vPushReg R4
+0x12803a8  vPushReg R13
+0x1322529  vPushReg R6
+0x10f22dd  vPushReg R11
+0x109852b  vPopOptable
+0x1081a08  vPopReg R1
+0x132e5c2  vPopReg R15
+0x128ca86  vPopReg R0
+0x105ed16  vPopReg R14
+0x1124bda  vPopReg R3
+0x10a454b  vPopReg R11
+0x10bfe87  vPopReg R2
+0x1334331  vPopReg R5
+0x111dfe6  vPopReg R13
+0x104d619  vPopReg R8
+0x136db24  vPopReg R4
+0x1277e2c  vPushImm 00000000
+0x106e053  vPushReg R3
+0x10cdbe6  vPushImm 00000002
+0x1331243  vPushReg R3
+0x107fa5e  vAdd
+0x1081a08  vPopReg R10
+0x132e5c2  vPopReg R8
+0x12e872d  vPoiEsp
+0x128ca86  vPopReg R7
+0x10f0203  vPushReg R7
+0x1060956  vPushReg R7
+0x12aaf79  vNor
+0x105ed16  vPopReg R12
+0x104c8ee  vPushReg R7
+0x10ab988  vPushReg R7
+0x12debaf  vNor
+0x1124bda  vPopReg R6
+0x1119ae2  vNand
+0x10a454b  vPopReg R3
+0x129bada  vPopReg R12
+0x1317eb5  vPushImm 00000006
+0x10595f1  vPushReg R3
+0x106ae67  vPushReg R3
+0x109dcb3  vNor
+0x10bfe87  vPopReg R12
+0x1294a27  vPushImm ffffffbf
+0x10f7b54  vNand
+0x1334331  vPopReg R12
+0x1297af7  vShr
+0x111dfe6  vPopReg R2
+0x10612e2  vPushImm ffffffff
+0x1104aaf  vAdd
+0x104d619  vPopReg R10
+0x136db24  vPopReg R9
+0x1294a27  vPushImm 0058f6d6
+0x1295096  vPushReg R9
+0x104f9c8  vPushReg R9
+0x129b5fc  vNand
+0x1081a08  vPopReg R6
+0x12e4fad  vNor
+0x132e5c2  vPopReg R4
+0x1313d0f  vPushEsp
+0x104eb97  vPoiEsp
+0x110343a  vNor
+0x128ca86  vPopReg R2
+0x10612e2  vPushImm 0058f644
+0x10afd57  vPushReg R9
+0x10e35fc  vNor
+0x105ed16  vPopReg R6
+0x135d146  vPushEsp
+0x105bc2d  vPoiEsp
+0x1273db4  vNand
+0x1124bda  vPopReg R14
+0x109ce2d  vAdd
+0x10a454b  vPopReg R2
+0x10d6fd4  vPushReg R1
+0x12e02e4  vAdd
+0x10bfe87  vPopReg R6
+0x1334331  vPopReg R10
+0x10bfdce  vPushReg R3
+0x127a971  vPushReg R6
+0x10ba81f  vPushReg R0
+0x106e053  vPushReg R13
+0x1331243  vPushReg R5
+0x10595f1  vPushReg R3
+0x106ae67  vPushReg R15
+0x1295096  vPushReg R11
+0x104f9c8  vPushReg R7
+0x10afd57  vPushReg R8
+0x10d6fd4  vPushReg R1
+0x10bfdce  vPushReg R10
+0x133c62e  vPopOptable
+0x111dfe6  vPopReg R2
+0x104d619  vPopReg R12
+0x136db24  vPopReg R8
+0x1081a08  vPopReg R6
+0x132e5c2  vPopReg R4
+0x128ca86  vPopReg R14
+0x105ed16  vPopReg R9
+0x1124bda  vPopReg R5
+0x10a454b  vPopReg R11
+0x10bfe87  vPopReg R13
+0x1334331  vPopReg R3
+0x1072d72  vPushImm 007fee0a
+0x127a971  vPushReg R2
+0x10853ba  vAdd
+0x111dfe6  vPopReg R0
+0x104d619  vPopReg R7
+0x10ba81f  vPushReg R14
+0x106e053  vPushReg R11
+0x1331243  vPushReg R11
+0x10595f1  vPushReg R5
+0x106ae67  vPushReg R9
+0x1295096  vPushReg R14
+0x104f9c8  vPushReg R4
+0x10afd57  vPushReg R6
+0x10d6fd4  vPushReg R8
+0x10bfdce  vPushReg R12
+0x127a971  vPushReg R2
+0x10ba81f  vPushReg R7
+0x1281f00  vPopOptable
+0x10ea0a3  vPopReg R10
+0x109d9ba  vPopReg R11
+0x1054a12  vPopReg R6
+0x107c093  vPopReg R3
+0x1119383  vPopReg R1
+0x12ab1ef  vPopReg R4
+0x107559b  vPopReg R0
+0x129cf7c  vPopReg R5
+0x105322e  vPopReg R12
+0x129f8ac  vPopReg R15
+0x1069c6a  vPopReg R7
+0x13365cd  vPushReg R6
+0x12bdf39  vPushImm ffffffd0
+0x131ceb6  vAdd
+0x10ea0a3  vPopReg R15
+0x109d9ba  vPopReg R13
+0x10b1466  vPushImm 00000009
+0x107b8d5  vPushReg R13
+0x12cc098  vPushReg R13
+0x1113bb3  vNand
+0x1054a12  vPopReg R2
+0x12b36a1  vAdd
+0x107c093  vPopReg R15
+0x107fbaf  vPushEsp
+0x1087098  vPoiEsp
+0x10dace1  vPushImm 0005fff8
+0x1119383  vPopReg R8
+0x10d01e1  vPopReg R4
+0x12f2cd9  vPushReg R15
+0x12efc55  vPushImm 00000815
+0x10f5575  vNor
+0x12ab1ef  vPopReg R2
+0x10a5221  vPushEsp
+0x12a4cb4  vPoiEsp
+0x1302501  vNor
+0x107559b  vPopReg R14
+0x135b655  vPushReg R8
+0x1062a29  vPushImm fffff7ea
+0x12af894  vNor
+0x129cf7c  vPopReg R12
+0x10ff133  vPushEsp
+0x13201b4  vPoiEsp
+0x1369e2e  vNor
+0x105322e  vPopReg R14
+0x1323df4  vAdd
+0x129f8ac  vPopReg R12
+0x1069c6a  vPopReg R2
+0x1303363  vPushImm 00000006
+0x10a9f15  vPushReg R2
+0x135e153  vPushReg R2
+0x12ef963  vNor
+0x10ea0a3  vPopReg R14
+0x110fad1  vPushImm ffffffbe
+0x107e2ba  vNand
+0x109d9ba  vPopReg R4
+0x1054a12  vPopReg R12
+0x10a45d0  vPushReg R4
+0x12f5e04  vPushImm 00000040
+0x132e74c  vNor
+0x107c093  vPopReg R14
+0x10c99d7  vPushEsp
+0x107fed6  vPoiEsp
+0x12adce0  vNand
+0x1119383  vPopReg R12
+0x111e9b5  vShr
+0x12ab1ef  vPopReg R7
+0x132cd3b  vPushImm ffffffff
+0x106dcd9  vAdd
+0x107559b  vPopReg R7
+0x129cf7c  vPopReg R12
+0x12bdf39  vPushImm 007ff0af
+0x128a4a3  vPushReg R12
+0x12e067a  vPushReg R12
+0x10acfee  vNand
+0x105322e  vPopReg R15
+0x10f058a  vNor
+0x129f8ac  vPopReg R8
+0x106883c  vPushEsp
+0x134bc45  vPoiEsp
+0x136aa13  vNand
+0x1069c6a  vPopReg R9
+0x12efc55  vPushImm 007ff01d
+0x10f7cbc  vPushReg R12
+0x12a57dd  vNor
+0x10ea0a3  vPopReg R8
+0x1081072  vPushEsp
+0x10c8e27  vPoiEsp
+0x12b53e1  vNand
+0x109d9ba  vPopReg R7
+0x129e7c3  vAdd
+0x1054a12  vPopReg R9
+0x10dedb7  vPushReg R10
+0x1074cb2  vAdd
+0x107c093  vPopReg R8
+0x1119383  vPopReg R15
+0x131fd9f  vPushReg R5
+0x13365cd  vPushReg R4
+0x12f2cd9  vPushReg R13
+0x135b655  vPushReg R5
+0x10a9f15  vPushReg R0
+0x135e153  vPushReg R2
+0x10a45d0  vPushReg R1
+0x128a4a3  vPushReg R3
+0x12e067a  vPushReg R6
+0x10f7cbc  vPushReg R11
+0x10dedb7  vPushReg R10
+0x131fd9f  vPushReg R15
+0x10f991d  vPopOptable
+0x12ab1ef  vPopReg R9
+0x107559b  vPopReg R10
+0x129cf7c  vPopReg R11
+0x105322e  vPopReg R8
+0x129f8ac  vPopReg R3
+0x1069c6a  vPopReg R1
+0x10ea0a3  vPopReg R2
+0x109d9ba  vPopReg R7
+0x1054a12  vPopReg R12
+0x107c093  vPopReg R6
+0x1119383  vPopReg R6
+0x1062a29  vPushImm 007c57f6
+0x13365cd  vPushReg R9
+0x11011d9  vAdd
+0x12ab1ef  vPopReg R6
+0x107559b  vPopReg R14
+0x12f2cd9  vPushReg R12
+0x135b655  vPushReg R0
+0x10a9f15  vPushReg R12
+0x135e153  vPushReg R7
+0x10a45d0  vPushReg R2
+0x128a4a3  vPushReg R1
+0x12e067a  vPushReg R3
+0x10f7cbc  vPushReg R8
+0x10dedb7  vPushReg R11
+0x131fd9f  vPushReg R10
+0x13365cd  vPushReg R9
+0x12f2cd9  vPushReg R14
+0x10f0c8a  vPopOptable
+0x10bfe87  vPopReg R1
+0x1334331  vPopReg R2
+0x111dfe6  vPopReg R3
+0x104d619  vPopReg R0
+0x136db24  vPopReg R5
+0x1081a08  vPopReg R11
+0x132e5c2  vPopReg R15
+0x128ca86  vPopReg R12
+0x105ed16  vPopReg R6
+0x1124bda  vPopReg R7
+0x10a454b  vPopReg R7
+0x1331243  vPushReg R5
+0x10cdbe6  vPushImm ffffffc0
+0x12e02e4  vAdd
+0x10bfe87  vPopReg R4
+0x10cc64b  vPoiEsp
+0x1334331  vPopReg R4
+0x10595f1  vPushReg R4
+0x1362755  vPushImm 00000002
+0x106ae67  vPushReg R4
+0x12882ad  vShl
+0x111dfe6  vPopReg R9
+0x10853ba  vAdd
+0x104d619  vPopReg R14
+0x136db24  vPopReg R8
+0x1295096  vPushReg R3
+0x12b6971  vPushImm 00000001
+0x104f9c8  vPushReg R8
+0x10b139e  vShl
+0x1081a08  vPopReg R9
+0x127f8db  vAdd
+0x132e5c2  vPopReg R14
+0x1294a27  vPushImm ffffffd0
+0x130031a  vAdd
+0x128ca86  vPopReg R7
+0x105ed16  vPopReg R7
+0x111e8b5  vPushImm 00000000
+0x10ed288  vPushReg R7
+0x1124bda  vPopReg R3
+0x12c4d21  vPushImm 00000000
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R5
+0x10612e2  vPushImm ffffffc0
+0x12fe53b  vAdd
+0x10a454b  vPopReg R8
+0x1364d03  vPopMem
+0x10bfdce  vPushReg R2
+0x10867b4  vPoiEsp
+0x1072d72  vPushImm 00000002
+0x127a971  vPushReg R2
+0x12b55fe  vAdd
+0x10bfe87  vPopReg R14
+0x1334331  vPopReg R13
+0x111dfe6  vPopReg R4
+0x10d0090  vPushReg R4
+0x128848b  vPushReg R4
+0x10d63a6  vNand
+0x104d619  vPopReg R10
+0x1090ae9  vPushReg R4
+0x10f0203  vPushReg R4
+0x111d8c2  vNand
+0x136db24  vPopReg R6
+0x12fb806  vNand
+0x1081a08  vPopReg R2
+0x106b606  vPopReg R14
+0x1277e2c  vPushImm 00000006
+0x10ba81f  vPushReg R2
+0x1322aa0  vPushImm ffffffbf
+0x12b2859  vNand
+0x132e5c2  vPopReg R9
+0x105ec10  vShr
+0x128ca86  vPopReg R9
+0x1351959  vPushImm ffffffff
+0x129d85b  vAdd
+0x105ed16  vPopReg R11
+0x1124bda  vPopReg R8
+0x1351959  vPushImm 007c5ac2
+0x106e053  vPushReg R8
+0x1331243  vPushReg R8
+0x12b162e  vNor
+0x10a454b  vPopReg R6
+0x10fa954  vNor
+0x10bfe87  vPopReg R10
+0x1320a1e  vPushEsp
+0x12eb80f  vPoiEsp
+0x110c4a3  vNor
+0x1334331  vPopReg R10
+0x1287ac9  vPushImm 007c5a30
+0x10595f1  vPushReg R8
+0x10fbc1e  vNor
+0x111dfe6  vPopReg R10
+0x12b79f4  vPushEsp
+0x127ea93  vPoiEsp
+0x12cc5fd  vNand
+0x104d619  vPopReg R11
+0x12af8af  vAdd
+0x136db24  vPopReg R11
+0x106ae67  vPushReg R1
+0x107fa5e  vAdd
+0x1081a08  vPopReg R9
+0x132e5c2  vPopReg R11
+0x1295096  vPushReg R15
+0x104f9c8  vPushReg R10
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R12
+0x10bfdce  vPushReg R15
+0x127a971  vPushReg R2
+0x10ba81f  vPushReg R5
+0x106e053  vPushReg R0
+0x1331243  vPushReg R4
+0x10595f1  vPushReg R13
+0x106ae67  vPushReg R1
+0x1295096  vPushReg R11
+0x133c62e  vPopOptable
+0x1124bda  vPopReg R6
+0x10a454b  vPopReg R4
+0x10bfe87  vPopReg R8
+0x1334331  vPopReg R9
+0x111dfe6  vPopReg R7
+0x104d619  vPopReg R2
+0x136db24  vPopReg R0
+0x1081a08  vPopReg R13
+0x132e5c2  vPopReg R10
+0x128ca86  vPopReg R1
+0x105ed16  vPopReg R14
+0x10c4115  vPushImm 007fee0a
+0x10d6fd4  vPushReg R6
+0x109ce2d  vAdd
+0x1124bda  vPopReg R1
+0x10a454b  vPopReg R1
+0x10bfdce  vPushReg R11
+0x127a971  vPushReg R14
+0x10ba81f  vPushReg R10
+0x106e053  vPushReg R13
+0x1331243  vPushReg R0
+0x10595f1  vPushReg R2
+0x106ae67  vPushReg R7
+0x1295096  vPushReg R9
+0x104f9c8  vPushReg R8
+0x10afd57  vPushReg R4
+0x10d6fd4  vPushReg R6
+0x10bfdce  vPushReg R1
+0x1281f00  vPopOptable
+0x10ea0a3  vPopReg R10
+0x109d9ba  vPopReg R11
+0x1054a12  vPopReg R6
+0x107c093  vPopReg R3
+0x1119383  vPopReg R1
+0x12ab1ef  vPopReg R4
+0x107559b  vPopReg R0
+0x129cf7c  vPopReg R5
+0x105322e  vPopReg R12
+0x129f8ac  vPopReg R15
+0x1069c6a  vPopReg R7
+0x13365cd  vPushReg R6
+0x12bdf39  vPushImm ffffffd0
+0x131ceb6  vAdd
+0x10ea0a3  vPopReg R15
+0x109d9ba  vPopReg R13
+0x10b1466  vPushImm 00000009
+0x107b8d5  vPushReg R13
+0x12cc098  vPushReg R13
+0x1113bb3  vNand
+0x1054a12  vPopReg R2
+0x12b36a1  vAdd
+0x107c093  vPopReg R15
+0x107fbaf  vPushEsp
+0x1087098  vPoiEsp
+0x10dace1  vPushImm 0005ffff
+0x1119383  vPopReg R8
+0x10d01e1  vPopReg R4
+0x12f2cd9  vPushReg R15
+0x12efc55  vPushImm 00000815
+0x10f5575  vNor
+0x12ab1ef  vPopReg R2
+0x10a5221  vPushEsp
+0x12a4cb4  vPoiEsp
+0x1302501  vNor
+0x107559b  vPopReg R14
+0x135b655  vPushReg R8
+0x1062a29  vPushImm fffff7ea
+0x12af894  vNor
+0x129cf7c  vPopReg R12
+0x10ff133  vPushEsp
+0x13201b4  vPoiEsp
+0x1369e2e  vNor
+0x105322e  vPopReg R14
+0x1323df4  vAdd
+0x129f8ac  vPopReg R12
+0x1069c6a  vPopReg R2
+0x1303363  vPushImm 00000006
+0x10a9f15  vPushReg R2
+0x135e153  vPushReg R2
+0x12ef963  vNor
+0x10ea0a3  vPopReg R14
+0x110fad1  vPushImm ffffffbe
+0x107e2ba  vNand
+0x109d9ba  vPopReg R4
+0x1054a12  vPopReg R12
+0x10a45d0  vPushReg R4
+0x12f5e04  vPushImm 00000040
+0x132e74c  vNor
+0x107c093  vPopReg R14
+0x10c99d7  vPushEsp
+0x107fed6  vPoiEsp
+0x12adce0  vNand
+0x1119383  vPopReg R12
+0x111e9b5  vShr
+0x12ab1ef  vPopReg R7
+0x132cd3b  vPushImm ffffffff
+0x106dcd9  vAdd
+0x107559b  vPopReg R7
+0x129cf7c  vPopReg R12
+0x12bdf39  vPushImm 007ff0af
+0x128a4a3  vPushReg R12
+0x12e067a  vPushReg R12
+0x10acfee  vNand
+0x105322e  vPopReg R15
+0x10f058a  vNor
+0x129f8ac  vPopReg R8
+0x106883c  vPushEsp
+0x134bc45  vPoiEsp
+0x136aa13  vNand
+0x1069c6a  vPopReg R9
+0x12efc55  vPushImm 007ff01d
+0x10f7cbc  vPushReg R12
+0x12a57dd  vNor
+0x10ea0a3  vPopReg R8
+0x1081072  vPushEsp
+0x10c8e27  vPoiEsp
+0x12b53e1  vNand
+0x109d9ba  vPopReg R7
+0x129e7c3  vAdd
+0x1054a12  vPopReg R9
+0x10dedb7  vPushReg R10
+0x1074cb2  vAdd
+0x107c093  vPopReg R8
+0x1119383  vPopReg R15
+0x131fd9f  vPushReg R5
+0x13365cd  vPushReg R4
+0x12f2cd9  vPushReg R13
+0x135b655  vPushReg R5
+0x10a9f15  vPushReg R0
+0x135e153  vPushReg R2
+0x10a45d0  vPushReg R1
+0x128a4a3  vPushReg R3
+0x12e067a  vPushReg R6
+0x10f7cbc  vPushReg R11
+0x10dedb7  vPushReg R10
+0x131fd9f  vPushReg R15
+0x10f991d  vPopOptable
+0x12ab1ef  vPopReg R9
+0x107559b  vPopReg R10
+0x129cf7c  vPopReg R11
+0x105322e  vPopReg R8
+0x129f8ac  vPopReg R3
+0x1069c6a  vPopReg R1
+0x10ea0a3  vPopReg R2
+0x109d9ba  vPopReg R7
+0x1054a12  vPopReg R12
+0x107c093  vPopReg R6
+0x1119383  vPopReg R6
+0x1062a29  vPushImm 007c57f6
+0x13365cd  vPushReg R9
+0x11011d9  vAdd
+0x12ab1ef  vPopReg R6
+0x107559b  vPopReg R14
+0x12f2cd9  vPushReg R12
+0x135b655  vPushReg R0
+0x10a9f15  vPushReg R12
+0x135e153  vPushReg R7
+0x10a45d0  vPushReg R2
+0x128a4a3  vPushReg R1
+0x12e067a  vPushReg R3
+0x10f7cbc  vPushReg R8
+0x10dedb7  vPushReg R11
+0x131fd9f  vPushReg R10
+0x13365cd  vPushReg R9
+0x12f2cd9  vPushReg R14
+0x10f0c8a  vPopOptable
+0x10bfe87  vPopReg R1
+0x1334331  vPopReg R2
+0x111dfe6  vPopReg R3
+0x104d619  vPopReg R0
+0x136db24  vPopReg R5
+0x1081a08  vPopReg R11
+0x132e5c2  vPopReg R15
+0x128ca86  vPopReg R12
+0x105ed16  vPopReg R6
+0x1124bda  vPopReg R7
+0x10a454b  vPopReg R7
+0x1331243  vPushReg R5
+0x10cdbe6  vPushImm ffffffc0
+0x12e02e4  vAdd
+0x10bfe87  vPopReg R4
+0x10cc64b  vPoiEsp
+0x1334331  vPopReg R4
+0x10595f1  vPushReg R4
+0x1362755  vPushImm 00000002
+0x106ae67  vPushReg R4
+0x12882ad  vShl
+0x111dfe6  vPopReg R9
+0x10853ba  vAdd
+0x104d619  vPopReg R14
+0x136db24  vPopReg R8
+0x1295096  vPushReg R3
+0x12b6971  vPushImm 00000001
+0x104f9c8  vPushReg R8
+0x10b139e  vShl
+0x1081a08  vPopReg R9
+0x127f8db  vAdd
+0x132e5c2  vPopReg R14
+0x1294a27  vPushImm ffffffd0
+0x130031a  vAdd
+0x128ca86  vPopReg R7
+0x105ed16  vPopReg R7
+0x111e8b5  vPushImm 00000000
+0x10ed288  vPushReg R7
+0x1124bda  vPopReg R3
+0x12c4d21  vPushImm 00000000
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R5
+0x10612e2  vPushImm ffffffc0
+0x12fe53b  vAdd
+0x10a454b  vPopReg R8
+0x1364d03  vPopMem
+0x10bfdce  vPushReg R2
+0x10867b4  vPoiEsp
+0x1072d72  vPushImm 00000002
+0x127a971  vPushReg R2
+0x12b55fe  vAdd
+0x10bfe87  vPopReg R14
+0x1334331  vPopReg R13
+0x111dfe6  vPopReg R4
+0x10d0090  vPushReg R4
+0x128848b  vPushReg R4
+0x10d63a6  vNand
+0x104d619  vPopReg R10
+0x1090ae9  vPushReg R4
+0x10f0203  vPushReg R4
+0x111d8c2  vNand
+0x136db24  vPopReg R6
+0x12fb806  vNand
+0x1081a08  vPopReg R2
+0x106b606  vPopReg R14
+0x1277e2c  vPushImm 00000006
+0x10ba81f  vPushReg R2
+0x1322aa0  vPushImm ffffffbf
+0x12b2859  vNand
+0x132e5c2  vPopReg R9
+0x105ec10  vShr
+0x128ca86  vPopReg R9
+0x1351959  vPushImm ffffffff
+0x129d85b  vAdd
+0x105ed16  vPopReg R11
+0x1124bda  vPopReg R8
+0x1351959  vPushImm 007c5ac2
+0x106e053  vPushReg R8
+0x1331243  vPushReg R8
+0x12b162e  vNor
+0x10a454b  vPopReg R6
+0x10fa954  vNor
+0x10bfe87  vPopReg R10
+0x1320a1e  vPushEsp
+0x12eb80f  vPoiEsp
+0x110c4a3  vNor
+0x1334331  vPopReg R10
+0x1287ac9  vPushImm 007c5a30
+0x10595f1  vPushReg R8
+0x10fbc1e  vNor
+0x111dfe6  vPopReg R10
+0x12b79f4  vPushEsp
+0x127ea93  vPoiEsp
+0x12cc5fd  vNand
+0x104d619  vPopReg R11
+0x12af8af  vAdd
+0x136db24  vPopReg R11
+0x106ae67  vPushReg R1
+0x107fa5e  vAdd
+0x1081a08  vPopReg R9
+0x132e5c2  vPopReg R11
+0x1295096  vPushReg R15
+0x104f9c8  vPushReg R10
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R12
+0x10bfdce  vPushReg R15
+0x127a971  vPushReg R2
+0x10ba81f  vPushReg R5
+0x106e053  vPushReg R0
+0x1331243  vPushReg R4
+0x10595f1  vPushReg R13
+0x106ae67  vPushReg R1
+0x1295096  vPushReg R11
+0x133c62e  vPopOptable
+0x1124bda  vPopReg R6
+0x10a454b  vPopReg R4
+0x10bfe87  vPopReg R8
+0x1334331  vPopReg R9
+0x111dfe6  vPopReg R7
+0x104d619  vPopReg R2
+0x136db24  vPopReg R0
+0x1081a08  vPopReg R13
+0x132e5c2  vPopReg R10
+0x128ca86  vPopReg R1
+0x105ed16  vPopReg R14
+0x10c4115  vPushImm 007fee0a
+0x10d6fd4  vPushReg R6
+0x109ce2d  vAdd
+0x1124bda  vPopReg R1
+0x10a454b  vPopReg R1
+0x10bfdce  vPushReg R11
+0x127a971  vPushReg R14
+0x10ba81f  vPushReg R10
+0x106e053  vPushReg R13
+0x1331243  vPushReg R0
+0x10595f1  vPushReg R2
+0x106ae67  vPushReg R7
+0x1295096  vPushReg R9
+0x104f9c8  vPushReg R8
+0x10afd57  vPushReg R4
+0x10d6fd4  vPushReg R6
+0x10bfdce  vPushReg R1
+0x1281f00  vPopOptable
+0x10ea0a3  vPopReg R10
+0x109d9ba  vPopReg R11
+0x1054a12  vPopReg R6
+0x107c093  vPopReg R3
+0x1119383  vPopReg R1
+0x12ab1ef  vPopReg R4
+0x107559b  vPopReg R0
+0x129cf7c  vPopReg R5
+0x105322e  vPopReg R12
+0x129f8ac  vPopReg R15
+0x1069c6a  vPopReg R7
+0x13365cd  vPushReg R6
+0x12bdf39  vPushImm ffffffd0
+0x131ceb6  vAdd
+0x10ea0a3  vPopReg R15
+0x109d9ba  vPopReg R13
+0x10b1466  vPushImm 00000009
+0x107b8d5  vPushReg R13
+0x12cc098  vPushReg R13
+0x1113bb3  vNand
+0x1054a12  vPopReg R2
+0x12b36a1  vAdd
+0x107c093  vPopReg R15
+0x107fbaf  vPushEsp
+0x1087098  vPoiEsp
+0x10dace1  vPushImm 0005fffa
+0x1119383  vPopReg R8
+0x10d01e1  vPopReg R4
+0x12f2cd9  vPushReg R15
+0x12efc55  vPushImm 00000815
+0x10f5575  vNor
+0x12ab1ef  vPopReg R2
+0x10a5221  vPushEsp
+0x12a4cb4  vPoiEsp
+0x1302501  vNor
+0x107559b  vPopReg R14
+0x135b655  vPushReg R8
+0x1062a29  vPushImm fffff7ea
+0x12af894  vNor
+0x129cf7c  vPopReg R12
+0x10ff133  vPushEsp
+0x13201b4  vPoiEsp
+0x1369e2e  vNor
+0x105322e  vPopReg R14
+0x1323df4  vAdd
+0x129f8ac  vPopReg R12
+0x1069c6a  vPopReg R2
+0x1303363  vPushImm 00000006
+0x10a9f15  vPushReg R2
+0x135e153  vPushReg R2
+0x12ef963  vNor
+0x10ea0a3  vPopReg R14
+0x110fad1  vPushImm ffffffbe
+0x107e2ba  vNand
+0x109d9ba  vPopReg R4
+0x1054a12  vPopReg R12
+0x10a45d0  vPushReg R4
+0x12f5e04  vPushImm 00000040
+0x132e74c  vNor
+0x107c093  vPopReg R14
+0x10c99d7  vPushEsp
+0x107fed6  vPoiEsp
+0x12adce0  vNand
+0x1119383  vPopReg R12
+0x111e9b5  vShr
+0x12ab1ef  vPopReg R7
+0x132cd3b  vPushImm ffffffff
+0x106dcd9  vAdd
+0x107559b  vPopReg R7
+0x129cf7c  vPopReg R12
+0x12bdf39  vPushImm 007ff0af
+0x128a4a3  vPushReg R12
+0x12e067a  vPushReg R12
+0x10acfee  vNand
+0x105322e  vPopReg R15
+0x10f058a  vNor
+0x129f8ac  vPopReg R8
+0x106883c  vPushEsp
+0x134bc45  vPoiEsp
+0x136aa13  vNand
+0x1069c6a  vPopReg R9
+0x12efc55  vPushImm 007ff01d
+0x10f7cbc  vPushReg R12
+0x12a57dd  vNor
+0x10ea0a3  vPopReg R8
+0x1081072  vPushEsp
+0x10c8e27  vPoiEsp
+0x12b53e1  vNand
+0x109d9ba  vPopReg R7
+0x129e7c3  vAdd
+0x1054a12  vPopReg R9
+0x10dedb7  vPushReg R10
+0x1074cb2  vAdd
+0x107c093  vPopReg R8
+0x1119383  vPopReg R15
+0x131fd9f  vPushReg R5
+0x13365cd  vPushReg R4
+0x12f2cd9  vPushReg R13
+0x135b655  vPushReg R5
+0x10a9f15  vPushReg R0
+0x135e153  vPushReg R2
+0x10a45d0  vPushReg R1
+0x128a4a3  vPushReg R3
+0x12e067a  vPushReg R6
+0x10f7cbc  vPushReg R11
+0x10dedb7  vPushReg R10
+0x131fd9f  vPushReg R15
+0x10f991d  vPopOptable
+0x12ab1ef  vPopReg R9
+0x107559b  vPopReg R10
+0x129cf7c  vPopReg R11
+0x105322e  vPopReg R8
+0x129f8ac  vPopReg R3
+0x1069c6a  vPopReg R1
+0x10ea0a3  vPopReg R2
+0x109d9ba  vPopReg R7
+0x1054a12  vPopReg R12
+0x107c093  vPopReg R6
+0x1119383  vPopReg R6
+0x1062a29  vPushImm 007c57f6
+0x13365cd  vPushReg R9
+0x11011d9  vAdd
+0x12ab1ef  vPopReg R6
+0x107559b  vPopReg R14
+0x12f2cd9  vPushReg R12
+0x135b655  vPushReg R0
+0x10a9f15  vPushReg R12
+0x135e153  vPushReg R7
+0x10a45d0  vPushReg R2
+0x128a4a3  vPushReg R1
+0x12e067a  vPushReg R3
+0x10f7cbc  vPushReg R8
+0x10dedb7  vPushReg R11
+0x131fd9f  vPushReg R10
+0x13365cd  vPushReg R9
+0x12f2cd9  vPushReg R14
+0x10f0c8a  vPopOptable
+0x10bfe87  vPopReg R1
+0x1334331  vPopReg R2
+0x111dfe6  vPopReg R3
+0x104d619  vPopReg R0
+0x136db24  vPopReg R5
+0x1081a08  vPopReg R11
+0x132e5c2  vPopReg R15
+0x128ca86  vPopReg R12
+0x105ed16  vPopReg R6
+0x1124bda  vPopReg R7
+0x10a454b  vPopReg R7
+0x1331243  vPushReg R5
+0x10cdbe6  vPushImm ffffffc0
+0x12e02e4  vAdd
+0x10bfe87  vPopReg R4
+0x10cc64b  vPoiEsp
+0x1334331  vPopReg R4
+0x10595f1  vPushReg R4
+0x1362755  vPushImm 00000002
+0x106ae67  vPushReg R4
+0x12882ad  vShl
+0x111dfe6  vPopReg R9
+0x10853ba  vAdd
+0x104d619  vPopReg R14
+0x136db24  vPopReg R8
+0x1295096  vPushReg R3
+0x12b6971  vPushImm 00000001
+0x104f9c8  vPushReg R8
+0x10b139e  vShl
+0x1081a08  vPopReg R9
+0x127f8db  vAdd
+0x132e5c2  vPopReg R14
+0x1294a27  vPushImm ffffffd0
+0x130031a  vAdd
+0x128ca86  vPopReg R7
+0x105ed16  vPopReg R7
+0x111e8b5  vPushImm 00000000
+0x10ed288  vPushReg R7
+0x1124bda  vPopReg R3
+0x12c4d21  vPushImm 00000000
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R5
+0x10612e2  vPushImm ffffffc0
+0x12fe53b  vAdd
+0x10a454b  vPopReg R8
+0x1364d03  vPopMem
+0x10bfdce  vPushReg R2
+0x10867b4  vPoiEsp
+0x1072d72  vPushImm 00000002
+0x127a971  vPushReg R2
+0x12b55fe  vAdd
+0x10bfe87  vPopReg R14
+0x1334331  vPopReg R13
+0x111dfe6  vPopReg R4
+0x10d0090  vPushReg R4
+0x128848b  vPushReg R4
+0x10d63a6  vNand
+0x104d619  vPopReg R10
+0x1090ae9  vPushReg R4
+0x10f0203  vPushReg R4
+0x111d8c2  vNand
+0x136db24  vPopReg R6
+0x12fb806  vNand
+0x1081a08  vPopReg R2
+0x106b606  vPopReg R14
+0x1277e2c  vPushImm 00000006
+0x10ba81f  vPushReg R2
+0x1322aa0  vPushImm ffffffbf
+0x12b2859  vNand
+0x132e5c2  vPopReg R9
+0x105ec10  vShr
+0x128ca86  vPopReg R9
+0x1351959  vPushImm ffffffff
+0x129d85b  vAdd
+0x105ed16  vPopReg R11
+0x1124bda  vPopReg R8
+0x1351959  vPushImm 007c5ac2
+0x106e053  vPushReg R8
+0x1331243  vPushReg R8
+0x12b162e  vNor
+0x10a454b  vPopReg R6
+0x10fa954  vNor
+0x10bfe87  vPopReg R10
+0x1320a1e  vPushEsp
+0x12eb80f  vPoiEsp
+0x110c4a3  vNor
+0x1334331  vPopReg R10
+0x1287ac9  vPushImm 007c5a30
+0x10595f1  vPushReg R8
+0x10fbc1e  vNor
+0x111dfe6  vPopReg R10
+0x12b79f4  vPushEsp
+0x127ea93  vPoiEsp
+0x12cc5fd  vNand
+0x104d619  vPopReg R11
+0x12af8af  vAdd
+0x136db24  vPopReg R11
+0x106ae67  vPushReg R1
+0x107fa5e  vAdd
+0x1081a08  vPopReg R9
+0x132e5c2  vPopReg R11
+0x1295096  vPushReg R15
+0x104f9c8  vPushReg R10
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R12
+0x10bfdce  vPushReg R15
+0x127a971  vPushReg R2
+0x10ba81f  vPushReg R5
+0x106e053  vPushReg R0
+0x1331243  vPushReg R4
+0x10595f1  vPushReg R13
+0x106ae67  vPushReg R1
+0x1295096  vPushReg R11
+0x133c62e  vPopOptable
+0x1124bda  vPopReg R6
+0x10a454b  vPopReg R4
+0x10bfe87  vPopReg R8
+0x1334331  vPopReg R9
+0x111dfe6  vPopReg R7
+0x104d619  vPopReg R2
+0x136db24  vPopReg R0
+0x1081a08  vPopReg R13
+0x132e5c2  vPopReg R10
+0x128ca86  vPopReg R1
+0x105ed16  vPopReg R14
+0x10c4115  vPushImm 007fee0a
+0x10d6fd4  vPushReg R6
+0x109ce2d  vAdd
+0x1124bda  vPopReg R1
+0x10a454b  vPopReg R1
+0x10bfdce  vPushReg R11
+0x127a971  vPushReg R14
+0x10ba81f  vPushReg R10
+0x106e053  vPushReg R13
+0x1331243  vPushReg R0
+0x10595f1  vPushReg R2
+0x106ae67  vPushReg R7
+0x1295096  vPushReg R9
+0x104f9c8  vPushReg R8
+0x10afd57  vPushReg R4
+0x10d6fd4  vPushReg R6
+0x10bfdce  vPushReg R1
+0x1281f00  vPopOptable
+0x10ea0a3  vPopReg R10
+0x109d9ba  vPopReg R11
+0x1054a12  vPopReg R6
+0x107c093  vPopReg R3
+0x1119383  vPopReg R1
+0x12ab1ef  vPopReg R4
+0x107559b  vPopReg R0
+0x129cf7c  vPopReg R5
+0x105322e  vPopReg R12
+0x129f8ac  vPopReg R15
+0x1069c6a  vPopReg R7
+0x13365cd  vPushReg R6
+0x12bdf39  vPushImm ffffffd0
+0x131ceb6  vAdd
+0x10ea0a3  vPopReg R15
+0x109d9ba  vPopReg R13
+0x10b1466  vPushImm 00000009
+0x107b8d5  vPushReg R13
+0x12cc098  vPushReg R13
+0x1113bb3  vNand
+0x1054a12  vPopReg R2
+0x12b36a1  vAdd
+0x107c093  vPopReg R15
+0x107fbaf  vPushEsp
+0x1087098  vPoiEsp
+0x10dace1  vPushImm 0005fffd
+0x1119383  vPopReg R8
+0x10d01e1  vPopReg R4
+0x12f2cd9  vPushReg R15
+0x12efc55  vPushImm 00000815
+0x10f5575  vNor
+0x12ab1ef  vPopReg R2
+0x10a5221  vPushEsp
+0x12a4cb4  vPoiEsp
+0x1302501  vNor
+0x107559b  vPopReg R14
+0x135b655  vPushReg R8
+0x1062a29  vPushImm fffff7ea
+0x12af894  vNor
+0x129cf7c  vPopReg R12
+0x10ff133  vPushEsp
+0x13201b4  vPoiEsp
+0x1369e2e  vNor
+0x105322e  vPopReg R14
+0x1323df4  vAdd
+0x129f8ac  vPopReg R12
+0x1069c6a  vPopReg R2
+0x1303363  vPushImm 00000006
+0x10a9f15  vPushReg R2
+0x135e153  vPushReg R2
+0x12ef963  vNor
+0x10ea0a3  vPopReg R14
+0x110fad1  vPushImm ffffffbe
+0x107e2ba  vNand
+0x109d9ba  vPopReg R4
+0x1054a12  vPopReg R12
+0x10a45d0  vPushReg R4
+0x12f5e04  vPushImm 00000040
+0x132e74c  vNor
+0x107c093  vPopReg R14
+0x10c99d7  vPushEsp
+0x107fed6  vPoiEsp
+0x12adce0  vNand
+0x1119383  vPopReg R12
+0x111e9b5  vShr
+0x12ab1ef  vPopReg R7
+0x132cd3b  vPushImm ffffffff
+0x106dcd9  vAdd
+0x107559b  vPopReg R7
+0x129cf7c  vPopReg R12
+0x12bdf39  vPushImm 007ff0af
+0x128a4a3  vPushReg R12
+0x12e067a  vPushReg R12
+0x10acfee  vNand
+0x105322e  vPopReg R15
+0x10f058a  vNor
+0x129f8ac  vPopReg R8
+0x106883c  vPushEsp
+0x134bc45  vPoiEsp
+0x136aa13  vNand
+0x1069c6a  vPopReg R9
+0x12efc55  vPushImm 007ff01d
+0x10f7cbc  vPushReg R12
+0x12a57dd  vNor
+0x10ea0a3  vPopReg R8
+0x1081072  vPushEsp
+0x10c8e27  vPoiEsp
+0x12b53e1  vNand
+0x109d9ba  vPopReg R7
+0x129e7c3  vAdd
+0x1054a12  vPopReg R9
+0x10dedb7  vPushReg R10
+0x1074cb2  vAdd
+0x107c093  vPopReg R8
+0x1119383  vPopReg R15
+0x131fd9f  vPushReg R5
+0x13365cd  vPushReg R4
+0x12f2cd9  vPushReg R13
+0x135b655  vPushReg R5
+0x10a9f15  vPushReg R0
+0x135e153  vPushReg R2
+0x10a45d0  vPushReg R1
+0x128a4a3  vPushReg R3
+0x12e067a  vPushReg R6
+0x10f7cbc  vPushReg R11
+0x10dedb7  vPushReg R10
+0x131fd9f  vPushReg R15
+0x10f991d  vPopOptable
+0x12ab1ef  vPopReg R9
+0x107559b  vPopReg R10
+0x129cf7c  vPopReg R11
+0x105322e  vPopReg R8
+0x129f8ac  vPopReg R3
+0x1069c6a  vPopReg R1
+0x10ea0a3  vPopReg R2
+0x109d9ba  vPopReg R7
+0x1054a12  vPopReg R12
+0x107c093  vPopReg R6
+0x1119383  vPopReg R6
+0x1062a29  vPushImm 007c57f6
+0x13365cd  vPushReg R9
+0x11011d9  vAdd
+0x12ab1ef  vPopReg R6
+0x107559b  vPopReg R14
+0x12f2cd9  vPushReg R12
+0x135b655  vPushReg R0
+0x10a9f15  vPushReg R12
+0x135e153  vPushReg R7
+0x10a45d0  vPushReg R2
+0x128a4a3  vPushReg R1
+0x12e067a  vPushReg R3
+0x10f7cbc  vPushReg R8
+0x10dedb7  vPushReg R11
+0x131fd9f  vPushReg R10
+0x13365cd  vPushReg R9
+0x12f2cd9  vPushReg R14
+0x10f0c8a  vPopOptable
+0x10bfe87  vPopReg R1
+0x1334331  vPopReg R2
+0x111dfe6  vPopReg R3
+0x104d619  vPopReg R0
+0x136db24  vPopReg R5
+0x1081a08  vPopReg R11
+0x132e5c2  vPopReg R15
+0x128ca86  vPopReg R12
+0x105ed16  vPopReg R6
+0x1124bda  vPopReg R7
+0x10a454b  vPopReg R7
+0x1331243  vPushReg R5
+0x10cdbe6  vPushImm ffffffc0
+0x12e02e4  vAdd
+0x10bfe87  vPopReg R4
+0x10cc64b  vPoiEsp
+0x1334331  vPopReg R4
+0x10595f1  vPushReg R4
+0x1362755  vPushImm 00000002
+0x106ae67  vPushReg R4
+0x12882ad  vShl
+0x111dfe6  vPopReg R9
+0x10853ba  vAdd
+0x104d619  vPopReg R14
+0x136db24  vPopReg R8
+0x1295096  vPushReg R3
+0x12b6971  vPushImm 00000001
+0x104f9c8  vPushReg R8
+0x10b139e  vShl
+0x1081a08  vPopReg R9
+0x127f8db  vAdd
+0x132e5c2  vPopReg R14
+0x1294a27  vPushImm ffffffd0
+0x130031a  vAdd
+0x128ca86  vPopReg R7
+0x105ed16  vPopReg R7
+0x111e8b5  vPushImm 00000000
+0x10ed288  vPushReg R7
+0x1124bda  vPopReg R3
+0x12c4d21  vPushImm 00000000
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R5
+0x10612e2  vPushImm ffffffc0
+0x12fe53b  vAdd
+0x10a454b  vPopReg R8
+0x1364d03  vPopMem
+0x10bfdce  vPushReg R2
+0x10867b4  vPoiEsp
+0x1072d72  vPushImm 00000002
+0x127a971  vPushReg R2
+0x12b55fe  vAdd
+0x10bfe87  vPopReg R14
+0x1334331  vPopReg R13
+0x111dfe6  vPopReg R4
+0x10d0090  vPushReg R4
+0x128848b  vPushReg R4
+0x10d63a6  vNand
+0x104d619  vPopReg R10
+0x1090ae9  vPushReg R4
+0x10f0203  vPushReg R4
+0x111d8c2  vNand
+0x136db24  vPopReg R6
+0x12fb806  vNand
+0x1081a08  vPopReg R2
+0x106b606  vPopReg R14
+0x1277e2c  vPushImm 00000006
+0x10ba81f  vPushReg R2
+0x1322aa0  vPushImm ffffffbf
+0x12b2859  vNand
+0x132e5c2  vPopReg R9
+0x105ec10  vShr
+0x128ca86  vPopReg R9
+0x1351959  vPushImm ffffffff
+0x129d85b  vAdd
+0x105ed16  vPopReg R11
+0x1124bda  vPopReg R8
+0x1351959  vPushImm 007c5ac2
+0x106e053  vPushReg R8
+0x1331243  vPushReg R8
+0x12b162e  vNor
+0x10a454b  vPopReg R6
+0x10fa954  vNor
+0x10bfe87  vPopReg R10
+0x1320a1e  vPushEsp
+0x12eb80f  vPoiEsp
+0x110c4a3  vNor
+0x1334331  vPopReg R10
+0x1287ac9  vPushImm 007c5a30
+0x10595f1  vPushReg R8
+0x10fbc1e  vNor
+0x111dfe6  vPopReg R10
+0x12b79f4  vPushEsp
+0x127ea93  vPoiEsp
+0x12cc5fd  vNand
+0x104d619  vPopReg R11
+0x12af8af  vAdd
+0x136db24  vPopReg R11
+0x106ae67  vPushReg R1
+0x107fa5e  vAdd
+0x1081a08  vPopReg R9
+0x132e5c2  vPopReg R11
+0x1295096  vPushReg R15
+0x104f9c8  vPushReg R10
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R12
+0x10bfdce  vPushReg R15
+0x127a971  vPushReg R2
+0x10ba81f  vPushReg R5
+0x106e053  vPushReg R0
+0x1331243  vPushReg R4
+0x10595f1  vPushReg R13
+0x106ae67  vPushReg R1
+0x1295096  vPushReg R11
+0x133c62e  vPopOptable
+0x1124bda  vPopReg R6
+0x10a454b  vPopReg R4
+0x10bfe87  vPopReg R8
+0x1334331  vPopReg R9
+0x111dfe6  vPopReg R7
+0x104d619  vPopReg R2
+0x136db24  vPopReg R0
+0x1081a08  vPopReg R13
+0x132e5c2  vPopReg R10
+0x128ca86  vPopReg R1
+0x105ed16  vPopReg R14
+0x10c4115  vPushImm 007fee0a
+0x10d6fd4  vPushReg R6
+0x109ce2d  vAdd
+0x1124bda  vPopReg R1
+0x10a454b  vPopReg R1
+0x10bfdce  vPushReg R11
+0x127a971  vPushReg R14
+0x10ba81f  vPushReg R10
+0x106e053  vPushReg R13
+0x1331243  vPushReg R0
+0x10595f1  vPushReg R2
+0x106ae67  vPushReg R7
+0x1295096  vPushReg R9
+0x104f9c8  vPushReg R8
+0x10afd57  vPushReg R4
+0x10d6fd4  vPushReg R6
+0x10bfdce  vPushReg R1
+0x1281f00  vPopOptable
+0x10ea0a3  vPopReg R10
+0x109d9ba  vPopReg R11
+0x1054a12  vPopReg R6
+0x107c093  vPopReg R3
+0x1119383  vPopReg R1
+0x12ab1ef  vPopReg R4
+0x107559b  vPopReg R0
+0x129cf7c  vPopReg R5
+0x105322e  vPopReg R12
+0x129f8ac  vPopReg R15
+0x1069c6a  vPopReg R7
+0x13365cd  vPushReg R6
+0x12bdf39  vPushImm ffffffd0
+0x131ceb6  vAdd
+0x10ea0a3  vPopReg R15
+0x109d9ba  vPopReg R13
+0x10b1466  vPushImm 00000009
+0x107b8d5  vPushReg R13
+0x12cc098  vPushReg R13
+0x1113bb3  vNand
+0x1054a12  vPopReg R2
+0x12b36a1  vAdd
+0x107c093  vPopReg R15
+0x107fbaf  vPushEsp
+0x1087098  vPoiEsp
+0x10dace1  vPushImm 0005fff9
+0x1119383  vPopReg R8
+0x10d01e1  vPopReg R4
+0x12f2cd9  vPushReg R15
+0x12efc55  vPushImm 00000815
+0x10f5575  vNor
+0x12ab1ef  vPopReg R2
+0x10a5221  vPushEsp
+0x12a4cb4  vPoiEsp
+0x1302501  vNor
+0x107559b  vPopReg R14
+0x135b655  vPushReg R8
+0x1062a29  vPushImm fffff7ea
+0x12af894  vNor
+0x129cf7c  vPopReg R12
+0x10ff133  vPushEsp
+0x13201b4  vPoiEsp
+0x1369e2e  vNor
+0x105322e  vPopReg R14
+0x1323df4  vAdd
+0x129f8ac  vPopReg R12
+0x1069c6a  vPopReg R2
+0x1303363  vPushImm 00000006
+0x10a9f15  vPushReg R2
+0x135e153  vPushReg R2
+0x12ef963  vNor
+0x10ea0a3  vPopReg R14
+0x110fad1  vPushImm ffffffbe
+0x107e2ba  vNand
+0x109d9ba  vPopReg R4
+0x1054a12  vPopReg R12
+0x10a45d0  vPushReg R4
+0x12f5e04  vPushImm 00000040
+0x132e74c  vNor
+0x107c093  vPopReg R14
+0x10c99d7  vPushEsp
+0x107fed6  vPoiEsp
+0x12adce0  vNand
+0x1119383  vPopReg R12
+0x111e9b5  vShr
+0x12ab1ef  vPopReg R7
+0x132cd3b  vPushImm ffffffff
+0x106dcd9  vAdd
+0x107559b  vPopReg R7
+0x129cf7c  vPopReg R12
+0x12bdf39  vPushImm 007ff0af
+0x128a4a3  vPushReg R12
+0x12e067a  vPushReg R12
+0x10acfee  vNand
+0x105322e  vPopReg R15
+0x10f058a  vNor
+0x129f8ac  vPopReg R8
+0x106883c  vPushEsp
+0x134bc45  vPoiEsp
+0x136aa13  vNand
+0x1069c6a  vPopReg R9
+0x12efc55  vPushImm 007ff01d
+0x10f7cbc  vPushReg R12
+0x12a57dd  vNor
+0x10ea0a3  vPopReg R8
+0x1081072  vPushEsp
+0x10c8e27  vPoiEsp
+0x12b53e1  vNand
+0x109d9ba  vPopReg R7
+0x129e7c3  vAdd
+0x1054a12  vPopReg R9
+0x10dedb7  vPushReg R10
+0x1074cb2  vAdd
+0x107c093  vPopReg R8
+0x1119383  vPopReg R15
+0x131fd9f  vPushReg R5
+0x13365cd  vPushReg R4
+0x12f2cd9  vPushReg R13
+0x135b655  vPushReg R5
+0x10a9f15  vPushReg R0
+0x135e153  vPushReg R2
+0x10a45d0  vPushReg R1
+0x128a4a3  vPushReg R3
+0x12e067a  vPushReg R6
+0x10f7cbc  vPushReg R11
+0x10dedb7  vPushReg R10
+0x131fd9f  vPushReg R15
+0x10f991d  vPopOptable
+0x12ab1ef  vPopReg R9
+0x107559b  vPopReg R10
+0x129cf7c  vPopReg R11
+0x105322e  vPopReg R8
+0x129f8ac  vPopReg R3
+0x1069c6a  vPopReg R1
+0x10ea0a3  vPopReg R2
+0x109d9ba  vPopReg R7
+0x1054a12  vPopReg R12
+0x107c093  vPopReg R6
+0x1119383  vPopReg R6
+0x1062a29  vPushImm 007c57f6
+0x13365cd  vPushReg R9
+0x11011d9  vAdd
+0x12ab1ef  vPopReg R6
+0x107559b  vPopReg R14
+0x12f2cd9  vPushReg R12
+0x135b655  vPushReg R0
+0x10a9f15  vPushReg R12
+0x135e153  vPushReg R7
+0x10a45d0  vPushReg R2
+0x128a4a3  vPushReg R1
+0x12e067a  vPushReg R3
+0x10f7cbc  vPushReg R8
+0x10dedb7  vPushReg R11
+0x131fd9f  vPushReg R10
+0x13365cd  vPushReg R9
+0x12f2cd9  vPushReg R14
+0x10f0c8a  vPopOptable
+0x10bfe87  vPopReg R1
+0x1334331  vPopReg R2
+0x111dfe6  vPopReg R3
+0x104d619  vPopReg R0
+0x136db24  vPopReg R5
+0x1081a08  vPopReg R11
+0x132e5c2  vPopReg R15
+0x128ca86  vPopReg R12
+0x105ed16  vPopReg R6
+0x1124bda  vPopReg R7
+0x10a454b  vPopReg R7
+0x1331243  vPushReg R5
+0x10cdbe6  vPushImm ffffffc0
+0x12e02e4  vAdd
+0x10bfe87  vPopReg R4
+0x10cc64b  vPoiEsp
+0x1334331  vPopReg R4
+0x10595f1  vPushReg R4
+0x1362755  vPushImm 00000002
+0x106ae67  vPushReg R4
+0x12882ad  vShl
+0x111dfe6  vPopReg R9
+0x10853ba  vAdd
+0x104d619  vPopReg R14
+0x136db24  vPopReg R8
+0x1295096  vPushReg R3
+0x12b6971  vPushImm 00000001
+0x104f9c8  vPushReg R8
+0x10b139e  vShl
+0x1081a08  vPopReg R9
+0x127f8db  vAdd
+0x132e5c2  vPopReg R14
+0x1294a27  vPushImm ffffffd0
+0x130031a  vAdd
+0x128ca86  vPopReg R7
+0x105ed16  vPopReg R7
+0x111e8b5  vPushImm 00000000
+0x10ed288  vPushReg R7
+0x1124bda  vPopReg R3
+0x12c4d21  vPushImm 00000000
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R5
+0x10612e2  vPushImm ffffffc0
+0x12fe53b  vAdd
+0x10a454b  vPopReg R8
+0x1364d03  vPopMem
+0x10bfdce  vPushReg R2
+0x10867b4  vPoiEsp
+0x1072d72  vPushImm 00000002
+0x127a971  vPushReg R2
+0x12b55fe  vAdd
+0x10bfe87  vPopReg R14
+0x1334331  vPopReg R13
+0x111dfe6  vPopReg R4
+0x10d0090  vPushReg R4
+0x128848b  vPushReg R4
+0x10d63a6  vNand
+0x104d619  vPopReg R10
+0x1090ae9  vPushReg R4
+0x10f0203  vPushReg R4
+0x111d8c2  vNand
+0x136db24  vPopReg R6
+0x12fb806  vNand
+0x1081a08  vPopReg R2
+0x106b606  vPopReg R14
+0x1277e2c  vPushImm 00000006
+0x10ba81f  vPushReg R2
+0x1322aa0  vPushImm ffffffbf
+0x12b2859  vNand
+0x132e5c2  vPopReg R9
+0x105ec10  vShr
+0x128ca86  vPopReg R9
+0x1351959  vPushImm ffffffff
+0x129d85b  vAdd
+0x105ed16  vPopReg R11
+0x1124bda  vPopReg R8
+0x1351959  vPushImm 007c5ac2
+0x106e053  vPushReg R8
+0x1331243  vPushReg R8
+0x12b162e  vNor
+0x10a454b  vPopReg R6
+0x10fa954  vNor
+0x10bfe87  vPopReg R10
+0x1320a1e  vPushEsp
+0x12eb80f  vPoiEsp
+0x110c4a3  vNor
+0x1334331  vPopReg R10
+0x1287ac9  vPushImm 007c5a30
+0x10595f1  vPushReg R8
+0x10fbc1e  vNor
+0x111dfe6  vPopReg R10
+0x12b79f4  vPushEsp
+0x127ea93  vPoiEsp
+0x12cc5fd  vNand
+0x104d619  vPopReg R11
+0x12af8af  vAdd
+0x136db24  vPopReg R11
+0x106ae67  vPushReg R1
+0x107fa5e  vAdd
+0x1081a08  vPopReg R9
+0x132e5c2  vPopReg R11
+0x1295096  vPushReg R15
+0x104f9c8  vPushReg R10
+0x10afd57  vPushReg R3
+0x10d6fd4  vPushReg R12
+0x10bfdce  vPushReg R15
+0x127a971  vPushReg R2
+0x10ba81f  vPushReg R5
+0x106e053  vPushReg R0
+0x1331243  vPushReg R4
+0x10595f1  vPushReg R13
+0x106ae67  vPushReg R1
+0x1295096  vPushReg R11
+0x133c62e  vPopOptable
+0x1124bda  vPopReg R6
+0x10a454b  vPopReg R4
+0x10bfe87  vPopReg R8
+0x1334331  vPopReg R9
+0x111dfe6  vPopReg R7
+0x104d619  vPopReg R2
+0x136db24  vPopReg R0
+0x1081a08  vPopReg R13
+0x132e5c2  vPopReg R10
+0x128ca86  vPopReg R1
+0x105ed16  vPopReg R14
+0x10c4115  vPushImm 007fee0a
+0x10d6fd4  vPushReg R6
+0x109ce2d  vAdd
+0x1124bda  vPopReg R1
+0x10a454b  vPopReg R1
+0x10bfdce  vPushReg R11
+0x127a971  vPushReg R14
+0x10ba81f  vPushReg R10
+0x106e053  vPushReg R13
+0x1331243  vPushReg R0
+0x10595f1  vPushReg R2
+0x106ae67  vPushReg R7
+0x1295096  vPushReg R9
+0x104f9c8  vPushReg R8
+0x10afd57  vPushReg R4
+0x10d6fd4  vPushReg R6
+0x10bfdce  vPushReg R1
+0x1281f00  vPopOptable
+0x10ea0a3  vPopReg R10
+0x109d9ba  vPopReg R11
+0x1054a12  vPopReg R6
+0x107c093  vPopReg R3
+0x1119383  vPopReg R1
+0x12ab1ef  vPopReg R4
+0x107559b  vPopReg R0
+0x129cf7c  vPopReg R5
+0x105322e  vPopReg R12
+0x129f8ac  vPopReg R15
+0x1069c6a  vPopReg R7
+0x13365cd  vPushReg R6
+0x12bdf39  vPushImm ffffffd0
+0x131ceb6  vAdd
+0x10ea0a3  vPopReg R15
+0x109d9ba  vPopReg R13
+0x10b1466  vPushImm 00000009
+0x107b8d5  vPushReg R13
+0x12cc098  vPushReg R13
+0x1113bb3  vNand
+0x1054a12  vPopReg R2
+0x12b36a1  vAdd
+0x107c093  vPopReg R15
+0x107fbaf  vPushEsp
+0x1087098  vPoiEsp
+0x10dace1  vPushImm 0005fff5
+0x1119383  vPopReg R8
+0x10d01e1  vPopReg R4
+0x12f2cd9  vPushReg R15
+0x12efc55  vPushImm 00000815
+0x10f5575  vNor
+0x12ab1ef  vPopReg R2
+0x10a5221  vPushEsp
+0x12a4cb4  vPoiEsp
+0x1302501  vNor
+0x107559b  vPopReg R14
+0x135b655  vPushReg R8
+0x1062a29  vPushImm fffff7ea
+0x12af894  vNor
+0x129cf7c  vPopReg R12
+0x10ff133  vPushEsp
+0x13201b4  vPoiEsp
+0x1369e2e  vNor
+0x105322e  vPopReg R14
+0x1323df4  vAdd
+0x129f8ac  vPopReg R12
+0x1069c6a  vPopReg R2
+0x1303363  vPushImm 00000006
+0x10a9f15  vPushReg R2
+0x135e153  vPushReg R2
+0x12ef963  vNor
+0x10ea0a3  vPopReg R14
+0x110fad1  vPushImm ffffffbe
+0x107e2ba  vNand
+0x109d9ba  vPopReg R4
+0x1054a12  vPopReg R12
+0x10a45d0  vPushReg R4
+0x12f5e04  vPushImm 00000040
+0x132e74c  vNor
+0x107c093  vPopReg R14
+0x10c99d7  vPushEsp
+0x107fed6  vPoiEsp
+0x12adce0  vNand
+0x1119383  vPopReg R12
+0x111e9b5  vShr
+0x12ab1ef  vPopReg R7
+0x132cd3b  vPushImm ffffffff
+0x106dcd9  vAdd
+0x107559b  vPopReg R7
+0x129cf7c  vPopReg R12
+0x12bdf39  vPushImm 007ff0af
+0x128a4a3  vPushReg R12
+0x12e067a  vPushReg R12
+0x10acfee  vNand
+0x105322e  vPopReg R15
+0x10f058a  vNor
+0x129f8ac  vPopReg R8
+0x106883c  vPushEsp
+0x134bc45  vPoiEsp
+0x136aa13  vNand
+0x1069c6a  vPopReg R9
+0x12efc55  vPushImm 007ff01d
+0x10f7cbc  vPushReg R12
+0x12a57dd  vNor
+0x10ea0a3  vPopReg R8
+0x1081072  vPushEsp
+0x10c8e27  vPoiEsp
+0x12b53e1  vNand
+0x109d9ba  vPopReg R7
+0x129e7c3  vAdd
+0x1054a12  vPopReg R9
+0x10dedb7  vPushReg R10
+0x1074cb2  vAdd
+0x107c093  vPopReg R8
+0x1119383  vPopReg R15
+0x131fd9f  vPushReg R5
+0x13365cd  vPushReg R4
+0x12f2cd9  vPushReg R13
+0x135b655  vPushReg R5
+0x10a9f15  vPushReg R0
+0x135e153  vPushReg R2
+0x10a45d0  vPushReg R1
+0x128a4a3  vPushReg R3
+0x12e067a  vPushReg R6
+0x10f7cbc  vPushReg R11
+0x10dedb7  vPushReg R10
+0x131fd9f  vPushReg R15
+0x10f991d  vPopOptable
+0x129cf7c  vPopReg R13
+0x105322e  vPopReg R0
+0x129f8ac  vPopReg R10
+0x1069c6a  vPopReg R6
+0x10ea0a3  vPopReg R8
+0x109d9ba  vPopReg R11
+0x1054a12  vPopReg R9
+0x107c093  vPopReg R15
+0x1119383  vPopReg R2
+0x12ab1ef  vPopReg R1
+0x107559b  vPopReg R7
+0x110fad1  vPushImm 00878946
+0x135b655  vPushReg R13
+0x12e2411  vAdd
+0x129cf7c  vPopReg R1
+0x105322e  vPopReg R7
+0x10a9f15  vPushReg R13
+0x135e153  vPushReg R5
+0x10a45d0  vPushReg R2
+0x128a4a3  vPushReg R15
+0x12e067a  vPushReg R9
+0x10f7cbc  vPushReg R11
+0x10dedb7  vPushReg R8
+0x131fd9f  vPushReg R6
+0x13365cd  vPushReg R10
+0x12f2cd9  vPushReg R0
+0x135b655  vPushReg R13
+0x10a9f15  vPushReg R7
+0x10dcd90  vPopOptable
+0x105af09  vPopReg R6
+0x127c341  vPopReg R5
+0x12ec54e  vPopReg R10
+0x131c33e  vPopReg R7
+0x10bd219  vPopReg R0
+0x10d4926  vPopReg R11
+0x12cf658  vPopReg R3
+0x132ad5d  vPopReg R9
+0x10bc3b4  vPopReg R14
+0x13141af  vPopReg R8
+0x10efac9  vPopReg R15
+0x10b0ca7  vPushImm 00000a28
+0x10cc662  vPushReg R0
+0x128f0de  vPushImm ffffffc0
+0x108c3e6  vAdd
+0x105af09  vPopReg R2
+0x1071450  vPoiEsp
+0x127c341  vPopReg R2
+0x12ec54e  vPopReg R8
+0x10d8b75  vPushReg R8
+0x10b5034  vPushReg R2
+0x1072d57  vPushReg R2
+0x133ae95  vNor
+0x131c33e  vPopReg R1
+0x104d4b0  vAdd
+0x10bd219  vPopReg R1
+0x135a511  vPushEsp
+0x1112d60  vPoiEsp
+0x1349bbb  vNand
+0x10d4926  vPopReg R4
+0x1333cef  vPopReg R15
+0x106a8b2  vPushReg R1
+0x12f0dd8  vPushReg R1
+0x1286b56  vNor
+0x12cf658  vPopReg R11
+0x10eb16a  vPushImm fffff7ea
+0x10a30f9  vNand
+0x132ad5d  vPopReg R11
+0x127fdae  vPushReg R4
+0x12df538  vPushReg R4
+0x10ecb20  vNand
+0x10bc3b4  vPopReg R5
+0x1124bfa  vPushImm 00000815
+0x1353902  vNand
+0x13141af  vPopReg R5
+0x10f4c91  vAdd
+0x10efac9  vPopReg R5
+0x105af09  vPopReg R15
+0x10c7ae6  vPushImm 00000006
+0x10b2ece  vPushReg R15
+0x10afe3b  vPushImm ffffffbf
+0x128fb0c  vNand
+0x127c341  vPopReg R11
+0x1349511  vShr
+0x12ec54e  vPopReg R13
+0x1069f3d  vPushImm ffffffff
+0x12cfb63  vAdd
+0x131c33e  vPopReg R5
+0x10bd219  vPopReg R13
+0x1069f3d  vPushImm 00878bbb
+0x1291be5  vPushReg R13
+0x1112e8e  vPushReg R13
+0x133c635  vNor
+0x10d4926  vPopReg R12
+0x12e3343  vNor
+0x12cf658  vPopReg R1
+0x12e8ffe  vPushEsp
+0x10d9efc  vPoiEsp
+0x10a18d3  vNand
+0x132ad5d  vPopReg R5
+0x10c023d  vPushImm 00878b29
+0x1294412  vPushReg R13
+0x10ca884  vNor
+0x10bc3b4  vPopReg R12
+0x1353429  vPushEsp
+0x12f1512  vPoiEsp
+0x111b085  vNor
+0x13141af  vPopReg R12
+0x1296c53  vAdd
+0x10efac9  vPopReg R1
+0x1064254  vPushReg R6
+0x1282631  vAdd
+0x105af09  vPopReg R10
+0x127c341  vPopReg R4
+0x1119a06  vPushReg R2
+0x10cc662  vPushReg R11
+0x106a8b2  vPushReg R9
+0x12f0dd8  vPushReg R8
+0x127fdae  vPushReg R15
+0x12df538  vPushReg R2
+0x10b2ece  vPushReg R14
+0x1291be5  vPushReg R7
+0x1112e8e  vPushReg R3
+0x1294412  vPushReg R0
+0x1064254  vPushReg R6
+0x1119a06  vPushReg R4
+0x107000d  vPopOptable
+0x10bd219  vPopReg R8
+0x10d4926  vPopReg R13
+0x12cf658  vPopReg R4
+0x132ad5d  vPopReg R11
+0x10bc3b4  vPopReg R9
+0x13141af  vPopReg R0
+0x10efac9  vPopReg R3
+0x105af09  vPopReg R14
+0x127c341  vPopReg R5
+0x12ec54e  vPopReg R1
+0x131c33e  vPopReg R1
+0x12ec7ad  vPushImm 005bd244
+0x12f0dd8  vPushReg R8
+0x1080816  vAdd
+0x10bd219  vPopReg R2
+0x10d4926  vPopReg R2
+0x127fdae  vPushReg R1
+0x12df538  vPushReg R2
+0x10b2ece  vPushReg R5
+0x1291be5  vPushReg R14
+0x1112e8e  vPushReg R3
+0x1294412  vPushReg R0
+0x1064254  vPushReg R9
+0x1119a06  vPushReg R11
+0x10cc662  vPushReg R4
+0x106a8b2  vPushReg R13
+0x12f0dd8  vPushReg R8
+0x127fdae  vPushReg R2
+0x127aedb  vPopOptable
+0x1332403  vPopReg R1
+0x105c04d  vPopReg R11
+0x1273598  vPopReg R2
+0x1108abe  vPopReg R0
+0x10d4453  vPopReg R12
+0x112af98  vPopReg R13
+0x1082617  vPopReg R8
+0x13555d7  vPopReg R10
+0x12c6d64  vPopReg R3
+0x10d9fec  vPopReg R7
+0x104a19c  vPopReg R4
+0x10e0fc7  vPushImm 00000ece
+0x1332403  vPopReg R15
+0x108b60e  vPushReg R15
+0x10d61e7  vPushReg R13
+0x107c35f  vPushReg R13
+0x10f31a2  vNand
+0x105c04d  vPopReg R7
+0x10b79ef  vAdd
+0x1273598  vPopReg R4
+0x107dda6  vPushEsp
+0x10bc612  vPoiEsp
+0x12eff7f  vNor
+0x1108abe  vPopReg R7
+0x10d92c7  vPopReg R5
+0x12b7b0d  vPushReg R4
+0x1119310  vPushImm 00000815
+0x108170c  vNor
+0x10d4453  vPopReg R12
+0x1104a37  vPushEsp
+0x132969b  vPoiEsp
+0x1369679  vNand
+0x112af98  vPopReg R8
+0x10fa439  vPushReg R7
+0x12fb9e6  vPushReg R7
+0x10f5b14  vNor
+0x1082617  vPopReg R9
+0x10520d5  vPushImm 00000815
+0x12efade  vNand
+0x13555d7  vPopReg R12
+0x110b38d  vAdd
+0x12c6d64  vPopReg R12
+0x10d9fec  vPopReg R9
+0x106a3ba  vPushImm 00000006
+0x1295d1a  vPushReg R9
+0x1305913  vPushImm ffffffbf
+0x1349178  vNand
+0x104a19c  vPopReg R8
+0x10b6a5f  vShr
+0x1332403  vPopReg R5
+0x12983b2  vPushImm ffffffff
+0x12a7b9e  vAdd
+0x105c04d  vPopReg R8
+0x1273598  vPopReg R5
+0x12a5f4d  vPushImm 005bd49d
+0x12c476d  vPushReg R5
+0x109f8c7  vPushReg R5
+0x10ae836  vNor
+0x1108abe  vPopReg R7
+0x12dfadf  vNor
+0x10d4453  vPopReg R14
+0x1052d6d  vPushEsp
+0x130d34a  vPoiEsp
+0x133421b  vNand
+0x112af98  vPopReg R12
+0x104e590  vPushImm 005bd40b
+0x133f876  vPushReg R5
+0x10e4d82  vNor
+0x1082617  vPopReg R6
+0x128b2e0  vPushEsp
+0x12a7203  vPoiEsp
+0x12c3490  vNor
+0x13555d7  vPopReg R4
+0x104c759  vAdd
+0x12c6d64  vPopReg R8
+0x12e04d5  vPushReg R1
+0x104bf11  vAdd
+0x10d9fec  vPopReg R8
+0x104a19c  vPopReg R7
+0x10baa4d  vPushReg R12
+0x1352ef2  vPushReg R2
+0x12eb70b  vPushReg R10
+0x12b7b0d  vPushReg R13
+0x10fa439  vPushReg R11
+0x12fb9e6  vPushReg R15
+0x1295d1a  vPushReg R0
+0x12c476d  vPushReg R9
+0x109f8c7  vPushReg R3
+0x133f876  vPushReg R2
+0x12e04d5  vPushReg R1
+0x10baa4d  vPushReg R7
+0x135ef31  vPopOptable
+0x1273598  vPopReg R3
+0x1108abe  vPopReg R5
+0x10d4453  vPopReg R11
+0x112af98  vPopReg R10
+0x1082617  vPopReg R13
+0x13555d7  vPopReg R8
+0x12c6d64  vPopReg R6
+0x10d9fec  vPopReg R4
+0x104a19c  vPopReg R1
+0x1332403  vPopReg R7
+0x105c04d  vPopReg R9
+0x1119310  vPushImm 006074e6
+0x12b7b0d  vPushReg R3
+0x1283d15  vAdd
+0x1273598  vPopReg R9
+0x1108abe  vPopReg R0
+0x10fa439  vPushReg R3
+0x12fb9e6  vPushReg R0
+0x1295d1a  vPushReg R1
+0x12c476d  vPushReg R4
+0x109f8c7  vPushReg R6
+0x133f876  vPushReg R8
+0x12e04d5  vPushReg R13
+0x10baa4d  vPushReg R10
+0x1352ef2  vPushReg R11
+0x12eb70b  vPushReg R5
+0x12b7b0d  vPushReg R3
+0x10fa439  vPushReg R0
+0x12879ff  vPopOptable
+0x12c248d  vPopReg R14
+0x10a88af  vPopReg R9
+0x10d238d  vPopReg R3
+0x1354089  vPopReg R2
+0x1324fa0  vPopReg R12
+0x12e7ca6  vPopReg R4
+0x127de68  vPopReg R15
+0x10ecc28  vPopReg R1
+0x104e432  vPopReg R0
+0x10bf1d0  vPopReg R7
+0x12e70ba  vPopReg R13
+0x128d827  vPushImm 00001770
+0x12c248d  vPopReg R6
+0x111e907  vPushReg R6
+0x105bcb8  vPushReg R1
+0x1368b6b  vPushReg R1
+0x111e313  vNand
+0x10a88af  vPopReg R11
+0x12f4b13  vAdd
+0x10d238d  vPopReg R0
+0x109ace6  vPushEsp
+0x104f2b8  vPoiEsp
+0x1307e77  vPushImm 002b304a
+0x1354089  vPopReg R8
+0x12d0a14  vPopReg R10
+0x10f0376  vPushReg R0
+0x10afc47  vPushReg R0
+0x109af04  vNor
+0x1324fa0  vPopReg R10
+0x1349c21  vPushImm fffff7ea
+0x10f1226  vNand
+0x12e7ca6  vPopReg R11
+0x10c5a42  vPushReg R8
+0x133c6b3  vPushReg R8
+0x1299433  vNor
+0x127de68  vPopReg R5
+0x1311207  vPushImm 00000815
+0x10ba699  vNand
+0x10ecc28  vPopReg R2
+0x1325b8a  vAdd
+0x104e432  vPopReg R5
+0x10bf1d0  vPopReg R5
+0x1307a2a  vPushImm 00000006
+0x10d27af  vPushReg R5
+0x12e492b  vPushImm ffffffbf
+0x12eba06  vNand
+0x12e70ba  vPopReg R13
+0x1307a17  vShr
+0x12c248d  vPopReg R0
+0x13130e5  vPushImm ffffffff
+0x10cbab8  vAdd
+0x10a88af  vPopReg R13
+0x10d238d  vPopReg R0
+0x128d827  vPushImm 00607290
+0x10f7ae1  vPushReg R0
+0x1123c0c  vPushReg R0
+0x12eee98  vNor
+0x1354089  vPopReg R2
+0x129f195  vNor
+0x1324fa0  vPopReg R11
+0x105325e  vPushEsp
+0x107b56a  vPoiEsp
+0x1120144  vNand
+0x12e7ca6  vPopReg R7
+0x1349c21  vPushImm 00607322
+0x10c30a4  vPushReg R0
+0x12b23fd  vNor
+0x127de68  vPopReg R10
+0x12e7487  vPushEsp
+0x1273b8b  vPoiEsp
+0x104ea1c  vNor
+0x10ecc28  vPopReg R10
+0x12faf0a  vAdd
+0x104e432  vPopReg R7
+0x133b690  vPushReg R14
+0x127a780  vAdd
+0x10bf1d0  vPopReg R11
+0x12e70ba  vPopReg R11
+0x136e7e4  vPushReg R7
+0x10ab6fc  vPushReg R14
+0x10f0376  vPushReg R3
+0x10afc47  vPushReg R4
+0x10c5a42  vPushReg R1
+0x133c6b3  vPushReg R5
+0x10d27af  vPushReg R9
+0x10f7ae1  vPushReg R15
+0x1123c0c  vPushReg R12
+0x10c30a4  vPushReg R6
+0x133b690  vPushReg R14
+0x136e7e4  vPushReg R11
+0x10e35e8  vPopOptable
+0x10d238d  vPopReg R4
+0x1354089  vPopReg R0
+0x1324fa0  vPopReg R11
+0x12e7ca6  vPopReg R2
+0x127de68  vPopReg R15
+0x10ecc28  vPopReg R13
+0x104e432  vPopReg R9
+0x10bf1d0  vPopReg R10
+0x12e70ba  vPopReg R3
+0x12c248d  vPopReg R7
+0x10a88af  vPopReg R12
+0x12e492b  vPushImm 0059d5d8
+0x10afc47  vPushReg R4
+0x111a5c3  vAdd
+0x10d238d  vPopReg R6
+0x1354089  vPopReg R6
+0x10c5a42  vPushReg R3
+0x133c6b3  vPushReg R2
+0x10d27af  vPushReg R3
+0x10f7ae1  vPushReg R10
+0x1123c0c  vPushReg R9
+0x10c30a4  vPushReg R13
+0x133b690  vPushReg R15
+0x136e7e4  vPushReg R2
+0x10ab6fc  vPushReg R11
+0x10f0376  vPushReg R0
+0x10afc47  vPushReg R4
+0x10c5a42  vPushReg R6
+0x12a6c34  vPopOptable
+0x132e5c2  vPopReg R4
+0x128ca86  vPopReg R5
+0x105ed16  vPopReg R0
+0x1124bda  vPopReg R7
+0x10a454b  vPopReg R15
+0x10bfe87  vPopReg R14
+0x1334331  vPopReg R6
+0x111dfe6  vPopReg R11
+0x104d619  vPopReg R13
+0x136db24  vPopReg R12
+0x1081a08  vPopReg R2
+0x1297ebb  vPushImm 00001771
+0x132e5c2  vPopReg R3
+0x1343f47  vPushReg R3
+0x107f2bf  vPushReg R6
+0x12fd73d  vPushReg R6
+0x10cda9b  vNand
+0x128ca86  vPopReg R2
+0x1287adc  vAdd
+0x105ed16  vPopReg R2
+0x10dd544  vPushEsp
+0x10d57b0  vPoiEsp
+0x10694f2  vNand
+0x1124bda  vPopReg R8
+0x130dac0  vPopReg R1
+0x10595f1  vPushReg R2
+0x10c4115  vPushImm 00000815
+0x104ea9c  vNor
+0x10a454b  vPopReg R9
+0x12ca22c  vPushEsp
+0x1336e21  vPoiEsp
+0x10dabe4  vNor
+0x10bfe87  vPopReg R12
+0x106ae67  vPushReg R8
+0x1295096  vPushReg R8
+0x109f6dc  vNor
+0x1334331  vPopReg R11
+0x10a2afb  vPushImm 00000815
+0x10f1361  vNand
+0x111dfe6  vPopReg R14
+0x130031a  vAdd
+0x104d619  vPopReg R9
+0x136db24  vPopReg R9
+0x10aeb14  vPushImm 00000006
+0x104f9c8  vPushReg R9
+0x128d9f6  vPushImm ffffffbf
+0x108fdff  vNand
+0x1081a08  vPopReg R11
+0x1129359  vShr
+0x132e5c2  vPopReg R14
+0x10cdbe6  vPushImm ffffffff
+0x12fe53b  vAdd
+0x128ca86  vPopReg R14
+0x105ed16  vPopReg R12
+0x1072d72  vPushImm 0059d831
+0x10afd57  vPushReg R12
+0x10d6fd4  vPushReg R12
+0x12b162e  vNor
+0x1124bda  vPopReg R1
+0x10fa954  vNor
+0x10a454b  vPopReg R2
+0x12a3639  vPushEsp
+0x10ecab7  vPoiEsp
+0x110c4a3  vNor
+0x10bfe87  vPopReg R8
+0x1322aa0  vPushImm 0059d79f
+0x10bfdce  vPushReg R12
+0x10fbc1e  vNor
+0x1334331  vPopReg R11
+0x1320a1e  vPushEsp
+0x135037b  vPoiEsp
+0x1286724  vNand
+0x111dfe6  vPopReg R10
+0x12b55fe  vAdd
+0x104d619  vPopReg R10
+0x127a971  vPushReg R4
+0x129d85b  vAdd
+0x136db24  vPopReg R1
+0x1081a08  vPopReg R10
+0x10ba81f  vPushReg R4
+0x106e053  vPushReg R10
+0x1331243  vPushReg R9
+0x10595f1  vPushReg R7
+0x106ae67  vPushReg R15
+0x1295096  vPushReg R6
+0x104f9c8  vPushReg R3
+0x10afd57  vPushReg R0
+0x10d6fd4  vPushReg R13
+0x10bfdce  vPushReg R5
+0x127a971  vPushReg R4
+0x10ba81f  vPushReg R10
+0x133c62e  vPopOptable
+0x105ed16  vPopReg R7
+0x1124bda  vPopReg R0
+0x10a454b  vPopReg R9
+0x10bfe87  vPopReg R4
+0x1334331  vPopReg R8
+0x111dfe6  vPopReg R1
+0x104d619  vPopReg R12
+0x136db24  vPopReg R14
+0x1081a08  vPopReg R3
+0x132e5c2  vPopReg R5
+0x128ca86  vPopReg R10
+0x1287ac9  vPushImm 0087fb3e
+0x10595f1  vPushReg R7
+0x107fa5e  vAdd
+0x105ed16  vPopReg R13
+0x1124bda  vPopReg R13
+0x106ae67  vPushReg R9
+0x1295096  vPushReg R9
+0x104f9c8  vPushReg R3
+0x10afd57  vPushReg R14
+0x10d6fd4  vPushReg R12
+0x10bfdce  vPushReg R1
+0x127a971  vPushReg R8
+0x10ba81f  vPushReg R4
+0x106e053  vPushReg R9
+0x1331243  vPushReg R0
+0x10595f1  vPushReg R7
+0x106ae67  vPushReg R13
+0x1281f00  vPopOptable
+0x107c093  vPopReg R6
+0x1119383  vPopReg R13
+0x12ab1ef  vPopReg R9
+0x107559b  vPopReg R12
+0x129cf7c  vPopReg R5
+0x105322e  vPopReg R7
+0x129f8ac  vPopReg R0
+0x1069c6a  vPopReg R8
+0x10ea0a3  vPopReg R3
+0x109d9ba  vPopReg R2
+0x1054a12  vPopReg R2
+0x132cd3b  vPushImm 00001772
+0x107c093  vPopReg R4
+0x1296c6d  vPushReg R4
+0x12f0cd6  vPushReg R7
+0x106884e  vPushReg R7
+0x12f439f  vNand
+0x1119383  vPopReg R13
+0x133ea54  vAdd
+0x12ab1ef  vPopReg R14
+0x10eff0d  vPushEsp
+0x10b85be  vPoiEsp
+0x1081472  vPushImm fffc3048
+0x107559b  vPopReg R3
+0x10cfc73  vPopReg R10
+0x12f2cd9  vPushReg R14
+0x135b655  vPushReg R14
+0x10f7aa1  vNor
+0x129cf7c  vPopReg R11
+0x1337557  vPushImm fffff7ea
+0x12b53e1  vNand
+0x105322e  vPopReg R10
+0x10a9f15  vPushReg R3
+0x135e153  vPushReg R3
+0x1070ec2  vNor
+0x129f8ac  vPopReg R13
+0x10e4c2c  vPushImm 00000815
+0x10f0caa  vNand
+0x1069c6a  vPopReg R1
+0x12e2411  vAdd
+0x10ea0a3  vPopReg R13
+0x109d9ba  vPopReg R10
+0x1303363  vPushImm 00000006
+0x10a45d0  vPushReg R10
+0x128a4a3  vPushReg R10
+0x10f5575  vNor
+0x1054a12  vPopReg R11
+0x136d726  vPushImm ffffffbf
+0x1072391  vNand
+0x107c093  vPopReg R1
+0x131dd41  vShr
+0x1119383  vPopReg R13
+0x12dfac4  vPushImm ffffffff
+0x13140d4  vAdd
+0x12ab1ef  vPopReg R14
+0x107559b  vPopReg R15
+0x12dfac4  vPushImm 0087fda2
+0x12e067a  vPushReg R15
+0x10f7cbc  vPushReg R15
+0x1302501  vNor
+0x129cf7c  vPopReg R1
+0x12af894  vNor
+0x105322e  vPopReg R1
+0x107fbaf  vPushEsp
+0x129dd64  vPoiEsp
+0x1369e2e  vNor
+0x129f8ac  vPopReg R1
+0x1096a78  vPushImm 0087fd10
+0x10dedb7  vPushReg R15
+0x12ef963  vNor
+0x1069c6a  vPopReg R3
+0x10a5221  vPushEsp
+0x1368c33  vPoiEsp
+0x13338d2  vNand
+0x10ea0a3  vPopReg R13
+0x10e4509  vAdd
+0x109d9ba  vPopReg R3
+0x131fd9f  vPushReg R6
+0x1296a98  vAdd
+0x1054a12  vPopReg R11
+0x107c093  vPopReg R13
+0x13365cd  vPushReg R4
+0x12f2cd9  vPushReg R12
+0x135b655  vPushReg R10
+0x10a9f15  vPushReg R8
+0x135e153  vPushReg R0
+0x10a45d0  vPushReg R7
+0x128a4a3  vPushReg R5
+0x12e067a  vPushReg R12
+0x10f7cbc  vPushReg R9
+0x10dedb7  vPushReg R4
+0x131fd9f  vPushReg R6
+0x13365cd  vPushReg R13
+0x10f991d  vPopOptable
+0x1119383  vPopReg R2
+0x12ab1ef  vPopReg R15
+0x107559b  vPopReg R11
+0x129cf7c  vPopReg R3
+0x105322e  vPopReg R9
+0x129f8ac  vPopReg R12
+0x1069c6a  vPopReg R7
+0x10ea0a3  vPopReg R4
+0x109d9ba  vPopReg R14
+0x1054a12  vPopReg R0
+0x107c093  vPopReg R10
+0x12bdf39  vPushImm 0085b088
+0x12f2cd9  vPushReg R2
+0x131ffd6  vAdd
+0x1119383  vPopReg R0
+0x12ab1ef  vPopReg R8
+0x135b655  vPushReg R4
+0x10a9f15  vPushReg R10
+0x135e153  vPushReg R14
+0x10a45d0  vPushReg R4
+0x128a4a3  vPushReg R7
+0x12e067a  vPushReg R12
+0x10f7cbc  vPushReg R9
+0x10dedb7  vPushReg R3
+0x131fd9f  vPushReg R11
+0x13365cd  vPushReg R15
+0x12f2cd9  vPushReg R2
+0x135b655  vPushReg R8
+0x1310728  vPopOptable
+0x10d93bc  vPopReg R0
+0x130dd69  vPopReg R12
+0x1284361  vPopReg R10
+0x133bc8c  vPopReg R9
+0x1052b45  vPopReg R8
+0x10c533a  vPopReg R1
+0x10b3dc2  vPopReg R5
+0x10f54f1  vPopReg R13
+0x12bfa49  vPopReg R4
+0x1345186  vPopReg R7
+0x131853e  vPopReg R14
+0x10d326e  vPushImm 00001db0
+0x10d93bc  vPopReg R3
+0x10ac54d  vPushReg R3
+0x12e7fb5  vPushReg R1
+0x1347660  vPushReg R1
+0x10a12dd  vNor
+0x130dd69  vPopReg R2
+0x12d2cf1  vAdd
+0x1284361  vPopReg R6
+0x10eb405  vPushEsp
+0x12d0ae7  vPoiEsp
+0x1092c59  vNor
+0x133bc8c  vPopReg R7
+0x12aa65b  vPopReg R11
+0x12a56e8  vPushReg R6
+0x10b5e01  vPushImm 00000815
+0x12a85d0  vNor
+0x1052b45  vPopReg R14
+0x12da526  vPushEsp
+0x1062952  vPoiEsp
+0x10a62e3  vNor
+0x10c533a  vPopReg R15
+0x134dbe0  vPushReg R7
+0x1311694  vPushImm fffff7ea
+0x136dc8f  vNor
+0x10b3dc2  vPopReg R15
+0x108117f  vPushEsp
+0x1108684  vPoiEsp
+0x12d528d  vNand
+0x10f54f1  vPopReg R14
+0x11197bd  vAdd
+0x12bfa49  vPopReg R2
+0x1345186  vPopReg R14
+0x129d01a  vPushImm 00000006
+0x1313d5d  vPushReg R14
+0x1082764  vPushImm ffffffbf
+0x10f5737  vNand
+0x131853e  vPopReg R6
+0x1111976  vShr
+0x10d93bc  vPopReg R4
+0x111b54a  vPushImm ffffffff
+0x136aadd  vAdd
+0x130dd69  vPopReg R6
+0x1284361  vPopReg R2
+0x1082764  vPushImm 0085b2e4
+0x12ceb7c  vPushReg R2
+0x1316096  vPushReg R2
+0x10d399b  vNor
+0x133bc8c  vPopReg R11
+0x13639e8  vNor
+0x1052b45  vPopReg R8
+0x1129426  vPushEsp
+0x10b9fad  vPoiEsp
+0x12ca1ea  vNor
+0x10c533a  vPopReg R7
+0x111b54a  UNKNOWN

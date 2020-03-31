@@ -1,0 +1,126 @@
+INST: VMTransReg_vPop
+
+>>>>>>> Handler: 122 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# esi = vOptable, 这里是什么为未知
+0x648ebd mov     edx, [edi]
+0x648ebf add     edi, 4
+0x648ecb mov     esi, edx
+# ebp = vEsp
+0x648ed3 mov     ebp, edi
+
+0x6079d2 mov     ebx, esi
+0x6079d8 mov     eax, 0
+0x6079dd sub     ebx, eax
+
+# edi = vEip
+0x6079df lea     edi, loc_6079DF
+
+0x6079ed sub     esi, 4
+0x6079f3 mov     edx, [esi]
+0x6079f8 xor     edx, ebx
+0x6079fc rol     edx, 1
+0x6079fe neg     edx
+0x6926a2 inc     edx
+0x6926a8 neg     edx
+0x6926ad xor     ebx, edx
+0x6926b0 add     edi, edx
+0x6926b2 jmp     edi
+
+
+>>>>>>> Handler: 211 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0x63a84a mov     edx, [ebp+0]
+0x63a84e add     ebp, 4
+0x63a854 xchg    ebp, edx
+0x63a856 mov     edi, edx
+
+0x61d642 mov     ebx, ebp
+0x61d64b mov     ecx, 0
+0x61d650 sub     ebx, ecx
+
+0x61d655 lea     esi, loc_61D655
+
+0x61d65c mov     edx, [ebp+0]
+0x61d664 add     ebp, 4
+0x61d66c xor     edx, ebx
+0x64df06 inc     edx
+0x6878b5 not     edx
+0x660f91 dec     edx
+0x65f0ef bswap   edx
+0x60522a inc     edx
+0x60522d not     edx
+0x605233 sub     edx, 1F3B18ADh
+0x67c068 rol     edx, 2
+0x67c06b neg     edx
+0x67c06d xor     ebx, edx
+0x6156d5 add     esi, edx
+0x68ff5c push    esi
+0x68ff5d retn
+
+>>>>>>> Handler: 303 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0x659976 mov     edx, [edi]
+0x65997a add     edi, 4
+0x659980 xchg    edi, edx
+0x659985 mov     esi, edx
+
+0x683e62 mov     ebx, edi
+0x683e6b mov     eax, 0
+0x683e7a sub     ebx, eax
+
+0x683e7c lea     ebp, loc_683E7C
+
+0x683e86 mov     ecx, [edi]
+0x683e88 add     edi, 4
+0x683e8e xor     ecx, ebx
+0x407bcd dec     ecx
+0x63e4c9 ror     ecx, 1
+0x63e4cb add     ecx, 38695809h
+0x68158a rol     ecx, 2
+0x68158d xor     ebx, ecx
+0x653217 add     ebp, ecx
+0x60d207 jmp     ebp
+
+>>>>>>> Handler: 394 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+0x6419ef mov     edx, [esi]
+0x6419f1 add     esi, 4
+0x6419fc mov     ebp, edx
+
+0x641a00 mov     edi, esi
+0x68c76d mov     ebx, ebp
+0x68c773 mov     edx, 0
+0x68c77e sub     ebx, edx
+
+0x68c783 lea     esi, loc_68C783
+
+0x68c790 mov     eax, [ebp+0]
+0x635129 lea     ebp, [ebp+4]
+0x635136 xor     eax, ebx
+0x635139 not     eax
+0x659352 neg     eax
+0x664360 dec     eax
+0x664361 ror     eax, 3
+0x66436c xor     ebx, eax
+0x66436e add     esi, eax
+0x664370 jmp     esi
+
+>>>>>>> Handler >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+59244544	0x10dc09a mov     eax, [esi]
+59244547	0x10dc0a1 add     esi, 4
+59244550	0x10dc0ad xchg    eax, esi      <---
+59244552	0x134997d mov     ebp, eax
+
+59244555	0x105a91b mov     ebx, esi
+59244558	0x105a923 mov     eax, 0AC0000h
+59244562	0x105a930 sub     ebx, eax
+
+59244564	0x105a934 lea     edi, loc_105A934
+
+59244565	0x105a93a lea     esi, [esi-4]
+59244566	0x105a940 mov     ecx, [esi]
+59244570	0x105a94e xor     ecx, ebx
+59244574	0x105a95d sub     ecx, 7C674F58h
+59244576	0x12a5fbc ror     ecx, 1
+59244579	0x12a5fc6 bswap   ecx
+59244582	0x12a5fca xor     ecx, 323B42C5h
+59244585	0x12a5fd4 xor     ebx, ecx
+59244587	0x12a5fd8 add     edi, ecx
+59244589	0x12be23a jmp     edi

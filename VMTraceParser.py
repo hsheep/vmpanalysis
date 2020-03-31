@@ -115,7 +115,7 @@ def vCode2File(v_code_list, file_name):
 
 
 def StartAnalysis(trace_file, base_addr, seek_off=0):
-    """ @seek_off: vmentry对应的文件偏移，"""
+    """ @seek_off: vmentry对应的文件偏移，用于跳跃分析"""
     global g_block_index
     block_index = 0
 
@@ -133,7 +133,6 @@ def StartAnalysis(trace_file, base_addr, seek_off=0):
         trace_fd.seek(seek_off, 0)
 
     # 开始分析
-    # while v_code != "VMLeave":
     while True:
         try:
             log.info("---- [%s]Debug, tell: %s ----" %

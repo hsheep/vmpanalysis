@@ -1,0 +1,97 @@
+##########} 简单的寄存器传播优化模型 {##########
+—————————————————————————————————————————————————————————————
+			   esi		|  	   eax		|	trash
+—————————————————————————————————————————————————————————————
+stage.1		[not esi]	|	[not eax]	|
+			[neg esi]	|	[neg eax]	|
+			[inc esi]	|	[inc eax]	|
+—————————————————————————————————————————————————————————————
+stage.2			 add esi, eax			|
+					————				|
+					 /					|
+					/					|
+			[add esi, eax]				|
+		-----------------------------------------------------
+stage2.1		add eax, esi			|						  
+						 ————			|
+							\			|
+							 \			|
+						  [add esi, eax]|
+—————————————————————————————————————————————————————————————
+stage.3		[not esi]	|	[not eax]	|
+			[neg esi]	|	[neg eax]	|
+			[inc esi]	|	[inc eax]	|
+—————————————————————————————————————————————————————————————
+stage.4				 mov eax, edi		|
+						 ————			|
+							\			|
+							 \			|
+						  [mov eax, edi]|
+—————————————————————————————————————————————————————————————
+stage.5	    {stage.1.esi}				|	{stage.3.eax}
+			{stage.3.esi}				|
+			{stage.1.eax}				|
+		-----------------------------------------------------
+stage5.1	{stage.3.esi}  				|	{stage.3.eax}
+										|	{stage.1.eax}
+										|	{stage.1.esi}
+—————————————————————————————————————————————————————————————
+
+* 各个寄存器列表记录以自身为目标寄存器指令引用。
+* 如遇到赋值操作，回溯当前指令列表寻找引用指令
+
+
+##########} 简单的栈指令优化模型 {##########
+//
+
+##########} 寄存器传播分析 {##########
+
+## 加入寄存器引用树
+opcode(算数) dst(reg)
+opcode(算数) dst(reg), src(reg)
+opcode(算数) dst(reg), src(reg), src(reg/imm)
+
+## 多寄存器加入引用树
+opcode dst(reg), src[base_reg, index_reg, displ_imm]
+
+## 寄存器引用树加入到删除队列
+opcode(传输) dst(reg), src(reg)
+
+## 寄存器引用树加入到优化队列
+opcode dst[base_reg, index_reg, displ_imm], src(reg)
+
+
+##########} 示例 {##########
+ror eax
+not eax
+mov ebx, eax
+add ecx, eax
+neg ebx
+mov ebx, ecx
+
+
+##########} 代码结构 {##########
+# 寄存器关联标记
+reg_bef_reset = {
+	eax: eax
+	ecx: eax,
+	edx: edx,
+	ebx: eax,  
+}
+
+
+# 指令引用树
+reg_refer = {
+	eax : [
+		ror eax
+		not eax
+		mov ebx, eax
+		add ecx, eax
+		neg ebx
+	],
+	ecx: [],
+	edx: [],
+	ebx: [
+		mov ebx, ecx
+	],  
+}
